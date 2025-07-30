@@ -3,6 +3,8 @@ using UnityEngine;
 public class Grabbable : MonoBehaviour
 {
     //private int MultiTrigger;
+    public Sprite InitialSprite;
+    public Sprite ActiveSprite;
     public bool MousedOver;
     public bool GrabbedLock;
     public bool MouseLockOut;
@@ -17,6 +19,7 @@ public class Grabbable : MonoBehaviour
     public float GrabSpeed = 20;
     public int MultiTrigger = 0;
     public Rigidbody2D rb;
+    public SpriteRenderer SpriteRenderer;
     public GameObject Target;
     public GameObject TargettedReciever;
     public bool SnapToReciever = false;
@@ -25,6 +28,8 @@ public class Grabbable : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        SpriteRenderer = GetComponent<SpriteRenderer>();
+        InitialSprite = this.SpriteRenderer.sprite;
         StartPos = transform.position;
     }
 
@@ -34,6 +39,7 @@ public class Grabbable : MonoBehaviour
         CheckGrab();
         if (!GrabbedLock)
         {
+            SpriteRenderer.sprite = InitialSprite;
             if (MultiTrigger == 1)
             {
                 rb.velocity = Vector2.zero;
@@ -65,6 +71,13 @@ public class Grabbable : MonoBehaviour
             else if (!LockOnNode)
             {
                 transform.position = StartPos;
+            }
+        }
+        else
+        {
+            if (ActiveSprite != null)
+            {
+                SpriteRenderer.sprite = ActiveSprite;
             }
         }
     }
