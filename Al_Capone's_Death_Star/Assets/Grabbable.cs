@@ -9,6 +9,7 @@ public class Grabbable : MonoBehaviour
     public bool MouseDown;
     public bool MousedOverReciever;
     public bool MousedOverOutput;
+    public bool LockOnNode = false;
     //public bool MousedOverOutput;
     public Vector2 mousePos;
     public Vector2 TrueMousePos;
@@ -40,6 +41,7 @@ public class Grabbable : MonoBehaviour
                 {
                     if (MousedOverReciever)
                     {
+                        LockOnNode = true;
                         transform.position = TargettedReciever.transform.position;
                     }
                     else
@@ -51,6 +53,7 @@ public class Grabbable : MonoBehaviour
                 {
                     if (MousedOverOutput)
                     {
+                        LockOnNode = true;
                         transform.position = TargettedReciever.transform.position;
                     }
                     else
@@ -59,7 +62,7 @@ public class Grabbable : MonoBehaviour
                     }
                 }
             }
-            else
+            else if (!LockOnNode)
             {
                 transform.position = StartPos;
             }
@@ -90,7 +93,7 @@ public class Grabbable : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Debug.Log("triggered" + collision.gameObject.name);
-        if (collision.gameObject.name != "Mouse")
+        if (collision.gameObject.name != "Mouse" && collision.gameObject.name != "Wiretap")
         {
             MultiTrigger++;
         }
@@ -111,7 +114,7 @@ public class Grabbable : MonoBehaviour
             MousedOverOutput = false;
             TargettedReciever = null;
         }
-        if (collision.gameObject.name != "Mouse")
+        if (collision.gameObject.name != "Mouse" && collision.gameObject.name != "Wiretap")
         {
             MultiTrigger--;
         }
@@ -146,6 +149,7 @@ public class Grabbable : MonoBehaviour
     public void Grab()
     {
         GrabbedLock = true;
+        LockOnNode = false;
         mousePos = Input.mousePosition;
         TrueMousePos = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 0));
         rb.velocity = new Vector2(TrueMousePos.x - transform.position.x, TrueMousePos.y - transform.position.y) * GrabSpeed;
