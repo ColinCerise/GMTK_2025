@@ -77,6 +77,7 @@ public class Grabbable : MonoBehaviour
         {
             if (ActiveSprite != null)
             {
+                //needs to exist
                 SpriteRenderer.sprite = ActiveSprite;
             }
         }
