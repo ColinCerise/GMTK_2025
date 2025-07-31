@@ -776,7 +776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
+  ActiveSprite: {fileID: 21300000, guid: 59145889c6477ac46be097e25f8f154d, type: 3}
   MousedOver: 0
   GrabbedLock: 0
   MouseLockOut: 0
@@ -1833,7 +1833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
+  ActiveSprite: {fileID: 21300000, guid: 59145889c6477ac46be097e25f8f154d, type: 3}
   MousedOver: 0
   GrabbedLock: 0
   MouseLockOut: 0
@@ -2163,7 +2163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
+  ActiveSprite: {fileID: 21300000, guid: 59145889c6477ac46be097e25f8f154d, type: 3}
   MousedOver: 0
   GrabbedLock: 0
   MouseLockOut: 0
@@ -2490,7 +2490,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
+  ActiveSprite: {fileID: 21300000, guid: 59145889c6477ac46be097e25f8f154d, type: 3}
   MousedOver: 0
   GrabbedLock: 0
   MouseLockOut: 0
@@ -2802,7 +2802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
+  ActiveSprite: {fileID: 21300000, guid: 59145889c6477ac46be097e25f8f154d, type: 3}
   MousedOver: 0
   GrabbedLock: 0
   MouseLockOut: 0
