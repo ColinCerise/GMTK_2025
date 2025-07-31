@@ -3271,8 +3271,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 5
+  m_fontSizeBase: 5
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3882,7 +3882,7 @@ GameObject:
   - component: {fileID: 1711430211}
   - component: {fileID: 1711430210}
   m_Layer: 0
-  m_Name: CoversationsManager
+  m_Name: We STill On
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3907,7 +3907,11 @@ MonoBehaviour:
     Eastburrow Boss: Of course. I would expect nothing less.  Whistlepig Boss: I
     hope this is a long and prosperous alliance for us both.  Eastburrow Boss: I\u2019ll
     see you there.   "
+  PreConversation: 
   ConversationTargets: 
+  PlayerReciever: {fileID: 0}
+  StarterOutput: {fileID: 400463482}
+  TargetReciever: {fileID: 1492175551}
   TimeOffsetHours: 12
   TimeOffsetMinutes: 3
   LPS: 20
@@ -4087,6 +4091,80 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 125111712}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1947002914
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1947002916}
+  - component: {fileID: 1947002915}
+  m_Layer: 0
+  m_Name: Smuggling Guns
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1947002915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947002914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f27d2d9b5782f940997cb510fcaf29f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Conversation: "Smuggling Guns 1 [Thickwood \u2014> Chuckwood]:  Thickwood Agent:
+    I need you to smuggle two guns into the storage unit where the alliance meeting
+    is tonight.  Chuckwood Smuggler: Sure. I can make that happen. Aren\u2019t they
+    doing a sweep though to check for that kind of thing? I can\u2019t promise they
+    won\u2019t be found.  Thickwood Agent: Don\u2019t worry, we\u2019ve got that
+    covered.  Smuggler: Alright. I\u2019ll get going on that.  Thickwood Agent: Report
+    back to base when you\u2019re done. Call me from there.  Smuggler: I\u2019ll
+    get back to you in a couple hours. "
+  PreConversation: 
+  ConversationTargets: 
+  PlayerReciever: {fileID: 0}
+  StarterOutput: {fileID: 921685621}
+  TargetReciever: {fileID: 670683100}
+  TimeOffsetHours: 12
+  TimeOffsetMinutes: 3
+  LPS: 20
+  StartOffset: 0
+  PlaceInConversation: 0
+  CurrentDialog: 
+  Wiretap: {fileID: 0}
+  WiretapScript: {fileID: 0}
+  Manager: {fileID: 0}
+  ManagerScript: {fileID: 0}
+  DialogueBox: {fileID: 0}
+  DialogueBoxScript: {fileID: 0}
+  TimeWaited: 0
+  CallEnded: 0
+  CallConnected: 0
+  CallStarted: 0
+  IAMTALKING: 0
+--- !u!4 &1947002916
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947002914}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.1024008, y: -0.09123979, z: -0.060267232}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1979339800
 GameObject:
@@ -4331,4 +4409,5 @@ SceneRoots:
   - {fileID: 1308828697}
   - {fileID: 88164}
   - {fileID: 1711430211}
+  - {fileID: 1947002916}
   - {fileID: 1286682198}

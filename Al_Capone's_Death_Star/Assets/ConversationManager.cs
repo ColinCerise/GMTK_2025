@@ -59,6 +59,10 @@ public class ConversationManager : MonoBehaviour
             TimeWaited += Time.deltaTime;
             ConnectedPoint = GameObject.Find(StarterOutput.name.Substring(0, (StarterOutput.name.Length - 1)) + "2");
             ConnectedReciever = ConnectedPoint.GetComponent<Grabbable>().TargettedReciever;
+            if (ConnectedReciever == TargetReciever)
+            {
+                CallStarted = true;
+            }
 
             if (CallStarted && StartOffset == 0)
             {
@@ -72,7 +76,7 @@ public class ConversationManager : MonoBehaviour
             {
                 CallEnded = true;
             }
-            else if (TimeWaited >= 30 && ConnectedReciever != TargetReciever)
+            else if (TimeWaited >= 30 && CallStarted)
             {
                 CallEnded = true;
             }
@@ -82,14 +86,25 @@ public class ConversationManager : MonoBehaviour
                 if ((TimeWaited - StartOffset) * LPS <= maxLeangth + 1)
                 {
                     PlaceInConversation = (int)((TimeWaited - StartOffset) * LPS);
-                    if (WiretapScript.Conversation.Equals(ConversationTargets))
+                    if (WiretapScript.Conversation != null && WiretapScript.Conversation.Equals(ConversationTargets))
                     {
                         if (!IAMTALKING)
                         {
                             IAMTALKING = true;
                             DialogueBoxScript.SetAsTalking(this.gameObject, PlaceInConversation);
                         }
-                        CurrentDialog = Conversation.Substring(DialogueBoxScript.StartNum, PlaceInConversation);
+                        if (PlaceInConversation < maxLeangth && DialogueBoxScript.StartNum < maxLeangth)
+                        {
+                            CurrentDialog = Conversation.Substring(DialogueBoxScript.StartNum, PlaceInConversation - DialogueBoxScript.StartNum);
+                        }
+                        else if (DialogueBoxScript.StartNum < maxLeangth)
+                        {
+                            CurrentDialog = Conversation.Substring(DialogueBoxScript.StartNum, maxLeangth - DialogueBoxScript.StartNum);
+                        }
+                        else
+                        {
+                            CallEnded = true;
+                        }
                     }
                     else
                     {
