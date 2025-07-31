@@ -89,6 +89,13 @@ public class ConversationManager : MonoBehaviour
         {
             totalCharLength += str.Length;
         }
+
+        string convo = "";
+        foreach (string str in dialogueList)
+        {
+            convo += str;
+        }
+        Conversation = convo;
     }
 
     void Update()

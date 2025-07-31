@@ -391,7 +391,10 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Escape2
+  speakerList: []
+  dialogueList: []
+  lineIndex: 0
 --- !u!1 &186428237
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,7 +1203,10 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Car2
+  speakerList: []
+  dialogueList: []
+  lineIndex: 0
 --- !u!1 &294092221
 GameObject:
   m_ObjectHideFlags: 0
@@ -1983,7 +1989,10 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Bribe2
+  speakerList: []
+  dialogueList: []
+  lineIndex: 0
 --- !u!1 &542213682
 GameObject:
   m_ObjectHideFlags: 0
@@ -2056,7 +2065,10 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Mundane3
+  speakerList: []
+  dialogueList: []
+  lineIndex: 0
 --- !u!1 &576518151
 GameObject:
   m_ObjectHideFlags: 0
@@ -2278,7 +2290,10 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Smuggling3
+  speakerList: []
+  dialogueList: []
+  lineIndex: 0
 --- !u!1 &619343975
 GameObject:
   m_ObjectHideFlags: 0
@@ -2351,7 +2366,10 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Mundane1
+  speakerList: []
+  dialogueList: []
+  lineIndex: 0
 --- !u!1 &670683100
 GameObject:
   m_ObjectHideFlags: 0
@@ -3018,7 +3036,10 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Bribe1
+  speakerList: []
+  dialogueList: []
+  lineIndex: 0
 --- !u!1 &859865472
 GameObject:
   m_ObjectHideFlags: 0
@@ -3241,7 +3262,10 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Smuggling2
+  speakerList: []
+  dialogueList: []
+  lineIndex: 0
 --- !u!1 &901030210
 GameObject:
   m_ObjectHideFlags: 0
@@ -3898,7 +3922,10 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Mundane2
+  speakerList: []
+  dialogueList: []
+  lineIndex: 0
 --- !u!1 &986484969
 GameObject:
   m_ObjectHideFlags: 0
@@ -4307,7 +4334,10 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Inside2
+  speakerList: []
+  dialogueList: []
+  lineIndex: 0
 --- !u!1 &1097691633
 GameObject:
   m_ObjectHideFlags: 0
@@ -5144,7 +5174,10 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Cthulu
+  speakerList: []
+  dialogueList: []
+  lineIndex: 0
 --- !u!1 &1286682197
 GameObject:
   m_ObjectHideFlags: 0
@@ -5842,7 +5875,10 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Car1
+  speakerList: []
+  dialogueList: []
+  lineIndex: 0
 --- !u!1 &1492175551
 GameObject:
   m_ObjectHideFlags: 0
@@ -6523,7 +6559,7 @@ GameObject:
   - component: {fileID: 1711430211}
   - component: {fileID: 1711430210}
   m_Layer: 0
-  m_Name: StillOn
+  m_Name: WeStillOn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6575,7 +6611,10 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: WeStillOn
+  speakerList: []
+  dialogueList: []
+  lineIndex: 0
 --- !u!4 &1711430211
 Transform:
   m_ObjectHideFlags: 0
@@ -6672,7 +6711,10 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Inside1
+  speakerList: []
+  dialogueList: []
+  lineIndex: 0
 --- !u!1 &1735138189
 GameObject:
   m_ObjectHideFlags: 0
@@ -7372,7 +7414,10 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Smuggling1
+  speakerList: []
+  dialogueList: []
+  lineIndex: 0
 --- !u!4 &1947002916
 Transform:
   m_ObjectHideFlags: 0
@@ -7950,7 +7995,10 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Escape1
+  speakerList: []
+  dialogueList: []
+  lineIndex: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
