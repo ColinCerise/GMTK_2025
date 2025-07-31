@@ -84,7 +84,6 @@ public class ConversationManager : MonoBehaviour
         }
     }
 
-    // Update is called once per
     void Update()
     {
         if (((ManagerScript.Hours == TimeOffsetHours && ManagerScript.Minutes >= TimeOffsetMinutes) || ManagerScript.Hours > TimeOffsetHours) && !CallEnded)
@@ -111,10 +110,12 @@ public class ConversationManager : MonoBehaviour
             {
                 StartOffset = TimeWaited;
             }
+
             if (ConnectedReciever == PlayerReciever)
             {
                 CallConnected = true;
             }
+
             if (TimeWaited >= 20 && !CallConnected)
             {
                 CallEnded = true;
