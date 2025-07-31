@@ -24,6 +24,7 @@ public class Grabbable : MonoBehaviour
     public GameObject TargettedReciever;
     public bool SnapToReciever = false;
     public bool SnapToOutput = false;
+    public bool AbleToLock = true;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -59,7 +60,10 @@ public class Grabbable : MonoBehaviour
                 {
                     if (MousedOverOutput)
                     {
-                        LockOnNode = true;
+                        if (AbleToLock)
+                        {
+                            LockOnNode = true;
+                        }
                         transform.position = TargettedReciever.transform.position;
                     }
                     else
