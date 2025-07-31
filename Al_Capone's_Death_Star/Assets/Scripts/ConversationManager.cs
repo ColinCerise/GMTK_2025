@@ -20,7 +20,7 @@ public class ConversationManager : MonoBehaviour
     public float LPS = 20;
     public float StartOffset = 0;
     public int PlaceInConversation = 0;
-    int maxLeangth;
+    public int maxLeangth;
     //public char CurrentChar;
     public string CurrentDialog;
     public GameObject Wiretap;
@@ -62,6 +62,7 @@ public class ConversationManager : MonoBehaviour
             if (ConnectedReciever == TargetReciever)
             {
                 CallStarted = true;
+                CallConnected = true;
             }
 
             if (CallStarted && StartOffset == 0)
