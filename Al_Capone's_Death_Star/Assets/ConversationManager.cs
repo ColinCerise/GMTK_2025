@@ -41,7 +41,7 @@ public class ConversationManager : MonoBehaviour
         DialogueBoxScript = DialogueBox.GetComponent<DialogueManager>();
     }
 
-    // Update is called once per frame
+    // Update is called once per
     void Update()
     {
         if (((ManagerScript.Hours == TimeOffsetHours && ManagerScript.Minutes >= TimeOffsetMinutes) || ManagerScript.Hours > TimeOffsetHours) && !CallEnded)

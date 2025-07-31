@@ -3271,7 +3271,7 @@ MonoBehaviour:
   TargettedReciever: {fileID: 0}
   SnapToReciever: 0
   SnapToOutput: 1
-  AbleToLock: 0
+  AbleToLock: 1
 --- !u!50 &1308828694
 Rigidbody2D:
   serializedVersion: 4
