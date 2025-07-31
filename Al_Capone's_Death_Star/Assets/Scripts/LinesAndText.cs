@@ -6,9 +6,9 @@ using UnityEngine;
 //using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 using TMPro;
+using UnityEngine.UI;
 public class LinesAndText : MonoBehaviour
 {
-    public TMP_Text ClockText;
     public int Hours = 12;
     public int Minutes;
     public float AccumulatedTime;
@@ -27,6 +27,12 @@ public class LinesAndText : MonoBehaviour
     public LineRenderer Line5;
     public GameObject Connectpoint5a;
     public GameObject Connectpoint5b;
+
+    // Variables for clock rendering
+    [SerializeField] GameObject clockDisplay;
+    [SerializeField] Sprite[] clockSprites;
+    private Image[] clockDigits;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -35,6 +41,8 @@ public class LinesAndText : MonoBehaviour
         Line3 = GameObject.Find("Line3").GetComponent<LineRenderer>();
         Line4 = GameObject.Find("Line4").GetComponent<LineRenderer>();
         Line5 = GameObject.Find("Line5").GetComponent<LineRenderer>();
+
+        clockDigits = clockDisplay.GetComponentsInChildren<Image>();
     }
 
     // Update is called once per frame
@@ -52,14 +60,7 @@ public class LinesAndText : MonoBehaviour
         Line5.SetPosition(1, Connectpoint5b.transform.position);
 
         AccumulatedTime += Time.deltaTime;
-        if (Minutes < 10)
-        {
-            ClockText.text = Hours.ToString() + ":0" + Minutes.ToString();
-        }
-        else
-        {
-            ClockText.text = Hours.ToString() + ":" + Minutes.ToString();
-        }
+        ClockDisplay(Hours, Minutes);
         if (AccumulatedTime >= .5)
         {
             for (float i = AccumulatedTime; i > .5f; i -= .5f)
@@ -73,5 +74,13 @@ public class LinesAndText : MonoBehaviour
                 }
             }
         }
+    }
+
+    private void ClockDisplay(int hours, int minutes)
+    {
+        clockDigits[0].sprite = clockSprites[hours / 10];
+        clockDigits[1].sprite = clockSprites[hours % 10];
+        clockDigits[2].sprite = clockSprites[minutes / 10];
+        clockDigits[3].sprite = clockSprites[minutes % 10];
     }
 }
