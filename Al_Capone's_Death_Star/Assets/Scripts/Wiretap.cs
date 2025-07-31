@@ -4,6 +4,7 @@ using static UnityEngine.GraphicsBuffer;
 public class Wiretap : MonoBehaviour
 {
     public GameObject Target;
+
     public bool OverOutput;
     public GameObject TargettedOutput;
     public GameObject ConnectedPoint;
