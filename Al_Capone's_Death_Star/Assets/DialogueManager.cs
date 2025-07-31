@@ -24,7 +24,10 @@ public class DialogueManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        DialogueBox.text = Conversation.GetComponent<ConversationManager>().CurrentDialog;
+        if (Conversation != null && Conversation.GetComponent<ConversationManager>().CurrentDialog != null)
+        {
+            DialogueBox.text = Conversation.GetComponent<ConversationManager>().CurrentDialog;
+        }
     }
     public void SetAsTalking(GameObject Conversationist, int startingNum)
     {
