@@ -3224,6 +3224,7 @@ MonoBehaviour:
   Wiretap: {fileID: 0}
   WiretapScript: {fileID: 0}
   Conversation: {fileID: 0}
+  DialogueTimer: 0
 --- !u!114 &1286682201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3882,7 +3883,7 @@ GameObject:
   - component: {fileID: 1711430211}
   - component: {fileID: 1711430210}
   m_Layer: 0
-  m_Name: We STill On
+  m_Name: '"We still on?"'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
