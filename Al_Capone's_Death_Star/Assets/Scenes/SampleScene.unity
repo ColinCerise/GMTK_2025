@@ -6598,7 +6598,7 @@ MonoBehaviour:
     Boss: Of course. I would expect nothing less.  Whistlepig Boss: I hope this is
     a long and prosperous alliance for us both.  Eastburrow Boss: I\u2019ll see you
     there. "
-  PreConversation: 
+  PreConversation: Operator, Whistlepig
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 400463482}
@@ -7879,7 +7879,7 @@ Transform:
   m_GameObject: {fileID: 2013851218}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5, y: -3.53, z: 0}
+  m_LocalPosition: {x: -8, y: -3.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
