@@ -123,6 +123,7 @@ public class ConversationManager : MonoBehaviour
                     else
                     {
                         IAMTALKING = false;
+                        Manager.GetComponent<ConvoLog>().AddConvo(CurrentDialog);
                         CurrentDialog = null;
                     }
                     //CurrentChar = Conversation[PlaceInConversation];
