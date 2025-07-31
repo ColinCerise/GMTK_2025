@@ -187,8 +187,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 36
+  m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -290,7 +290,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.93, y: -1.66}
+  m_AnchoredPosition: {x: -0.38, y: 4.42}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &88107218
@@ -346,8 +346,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.21133333}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.6, y: 0.5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -397,7 +397,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d59a285d45b9aab4a976c5e99b983ea3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -417,7 +417,7 @@ Transform:
   m_GameObject: {fileID: 88107218}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4, y: -2, z: 0}
+  m_LocalPosition: {x: -4, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -471,7 +471,7 @@ GameObject:
   - component: {fileID: 188834808}
   - component: {fileID: 188834807}
   - component: {fileID: 188834806}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Monax1
   m_TagString: Output
   m_Icon: {fileID: 0}
@@ -580,7 +580,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 448b88abfd84690458dab15afae59a85, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -772,7 +772,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 222431241}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b78c8ed6081a61a44be539730e8fd081, type: 3}
+  m_Script: {fileID: 11500000, guid: 4faefb260d7e0b140a0ee29d4108dc10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
@@ -1098,6 +1098,39 @@ Transform:
   - {fileID: 670683103}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &389639079
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 389639080}
+  m_Layer: 0
+  m_Name: Conversations
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &389639080
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 389639079}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.9912056, y: -0.9778645, z: 0.05273807}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1711430211}
+  - {fileID: 1947002916}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &400463482
 GameObject:
   m_ObjectHideFlags: 0
@@ -1110,7 +1143,7 @@ GameObject:
   - component: {fileID: 400463485}
   - component: {fileID: 400463484}
   - component: {fileID: 400463483}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eastburrow1
   m_TagString: Output
   m_Icon: {fileID: 0}
@@ -1219,7 +1252,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 448b88abfd84690458dab15afae59a85, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1257,6 +1290,7 @@ GameObject:
   - component: {fileID: 420143888}
   - component: {fileID: 420143887}
   - component: {fileID: 420143886}
+  - component: {fileID: 420143889}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1303,11 +1337,11 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
+  near clip plane: 0
+  far clip plane: 1
   field of view: 60
   orthographic: 1
-  orthographic size: 4
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1332,12 +1366,32 @@ Transform:
   m_GameObject: {fileID: 420143885}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 0, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &420143889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420143885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_AssetsPPU: 30
+  m_RefResolutionX: 320
+  m_RefResolutionY: 180
+  m_UpscaleRT: 1
+  m_PixelSnapping: 0
+  m_CropFrameX: 0
+  m_CropFrameY: 0
+  m_StretchFill: 0
 --- !u!1 &478585652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1391,8 +1445,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.21133333}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.6, y: 0.5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1442,7 +1496,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d59a285d45b9aab4a976c5e99b983ea3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1462,7 +1516,7 @@ Transform:
   m_GameObject: {fileID: 478585652}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -2, z: 0}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1521,8 +1575,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.21133333}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.6, y: 0.5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1572,7 +1626,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d59a285d45b9aab4a976c5e99b983ea3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1592,7 +1646,7 @@ Transform:
   m_GameObject: {fileID: 670683100}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: -2, z: 0}
+  m_LocalPosition: {x: 4, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1610,7 +1664,7 @@ GameObject:
   - component: {fileID: 710281749}
   - component: {fileID: 710281748}
   - component: {fileID: 710281747}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chuckwood1
   m_TagString: Output
   m_Icon: {fileID: 0}
@@ -1719,7 +1773,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 448b88abfd84690458dab15afae59a85, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1739,13 +1793,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 710281746}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.258819, w: 0.9659259}
   m_LocalPosition: {x: 4, y: 2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 125111712}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -30}
 --- !u!1 &820983362
 GameObject:
   m_ObjectHideFlags: 0
@@ -1775,7 +1829,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 820983362}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b78c8ed6081a61a44be539730e8fd081, type: 3}
+  m_Script: {fileID: 11500000, guid: 4faefb260d7e0b140a0ee29d4108dc10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
@@ -2049,7 +2103,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 448b88abfd84690458dab15afae59a85, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2105,7 +2159,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 962602142}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b78c8ed6081a61a44be539730e8fd081, type: 3}
+  m_Script: {fileID: 11500000, guid: 4faefb260d7e0b140a0ee29d4108dc10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
@@ -2286,7 +2340,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 986484969}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd80737cf9891c84bbf731b325fc61a5, type: 3}
+  m_Script: {fileID: 11500000, guid: b3ab0d3e4f455d146b34b2a1236f2a0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mousePos: {x: 0, y: 0, z: 0}
@@ -2432,7 +2486,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1055399312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b78c8ed6081a61a44be539730e8fd081, type: 3}
+  m_Script: {fileID: 11500000, guid: 4faefb260d7e0b140a0ee29d4108dc10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
@@ -2638,8 +2692,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.21133333}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.6, y: 0.5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2689,7 +2743,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d59a285d45b9aab4a976c5e99b983ea3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2709,7 +2763,7 @@ Transform:
   m_GameObject: {fileID: 1100449619}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: -2, z: 0}
+  m_LocalPosition: {x: 2, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2744,7 +2798,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1136175019}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b78c8ed6081a61a44be539730e8fd081, type: 3}
+  m_Script: {fileID: 11500000, guid: 4faefb260d7e0b140a0ee29d4108dc10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
@@ -3204,7 +3258,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 3.1024008, y: -0.09123979}
+  m_AnchoredPosition: {x: 4.78, y: -1.47}
   m_SizeDelta: {x: 20, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1286682199
@@ -3216,7 +3270,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1286682197}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4da5f19e26f28b40890e734ed04cc25, type: 3}
+  m_Script: {fileID: 11500000, guid: ced66636d01c52c4e9d0fee0de8ce5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueBox: {fileID: 1286682201}
@@ -3272,8 +3326,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 5
-  m_fontSizeBase: 5
+  m_fontSize: 10
+  m_fontSizeBase: 10
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -3389,7 +3443,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1308828691}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68d6ad5e88d2b7448975a04e43b873ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c42fab8e07d33349a4b47739295c7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
@@ -3407,7 +3461,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1308828691}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b78c8ed6081a61a44be539730e8fd081, type: 3}
+  m_Script: {fileID: 11500000, guid: 4faefb260d7e0b140a0ee29d4108dc10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
@@ -3494,7 +3548,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 0.8828125}
+    oldSize: {x: 0.8, y: 0.8333333}
     newSize: {x: 1, y: 0.8828125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3544,8 +3598,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 2747690628134850419, guid: b670ab75dde984907b8570040daa08c5, type: 3}
-  m_Color: {r: 0, g: 0.15639687, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 0f4ce0a3a825c0443b4c405c77038780, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3564,7 +3618,7 @@ Transform:
   m_GameObject: {fileID: 1308828691}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6, y: 0, z: 0}
+  m_LocalPosition: {x: -5.85, y: -1.56, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3759,8 +3813,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.21133333}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.6, y: 0.5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3810,7 +3864,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d59a285d45b9aab4a976c5e99b983ea3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3830,7 +3884,7 @@ Transform:
   m_GameObject: {fileID: 1492175551}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: -2, z: 0}
+  m_LocalPosition: {x: -2, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3898,23 +3952,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1711430209}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f27d2d9b5782f940997cb510fcaf29f, type: 3}
+  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: " Eastburrow Boss: We still on for tonight?  Whistlepig Boss: As
-    long as you hold up your end of the deal.  Eastburrow Boss: I will. Don\u2019t
-    worry.  Whistlepig Boss: Good. I\u2019ll be there with my second. No weapons.
-    I\u2019ll have someone check you at the door. I expect you\u2019ll do the same. 
-    Eastburrow Boss: Of course. I would expect nothing less.  Whistlepig Boss: I
-    hope this is a long and prosperous alliance for us both.  Eastburrow Boss: I\u2019ll
-    see you there.   "
+  Conversation: "Eastburrow Boss: We still on for tonight?  Whistlepig Boss: As long
+    as you hold up your end of the deal.  Eastburrow Boss: I will. Don\u2019t worry. 
+    Whistlepig Boss: Good. I\u2019ll be there with my second. No weapons. I\u2019ll
+    have someone check you at the door. I expect you\u2019ll do the same.  Eastburrow
+    Boss: Of course. I would expect nothing less.  Whistlepig Boss: I hope this is
+    a long and prosperous alliance for us both.  Eastburrow Boss: I\u2019ll see you
+    there. "
   PreConversation: 
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 400463482}
-  TargetReciever: {fileID: 1492175551}
+  StarterOutput: {fileID: 0}
+  TargetReciever: {fileID: 0}
   TimeOffsetHours: 12
-  TimeOffsetMinutes: 3
+  TimeOffsetMinutes: 10
   LPS: 20
   StartOffset: 0
   PlaceInConversation: 0
@@ -3938,12 +3992,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1711430209}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.1024008, y: -0.09123979, z: -0.060267232}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 389639080}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1855241245
 GameObject:
@@ -3957,7 +4011,7 @@ GameObject:
   - component: {fileID: 1855241248}
   - component: {fileID: 1855241247}
   - component: {fileID: 1855241246}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Whistlepig1
   m_TagString: Output
   m_Icon: {fileID: 0}
@@ -4066,7 +4120,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 448b88abfd84690458dab15afae59a85, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4104,7 +4158,7 @@ GameObject:
   - component: {fileID: 1947002916}
   - component: {fileID: 1947002915}
   m_Layer: 0
-  m_Name: Smuggling Guns
+  m_Name: Smuggling guns
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4119,24 +4173,23 @@ MonoBehaviour:
   m_GameObject: {fileID: 1947002914}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f27d2d9b5782f940997cb510fcaf29f, type: 3}
+  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: "Smuggling Guns 1 [Thickwood \u2014> Chuckwood]:  Thickwood Agent:
-    I need you to smuggle two guns into the storage unit where the alliance meeting
-    is tonight.  Chuckwood Smuggler: Sure. I can make that happen. Aren\u2019t they
-    doing a sweep though to check for that kind of thing? I can\u2019t promise they
-    won\u2019t be found.  Thickwood Agent: Don\u2019t worry, we\u2019ve got that
-    covered.  Smuggler: Alright. I\u2019ll get going on that.  Thickwood Agent: Report
-    back to base when you\u2019re done. Call me from there.  Smuggler: I\u2019ll
-    get back to you in a couple hours. "
+  Conversation: "Thickwood Agent: I need you to smuggle two guns into the storage
+    unit where the alliance meeting is tonight.  Chuckwood Smuggler: Sure. I can
+    make that happen. Aren\u2019t they doing a sweep though to check for that kind
+    of thing? I can\u2019t promise they won\u2019t be found.  Thickwood Agent: Don\u2019t
+    worry, we\u2019ve got that covered.  Smuggler: Alright. I\u2019ll get going on
+    that.  Thickwood Agent: Report back to base when you\u2019re done. Call me from
+    there.  Smuggler: I\u2019ll get back to you in a couple hours. "
   PreConversation: 
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 921685621}
-  TargetReciever: {fileID: 670683100}
+  StarterOutput: {fileID: 0}
+  TargetReciever: {fileID: 0}
   TimeOffsetHours: 12
-  TimeOffsetMinutes: 3
+  TimeOffsetMinutes: 10
   LPS: 20
   StartOffset: 0
   PlaceInConversation: 0
@@ -4160,12 +4213,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1947002914}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.1024008, y: -0.09123979, z: -0.060267232}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 389639080}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1979339800
 GameObject:
@@ -4229,7 +4282,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1995254230}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdde6f3e2c5ad0e4491eab965cbabe55, type: 3}
+  m_Script: {fileID: 11500000, guid: c9f85b17f21a7f34ab3270237dbde35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ClockText: {fileID: 88162}
@@ -4249,8 +4302,8 @@ MonoBehaviour:
   Connectpoint4a: {fileID: 400463482}
   Connectpoint4b: {fileID: 1055399312}
   Line5: {fileID: 0}
-  Connectpoint5a: {fileID: 1136175019}
-  Connectpoint5b: {fileID: 710281746}
+  Connectpoint5a: {fileID: 710281746}
+  Connectpoint5b: {fileID: 1136175019}
 --- !u!4 &1995254232
 Transform:
   m_ObjectHideFlags: 0
@@ -4319,8 +4372,8 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0.21133333}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.6, y: 0.5}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4370,7 +4423,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d59a285d45b9aab4a976c5e99b983ea3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4409,6 +4462,5 @@ SceneRoots:
   - {fileID: 294092222}
   - {fileID: 1308828697}
   - {fileID: 88164}
-  - {fileID: 1711430211}
-  - {fileID: 1947002916}
+  - {fileID: 389639080}
   - {fileID: 1286682198}
