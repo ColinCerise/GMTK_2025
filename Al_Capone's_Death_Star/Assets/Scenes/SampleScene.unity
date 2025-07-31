@@ -1341,7 +1341,7 @@ Camera:
   far clip plane: 1
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1385,7 +1385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AssetsPPU: 30
-  m_RefResolutionX: 320
+  m_RefResolutionX: 500
   m_RefResolutionY: 180
   m_UpscaleRT: 1
   m_PixelSnapping: 0
@@ -3965,8 +3965,8 @@ MonoBehaviour:
   PreConversation: 
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 0}
-  TargetReciever: {fileID: 0}
+  StarterOutput: {fileID: 400463482}
+  TargetReciever: {fileID: 1492175551}
   TimeOffsetHours: 12
   TimeOffsetMinutes: 10
   LPS: 20
@@ -4186,8 +4186,8 @@ MonoBehaviour:
   PreConversation: 
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 0}
-  TargetReciever: {fileID: 0}
+  StarterOutput: {fileID: 921685621}
+  TargetReciever: {fileID: 670683100}
   TimeOffsetHours: 12
   TimeOffsetMinutes: 10
   LPS: 20
