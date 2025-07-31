@@ -6714,6 +6714,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7a6753a65ad5a4442b763280b6fbb4f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Anger: 0
+  MaxAnger: 100
 --- !u!4 &2075619982
 Transform:
   m_ObjectHideFlags: 0
@@ -6736,6 +6738,7 @@ SceneRoots:
   - {fileID: 420143888}
   - {fileID: 986484973}
   - {fileID: 1995254232}
+  - {fileID: 2075619982}
   - {fileID: 1979339801}
   - {fileID: 125111712}
   - {fileID: 1608982126}
@@ -6745,4 +6748,3 @@ SceneRoots:
   - {fileID: 1286682198}
   - {fileID: 186428241}
   - {fileID: 1735138192}
-  - {fileID: 2075619982}
