@@ -6,10 +6,14 @@ public class OutputJack : MonoBehaviour
 {
     public GameObject Connector;
     public Grabbable ConnectorScript;
+    public GameObject ConnectedLight;
     public Sprite InitialSprite;
     public Sprite ActiveSprite;
+    public Sprite InitialLight;
+    public Sprite ActiveLight;
     public SpriteRenderer SpriteRenderer;
     public bool isActive = false;
+    public bool LightActive = false;
     public bool IsReciever;
     public int MultiTrigger = 0;
     // Start is called before the first frame update
@@ -20,6 +24,8 @@ public class OutputJack : MonoBehaviour
         if (!IsReciever)
         {
             Connector = GameObject.Find(this.gameObject.name.Substring(0, (this.gameObject.name.Length - 1)) + "2");
+            ConnectedLight = GameObject.Find(this.gameObject.name.Substring(0, (this.gameObject.name.Length - 1)) + "3");
+            InitialLight = ConnectedLight.GetComponent<SpriteRenderer>().sprite;
         }
         /*
         else
@@ -45,6 +51,14 @@ public class OutputJack : MonoBehaviour
             else
             {
                 isActive = false;
+            }
+            if (LightActive)
+            {
+                ConnectedLight.GetComponent<SpriteRenderer>().sprite = ActiveLight;
+            }
+            else
+            {
+                ConnectedLight.GetComponent<SpriteRenderer>().sprite = InitialLight;
             }
         }
         else
@@ -94,5 +108,9 @@ public class OutputJack : MonoBehaviour
                 ConnectorScript = null;
             }
         }
+    }
+    public void SetLightActive(bool active)
+    {
+        LightActive = active;
     }
 }
