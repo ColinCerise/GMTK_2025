@@ -43,7 +43,6 @@ public class ConversationManager : MonoBehaviour
     GameObject ConnectedReciever;
 
     // Variables for parsing dialogue
-    [SerializeField] string encounterName;
     private int totalCharLength;
     public List<string> speakerList = new List<string>();
     public List<string> dialogueList = new List<string>();
@@ -68,7 +67,7 @@ public class ConversationManager : MonoBehaviour
 
     private void ParseDialogue()
     {
-        string filepath = Application.dataPath + "/TextFiles/" + encounterName + ".txt";
+        string filepath = Application.dataPath + "/TextFiles/" + gameObject.name + ".txt";
         if (File.Exists(filepath))
         {
             using StreamReader sr = new StreamReader(filepath);
