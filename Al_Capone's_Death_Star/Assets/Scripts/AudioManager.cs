@@ -1,28 +1,16 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
     [SerializeField] static AudioSource mainSource;
-
     [SerializeField] static string[] sfxNames;
+    [SerializeField] static AudioClip[] sfxClips;
 
-    // Start is called before the first frame update
-    void Start()
+    public static void PlaySFX(string sfxName)
     {
-        mainSource = GetComponent<AudioSource>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-    public static void PlaySFX(string soundEffect)
-    {
-        
+        mainSource.PlayOneShot(sfxClips[Array.IndexOf(sfxNames, sfxName)]);
     }
 }

@@ -52,4 +52,9 @@ public class DialogueManager : MonoBehaviour
             StartNum = startingNum - 10;
         }
     }
+    public void ForceUpdate()
+    {
+        DialogueBox.text = Conversation.GetComponent<ConversationManager>().CurrentDialog;
+        DialogueTimer = 0;
+    }
 }

@@ -116,7 +116,9 @@ public class ConversationManager : MonoBehaviour
             }
             if (PlaceInConversation >= maxLeangth)
             {
-                //CallEnded = true;
+                CurrentDialog = Conversation.Substring(DialogueBoxScript.StartNum, maxLeangth - DialogueBoxScript.StartNum);
+                DialogueBoxScript.ForceUpdate();
+                CallEnded = true;
             }
         }
         if (CallEnded)
