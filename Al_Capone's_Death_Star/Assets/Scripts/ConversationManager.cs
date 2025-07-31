@@ -116,7 +116,7 @@ public class ConversationManager : MonoBehaviour
             }
             if (PlaceInConversation >= maxLeangth)
             {
-                CallEnded = true;
+                //CallEnded = true;
             }
         }
         if (CallEnded)
