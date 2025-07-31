@@ -177,7 +177,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 0.5}
+    oldSize: {x: 0.6, y: 0.6333333}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -268,8 +268,8 @@ MonoBehaviour:
   Connector: {fileID: 0}
   ConnectorScript: {fileID: 0}
   ConnectedLight: {fileID: 0}
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
+  InitialSprite: {fileID: 21300000, guid: d59a285d45b9aab4a976c5e99b983ea3, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 990aac2fb81c0d449b9986287474bc03, type: 3}
   InitialLight: {fileID: 0}
   ActiveLight: {fileID: 0}
   SpriteRenderer: {fileID: 0}
@@ -582,10 +582,10 @@ MonoBehaviour:
   Connector: {fileID: 0}
   ConnectorScript: {fileID: 0}
   ConnectedLight: {fileID: 0}
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
-  InitialLight: {fileID: 0}
-  ActiveLight: {fileID: 0}
+  InitialSprite: {fileID: 21300000, guid: 448b88abfd84690458dab15afae59a85, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: eb9ac8c7ce2559747a69b4f0c4fee31c, type: 3}
+  InitialLight: {fileID: 21300000, guid: b6f4b8637e91fb74884671fa1c8bb20f, type: 3}
+  ActiveLight: {fileID: 21300000, guid: f105650987538044cae7cc2f7d9f481a, type: 3}
   SpriteRenderer: {fileID: 0}
   isActive: 0
   LightActive: 0
@@ -649,7 +649,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Positions:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 1}
@@ -967,7 +967,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Positions:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 1}
@@ -1286,10 +1286,10 @@ MonoBehaviour:
   Connector: {fileID: 0}
   ConnectorScript: {fileID: 0}
   ConnectedLight: {fileID: 0}
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
-  InitialLight: {fileID: 0}
-  ActiveLight: {fileID: 0}
+  InitialSprite: {fileID: 21300000, guid: 448b88abfd84690458dab15afae59a85, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: eb9ac8c7ce2559747a69b4f0c4fee31c, type: 3}
+  InitialLight: {fileID: 21300000, guid: b6f4b8637e91fb74884671fa1c8bb20f, type: 3}
+  ActiveLight: {fileID: 21300000, guid: f105650987538044cae7cc2f7d9f481a, type: 3}
   SpriteRenderer: {fileID: 0}
   isActive: 0
   LightActive: 0
@@ -1560,7 +1560,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 0.5}
+    oldSize: {x: 0.6, y: 0.6333333}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1651,8 +1651,8 @@ MonoBehaviour:
   Connector: {fileID: 0}
   ConnectorScript: {fileID: 0}
   ConnectedLight: {fileID: 0}
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
+  InitialSprite: {fileID: 21300000, guid: d59a285d45b9aab4a976c5e99b983ea3, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 990aac2fb81c0d449b9986287474bc03, type: 3}
   InitialLight: {fileID: 0}
   ActiveLight: {fileID: 0}
   SpriteRenderer: {fileID: 0}
@@ -1686,7 +1686,7 @@ Transform:
   m_GameObject: {fileID: 495559436}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.0610871, y: 4.9678955, z: 0.08939456}
+  m_LocalPosition: {x: -2, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1733,7 +1733,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b6f4b8637e91fb74884671fa1c8bb20f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2171,7 +2171,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 0.5}
+    oldSize: {x: 0.6, y: 0.6333333}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2262,8 +2262,8 @@ MonoBehaviour:
   Connector: {fileID: 0}
   ConnectorScript: {fileID: 0}
   ConnectedLight: {fileID: 0}
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
+  InitialSprite: {fileID: 21300000, guid: d59a285d45b9aab4a976c5e99b983ea3, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 990aac2fb81c0d449b9986287474bc03, type: 3}
   InitialLight: {fileID: 0}
   ActiveLight: {fileID: 0}
   SpriteRenderer: {fileID: 0}
@@ -2435,10 +2435,10 @@ MonoBehaviour:
   Connector: {fileID: 0}
   ConnectorScript: {fileID: 0}
   ConnectedLight: {fileID: 0}
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
-  InitialLight: {fileID: 0}
-  ActiveLight: {fileID: 0}
+  InitialSprite: {fileID: 21300000, guid: 448b88abfd84690458dab15afae59a85, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: eb9ac8c7ce2559747a69b4f0c4fee31c, type: 3}
+  InitialLight: {fileID: 21300000, guid: b6f4b8637e91fb74884671fa1c8bb20f, type: 3}
+  ActiveLight: {fileID: 21300000, guid: f105650987538044cae7cc2f7d9f481a, type: 3}
   SpriteRenderer: {fileID: 0}
   isActive: 0
   LightActive: 0
@@ -2470,7 +2470,7 @@ Transform:
   m_GameObject: {fileID: 750313045}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.968913, y: 4.9678955, z: 0.08939456}
+  m_LocalPosition: {x: 4, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2517,7 +2517,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b6f4b8637e91fb74884671fa1c8bb20f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3177,7 +3177,7 @@ Transform:
   m_GameObject: {fileID: 909030874}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.04108704, y: 4.9678955, z: 0.08939456}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3224,7 +3224,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b6f4b8637e91fb74884671fa1c8bb20f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3399,10 +3399,10 @@ MonoBehaviour:
   Connector: {fileID: 0}
   ConnectorScript: {fileID: 0}
   ConnectedLight: {fileID: 0}
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
-  InitialLight: {fileID: 0}
-  ActiveLight: {fileID: 0}
+  InitialSprite: {fileID: 21300000, guid: 448b88abfd84690458dab15afae59a85, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: eb9ac8c7ce2559747a69b4f0c4fee31c, type: 3}
+  InitialLight: {fileID: 21300000, guid: b6f4b8637e91fb74884671fa1c8bb20f, type: 3}
+  ActiveLight: {fileID: 21300000, guid: f105650987538044cae7cc2f7d9f481a, type: 3}
   SpriteRenderer: {fileID: 0}
   isActive: 0
   LightActive: 0
@@ -4093,7 +4093,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 0.5}
+    oldSize: {x: 0.6, y: 0.6333333}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4184,8 +4184,8 @@ MonoBehaviour:
   Connector: {fileID: 0}
   ConnectorScript: {fileID: 0}
   ConnectedLight: {fileID: 0}
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
+  InitialSprite: {fileID: 21300000, guid: d59a285d45b9aab4a976c5e99b983ea3, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 990aac2fb81c0d449b9986287474bc03, type: 3}
   InitialLight: {fileID: 0}
   ActiveLight: {fileID: 0}
   SpriteRenderer: {fileID: 0}
@@ -4433,7 +4433,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Positions:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 1}
@@ -4569,7 +4569,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Positions:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 1}
@@ -5086,7 +5086,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8, y: 0.8333333}
+    oldSize: {x: 0.8, y: 1.0333333}
     newSize: {x: 1, y: 0.8828125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5135,7 +5135,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 0f4ce0a3a825c0443b4c405c77038780, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5188,7 +5188,7 @@ Transform:
   m_GameObject: {fileID: 1327886542}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.908913, y: 4.9678955, z: 0.08939456}
+  m_LocalPosition: {x: 2, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5235,7 +5235,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b6f4b8637e91fb74884671fa1c8bb20f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5304,7 +5304,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Positions:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 1}
@@ -5437,7 +5437,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 0.5}
+    oldSize: {x: 0.6, y: 0.6333333}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5528,8 +5528,8 @@ MonoBehaviour:
   Connector: {fileID: 0}
   ConnectorScript: {fileID: 0}
   ConnectedLight: {fileID: 0}
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
+  InitialSprite: {fileID: 21300000, guid: d59a285d45b9aab4a976c5e99b983ea3, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 990aac2fb81c0d449b9986287474bc03, type: 3}
   InitialLight: {fileID: 0}
   ActiveLight: {fileID: 0}
   SpriteRenderer: {fileID: 0}
@@ -6380,7 +6380,7 @@ Transform:
   m_GameObject: {fileID: 1823007887}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.08108704, y: -1.4678956, z: -0.08939456}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6630,10 +6630,10 @@ MonoBehaviour:
   Connector: {fileID: 0}
   ConnectorScript: {fileID: 0}
   ConnectedLight: {fileID: 0}
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
-  InitialLight: {fileID: 0}
-  ActiveLight: {fileID: 0}
+  InitialSprite: {fileID: 21300000, guid: 448b88abfd84690458dab15afae59a85, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: eb9ac8c7ce2559747a69b4f0c4fee31c, type: 3}
+  InitialLight: {fileID: 21300000, guid: b6f4b8637e91fb74884671fa1c8bb20f, type: 3}
+  ActiveLight: {fileID: 21300000, guid: f105650987538044cae7cc2f7d9f481a, type: 3}
   SpriteRenderer: {fileID: 0}
   isActive: 0
   LightActive: 0
@@ -7177,7 +7177,7 @@ Transform:
   m_GameObject: {fileID: 2007604382}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.081087, y: 4.9678955, z: 0.08939456}
+  m_LocalPosition: {x: -4, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7224,7 +7224,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b6f4b8637e91fb74884671fa1c8bb20f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7289,7 +7289,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 0.5}
+    oldSize: {x: 0.6, y: 0.6333333}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
