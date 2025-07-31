@@ -45,6 +45,9 @@ public class ConversationManager : MonoBehaviour
     // Variables for parsing dialogue
     [SerializeField] string encounterName;
     private int totalCharLength;
+    public List<string> speakerList = new List<string>();
+    public List<string> dialogueList = new List<string>();
+    public int lineIndex;
 
     // Start is called before the first frame
     void Start()
@@ -60,15 +63,12 @@ public class ConversationManager : MonoBehaviour
         AngryBar = AngerManager.GetComponent<AngerBar>();
         ConversationTargets = StarterOutput.name + " + " + TargetReciever.name;
 
-        //ParseDialogue();
+        ParseDialogue();
     }
 
     private void ParseDialogue()
     {
-        List<string> speakerList = new List<string>();
-        List<string> dialogueList = new List<string>();
-        string filepath = Application.dataPath + "\\" + encounterName + ".txt";
-
+        string filepath = Application.dataPath + "/TextFiles/" + encounterName + ".txt";
         if (File.Exists(filepath))
         {
             using StreamReader sr = new StreamReader(filepath);
@@ -79,7 +79,7 @@ public class ConversationManager : MonoBehaviour
                 {
                     line.Trim();
                     speakerList.Add(line.Substring(0, line.IndexOf(": ")));
-                    dialogueList.Add(line.Substring(line.IndexOf(": ") + 1));
+                    dialogueList.Add(line.Substring(line.IndexOf(": ") + 2));
                 }
             }
         }
@@ -95,7 +95,8 @@ public class ConversationManager : MonoBehaviour
     {
         if (((ManagerScript.Hours == TimeOffsetHours && ManagerScript.Minutes >= TimeOffsetMinutes) || ManagerScript.Hours > TimeOffsetHours) && !CallEnded)
         {
-            maxLeangth = Conversation.Length;
+            maxLeangth = totalCharLength;
+            //maxLeangth = Conversation.Length;
             TimeWaited += Time.deltaTime;
             ConnectedPoint = GameObject.Find(StarterOutput.name.Substring(0, (StarterOutput.name.Length - 1)) + "2");
             ConnectedReciever = ConnectedPoint.GetComponent<Grabbable>().TargettedReciever;
@@ -147,8 +148,9 @@ public class ConversationManager : MonoBehaviour
                     AngryBar.DisconnectedCall();
                     Manager.GetComponent<ConvoLog>().AddConvo(CurrentDialog);
                 }
-                if ((TimeWaited - StartOffset) * LPS <= maxLeangth + 1)
+                if ((TimeWaited - StartOffset) * LPS <= maxLeangth + 1) // Continue to progress conversation
                 {
+                    // Set the integer value of the current character based on the passage of time since the beginning of the conversation
                     PlaceInConversation = (int)((TimeWaited - StartOffset) * LPS);
                     if (WiretapScript.Conversation != null && WiretapScript.Conversation.Equals(ConversationTargets))
                     {
@@ -160,6 +162,7 @@ public class ConversationManager : MonoBehaviour
                         if (!IAMTALKING)
                         {
                             IAMTALKING = true;
+                            // Initialize dialogue encounter
                             DialogueBoxScript.SetAsTalking(this.gameObject, PlaceInConversation);
                         }
                         if (PlaceInConversation < maxLeangth && DialogueBoxScript.StartNum < maxLeangth)
@@ -199,6 +202,30 @@ public class ConversationManager : MonoBehaviour
         {
             IAMTALKING = false;
             CurrentDialog = null;
+        }
+    }
+
+    public string CurrentLine()
+    {
+        int charNum = PlaceInConversation;
+        int lineIndex = -1;
+        int remainder = charNum;
+        if (charNum < totalCharLength)
+        {
+            for (int i = 0, count = charNum; count > 0; i++)
+            {
+                lineIndex = i;
+                remainder = count;
+                count -= dialogueList[i].Length;
+            }
+        }
+        if (lineIndex >= 0 && lineIndex < dialogueList.Count)
+        {
+            return speakerList[lineIndex] + ": " + dialogueList[lineIndex].Substring(0, remainder);
+        }
+        else
+        {
+            return string.Empty;
         }
     }
 }
