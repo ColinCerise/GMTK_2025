@@ -795,6 +795,7 @@ MonoBehaviour:
   TargettedReciever: {fileID: 0}
   SnapToReciever: 1
   SnapToOutput: 0
+  AbleToLock: 1
 --- !u!50 &222431243
 Rigidbody2D:
   serializedVersion: 4
@@ -1797,6 +1798,7 @@ MonoBehaviour:
   TargettedReciever: {fileID: 0}
   SnapToReciever: 1
   SnapToOutput: 0
+  AbleToLock: 1
 --- !u!50 &820983364
 Rigidbody2D:
   serializedVersion: 4
@@ -2126,6 +2128,7 @@ MonoBehaviour:
   TargettedReciever: {fileID: 0}
   SnapToReciever: 1
   SnapToOutput: 0
+  AbleToLock: 1
 --- !u!50 &962602144
 Rigidbody2D:
   serializedVersion: 4
@@ -2452,6 +2455,7 @@ MonoBehaviour:
   TargettedReciever: {fileID: 0}
   SnapToReciever: 1
   SnapToOutput: 0
+  AbleToLock: 1
 --- !u!50 &1055399314
 Rigidbody2D:
   serializedVersion: 4
@@ -2763,6 +2767,7 @@ MonoBehaviour:
   TargettedReciever: {fileID: 0}
   SnapToReciever: 1
   SnapToOutput: 0
+  AbleToLock: 1
 --- !u!50 &1136175021
 Rigidbody2D:
   serializedVersion: 4
@@ -3235,6 +3240,7 @@ MonoBehaviour:
   TargettedReciever: {fileID: 0}
   SnapToReciever: 0
   SnapToOutput: 1
+  AbleToLock: 0
 --- !u!50 &1308828694
 Rigidbody2D:
   serializedVersion: 4
@@ -3705,6 +3711,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f27d2d9b5782f940997cb510fcaf29f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Conversation: 
+  ConversationTargets: 
+  TimeOffsetHours: 12
+  TimeOffsetMinutes: 10
+  LPS: 20
+  PlaceInConversation: 0
+  CurrentChar: 0
+  Wiretap: {fileID: 0}
+  WiretapScript: {fileID: 0}
+  Manager: {fileID: 0}
+  ManagerScript: {fileID: 0}
+  TimeWaited: 0
 --- !u!4 &1711430211
 Transform:
   m_ObjectHideFlags: 0
