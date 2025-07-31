@@ -32,7 +32,6 @@ public class Grabbable : MonoBehaviour
         SpriteRenderer = GetComponent<SpriteRenderer>();
         InitialSprite = this.SpriteRenderer.sprite;
         StartPos = transform.position;
-
         //this.GetComponent<Wiretap>
     }
 
