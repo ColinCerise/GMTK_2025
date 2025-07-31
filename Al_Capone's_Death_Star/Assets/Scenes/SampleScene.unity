@@ -177,7 +177,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 0.5}
+    oldSize: {x: 0.6, y: 0.6333333}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -268,8 +268,8 @@ MonoBehaviour:
   Connector: {fileID: 0}
   ConnectorScript: {fileID: 0}
   ConnectedLight: {fileID: 0}
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
+  InitialSprite: {fileID: 21300000, guid: d59a285d45b9aab4a976c5e99b983ea3, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 990aac2fb81c0d449b9986287474bc03, type: 3}
   InitialLight: {fileID: 0}
   ActiveLight: {fileID: 0}
   SpriteRenderer: {fileID: 0}
@@ -313,6 +313,85 @@ Transform:
   - {fileID: 710281750}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &186307275
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 186307276}
+  - component: {fileID: 186307277}
+  m_Layer: 0
+  m_Name: Escape2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &186307276
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186307275}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 389639080}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &186307277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 186307275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Conversation: "Eastburrow Boss: We still on for tonight?  Whistlepig Boss: As long
+    as you hold up your end of the deal.  Eastburrow Boss: I will. Don\u2019t worry. 
+    Whistlepig Boss: Good. I\u2019ll be there with my second. No weapons. I\u2019ll
+    have someone check you at the door. I expect you\u2019ll do the same.  Eastburrow
+    Boss: Of course. I would expect nothing less.  Whistlepig Boss: I hope this is
+    a long and prosperous alliance for us both.  Eastburrow Boss: I\u2019ll see you
+    there. "
+  PreConversation: 
+  ConversationTargets: 
+  PlayerReciever: {fileID: 0}
+  StarterOutput: {fileID: 1855241245}
+  TargetReciever: {fileID: 88107218}
+  TimeOffsetHours: 19
+  TimeOffsetMinutes: 0
+  LPS: 20
+  StartOffset: 0
+  PlaceInConversation: 0
+  maxLeangth: 0
+  CurrentDialog: 
+  Wiretap: {fileID: 0}
+  WiretapScript: {fileID: 0}
+  Manager: {fileID: 0}
+  ManagerScript: {fileID: 0}
+  DialogueBox: {fileID: 0}
+  DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
+  TimeWaited: 0
+  CallEnded: 0
+  CallMissed: 0
+  CallConnected: 0
+  CallStarted: 0
+  IAMTALKING: 0
+  ListenedToConvo: 0
+  encounterName: 
 --- !u!1 &186428237
 GameObject:
   m_ObjectHideFlags: 0
@@ -582,10 +661,10 @@ MonoBehaviour:
   Connector: {fileID: 0}
   ConnectorScript: {fileID: 0}
   ConnectedLight: {fileID: 0}
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
-  InitialLight: {fileID: 0}
-  ActiveLight: {fileID: 0}
+  InitialSprite: {fileID: 21300000, guid: 448b88abfd84690458dab15afae59a85, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: eb9ac8c7ce2559747a69b4f0c4fee31c, type: 3}
+  InitialLight: {fileID: 21300000, guid: b6f4b8637e91fb74884671fa1c8bb20f, type: 3}
+  ActiveLight: {fileID: 21300000, guid: f105650987538044cae7cc2f7d9f481a, type: 3}
   SpriteRenderer: {fileID: 0}
   isActive: 0
   LightActive: 0
@@ -649,7 +728,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Positions:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 1}
@@ -967,7 +1046,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Positions:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 1}
@@ -1045,6 +1124,83 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1979339801}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &270839291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 270839292}
+  - component: {fileID: 270839293}
+  m_Layer: 0
+  m_Name: Car2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &270839292
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270839291}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 389639080}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &270839293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 270839291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Conversation: "Thickwood Agent: We have the guns planted in the warehouse.  Gunman:
+    Where can we find them?  Thickwood Agent: They\u2019re sitting by the garage
+    door where you\u2019ll enter, hidden in some boxes.  Gunman: How are we supposed
+    to find which boxes these things are in?  Thickwood Agent: They\u2019re unarmed.
+    They won\u2019t put up much of a fight. Just get it done.  Gunman: Understood. "
+  PreConversation: 
+  ConversationTargets: 
+  PlayerReciever: {fileID: 0}
+  StarterOutput: {fileID: 400463482}
+  TargetReciever: {fileID: 670683100}
+  TimeOffsetHours: 18
+  TimeOffsetMinutes: 0
+  LPS: 20
+  StartOffset: 0
+  PlaceInConversation: 0
+  maxLeangth: 0
+  CurrentDialog: 
+  Wiretap: {fileID: 0}
+  WiretapScript: {fileID: 0}
+  Manager: {fileID: 0}
+  ManagerScript: {fileID: 0}
+  DialogueBox: {fileID: 0}
+  DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
+  TimeWaited: 0
+  CallEnded: 0
+  CallMissed: 0
+  CallConnected: 0
+  CallStarted: 0
+  IAMTALKING: 0
+  ListenedToConvo: 0
+  encounterName: 
 --- !u!1 &294092221
 GameObject:
   m_ObjectHideFlags: 0
@@ -1111,14 +1267,21 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1241174938}
   - {fileID: 1711430211}
   - {fileID: 1947002916}
   - {fileID: 881907531}
   - {fileID: 589408311}
+  - {fileID: 2089083528}
+  - {fileID: 186307276}
+  - {fileID: 1720559578}
+  - {fileID: 1090900946}
+  - {fileID: 1467166796}
+  - {fileID: 270839292}
   - {fileID: 833088550}
   - {fileID: 501975485}
-  - {fileID: 1090900946}
-  - {fileID: 1720559578}
+  - {fileID: 619343976}
+  - {fileID: 983352628}
   - {fileID: 542213683}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1286,10 +1449,10 @@ MonoBehaviour:
   Connector: {fileID: 0}
   ConnectorScript: {fileID: 0}
   ConnectedLight: {fileID: 0}
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
-  InitialLight: {fileID: 0}
-  ActiveLight: {fileID: 0}
+  InitialSprite: {fileID: 21300000, guid: 448b88abfd84690458dab15afae59a85, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: eb9ac8c7ce2559747a69b4f0c4fee31c, type: 3}
+  InitialLight: {fileID: 21300000, guid: b6f4b8637e91fb74884671fa1c8bb20f, type: 3}
+  ActiveLight: {fileID: 21300000, guid: f105650987538044cae7cc2f7d9f481a, type: 3}
   SpriteRenderer: {fileID: 0}
   isActive: 0
   LightActive: 0
@@ -1560,7 +1723,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 0.5}
+    oldSize: {x: 0.6, y: 0.6333333}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1651,8 +1814,8 @@ MonoBehaviour:
   Connector: {fileID: 0}
   ConnectorScript: {fileID: 0}
   ConnectedLight: {fileID: 0}
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
+  InitialSprite: {fileID: 21300000, guid: d59a285d45b9aab4a976c5e99b983ea3, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 990aac2fb81c0d449b9986287474bc03, type: 3}
   InitialLight: {fileID: 0}
   ActiveLight: {fileID: 0}
   SpriteRenderer: {fileID: 0}
@@ -1686,7 +1849,7 @@ Transform:
   m_GameObject: {fileID: 495559436}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.0610871, y: 4.9678955, z: 0.08939456}
+  m_LocalPosition: {x: -2, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1733,7 +1896,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b6f4b8637e91fb74884671fa1c8bb20f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1798,8 +1961,8 @@ MonoBehaviour:
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 710281746}
   TargetReciever: {fileID: 478585652}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
+  TimeOffsetHours: 17
+  TimeOffsetMinutes: 0
   LPS: 20
   StartOffset: 0
   PlaceInConversation: 0
@@ -1871,8 +2034,8 @@ MonoBehaviour:
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 400463482}
   TargetReciever: {fileID: 670683100}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
+  TimeOffsetHours: 20
+  TimeOffsetMinutes: 0
   LPS: 20
   StartOffset: 0
   PlaceInConversation: 0
@@ -2050,7 +2213,7 @@ GameObject:
   - component: {fileID: 589408311}
   - component: {fileID: 589408312}
   m_Layer: 0
-  m_Name: Smuggle 3
+  m_Name: Smuggling3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2093,8 +2256,81 @@ MonoBehaviour:
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 921685621}
   TargetReciever: {fileID: 1100449619}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
+  TimeOffsetHours: 21
+  TimeOffsetMinutes: 0
+  LPS: 20
+  StartOffset: 0
+  PlaceInConversation: 0
+  maxLeangth: 0
+  CurrentDialog: 
+  Wiretap: {fileID: 0}
+  WiretapScript: {fileID: 0}
+  Manager: {fileID: 0}
+  ManagerScript: {fileID: 0}
+  DialogueBox: {fileID: 0}
+  DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
+  TimeWaited: 0
+  CallEnded: 0
+  CallMissed: 0
+  CallConnected: 0
+  CallStarted: 0
+  IAMTALKING: 0
+  ListenedToConvo: 0
+  encounterName: 
+--- !u!1 &619343975
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 619343976}
+  - component: {fileID: 619343977}
+  m_Layer: 0
+  m_Name: Mundane1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &619343976
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619343975}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 389639080}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &619343977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 619343975}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Conversation: 
+  PreConversation: 
+  ConversationTargets: 
+  PlayerReciever: {fileID: 0}
+  StarterOutput: {fileID: 188834805}
+  TargetReciever: {fileID: 88107218}
+  TimeOffsetHours: 13
+  TimeOffsetMinutes: 0
   LPS: 20
   StartOffset: 0
   PlaceInConversation: 0
@@ -2171,7 +2407,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 0.5}
+    oldSize: {x: 0.6, y: 0.6333333}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -2262,8 +2498,8 @@ MonoBehaviour:
   Connector: {fileID: 0}
   ConnectorScript: {fileID: 0}
   ConnectedLight: {fileID: 0}
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
+  InitialSprite: {fileID: 21300000, guid: d59a285d45b9aab4a976c5e99b983ea3, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 990aac2fb81c0d449b9986287474bc03, type: 3}
   InitialLight: {fileID: 0}
   ActiveLight: {fileID: 0}
   SpriteRenderer: {fileID: 0}
@@ -2435,10 +2671,10 @@ MonoBehaviour:
   Connector: {fileID: 0}
   ConnectorScript: {fileID: 0}
   ConnectedLight: {fileID: 0}
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
-  InitialLight: {fileID: 0}
-  ActiveLight: {fileID: 0}
+  InitialSprite: {fileID: 21300000, guid: 448b88abfd84690458dab15afae59a85, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: eb9ac8c7ce2559747a69b4f0c4fee31c, type: 3}
+  InitialLight: {fileID: 21300000, guid: b6f4b8637e91fb74884671fa1c8bb20f, type: 3}
+  ActiveLight: {fileID: 21300000, guid: f105650987538044cae7cc2f7d9f481a, type: 3}
   SpriteRenderer: {fileID: 0}
   isActive: 0
   LightActive: 0
@@ -2470,7 +2706,7 @@ Transform:
   m_GameObject: {fileID: 750313045}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.968913, y: 4.9678955, z: 0.08939456}
+  m_LocalPosition: {x: 4, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2517,7 +2753,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b6f4b8637e91fb74884671fa1c8bb20f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2760,8 +2996,8 @@ MonoBehaviour:
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 921685621}
   TargetReciever: {fileID: 670683100}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
+  TimeOffsetHours: 16
+  TimeOffsetMinutes: 0
   LPS: 20
   StartOffset: 0
   PlaceInConversation: 0
@@ -2938,7 +3174,7 @@ GameObject:
   - component: {fileID: 881907531}
   - component: {fileID: 881907532}
   m_Layer: 0
-  m_Name: Smuggling guns2
+  m_Name: Smuggling2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2983,8 +3219,8 @@ MonoBehaviour:
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 400463482}
   TargetReciever: {fileID: 88107218}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
+  TimeOffsetHours: 16
+  TimeOffsetMinutes: 0
   LPS: 20
   StartOffset: 0
   PlaceInConversation: 0
@@ -3177,7 +3413,7 @@ Transform:
   m_GameObject: {fileID: 909030874}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.04108704, y: 4.9678955, z: 0.08939456}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3224,7 +3460,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b6f4b8637e91fb74884671fa1c8bb20f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3399,10 +3635,10 @@ MonoBehaviour:
   Connector: {fileID: 0}
   ConnectorScript: {fileID: 0}
   ConnectedLight: {fileID: 0}
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
-  InitialLight: {fileID: 0}
-  ActiveLight: {fileID: 0}
+  InitialSprite: {fileID: 21300000, guid: 448b88abfd84690458dab15afae59a85, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: eb9ac8c7ce2559747a69b4f0c4fee31c, type: 3}
+  InitialLight: {fileID: 21300000, guid: b6f4b8637e91fb74884671fa1c8bb20f, type: 3}
+  ActiveLight: {fileID: 21300000, guid: f105650987538044cae7cc2f7d9f481a, type: 3}
   SpriteRenderer: {fileID: 0}
   isActive: 0
   LightActive: 0
@@ -3590,6 +3826,79 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1608982126}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &983352627
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 983352628}
+  - component: {fileID: 983352629}
+  m_Layer: 0
+  m_Name: Mundane2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &983352628
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983352627}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 389639080}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &983352629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 983352627}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Conversation: 
+  PreConversation: 
+  ConversationTargets: 
+  PlayerReciever: {fileID: 0}
+  StarterOutput: {fileID: 921685621}
+  TargetReciever: {fileID: 1100449619}
+  TimeOffsetHours: 19
+  TimeOffsetMinutes: 0
+  LPS: 20
+  StartOffset: 0
+  PlaceInConversation: 0
+  maxLeangth: 0
+  CurrentDialog: 
+  Wiretap: {fileID: 0}
+  WiretapScript: {fileID: 0}
+  Manager: {fileID: 0}
+  ManagerScript: {fileID: 0}
+  DialogueBox: {fileID: 0}
+  DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
+  TimeWaited: 0
+  CallEnded: 0
+  CallMissed: 0
+  CallConnected: 0
+  CallStarted: 0
+  IAMTALKING: 0
+  ListenedToConvo: 0
+  encounterName: 
 --- !u!1 &986484969
 GameObject:
   m_ObjectHideFlags: 0
@@ -3976,8 +4285,8 @@ MonoBehaviour:
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 188834805}
   TargetReciever: {fileID: 1492175551}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
+  TimeOffsetHours: 20
+  TimeOffsetMinutes: 0
   LPS: 20
   StartOffset: 0
   PlaceInConversation: 0
@@ -4093,7 +4402,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 0.5}
+    oldSize: {x: 0.6, y: 0.6333333}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4184,8 +4493,8 @@ MonoBehaviour:
   Connector: {fileID: 0}
   ConnectorScript: {fileID: 0}
   ConnectedLight: {fileID: 0}
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
+  InitialSprite: {fileID: 21300000, guid: d59a285d45b9aab4a976c5e99b983ea3, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 990aac2fb81c0d449b9986287474bc03, type: 3}
   InitialLight: {fileID: 0}
   ActiveLight: {fileID: 0}
   SpriteRenderer: {fileID: 0}
@@ -4433,7 +4742,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Positions:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 1}
@@ -4569,7 +4878,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Positions:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 1}
@@ -4761,6 +5070,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1233380968}
   m_CullTransparentMesh: 1
+--- !u!1 &1241174937
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1241174938}
+  - component: {fileID: 1241174939}
+  m_Layer: 0
+  m_Name: Cthulu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1241174938
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241174937}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 389639080}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1241174939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1241174937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Conversation: RAAAAAAAAAAAH I am Cthulu and my patron DIED!!!!!! This wont do!!
+    I have sent you back in time to save the mob boss at the cost of your sanity!
+    Do your best to solve the murder and save my patron before you go insane!!!!!!!
+  PreConversation: 
+  ConversationTargets: 
+  PlayerReciever: {fileID: 0}
+  StarterOutput: {fileID: 921685621}
+  TargetReciever: {fileID: 2013851218}
+  TimeOffsetHours: 12
+  TimeOffsetMinutes: 0
+  LPS: 20
+  StartOffset: 0
+  PlaceInConversation: 0
+  maxLeangth: 0
+  CurrentDialog: 
+  Wiretap: {fileID: 0}
+  WiretapScript: {fileID: 0}
+  Manager: {fileID: 0}
+  ManagerScript: {fileID: 0}
+  DialogueBox: {fileID: 0}
+  DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
+  TimeWaited: 0
+  CallEnded: 0
+  CallMissed: 0
+  CallConnected: 0
+  CallStarted: 0
+  IAMTALKING: 0
+  ListenedToConvo: 0
+  encounterName: 
 --- !u!1 &1286682197
 GameObject:
   m_ObjectHideFlags: 0
@@ -5086,7 +5470,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.8, y: 0.8333333}
+    oldSize: {x: 0.8, y: 1.0333333}
     newSize: {x: 1, y: 0.8828125}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5135,7 +5519,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 0f4ce0a3a825c0443b4c405c77038780, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5188,7 +5572,7 @@ Transform:
   m_GameObject: {fileID: 1327886542}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.908913, y: 4.9678955, z: 0.08939456}
+  m_LocalPosition: {x: 2, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5235,7 +5619,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b6f4b8637e91fb74884671fa1c8bb20f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -5304,7 +5688,7 @@ LineRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_Positions:
   - {x: 0, y: 0, z: 0}
   - {x: 0, y: 0, z: 1}
@@ -5382,6 +5766,83 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1979339801}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1467166795
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1467166796}
+  - component: {fileID: 1467166797}
+  m_Layer: 0
+  m_Name: Car1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1467166796
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467166795}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 389639080}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1467166797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467166795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Conversation: "Thickwood Agent: We have the guns planted in the warehouse.  Gunman:
+    Where can we find them?  Thickwood Agent: They\u2019re sitting by the garage
+    door where you\u2019ll enter, hidden in some boxes.  Gunman: How are we supposed
+    to find which boxes these things are in?  Thickwood Agent: They\u2019re unarmed.
+    They won\u2019t put up much of a fight. Just get it done.  Gunman: Understood. "
+  PreConversation: 
+  ConversationTargets: 
+  PlayerReciever: {fileID: 0}
+  StarterOutput: {fileID: 710281746}
+  TargetReciever: {fileID: 1100449619}
+  TimeOffsetHours: 14
+  TimeOffsetMinutes: 0
+  LPS: 20
+  StartOffset: 0
+  PlaceInConversation: 0
+  maxLeangth: 0
+  CurrentDialog: 
+  Wiretap: {fileID: 0}
+  WiretapScript: {fileID: 0}
+  Manager: {fileID: 0}
+  ManagerScript: {fileID: 0}
+  DialogueBox: {fileID: 0}
+  DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
+  TimeWaited: 0
+  CallEnded: 0
+  CallMissed: 0
+  CallConnected: 0
+  CallStarted: 0
+  IAMTALKING: 0
+  ListenedToConvo: 0
+  encounterName: 
 --- !u!1 &1492175551
 GameObject:
   m_ObjectHideFlags: 0
@@ -5437,7 +5898,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 0.5}
+    oldSize: {x: 0.6, y: 0.6333333}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -5528,8 +5989,8 @@ MonoBehaviour:
   Connector: {fileID: 0}
   ConnectorScript: {fileID: 0}
   ConnectedLight: {fileID: 0}
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
+  InitialSprite: {fileID: 21300000, guid: d59a285d45b9aab4a976c5e99b983ea3, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 990aac2fb81c0d449b9986287474bc03, type: 3}
   InitialLight: {fileID: 0}
   ActiveLight: {fileID: 0}
   SpriteRenderer: {fileID: 0}
@@ -6062,7 +6523,7 @@ GameObject:
   - component: {fileID: 1711430211}
   - component: {fileID: 1711430210}
   m_Layer: 0
-  m_Name: '"We still on?"'
+  m_Name: StillOn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6092,8 +6553,8 @@ MonoBehaviour:
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 400463482}
   TargetReciever: {fileID: 1492175551}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
+  TimeOffsetHours: 13
+  TimeOffsetMinutes: 0
   LPS: 20
   StartOffset: 0
   PlaceInConversation: 0
@@ -6380,7 +6841,7 @@ Transform:
   m_GameObject: {fileID: 1823007887}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.08108704, y: -1.4678956, z: -0.08939456}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6630,10 +7091,10 @@ MonoBehaviour:
   Connector: {fileID: 0}
   ConnectorScript: {fileID: 0}
   ConnectedLight: {fileID: 0}
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
-  InitialLight: {fileID: 0}
-  ActiveLight: {fileID: 0}
+  InitialSprite: {fileID: 21300000, guid: 448b88abfd84690458dab15afae59a85, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: eb9ac8c7ce2559747a69b4f0c4fee31c, type: 3}
+  InitialLight: {fileID: 21300000, guid: b6f4b8637e91fb74884671fa1c8bb20f, type: 3}
+  ActiveLight: {fileID: 21300000, guid: f105650987538044cae7cc2f7d9f481a, type: 3}
   SpriteRenderer: {fileID: 0}
   isActive: 0
   LightActive: 0
@@ -6859,7 +7320,7 @@ GameObject:
   - component: {fileID: 1947002916}
   - component: {fileID: 1947002915}
   m_Layer: 0
-  m_Name: Smuggling guns
+  m_Name: Smuggling1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6889,8 +7350,8 @@ MonoBehaviour:
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 921685621}
   TargetReciever: {fileID: 670683100}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
+  TimeOffsetHours: 14
+  TimeOffsetMinutes: 0
   LPS: 20
   StartOffset: 0
   PlaceInConversation: 0
@@ -7177,7 +7638,7 @@ Transform:
   m_GameObject: {fileID: 2007604382}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4.081087, y: 4.9678955, z: 0.08939456}
+  m_LocalPosition: {x: -4, y: 5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7224,7 +7685,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b6f4b8637e91fb74884671fa1c8bb20f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7289,7 +7750,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6, y: 0.5}
+    oldSize: {x: 0.6, y: 0.6333333}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -7411,6 +7872,85 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2089083527
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2089083528}
+  - component: {fileID: 2089083529}
+  m_Layer: 0
+  m_Name: Escape1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2089083528
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089083527}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 389639080}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2089083529
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2089083527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Conversation: "Eastburrow Boss: We still on for tonight?  Whistlepig Boss: As long
+    as you hold up your end of the deal.  Eastburrow Boss: I will. Don\u2019t worry. 
+    Whistlepig Boss: Good. I\u2019ll be there with my second. No weapons. I\u2019ll
+    have someone check you at the door. I expect you\u2019ll do the same.  Eastburrow
+    Boss: Of course. I would expect nothing less.  Whistlepig Boss: I hope this is
+    a long and prosperous alliance for us both.  Eastburrow Boss: I\u2019ll see you
+    there. "
+  PreConversation: 
+  ConversationTargets: 
+  PlayerReciever: {fileID: 0}
+  StarterOutput: {fileID: 1855241245}
+  TargetReciever: {fileID: 478585652}
+  TimeOffsetHours: 15
+  TimeOffsetMinutes: 0
+  LPS: 20
+  StartOffset: 0
+  PlaceInConversation: 0
+  maxLeangth: 0
+  CurrentDialog: 
+  Wiretap: {fileID: 0}
+  WiretapScript: {fileID: 0}
+  Manager: {fileID: 0}
+  ManagerScript: {fileID: 0}
+  DialogueBox: {fileID: 0}
+  DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
+  TimeWaited: 0
+  CallEnded: 0
+  CallMissed: 0
+  CallConnected: 0
+  CallStarted: 0
+  IAMTALKING: 0
+  ListenedToConvo: 0
+  encounterName: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

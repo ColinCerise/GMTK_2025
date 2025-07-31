@@ -19,7 +19,7 @@ public class Wiretap : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (OverOutput)
+        if (OverOutput && !this.gameObject.GetComponent<Grabbable>().GrabbedLock)
         {
             ConnectedPoint = GameObject.Find(TargettedOutput.name.Substring(0, (TargettedOutput.name.Length - 1)) + "2");
             ConnectedReciever = ConnectedPoint.GetComponent<Grabbable>().TargettedReciever;
