@@ -54,7 +54,10 @@ public class DialogueManager : MonoBehaviour
     }
     public void ForceUpdate()
     {
-        DialogueBox.text = Conversation.GetComponent<ConversationManager>().CurrentDialog;
+        if (Conversation != null && Conversation.GetComponent<ConversationManager>())
+        {
+            DialogueBox.text = Conversation.GetComponent<ConversationManager>().CurrentDialog;
+        }
         DialogueTimer = 0;
     }
 }
