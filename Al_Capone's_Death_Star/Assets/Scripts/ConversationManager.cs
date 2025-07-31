@@ -98,7 +98,7 @@ public class ConversationManager : MonoBehaviour
                         if (PlaceInConversation - DialogueBoxScript.StartNum >= maxLeangth / 2)
                         {
                             ListenedToConvo = true;
-                            Debug.Log(PlaceInConversation - DialogueBoxScript.StartNum - maxLeangth / 2);
+                            //Debug.Log(PlaceInConversation - DialogueBoxScript.StartNum - maxLeangth / 2);
                         }
                         if (!IAMTALKING)
                         {
