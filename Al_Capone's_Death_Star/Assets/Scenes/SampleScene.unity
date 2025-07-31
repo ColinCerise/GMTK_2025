@@ -5114,11 +5114,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: 
+  Conversation: RAAAAAAAAAAAH I am Cthulu and my patron DIED!!!!!! This wont do!!
+    I have sent you back in time to save the mob boss at the cost of your sanity!
+    Do your best to solve the murder and save my patron before you go insane!!!!!!!
   PreConversation: 
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 921685621}
+  StarterOutput: {fileID: 0}
   TargetReciever: {fileID: 0}
   TimeOffsetHours: 12
   TimeOffsetMinutes: 0
