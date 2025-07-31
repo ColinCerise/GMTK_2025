@@ -85,6 +85,10 @@ public class ConversationManager : MonoBehaviour
             
             else if (CallStarted && !CallEnded)
             {
+                if (ConnectedReciever != TargetReciever)
+                {
+                    CallEnded = true;
+                }
                 if ((TimeWaited - StartOffset) * LPS <= maxLeangth + 1)
                 {
                     PlaceInConversation = (int)((TimeWaited - StartOffset) * LPS);
