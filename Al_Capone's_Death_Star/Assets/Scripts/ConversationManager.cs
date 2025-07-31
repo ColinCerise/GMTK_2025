@@ -89,6 +89,7 @@ public class ConversationManager : MonoBehaviour
                 {
                     CallEnded = true;
                     CallMissed = true;
+                    Manager.GetComponent<ConvoLog>().AddConvo(CurrentDialog);
                 }
                 if ((TimeWaited - StartOffset) * LPS <= maxLeangth + 1)
                 {
@@ -116,6 +117,7 @@ public class ConversationManager : MonoBehaviour
                         else
                         {
                             CallEnded = true;
+                            Manager.GetComponent<ConvoLog>().AddConvo(CurrentDialog);
                         }
                     }
                     else
@@ -131,6 +133,7 @@ public class ConversationManager : MonoBehaviour
                 CurrentDialog = Conversation.Substring(DialogueBoxScript.StartNum, maxLeangth - DialogueBoxScript.StartNum);
                 DialogueBoxScript.ForceUpdate();
                 CallEnded = true;
+                Manager.GetComponent<ConvoLog>().AddConvo(CurrentDialog);
             }
         }
         if (CallEnded)
