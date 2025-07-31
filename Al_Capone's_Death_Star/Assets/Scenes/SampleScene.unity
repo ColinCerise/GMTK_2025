@@ -3181,7 +3181,6 @@ GameObject:
   - component: {fileID: 1286682199}
   - component: {fileID: 1286682202}
   - component: {fileID: 1286682201}
-  - component: {fileID: 1286682200}
   m_Layer: 0
   m_Name: Dialogue Manager
   m_TagString: Untagged
@@ -3225,14 +3224,6 @@ MonoBehaviour:
   Wiretap: {fileID: 0}
   WiretapScript: {fileID: 0}
   Conversation: {fileID: 0}
---- !u!33 &1286682200
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1286682197}
-  m_Mesh: {fileID: 0}
 --- !u!114 &1286682201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3918,7 +3909,7 @@ MonoBehaviour:
     see you there.   "
   ConversationTargets: 
   TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
+  TimeOffsetMinutes: 3
   LPS: 20
   StartOffset: 0
   PlaceInConversation: 0
