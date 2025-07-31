@@ -35,6 +35,7 @@ public class ConversationManager : MonoBehaviour
     public bool CallConnected = false;
     public bool CallStarted = false;
     public bool IAMTALKING = false;
+    public bool ListenedToConvo;
     GameObject ConnectedPoint;
     GameObject ConnectedReciever; 
     // Start is called before the first frame
