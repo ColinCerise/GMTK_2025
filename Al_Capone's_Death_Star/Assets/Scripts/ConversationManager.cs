@@ -34,6 +34,7 @@ public class ConversationManager : MonoBehaviour
     public bool CallConnected = false;
     public bool CallStarted = false;
     public bool IAMTALKING = false;
+    public bool ListenedToConvo = false;
     GameObject ConnectedPoint;
     GameObject ConnectedReciever; 
     // Start is called before the first frame
@@ -97,10 +98,18 @@ public class ConversationManager : MonoBehaviour
                         if (PlaceInConversation < maxLeangth && DialogueBoxScript.StartNum < maxLeangth)
                         {
                             CurrentDialog = Conversation.Substring(DialogueBoxScript.StartNum, PlaceInConversation - DialogueBoxScript.StartNum);
+                            if (PlaceInConversation - DialogueBoxScript.StartNum >= maxLeangth / 2)
+                            {
+                                ListenedToConvo = true;
+                            }
                         }
                         else if (DialogueBoxScript.StartNum < maxLeangth)
                         {
                             CurrentDialog = Conversation.Substring(DialogueBoxScript.StartNum, maxLeangth - DialogueBoxScript.StartNum);
+                            if (PlaceInConversation - DialogueBoxScript.StartNum >= maxLeangth / 2)
+                            {
+                                ListenedToConvo = true;
+                            }
                         }
                         else
                         {
@@ -119,6 +128,10 @@ public class ConversationManager : MonoBehaviour
             {
                 CurrentDialog = Conversation.Substring(DialogueBoxScript.StartNum, maxLeangth - DialogueBoxScript.StartNum);
                 DialogueBoxScript.ForceUpdate();
+                if (PlaceInConversation - DialogueBoxScript.StartNum >= maxLeangth / 2)
+                {
+                    ListenedToConvo = true;
+                }
                 CallEnded = true;
             }
         }
