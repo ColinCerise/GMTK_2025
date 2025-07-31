@@ -752,7 +752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 21300000, guid: ab63edad01f7c8849ba97dc360fb40d9, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 7f53419cf9fe601498a9ffe37d37bcc6, type: 3}
   MousedOver: 0
   GrabbedLock: 0
   MouseLockOut: 0
@@ -2249,7 +2249,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 21300000, guid: ab63edad01f7c8849ba97dc360fb40d9, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 7f53419cf9fe601498a9ffe37d37bcc6, type: 3}
   MousedOver: 0
   GrabbedLock: 0
   MouseLockOut: 0
@@ -2935,7 +2935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 21300000, guid: ab63edad01f7c8849ba97dc360fb40d9, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 7f53419cf9fe601498a9ffe37d37bcc6, type: 3}
   MousedOver: 0
   GrabbedLock: 0
   MouseLockOut: 0
@@ -3262,7 +3262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 21300000, guid: ab63edad01f7c8849ba97dc360fb40d9, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 7f53419cf9fe601498a9ffe37d37bcc6, type: 3}
   MousedOver: 0
   GrabbedLock: 0
   MouseLockOut: 0
@@ -3713,7 +3713,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 21300000, guid: ab63edad01f7c8849ba97dc360fb40d9, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 7f53419cf9fe601498a9ffe37d37bcc6, type: 3}
   MousedOver: 0
   GrabbedLock: 0
   MouseLockOut: 0
@@ -5128,7 +5128,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3d0e87cf88d8d084e9f3807054cb6527, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 912a0714f6bacb04c936dcb5c99c660d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
