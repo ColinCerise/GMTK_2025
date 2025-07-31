@@ -621,7 +621,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 314175b05b6b09f49aea43b510218407, type: 2}
+  - {fileID: 2100000, guid: dcf2d532e55c03246be3ecb985c39f2c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -939,7 +939,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 314175b05b6b09f49aea43b510218407, type: 2}
+  - {fileID: 2100000, guid: dcf2d532e55c03246be3ecb985c39f2c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1320,7 +1320,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.34509805, g: 0.29411766, b: 0.21176471, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -1621,6 +1621,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  encounterName: 
 --- !u!1 &542213682
 GameObject:
   m_ObjectHideFlags: 0
@@ -1691,6 +1692,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  encounterName: 
 --- !u!1 &576518151
 GameObject:
   m_ObjectHideFlags: 0
@@ -1898,6 +1900,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  encounterName: 
 --- !u!1 &670683100
 GameObject:
   m_ObjectHideFlags: 0
@@ -2470,6 +2473,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  encounterName: 
 --- !u!1 &859865472
 GameObject:
   m_ObjectHideFlags: 0
@@ -2678,6 +2682,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  encounterName: 
 --- !u!1 &901030210
 GameObject:
   m_ObjectHideFlags: 0
@@ -3568,6 +3573,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  encounterName: 
 --- !u!1 &1097691633
 GameObject:
   m_ObjectHideFlags: 0
@@ -3978,7 +3984,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 314175b05b6b09f49aea43b510218407, type: 2}
+  - {fileID: 2100000, guid: dcf2d532e55c03246be3ecb985c39f2c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4114,7 +4120,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 314175b05b6b09f49aea43b510218407, type: 2}
+  - {fileID: 2100000, guid: dcf2d532e55c03246be3ecb985c39f2c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4765,7 +4771,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 314175b05b6b09f49aea43b510218407, type: 2}
+  - {fileID: 2100000, guid: dcf2d532e55c03246be3ecb985c39f2c, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5589,6 +5595,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  encounterName: 
 --- !u!4 &1711430211
 Transform:
   m_ObjectHideFlags: 0
@@ -5683,6 +5690,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  encounterName: 
 --- !u!1 &1735138189
 GameObject:
   m_ObjectHideFlags: 0
@@ -6340,6 +6348,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  encounterName: 
 --- !u!4 &1947002916
 Transform:
   m_ObjectHideFlags: 0
