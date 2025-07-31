@@ -36,7 +36,7 @@ public class ConversationManager : MonoBehaviour
     public bool IAMTALKING = false;
     GameObject ConnectedPoint;
     GameObject ConnectedReciever; 
-    // Start is called before the first frame update
+    // Start is called before the first frame
     void Start()
     {
         Wiretap = GameObject.Find("Wiretap");
