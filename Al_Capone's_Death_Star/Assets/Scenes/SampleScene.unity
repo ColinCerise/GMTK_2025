@@ -3169,6 +3169,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1979339801}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1286682197
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1286682198}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1286682198
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1286682197}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.1024008, y: -0.09123979, z: -0.060267232}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1308828691
 GameObject:
   m_ObjectHideFlags: 0
@@ -3711,17 +3742,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f27d2d9b5782f940997cb510fcaf29f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: 
+  Conversation: " Eastburrow Boss: We still on for tonight?  Whistlepig Boss: As
+    long as you hold up your end of the deal.  Eastburrow Boss: I will. Don\u2019t
+    worry.  Whistlepig Boss: Good. I\u2019ll be there with my second. No weapons.
+    I\u2019ll have someone check you at the door. I expect you\u2019ll do the same. 
+    Eastburrow Boss: Of course. I would expect nothing less.  Whistlepig Boss: I
+    hope this is a long and prosperous alliance for us both.  Eastburrow Boss: I\u2019ll
+    see you there.   "
   ConversationTargets: 
   TimeOffsetHours: 12
   TimeOffsetMinutes: 10
   LPS: 20
+  StartOffset: 0
   PlaceInConversation: 0
-  CurrentChar: 0
+  CurrentChar: 67
   Wiretap: {fileID: 0}
   WiretapScript: {fileID: 0}
   Manager: {fileID: 0}
   ManagerScript: {fileID: 0}
+  TimeWaited: 0
+  CallEnded: 0
+  CallConnected: 0
+  CallStarted: 0
 --- !u!4 &1711430211
 Transform:
   m_ObjectHideFlags: 0
@@ -4128,3 +4170,4 @@ SceneRoots:
   - {fileID: 1308828697}
   - {fileID: 88164}
   - {fileID: 1711430211}
+  - {fileID: 1286682198}

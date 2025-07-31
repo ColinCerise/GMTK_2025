@@ -32,12 +32,25 @@ public class Grabbable : MonoBehaviour
         SpriteRenderer = GetComponent<SpriteRenderer>();
         InitialSprite = this.SpriteRenderer.sprite;
         StartPos = transform.position;
+
+        //this.GetComponent<Wiretap>
     }
 
     // Update is called once per frame
     void Update()
     {
         CheckGrab();
+        if (this.GetComponent<Wiretap>() != null)
+        {
+            if (this.GetComponent<Wiretap>().Conversation != null)
+            {
+                LockOnNode = true;
+            }
+            else
+            {
+                LockOnNode = false;
+            }
+        }
         if (!GrabbedLock)
         {
             SpriteRenderer.sprite = InitialSprite;
@@ -97,12 +110,12 @@ public class Grabbable : MonoBehaviour
         {
             MousedOver = true;
         }
-        else if (collision.gameObject.tag == "Reciever")
+        else if (collision.gameObject.tag == "Reciever" && SnapToReciever)
         {
             MousedOverReciever = true;
             TargettedReciever = collision.gameObject;
         }
-        else if (collision.gameObject.tag == "Output")
+        else if (collision.gameObject.tag == "Output" && SnapToOutput)
         {
             MousedOverOutput = true;
             TargettedReciever = collision.gameObject;
