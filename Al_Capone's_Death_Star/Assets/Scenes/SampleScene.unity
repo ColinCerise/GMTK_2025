@@ -1295,6 +1295,7 @@ GameObject:
   - component: {fileID: 420143887}
   - component: {fileID: 420143886}
   - component: {fileID: 420143889}
+  - component: {fileID: 420143890}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1396,6 +1397,102 @@ MonoBehaviour:
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
+--- !u!82 &420143890
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 420143885}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &478585652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1614,6 +1711,8 @@ MonoBehaviour:
   ManagerScript: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
   CallMissed: 0
@@ -1685,6 +1784,8 @@ MonoBehaviour:
   ManagerScript: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
   CallMissed: 0
@@ -1786,6 +1887,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1995254234}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: click
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &576518154
@@ -1893,6 +2006,8 @@ MonoBehaviour:
   ManagerScript: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
   CallMissed: 0
@@ -2466,6 +2581,8 @@ MonoBehaviour:
   ManagerScript: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
   CallMissed: 0
@@ -2509,7 +2626,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -355, y: 175}
+  m_AnchoredPosition: {x: -217, y: 106}
   m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &859865474
@@ -2566,6 +2683,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1995254234}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: click
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &859865475
@@ -2675,6 +2804,8 @@ MonoBehaviour:
   ManagerScript: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
   CallMissed: 0
@@ -2776,6 +2907,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1995254234}
+        m_TargetAssemblyTypeName: AudioManager, Assembly-CSharp
+        m_MethodName: PlaySFX
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: click
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &901030213
@@ -3566,6 +3709,8 @@ MonoBehaviour:
   ManagerScript: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
   CallMissed: 0
@@ -3589,7 +3734,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1097691634
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3599,7 +3744,7 @@ RectTransform:
   m_GameObject: {fileID: 1097691633}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.6, y: 0.6, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1949670523}
@@ -5588,6 +5733,8 @@ MonoBehaviour:
   ManagerScript: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
   CallMissed: 0
@@ -5683,6 +5830,8 @@ MonoBehaviour:
   ManagerScript: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
   CallMissed: 0
@@ -6341,6 +6490,8 @@ MonoBehaviour:
   ManagerScript: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
   CallMissed: 0
@@ -6486,6 +6637,7 @@ GameObject:
   - component: {fileID: 1995254232}
   - component: {fileID: 1995254231}
   - component: {fileID: 1995254233}
+  - component: {fileID: 1995254234}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -6564,6 +6716,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversationsLogged: []
   logbookDisplay: {fileID: 1097691633}
+--- !u!114 &1995254234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1995254230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 031bd439f3807c141bc07ad72dff85c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainSource: {fileID: 420143890}
+  sfxNames:
+  - click
+  - lightOn
+  - tappingWires
+  - wireConnect
+  sfxClips:
+  - {fileID: 8300000, guid: ef6747dfbc6422f4a8b029320523efda, type: 3}
+  - {fileID: 8300000, guid: df8cd46d45bde23408c02c33e04800e1, type: 3}
+  - {fileID: 8300000, guid: 16c66068bc4f38a4d91b7fd0ba82244b, type: 3}
+  - {fileID: 8300000, guid: f162934e8d9619447809b5cda2f44da6, type: 3}
 --- !u!1 &2013851218
 GameObject:
   m_ObjectHideFlags: 0

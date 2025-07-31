@@ -5,11 +5,11 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
-    [SerializeField] static AudioSource mainSource;
-    [SerializeField] static string[] sfxNames;
-    [SerializeField] static AudioClip[] sfxClips;
+    [SerializeField] AudioSource mainSource;
+    [SerializeField] string[] sfxNames;
+    [SerializeField] AudioClip[] sfxClips;
 
-    public static void PlaySFX(string sfxName)
+    public void PlaySFX(string sfxName)
     {
         mainSource.PlayOneShot(sfxClips[Array.IndexOf(sfxNames, sfxName)]);
     }

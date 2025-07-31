@@ -30,6 +30,8 @@ public class ConversationManager : MonoBehaviour
     public LinesAndText ManagerScript;
     public GameObject DialogueBox;
     public DialogueManager DialogueBoxScript;
+    public GameObject AngerManager;
+    public AngerBar AngryBar;
     public float TimeWaited = 0;
     public bool CallEnded = false;
     public bool CallMissed = false;
@@ -50,9 +52,11 @@ public class ConversationManager : MonoBehaviour
         Manager = GameObject.Find("Manager");
         DialogueBox = GameObject.Find("Dialogue Manager");
         PlayerReciever = GameObject.Find("PlayerReciever");
+        AngerManager = GameObject.Find("AngryBossManager");
         WiretapScript = Wiretap.GetComponent<Wiretap>();
         ManagerScript = Manager.GetComponent<LinesAndText>();
         DialogueBoxScript = DialogueBox.GetComponent<DialogueManager>();
+        AngryBar = AngerManager.GetComponent<AngerBar>();
         ConversationTargets = StarterOutput.name + " + " + TargetReciever.name;
 
         //ParseDialogue();
@@ -89,6 +93,10 @@ public class ConversationManager : MonoBehaviour
             TimeWaited += Time.deltaTime;
             ConnectedPoint = GameObject.Find(StarterOutput.name.Substring(0, (StarterOutput.name.Length - 1)) + "2");
             ConnectedReciever = ConnectedPoint.GetComponent<Grabbable>().TargettedReciever;
+            if (!CallConnected && TimeWaited >= 5)
+            {
+                AngryBar.AddAnger(Time.deltaTime);
+            }
             if (ConnectedReciever == TargetReciever)
             {
                 CallStarted = true;
@@ -107,11 +115,13 @@ public class ConversationManager : MonoBehaviour
             {
                 CallEnded = true;
                 CallMissed = true;
+                AngryBar.DisconnectedCall();
             }
             else if (TimeWaited >= 30 && CallStarted)
             {
                 CallEnded = true;
                 CallMissed = true;
+                AngryBar.DisconnectedCall();
             }
             else if (CallStarted && !CallEnded)
             {
@@ -119,6 +129,7 @@ public class ConversationManager : MonoBehaviour
                 {
                     CallEnded = true;
                     CallMissed = true;
+                    AngryBar.DisconnectedCall();
                     Manager.GetComponent<ConvoLog>().AddConvo(CurrentDialog);
                 }
                 if ((TimeWaited - StartOffset) * LPS <= maxLeangth + 1)
