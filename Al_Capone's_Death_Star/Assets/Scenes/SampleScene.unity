@@ -404,7 +404,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1866340023}
-  - {fileID: 1227329350}
   - {fileID: 1097691634}
   - {fileID: 859865473}
   - {fileID: 1584706733}
@@ -884,7 +883,7 @@ SpriteRenderer:
   m_Size: {x: 0.28, y: 0.39}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &222431246
@@ -1106,6 +1105,11 @@ Transform:
   m_Children:
   - {fileID: 1711430211}
   - {fileID: 1947002916}
+  - {fileID: 501975485}
+  - {fileID: 542213683}
+  - {fileID: 589408311}
+  - {fileID: 833088550}
+  - {fileID: 1090900946}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &400463482
@@ -1610,6 +1614,7 @@ MonoBehaviour:
   DialogueBoxScript: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
+  CallMissed: 0
   CallConnected: 0
   CallStarted: 0
   IAMTALKING: 0
@@ -1679,6 +1684,7 @@ MonoBehaviour:
   DialogueBoxScript: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
+  CallMissed: 0
   CallConnected: 0
   CallStarted: 0
   IAMTALKING: 0
@@ -1885,6 +1891,7 @@ MonoBehaviour:
   DialogueBoxScript: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
+  CallMissed: 0
   CallConnected: 0
   CallStarted: 0
   IAMTALKING: 0
@@ -2373,7 +2380,7 @@ SpriteRenderer:
   m_Size: {x: 0.28, y: 0.39}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &820983367
@@ -2456,6 +2463,7 @@ MonoBehaviour:
   DialogueBoxScript: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
+  CallMissed: 0
   CallConnected: 0
   CallStarted: 0
   IAMTALKING: 0
@@ -3058,7 +3066,7 @@ SpriteRenderer:
   m_Size: {x: 0.28, y: 0.39}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &962602147
@@ -3385,7 +3393,7 @@ SpriteRenderer:
   m_Size: {x: 0.28, y: 0.39}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1055399317
@@ -3477,6 +3485,7 @@ MonoBehaviour:
   DialogueBoxScript: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
+  CallMissed: 0
   CallConnected: 0
   CallStarted: 0
   IAMTALKING: 0
@@ -3496,7 +3505,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1097691634
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3835,7 +3844,7 @@ SpriteRenderer:
   m_Size: {x: 0.28, y: 0.39}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1136175024
@@ -4927,82 +4936,6 @@ MonoBehaviour:
   isActive: 0
   IsReciever: 1
   MultiTrigger: 0
---- !u!1 &1584706732
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1584706733}
-  - component: {fileID: 1584706735}
-  - component: {fileID: 1584706734}
-  m_Layer: 5
-  m_Name: Clock
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1584706733
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584706732}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1227329350}
-  m_Father: {fileID: 186428241}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: 0}
-  m_SizeDelta: {x: 209, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1584706734
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584706732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3d0e87cf88d8d084e9f3807054cb6527, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &1584706735
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1584706732}
-  m_CullTransparentMesh: 1
 --- !u!1 &1507690003
 GameObject:
   m_ObjectHideFlags: 0
@@ -5136,6 +5069,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1507690003}
+  m_CullTransparentMesh: 1
+--- !u!1 &1584706732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1584706733}
+  - component: {fileID: 1584706735}
+  - component: {fileID: 1584706734}
+  m_Layer: 5
+  m_Name: Clock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1584706733
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584706732}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1227329350}
+  m_Father: {fileID: 186428241}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 300, y: 0}
+  m_SizeDelta: {x: 209, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1584706734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584706732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3d0e87cf88d8d084e9f3807054cb6527, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1584706735
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584706732}
   m_CullTransparentMesh: 1
 --- !u!1 &1608982125
 GameObject:
@@ -5497,9 +5506,11 @@ MonoBehaviour:
   DialogueBoxScript: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
+  CallMissed: 0
   CallConnected: 0
   CallStarted: 0
   IAMTALKING: 0
+  ListenedToConvo: 0
 --- !u!4 &1711430211
 Transform:
   m_ObjectHideFlags: 0
@@ -6167,9 +6178,11 @@ MonoBehaviour:
   DialogueBoxScript: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
+  CallMissed: 0
   CallConnected: 0
   CallStarted: 0
   IAMTALKING: 0
+  ListenedToConvo: 0
 --- !u!4 &1947002916
 Transform:
   m_ObjectHideFlags: 0
