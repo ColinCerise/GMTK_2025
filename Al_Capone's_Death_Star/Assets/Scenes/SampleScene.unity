@@ -6516,16 +6516,16 @@ MonoBehaviour:
   Connectpoint5b: {fileID: 1136175019}
   clockDisplay: {fileID: 1227329349}
   clockSprites:
-  - {fileID: 21300000, guid: 4b2fac91fc35d9441bc19672077b9d35, type: 3}
-  - {fileID: 21300000, guid: 582adac8bdfdbd245a0ad326136b4a0e, type: 3}
-  - {fileID: 21300000, guid: 9e97cf43a420dd441b4c9a05fc2c694d, type: 3}
-  - {fileID: 21300000, guid: 7b79013b4ee617342a7948e52b3d75b4, type: 3}
-  - {fileID: 21300000, guid: 6284ebb0b4edafd4caccd1a831523bc0, type: 3}
-  - {fileID: 21300000, guid: 8e6bbd8faed80c144a0d1fdb0f8cb498, type: 3}
-  - {fileID: 21300000, guid: f7d7822416208bf49a056749bfce6af7, type: 3}
-  - {fileID: 21300000, guid: f58aab0b38b487948adb040ca6de71fd, type: 3}
-  - {fileID: 21300000, guid: cb13a9c41a967784d9849921f9e753f0, type: 3}
-  - {fileID: 21300000, guid: 4fe032a2cdc661e4da20f7482abb8234, type: 3}
+  - {fileID: 21300000, guid: b08ff43ed6e5b5342a4efdaf9be0e745, type: 3}
+  - {fileID: 21300000, guid: 0811c0d2662d3bd4d9df0bfe510e3489, type: 3}
+  - {fileID: 21300000, guid: e1eddc7be5b7f244382b0f2c01fd5460, type: 3}
+  - {fileID: 21300000, guid: 531d7ae43876f4a449a35e2411168182, type: 3}
+  - {fileID: 21300000, guid: 5a24ae95d113391478ca66696a073602, type: 3}
+  - {fileID: 21300000, guid: c96cccf696cddb84b925a124a6ab1160, type: 3}
+  - {fileID: 21300000, guid: c0089ce3332352249911bf35964b560a, type: 3}
+  - {fileID: 21300000, guid: 95573fdb0b50df64f85aa104851be123, type: 3}
+  - {fileID: 21300000, guid: 24dbbee5970fe3c4797bed23a15683c2, type: 3}
+  - {fileID: 21300000, guid: 4812fab36308910459f0777addb911fa, type: 3}
 --- !u!4 &1995254232
 Transform:
   m_ObjectHideFlags: 0
