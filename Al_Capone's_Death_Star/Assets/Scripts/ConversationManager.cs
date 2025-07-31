@@ -82,6 +82,10 @@ public class ConversationManager : MonoBehaviour
                 }
             }
         }
+        else
+        {
+            Debug.Log(gameObject.name);
+        }
 
         totalCharLength = 0;
         foreach (string str in dialogueList)
