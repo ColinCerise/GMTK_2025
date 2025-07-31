@@ -107,7 +107,7 @@ public class ConversationManager : MonoBehaviour
             {
                 AngryBar.AddAnger(Time.deltaTime);
             }
-            if (ConnectedReciever == TargetReciever)
+            if (ConnectedReciever == TargetReciever && !ConnectedPoint.GetComponent<Grabbable>().GrabbedLock)
             {
                 CallStarted = true;
                 CallConnected = true;
@@ -195,7 +195,7 @@ public class ConversationManager : MonoBehaviour
                 Manager.GetComponent<ConvoLog>().AddConvo(CurrentDialog);
             }
         }
-        if (CallEnded)
+        if (CallEnded && IAMTALKING)
         {
             IAMTALKING = false;
             CurrentDialog = null;
