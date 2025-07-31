@@ -14,6 +14,7 @@ public class DialogueManager : MonoBehaviour
     public GameObject Wiretap;
     public Wiretap WiretapScript;
     public GameObject Conversation;
+    public float DialogueTimer = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,11 +28,28 @@ public class DialogueManager : MonoBehaviour
         if (Conversation != null && Conversation.GetComponent<ConversationManager>().CurrentDialog != null)
         {
             DialogueBox.text = Conversation.GetComponent<ConversationManager>().CurrentDialog;
+            DialogueTimer = 0;
+        }
+        else
+        {
+            DialogueTimer += Time.deltaTime;
+            if (DialogueTimer >= 3)
+            {
+                DialogueBox.text = null;
+                DialogueTimer = 0;
+            }
         }
     }
     public void SetAsTalking(GameObject Conversationist, int startingNum)
     {
         Conversation = Conversationist;
-        StartNum = startingNum;
+        if (startingNum < 10)
+        {
+            StartNum = 0;
+        }
+        else
+        {
+            StartNum = startingNum - 10;
+        }
     }
 }
