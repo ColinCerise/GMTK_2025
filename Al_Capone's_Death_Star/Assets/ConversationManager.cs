@@ -15,6 +15,7 @@ public class ConversationManager : MonoBehaviour
     public Wiretap WiretapScript;
     public GameObject Manager;
     public LinesAndText ManagerScript;
+    public float TimeWaited = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,7 +30,7 @@ public class ConversationManager : MonoBehaviour
     {
         if (ManagerScript.Hours >= TimeOffsetHours && ManagerScript.Minutes >= TimeOffsetMinutes)
         {
-
+            TimeWaited += Time.deltaTime;
         }
     }
 }
