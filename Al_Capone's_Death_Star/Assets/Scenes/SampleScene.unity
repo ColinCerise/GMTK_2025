@@ -122,156 +122,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &6429704
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6429705}
-  - component: {fileID: 6429706}
-  m_Layer: 0
-  m_Name: Steal Car1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6429705
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6429704}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 389639080}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6429706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6429704}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Conversation: "Chuckwood Agent: I need you to steal a car.  Car Thief: That\u2019s
-    what I do best. What are you looking for?  Chuckwood Agent: We need at least
-    four seats and something that doesn\u2019t attract too much heat for sitting
-    on the street. Ideally something no one will miss for one night.  Car Thief:
-    I\u2019ll find something.  Chuckwood Agent: Once you get it, hand it off to Getaway
-    Driver and call me.  Car Thief: You\u2019ll hear from me as soon as I make the
-    handoff. "
-  PreConversation: 
-  ConversationTargets: 
-  PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 710281746}
-  TargetReciever: {fileID: 1100449619}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
-  LPS: 20
-  StartOffset: 0
-  PlaceInConversation: 0
-  maxLeangth: 0
-  CurrentDialog: 
-  Wiretap: {fileID: 0}
-  WiretapScript: {fileID: 0}
-  Manager: {fileID: 0}
-  ManagerScript: {fileID: 0}
-  DialogueBox: {fileID: 0}
-  DialogueBoxScript: {fileID: 0}
-  TimeWaited: 0
-  CallEnded: 0
-  CallConnected: 0
-  CallStarted: 0
-  IAMTALKING: 0
-  ListenedToConvo: 0
---- !u!1 &9896954
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9896955}
-  - component: {fileID: 9896956}
-  m_Layer: 0
-  m_Name: Escape1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &9896955
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9896954}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 389639080}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &9896956
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9896954}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Conversation: "Whistlepig Agent: I need you to drive tonight.  Getaway Driver:
-    Where to?  Whistlepig Agent: I need a getaway driver, and you\u2019re the best
-    we\u2019ve got on hand.  Getaway Driver: I know.  Whistlepig Agent: What I don\u2019t
-    need is that attitude. Can you do it or not?  Getaway Driver: I can do it.  Whistlepig
-    Agent: Great. Get to Eastburrow and wait until we can get you a car. Then head
-    to Thickwood. Once you get the car, drive to Thickwood, where I\u2019ll contact
-    you.  Getaway Driver: I\u2019ll be waiting. "
-  PreConversation: 
-  ConversationTargets: 
-  PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 1855241245}
-  TargetReciever: {fileID: 478585652}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
-  LPS: 20
-  StartOffset: 0
-  PlaceInConversation: 0
-  maxLeangth: 0
-  CurrentDialog: 
-  Wiretap: {fileID: 0}
-  WiretapScript: {fileID: 0}
-  Manager: {fileID: 0}
-  ManagerScript: {fileID: 0}
-  DialogueBox: {fileID: 0}
-  DialogueBoxScript: {fileID: 0}
-  TimeWaited: 0
-  CallEnded: 0
-  CallConnected: 0
-  CallStarted: 0
-  IAMTALKING: 0
-  ListenedToConvo: 0
 --- !u!1 &88107218
 GameObject:
   m_ObjectHideFlags: 0
@@ -554,7 +404,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1866340023}
-  - {fileID: 1227329350}
+  - {fileID: 1584706733}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1031,7 +881,7 @@ SpriteRenderer:
   m_Size: {x: 0.28, y: 0.39}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &222431246
@@ -1185,86 +1035,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1979339801}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &268816302
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 268816303}
-  - component: {fileID: 268816304}
-  m_Layer: 0
-  m_Name: Escape2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &268816303
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 268816302}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 389639080}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &268816304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 268816302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Conversation: "Whistlepig Agent: I heard you procured a car. Is everything in order? 
-    Getaway Driver: Yes, quite. This is a lovely vehicle, matches the description
-    you provided perfectly. New coat of blue paint and everything. It should do nicely
-    for the job. What exactly do you have in mind?  Whistlepig Agent: They will be
-    unarmed. The garage door will open. You drive in, pick up the three people inside,
-    and escape back to Eastburrow, where you\u2019ll dump the car with Car Thief
-    and get back to base for the night in one of our vehicles.  Getaway Driver: How
-    much heat do you expect on my tail?  Whistlepig Agent: After the gunshots go
-    off, I expect some kind of pursuit, but they\u2019re not ready for this. I\u2019m
-    sure you\u2019ll be fine.  Getaway Driver: I\u2019ll scamper out of there as
-    quickly as I can regardless.  Whistlepig Agent: Your cowardice makes you perfect
-    for this job.  Getaway Driver: Thank you? "
-  PreConversation: 
-  ConversationTargets: 
-  PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 1855241245}
-  TargetReciever: {fileID: 88107218}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
-  LPS: 20
-  StartOffset: 0
-  PlaceInConversation: 0
-  maxLeangth: 0
-  CurrentDialog: 
-  Wiretap: {fileID: 0}
-  WiretapScript: {fileID: 0}
-  Manager: {fileID: 0}
-  ManagerScript: {fileID: 0}
-  DialogueBox: {fileID: 0}
-  DialogueBoxScript: {fileID: 0}
-  TimeWaited: 0
-  CallEnded: 0
-  CallConnected: 0
-  CallStarted: 0
-  IAMTALKING: 0
-  ListenedToConvo: 0
 --- !u!1 &294092221
 GameObject:
   m_ObjectHideFlags: 0
@@ -1333,19 +1103,6 @@ Transform:
   m_Children:
   - {fileID: 1711430211}
   - {fileID: 1947002916}
-  - {fileID: 1734444978}
-  - {fileID: 589408311}
-  - {fileID: 9896955}
-  - {fileID: 268816303}
-  - {fileID: 1330497809}
-  - {fileID: 1090900946}
-  - {fileID: 6429705}
-  - {fileID: 1351737552}
-  - {fileID: 833088550}
-  - {fileID: 501975485}
-  - {fileID: 705648001}
-  - {fileID: 461329684}
-  - {fileID: 542213683}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &400463482
@@ -1579,7 +1336,7 @@ Camera:
   far clip plane: 1
   field of view: 60
   orthographic: 1
-  orthographic size: 4
+  orthographic size: 5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1604,7 +1361,7 @@ Transform:
   m_GameObject: {fileID: 420143885}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1}
+  m_LocalPosition: {x: 1, y: -1, z: -1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1630,75 +1387,6 @@ MonoBehaviour:
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
---- !u!1 &461329683
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 461329684}
-  - component: {fileID: 461329685}
-  m_Layer: 0
-  m_Name: Mundane2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &461329684
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461329683}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 389639080}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &461329685
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 461329683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Conversation: 
-  PreConversation: 
-  ConversationTargets: 
-  PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 921685621}
-  TargetReciever: {fileID: 1100449619}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
-  LPS: 20
-  StartOffset: 0
-  PlaceInConversation: 0
-  maxLeangth: 0
-  CurrentDialog: 
-  Wiretap: {fileID: 0}
-  WiretapScript: {fileID: 0}
-  Manager: {fileID: 0}
-  ManagerScript: {fileID: 0}
-  DialogueBox: {fileID: 0}
-  DialogueBoxScript: {fileID: 0}
-  TimeWaited: 0
-  CallEnded: 0
-  CallConnected: 0
-  CallStarted: 0
-  IAMTALKING: 0
-  ListenedToConvo: 0
 --- !u!1 &478585652
 GameObject:
   m_ObjectHideFlags: 0
@@ -1850,221 +1538,6 @@ MonoBehaviour:
   isActive: 0
   IsReciever: 1
   MultiTrigger: 0
---- !u!1 &501975484
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 501975485}
-  - component: {fileID: 501975486}
-  m_Layer: 0
-  m_Name: Bribe2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &501975485
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 501975484}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 389639080}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &501975486
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 501975484}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Conversation: "Thickwood Agent: We have the guns planted in the warehouse.  Gunman:
-    Where can we find them?  Thickwood Agent: They\u2019re sitting by the garage
-    door where you\u2019ll enter, hidden in some boxes.  Gunman: How are we supposed
-    to find which boxes these things are in?  Thickwood Agent: They\u2019re unarmed.
-    They won\u2019t put up much of a fight. Just get it done.  Gunman: Understood. "
-  PreConversation: 
-  ConversationTargets: 
-  PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 710281746}
-  TargetReciever: {fileID: 478585652}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
-  LPS: 20
-  StartOffset: 0
-  PlaceInConversation: 0
-  maxLeangth: 0
-  CurrentDialog: 
-  Wiretap: {fileID: 0}
-  WiretapScript: {fileID: 0}
-  Manager: {fileID: 0}
-  ManagerScript: {fileID: 0}
-  DialogueBox: {fileID: 0}
-  DialogueBoxScript: {fileID: 0}
-  TimeWaited: 0
-  CallEnded: 0
-  CallConnected: 0
-  CallStarted: 0
-  IAMTALKING: 0
-  ListenedToConvo: 0
---- !u!1 &542213682
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 542213683}
-  - component: {fileID: 542213684}
-  m_Layer: 0
-  m_Name: Mundane3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &542213683
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 542213682}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 389639080}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &542213684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 542213682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Conversation: 
-  PreConversation: 
-  ConversationTargets: 
-  PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 400463482}
-  TargetReciever: {fileID: 670683100}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
-  LPS: 20
-  StartOffset: 0
-  PlaceInConversation: 0
-  maxLeangth: 0
-  CurrentDialog: 
-  Wiretap: {fileID: 0}
-  WiretapScript: {fileID: 0}
-  Manager: {fileID: 0}
-  ManagerScript: {fileID: 0}
-  DialogueBox: {fileID: 0}
-  DialogueBoxScript: {fileID: 0}
-  TimeWaited: 0
-  CallEnded: 0
-  CallConnected: 0
-  CallStarted: 0
-  IAMTALKING: 0
-  ListenedToConvo: 0
---- !u!1 &589408310
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 589408311}
-  - component: {fileID: 589408312}
-  m_Layer: 0
-  m_Name: Smuggle 3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &589408311
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 589408310}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 389639080}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &589408312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 589408310}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Conversation: "Thickwood Agent: We have the guns planted in the warehouse.  Gunman:
-    Where can we find them?  Thickwood Agent: They\u2019re sitting by the garage
-    door where you\u2019ll enter, hidden in some boxes.  Gunman: How are we supposed
-    to find which boxes these things are in?  Thickwood Agent: They\u2019re unarmed.
-    They won\u2019t put up much of a fight. Just get it done.  Gunman: Understood. "
-  PreConversation: 
-  ConversationTargets: 
-  PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 921685621}
-  TargetReciever: {fileID: 1100449619}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
-  LPS: 20
-  StartOffset: 0
-  PlaceInConversation: 0
-  maxLeangth: 0
-  CurrentDialog: 
-  Wiretap: {fileID: 0}
-  WiretapScript: {fileID: 0}
-  Manager: {fileID: 0}
-  ManagerScript: {fileID: 0}
-  DialogueBox: {fileID: 0}
-  DialogueBoxScript: {fileID: 0}
-  TimeWaited: 0
-  CallEnded: 0
-  CallConnected: 0
-  CallStarted: 0
-  IAMTALKING: 0
-  ListenedToConvo: 0
 --- !u!1 &670683100
 GameObject:
   m_ObjectHideFlags: 0
@@ -2216,75 +1689,6 @@ MonoBehaviour:
   isActive: 0
   IsReciever: 1
   MultiTrigger: 0
---- !u!1 &705648000
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 705648001}
-  - component: {fileID: 705648002}
-  m_Layer: 0
-  m_Name: Mundane1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &705648001
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 705648000}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 389639080}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &705648002
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 705648000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Conversation: 
-  PreConversation: 
-  ConversationTargets: 
-  PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 188834805}
-  TargetReciever: {fileID: 88107218}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
-  LPS: 20
-  StartOffset: 0
-  PlaceInConversation: 0
-  maxLeangth: 0
-  CurrentDialog: 
-  Wiretap: {fileID: 0}
-  WiretapScript: {fileID: 0}
-  Manager: {fileID: 0}
-  ManagerScript: {fileID: 0}
-  DialogueBox: {fileID: 0}
-  DialogueBoxScript: {fileID: 0}
-  TimeWaited: 0
-  CallEnded: 0
-  CallConnected: 0
-  CallStarted: 0
-  IAMTALKING: 0
-  ListenedToConvo: 0
 --- !u!1 &710281746
 GameObject:
   m_ObjectHideFlags: 0
@@ -2618,7 +2022,7 @@ SpriteRenderer:
   m_Size: {x: 0.28, y: 0.39}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &820983367
@@ -2636,75 +2040,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1608982126}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &833088549
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 833088550}
-  - component: {fileID: 833088551}
-  m_Layer: 0
-  m_Name: Bribe1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &833088550
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 833088549}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 389639080}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &833088551
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 833088549}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Conversation: 
-  PreConversation: 
-  ConversationTargets: 
-  PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 921685621}
-  TargetReciever: {fileID: 670683100}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
-  LPS: 20
-  StartOffset: 0
-  PlaceInConversation: 0
-  maxLeangth: 0
-  CurrentDialog: 
-  Wiretap: {fileID: 0}
-  WiretapScript: {fileID: 0}
-  Manager: {fileID: 0}
-  ManagerScript: {fileID: 0}
-  DialogueBox: {fileID: 0}
-  DialogueBoxScript: {fileID: 0}
-  TimeWaited: 0
-  CallEnded: 0
-  CallConnected: 0
-  CallStarted: 0
-  IAMTALKING: 0
-  ListenedToConvo: 0
 --- !u!1 &921685621
 GameObject:
   m_ObjectHideFlags: 0
@@ -3038,7 +2373,7 @@ SpriteRenderer:
   m_Size: {x: 0.28, y: 0.39}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &962602147
@@ -3365,7 +2700,7 @@ SpriteRenderer:
   m_Size: {x: 0.28, y: 0.39}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1055399317
@@ -3383,84 +2718,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1608982126}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1090900945
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1090900946}
-  - component: {fileID: 1090900947}
-  m_Layer: 0
-  m_Name: Inside2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1090900946
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1090900945}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 389639080}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1090900947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1090900945}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Conversation: "Monax Agent: I have more information for you.  Inside Agent: I\u2019m
-    ready.  Monax Agent: A getaway driver will be waiting outside the building in
-    a blue car with an eagle-shaped hood ornament. Be there by ten past midnight
-    or you\u2019ll be left behind.  Inside Agent: Alright. You got any other information
-    for me?  Monax Agent: You\u2019re sure that the Eastburrow Boss trusts you? 
-    Inside Agent: Of course. I\u2019ve been deep undercover for months. I\u2019m
-    about to check the room for hidden weapons. I\u2019ll help your agent ensure
-    the guns are well-concealed.  Monax Agent: Perfect. They\u2019re stored in the
-    containers by the garage door.  Inside Agent: I\u2019ll make sure they remain
-    hidden. You won\u2019t be getting any problems from me. "
-  PreConversation: 
-  ConversationTargets: 
-  PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 188834805}
-  TargetReciever: {fileID: 1492175551}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
-  LPS: 20
-  StartOffset: 0
-  PlaceInConversation: 0
-  maxLeangth: 0
-  CurrentDialog: 
-  Wiretap: {fileID: 0}
-  WiretapScript: {fileID: 0}
-  Manager: {fileID: 0}
-  ManagerScript: {fileID: 0}
-  DialogueBox: {fileID: 0}
-  DialogueBoxScript: {fileID: 0}
-  TimeWaited: 0
-  CallEnded: 0
-  CallConnected: 0
-  CallStarted: 0
-  IAMTALKING: 0
-  ListenedToConvo: 0
 --- !u!1 &1100449619
 GameObject:
   m_ObjectHideFlags: 0
@@ -3776,7 +3033,7 @@ SpriteRenderer:
   m_Size: {x: 0.28, y: 0.39}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1136175024
@@ -4089,7 +3346,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227329349}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -4098,12 +3355,12 @@ RectTransform:
   - {fileID: 1233380969}
   - {fileID: 1812989583}
   - {fileID: 1845136094}
-  m_Father: {fileID: 186428241}
+  m_Father: {fileID: 1584706733}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 143}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1233380968
 GameObject:
@@ -4132,15 +3389,15 @@ RectTransform:
   m_GameObject: {fileID: 1233380968}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1227329350}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 28, y: 39}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -30, y: -12}
+  m_SizeDelta: {x: 44, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1233380970
 MonoBehaviour:
@@ -4576,163 +3833,11 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.85, y: -1.56, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1330497808
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1330497809}
-  - component: {fileID: 1330497810}
-  m_Layer: 0
-  m_Name: Inside1
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1330497809
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330497808}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 389639080}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1330497810
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1330497808}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Conversation: "Monax Agent: Are you still with us?  Inside Agent: Yes. You don\u2019t
-    need to worry about me. I\u2019ll follow through.  Monax Agent: Are you in position
-    for tonight?  Inside Agent: Yes. I\u2019ve been selected to check the location
-    and Eastburrow Boss for weapons.  Monax Agent: Excellent. All your hard work
-    is paying off. All the pieces are falling into place just as intended.  Inside
-    Agent: I\u2019m happy to be of service. I hope it all pays off. We can finally
-    take down the tyrant and run this town all on our own.  Monax Agent: I look forward
-    to that day. I\u2019ll update you later this evening with more information on
-    what exactly we need you to do. This is essential information, so stand by for
-    my call.  Inside Agent: I\u2019ll be waiting. "
-  PreConversation: 
-  ConversationTargets: 
-  PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 188834805}
-  TargetReciever: {fileID: 1492175551}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
-  LPS: 20
-  StartOffset: 0
-  PlaceInConversation: 0
-  maxLeangth: 0
-  CurrentDialog: 
-  Wiretap: {fileID: 0}
-  WiretapScript: {fileID: 0}
-  Manager: {fileID: 0}
-  ManagerScript: {fileID: 0}
-  DialogueBox: {fileID: 0}
-  DialogueBoxScript: {fileID: 0}
-  TimeWaited: 0
-  CallEnded: 0
-  CallConnected: 0
-  CallStarted: 0
-  IAMTALKING: 0
-  ListenedToConvo: 0
---- !u!1 &1351737551
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1351737552}
-  - component: {fileID: 1351737553}
-  m_Layer: 0
-  m_Name: Steal Car2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1351737552
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351737551}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 389639080}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1351737553
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1351737551}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Conversation: "Car Thief: I\u2019ve got the car. It\u2019s a blue five-seater with
-    an eagle hood ornament.  Chuckwood Agent: Excellent. Did you make the handoff? 
-    Car Thief: Yes. Getaway Driver is already headed toward Thickwood.  Chuckwood
-    Agent: Everything is on track.  Car Thief: Do you need my services any more today? 
-    Chuckwood Agent: Return the car after we\u2019re finished with it. You\u2019re
-    free to go until then.  Car Thief: I\u2019ll check back in after midnight. "
-  PreConversation: 
-  ConversationTargets: 
-  PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 400463482}
-  TargetReciever: {fileID: 670683100}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
-  LPS: 20
-  StartOffset: 0
-  PlaceInConversation: 0
-  maxLeangth: 0
-  CurrentDialog: 
-  Wiretap: {fileID: 0}
-  WiretapScript: {fileID: 0}
-  Manager: {fileID: 0}
-  ManagerScript: {fileID: 0}
-  DialogueBox: {fileID: 0}
-  DialogueBoxScript: {fileID: 0}
-  TimeWaited: 0
-  CallEnded: 0
-  CallConnected: 0
-  CallStarted: 0
-  IAMTALKING: 0
-  ListenedToConvo: 0
 --- !u!1 &1353508107
 GameObject:
   m_ObjectHideFlags: 0
@@ -5020,6 +4125,82 @@ MonoBehaviour:
   isActive: 0
   IsReciever: 1
   MultiTrigger: 0
+--- !u!1 &1584706732
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1584706733}
+  - component: {fileID: 1584706735}
+  - component: {fileID: 1584706734}
+  m_Layer: 5
+  m_Name: Clock
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1584706733
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584706732}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1227329350}
+  m_Father: {fileID: 186428241}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 300, y: 0}
+  m_SizeDelta: {x: 209, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1584706734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584706732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 3d0e87cf88d8d084e9f3807054cb6527, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1584706735
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1584706732}
+  m_CullTransparentMesh: 1
 --- !u!1 &1608982125
 GameObject:
   m_ObjectHideFlags: 0
@@ -5115,7 +4296,6 @@ MonoBehaviour:
   CallConnected: 0
   CallStarted: 0
   IAMTALKING: 0
-  ListenedToConvo: 0
 --- !u!4 &1711430211
 Transform:
   m_ObjectHideFlags: 0
@@ -5131,79 +4311,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 389639080}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1734444977
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1734444978}
-  - component: {fileID: 1734444979}
-  m_Layer: 0
-  m_Name: Smuggle 2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1734444978
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734444977}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 389639080}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1734444979
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1734444977}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Conversation: "Smuggler: I got the guns in.  Thickwood Agent: Excellent. Where
-    are they stored?  Smuggler: I hid them in some boxes by the garage door entrance. 
-    Thickwood Agent: Perfect. That\u2019s how we\u2019re getting in and out.  Smuggler:
-    You\u2019re not expecting me to get my hands dirty here, right?  Thickwood Agent:
-    No. We have other people for that purpose. "
-  PreConversation: 
-  ConversationTargets: 
-  PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 400463482}
-  TargetReciever: {fileID: 88107218}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 10
-  LPS: 20
-  StartOffset: 0
-  PlaceInConversation: 0
-  maxLeangth: 0
-  CurrentDialog: 
-  Wiretap: {fileID: 0}
-  WiretapScript: {fileID: 0}
-  Manager: {fileID: 0}
-  ManagerScript: {fileID: 0}
-  DialogueBox: {fileID: 0}
-  DialogueBoxScript: {fileID: 0}
-  TimeWaited: 0
-  CallEnded: 0
-  CallConnected: 0
-  CallStarted: 0
-  IAMTALKING: 0
-  ListenedToConvo: 0
 --- !u!1 &1735138189
 GameObject:
   m_ObjectHideFlags: 0
@@ -5299,15 +4406,15 @@ RectTransform:
   m_GameObject: {fileID: 1812989582}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1227329350}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 49, y: 0}
-  m_SizeDelta: {x: 28, y: 39}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 31, y: -12}
+  m_SizeDelta: {x: 44, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1812989584
 MonoBehaviour:
@@ -5374,15 +4481,15 @@ RectTransform:
   m_GameObject: {fileID: 1845136093}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1227329350}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 99, y: 0}
-  m_SizeDelta: {x: 28, y: 39}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 78, y: -12}
+  m_SizeDelta: {x: 44, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1845136095
 MonoBehaviour:
@@ -5752,15 +4859,15 @@ RectTransform:
   m_GameObject: {fileID: 1890734060}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.5, y: 1.5, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1227329350}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -56, y: 0}
-  m_SizeDelta: {x: 28, y: 39}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -77, y: -12}
+  m_SizeDelta: {x: 44, y: 64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1890734062
 MonoBehaviour:
@@ -5859,7 +4966,6 @@ MonoBehaviour:
   CallConnected: 0
   CallStarted: 0
   IAMTALKING: 0
-  ListenedToConvo: 0
 --- !u!4 &1947002916
 Transform:
   m_ObjectHideFlags: 0
@@ -5960,16 +5066,16 @@ MonoBehaviour:
   Connectpoint5b: {fileID: 1136175019}
   clockDisplay: {fileID: 1227329349}
   clockSprites:
-  - {fileID: 21300000, guid: b08ff43ed6e5b5342a4efdaf9be0e745, type: 3}
-  - {fileID: 21300000, guid: 0811c0d2662d3bd4d9df0bfe510e3489, type: 3}
-  - {fileID: 21300000, guid: e1eddc7be5b7f244382b0f2c01fd5460, type: 3}
-  - {fileID: 21300000, guid: 531d7ae43876f4a449a35e2411168182, type: 3}
-  - {fileID: 21300000, guid: 5a24ae95d113391478ca66696a073602, type: 3}
-  - {fileID: 21300000, guid: c96cccf696cddb84b925a124a6ab1160, type: 3}
-  - {fileID: 21300000, guid: c0089ce3332352249911bf35964b560a, type: 3}
-  - {fileID: 21300000, guid: 95573fdb0b50df64f85aa104851be123, type: 3}
-  - {fileID: 21300000, guid: 24dbbee5970fe3c4797bed23a15683c2, type: 3}
-  - {fileID: 21300000, guid: 4812fab36308910459f0777addb911fa, type: 3}
+  - {fileID: 21300000, guid: 4b2fac91fc35d9441bc19672077b9d35, type: 3}
+  - {fileID: 21300000, guid: 582adac8bdfdbd245a0ad326136b4a0e, type: 3}
+  - {fileID: 21300000, guid: 9e97cf43a420dd441b4c9a05fc2c694d, type: 3}
+  - {fileID: 21300000, guid: 7b79013b4ee617342a7948e52b3d75b4, type: 3}
+  - {fileID: 21300000, guid: 6284ebb0b4edafd4caccd1a831523bc0, type: 3}
+  - {fileID: 21300000, guid: 8e6bbd8faed80c144a0d1fdb0f8cb498, type: 3}
+  - {fileID: 21300000, guid: f7d7822416208bf49a056749bfce6af7, type: 3}
+  - {fileID: 21300000, guid: f58aab0b38b487948adb040ca6de71fd, type: 3}
+  - {fileID: 21300000, guid: cb13a9c41a967784d9849921f9e753f0, type: 3}
+  - {fileID: 21300000, guid: 4fe032a2cdc661e4da20f7482abb8234, type: 3}
 --- !u!4 &1995254232
 Transform:
   m_ObjectHideFlags: 0
