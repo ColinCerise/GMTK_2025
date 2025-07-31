@@ -60,7 +60,7 @@ public class ConversationManager : MonoBehaviour
         AngryBar = AngerManager.GetComponent<AngerBar>();
         ConversationTargets = StarterOutput.name + " + " + TargetReciever.name;
 
-        ParseDialogue();
+        //ParseDialogue();
     }
 
     private void ParseDialogue()
