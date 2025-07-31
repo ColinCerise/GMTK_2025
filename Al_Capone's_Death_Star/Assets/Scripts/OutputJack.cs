@@ -27,7 +27,10 @@ public class OutputJack : MonoBehaviour
             Connector = GameObject.Find(this.gameObject.name.Substring(0, (this.gameObject.name.Length - 8)) + "2");
         }
         */
-        ConnectorScript = Connector.GetComponent<Grabbable>();
+        if (Connector != null)
+        {
+            ConnectorScript = Connector.GetComponent<Grabbable>();
+        }
     }
 
     // Update is called once per frame

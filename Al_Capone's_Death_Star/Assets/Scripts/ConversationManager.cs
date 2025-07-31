@@ -31,10 +31,10 @@ public class ConversationManager : MonoBehaviour
     public DialogueManager DialogueBoxScript;
     public float TimeWaited = 0;
     public bool CallEnded = false;
+    public bool CallMissed = false;
     public bool CallConnected = false;
     public bool CallStarted = false;
     public bool IAMTALKING = false;
-    public bool ListenedToConvo = false;
     GameObject ConnectedPoint;
     GameObject ConnectedReciever; 
     // Start is called before the first frame
@@ -53,7 +53,6 @@ public class ConversationManager : MonoBehaviour
     // Update is called once per
     void Update()
     {
-        
         if (((ManagerScript.Hours == TimeOffsetHours && ManagerScript.Minutes >= TimeOffsetMinutes) || ManagerScript.Hours > TimeOffsetHours) && !CallEnded)
         {
             maxLeangth = Conversation.Length;
@@ -65,7 +64,6 @@ public class ConversationManager : MonoBehaviour
                 CallStarted = true;
                 CallConnected = true;
             }
-
             if (CallStarted && StartOffset == 0)
             {
                 StartOffset = TimeWaited;
@@ -77,23 +75,30 @@ public class ConversationManager : MonoBehaviour
             if (TimeWaited >= 20 && !CallConnected)
             {
                 CallEnded = true;
+                CallMissed = true;
             }
             else if (TimeWaited >= 30 && CallStarted)
             {
                 CallEnded = true;
+                CallMissed = true;
             }
-            
             else if (CallStarted && !CallEnded)
             {
                 if (ConnectedReciever != TargetReciever)
                 {
                     CallEnded = true;
+                    CallMissed = true;
                 }
                 if ((TimeWaited - StartOffset) * LPS <= maxLeangth + 1)
                 {
                     PlaceInConversation = (int)((TimeWaited - StartOffset) * LPS);
                     if (WiretapScript.Conversation != null && WiretapScript.Conversation.Equals(ConversationTargets))
                     {
+                        if (PlaceInConversation - DialogueBoxScript.StartNum >= maxLeangth / 2)
+                        {
+                            ListenedToConvo = true;
+                            Debug.Log(PlaceInConversation - DialogueBoxScript.StartNum - maxLeangth / 2);
+                        }
                         if (!IAMTALKING)
                         {
                             IAMTALKING = true;
@@ -102,18 +107,10 @@ public class ConversationManager : MonoBehaviour
                         if (PlaceInConversation < maxLeangth && DialogueBoxScript.StartNum < maxLeangth)
                         {
                             CurrentDialog = Conversation.Substring(DialogueBoxScript.StartNum, PlaceInConversation - DialogueBoxScript.StartNum);
-                            if (PlaceInConversation - DialogueBoxScript.StartNum >= maxLeangth / 2)
-                            {
-                                ListenedToConvo = true;
-                            }
                         }
                         else if (DialogueBoxScript.StartNum < maxLeangth)
                         {
                             CurrentDialog = Conversation.Substring(DialogueBoxScript.StartNum, maxLeangth - DialogueBoxScript.StartNum);
-                            if (PlaceInConversation - DialogueBoxScript.StartNum >= maxLeangth / 2)
-                            {
-                                ListenedToConvo = true;
-                            }
                         }
                         else
                         {
@@ -132,10 +129,6 @@ public class ConversationManager : MonoBehaviour
             {
                 CurrentDialog = Conversation.Substring(DialogueBoxScript.StartNum, maxLeangth - DialogueBoxScript.StartNum);
                 DialogueBoxScript.ForceUpdate();
-                if (PlaceInConversation - DialogueBoxScript.StartNum >= maxLeangth / 2)
-                {
-                    ListenedToConvo = true;
-                }
                 CallEnded = true;
             }
         }
