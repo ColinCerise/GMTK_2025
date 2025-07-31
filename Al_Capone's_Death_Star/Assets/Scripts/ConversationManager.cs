@@ -44,6 +44,7 @@ public class ConversationManager : MonoBehaviour
 
     // Variables for parsing dialogue
     [SerializeField] string encounterName;
+    private int totalCharLength;
 
     // Start is called before the first frame
     void Start()
@@ -59,7 +60,7 @@ public class ConversationManager : MonoBehaviour
         AngryBar = AngerManager.GetComponent<AngerBar>();
         ConversationTargets = StarterOutput.name + " + " + TargetReciever.name;
 
-        //ParseDialogue();
+        ParseDialogue();
     }
 
     private void ParseDialogue()
@@ -81,6 +82,12 @@ public class ConversationManager : MonoBehaviour
                     dialogueList.Add(line.Substring(line.IndexOf(": ") + 1));
                 }
             }
+        }
+
+        totalCharLength = 0;
+        foreach (string str in dialogueList)
+        {
+            totalCharLength += str.Length;
         }
     }
 
