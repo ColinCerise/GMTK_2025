@@ -471,7 +471,7 @@ GameObject:
   - component: {fileID: 188834808}
   - component: {fileID: 188834807}
   - component: {fileID: 188834806}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Monax1
   m_TagString: Output
   m_Icon: {fileID: 0}
@@ -580,7 +580,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 448b88abfd84690458dab15afae59a85, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -775,27 +775,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78c8ed6081a61a44be539730e8fd081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
-  MousedOver: 0
-  GrabbedLock: 0
-  MouseLockOut: 0
-  MouseDown: 0
-  MousedOverReciever: 0
-  MousedOverOutput: 0
-  LockOnNode: 0
-  mousePos: {x: 0, y: 0}
-  TrueMousePos: {x: 0, y: 0}
-  StartPos: {x: 0, y: 0}
-  GrabSpeed: 20
-  MultiTrigger: 0
-  rb: {fileID: 0}
-  SpriteRenderer: {fileID: 0}
-  Target: {fileID: 0}
-  TargettedReciever: {fileID: 0}
-  SnapToReciever: 1
-  SnapToOutput: 0
-  AbleToLock: 1
 --- !u!50 &222431243
 Rigidbody2D:
   serializedVersion: 4
@@ -1110,7 +1089,7 @@ GameObject:
   - component: {fileID: 400463485}
   - component: {fileID: 400463484}
   - component: {fileID: 400463483}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Eastburrow1
   m_TagString: Output
   m_Icon: {fileID: 0}
@@ -1219,7 +1198,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 448b88abfd84690458dab15afae59a85, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1610,7 +1589,7 @@ GameObject:
   - component: {fileID: 710281749}
   - component: {fileID: 710281748}
   - component: {fileID: 710281747}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Chuckwood1
   m_TagString: Output
   m_Icon: {fileID: 0}
@@ -1719,7 +1698,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 448b88abfd84690458dab15afae59a85, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1778,27 +1757,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78c8ed6081a61a44be539730e8fd081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
-  MousedOver: 0
-  GrabbedLock: 0
-  MouseLockOut: 0
-  MouseDown: 0
-  MousedOverReciever: 0
-  MousedOverOutput: 0
-  LockOnNode: 0
-  mousePos: {x: 0, y: 0}
-  TrueMousePos: {x: 0, y: 0}
-  StartPos: {x: 0, y: 0}
-  GrabSpeed: 20
-  MultiTrigger: 0
-  rb: {fileID: 0}
-  SpriteRenderer: {fileID: 0}
-  Target: {fileID: 0}
-  TargettedReciever: {fileID: 0}
-  SnapToReciever: 1
-  SnapToOutput: 0
-  AbleToLock: 1
 --- !u!50 &820983364
 Rigidbody2D:
   serializedVersion: 4
@@ -2049,7 +2007,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 448b88abfd84690458dab15afae59a85, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2108,27 +2066,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78c8ed6081a61a44be539730e8fd081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
-  MousedOver: 0
-  GrabbedLock: 0
-  MouseLockOut: 0
-  MouseDown: 0
-  MousedOverReciever: 0
-  MousedOverOutput: 0
-  LockOnNode: 0
-  mousePos: {x: 0, y: 0}
-  TrueMousePos: {x: 0, y: 0}
-  StartPos: {x: 0, y: 0}
-  GrabSpeed: 20
-  MultiTrigger: 0
-  rb: {fileID: 0}
-  SpriteRenderer: {fileID: 0}
-  Target: {fileID: 0}
-  TargettedReciever: {fileID: 0}
-  SnapToReciever: 1
-  SnapToOutput: 0
-  AbleToLock: 1
 --- !u!50 &962602144
 Rigidbody2D:
   serializedVersion: 4
@@ -2289,8 +2226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fd80737cf9891c84bbf731b325fc61a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mousePos: {x: 0, y: 0, z: 0}
-  TrueMousePos: {x: 0, y: 0, z: 0}
 --- !u!61 &986484971
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2435,27 +2370,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78c8ed6081a61a44be539730e8fd081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
-  MousedOver: 0
-  GrabbedLock: 0
-  MouseLockOut: 0
-  MouseDown: 0
-  MousedOverReciever: 0
-  MousedOverOutput: 0
-  LockOnNode: 0
-  mousePos: {x: 0, y: 0}
-  TrueMousePos: {x: 0, y: 0}
-  StartPos: {x: 0, y: 0}
-  GrabSpeed: 20
-  MultiTrigger: 0
-  rb: {fileID: 0}
-  SpriteRenderer: {fileID: 0}
-  Target: {fileID: 0}
-  TargettedReciever: {fileID: 0}
-  SnapToReciever: 1
-  SnapToOutput: 0
-  AbleToLock: 1
 --- !u!50 &1055399314
 Rigidbody2D:
   serializedVersion: 4
@@ -2747,27 +2661,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78c8ed6081a61a44be539730e8fd081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
-  MousedOver: 0
-  GrabbedLock: 0
-  MouseLockOut: 0
-  MouseDown: 0
-  MousedOverReciever: 0
-  MousedOverOutput: 0
-  LockOnNode: 0
-  mousePos: {x: 0, y: 0}
-  TrueMousePos: {x: 0, y: 0}
-  StartPos: {x: 0, y: 0}
-  GrabSpeed: 20
-  MultiTrigger: 0
-  rb: {fileID: 0}
-  SpriteRenderer: {fileID: 0}
-  Target: {fileID: 0}
-  TargettedReciever: {fileID: 0}
-  SnapToReciever: 1
-  SnapToOutput: 0
-  AbleToLock: 1
 --- !u!50 &1136175021
 Rigidbody2D:
   serializedVersion: 4
@@ -3219,12 +3112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4da5f19e26f28b40890e734ed04cc25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DialogueBox: {fileID: 1286682201}
-  StartNum: 0
-  Wiretap: {fileID: 0}
-  WiretapScript: {fileID: 0}
-  Conversation: {fileID: 0}
-  DialogueTimer: 0
 --- !u!114 &1286682201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3392,12 +3279,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 68d6ad5e88d2b7448975a04e43b873ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Target: {fileID: 0}
-  OverOutput: 0
-  TargettedOutput: {fileID: 0}
-  ConnectedPoint: {fileID: 0}
-  ConnectedReciever: {fileID: 0}
-  Conversation: 
 --- !u!114 &1308828693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3410,27 +3291,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b78c8ed6081a61a44be539730e8fd081, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 0}
-  MousedOver: 0
-  GrabbedLock: 0
-  MouseLockOut: 0
-  MouseDown: 0
-  MousedOverReciever: 0
-  MousedOverOutput: 0
-  LockOnNode: 0
-  mousePos: {x: 0, y: 0}
-  TrueMousePos: {x: 0, y: 0}
-  StartPos: {x: 0, y: 0}
-  GrabSpeed: 20
-  MultiTrigger: 0
-  rb: {fileID: 0}
-  SpriteRenderer: {fileID: 0}
-  Target: {fileID: 0}
-  TargettedReciever: {fileID: 0}
-  SnapToReciever: 0
-  SnapToOutput: 1
-  AbleToLock: 1
 --- !u!50 &1308828694
 Rigidbody2D:
   serializedVersion: 4
@@ -3901,35 +3761,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f27d2d9b5782f940997cb510fcaf29f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: " Eastburrow Boss: We still on for tonight?  Whistlepig Boss: As
-    long as you hold up your end of the deal.  Eastburrow Boss: I will. Don\u2019t
-    worry.  Whistlepig Boss: Good. I\u2019ll be there with my second. No weapons.
-    I\u2019ll have someone check you at the door. I expect you\u2019ll do the same. 
-    Eastburrow Boss: Of course. I would expect nothing less.  Whistlepig Boss: I
-    hope this is a long and prosperous alliance for us both.  Eastburrow Boss: I\u2019ll
-    see you there.   "
-  PreConversation: 
-  ConversationTargets: 
-  PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 400463482}
-  TargetReciever: {fileID: 1492175551}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 3
-  LPS: 20
-  StartOffset: 0
-  PlaceInConversation: 0
-  CurrentDialog: 
-  Wiretap: {fileID: 0}
-  WiretapScript: {fileID: 0}
-  Manager: {fileID: 0}
-  ManagerScript: {fileID: 0}
-  DialogueBox: {fileID: 0}
-  DialogueBoxScript: {fileID: 0}
-  TimeWaited: 0
-  CallEnded: 0
-  CallConnected: 0
-  CallStarted: 0
-  IAMTALKING: 0
 --- !u!4 &1711430211
 Transform:
   m_ObjectHideFlags: 0
@@ -3957,7 +3788,7 @@ GameObject:
   - component: {fileID: 1855241248}
   - component: {fileID: 1855241247}
   - component: {fileID: 1855241246}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Whistlepig1
   m_TagString: Output
   m_Icon: {fileID: 0}
@@ -4066,7 +3897,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 448b88abfd84690458dab15afae59a85, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4122,36 +3953,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f27d2d9b5782f940997cb510fcaf29f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: "Smuggling Guns 1 [Thickwood \u2014> Chuckwood]:  Thickwood Agent:
-    I need you to smuggle two guns into the storage unit where the alliance meeting
-    is tonight.  Chuckwood Smuggler: Sure. I can make that happen. Aren\u2019t they
-    doing a sweep though to check for that kind of thing? I can\u2019t promise they
-    won\u2019t be found.  Thickwood Agent: Don\u2019t worry, we\u2019ve got that
-    covered.  Smuggler: Alright. I\u2019ll get going on that.  Thickwood Agent: Report
-    back to base when you\u2019re done. Call me from there.  Smuggler: I\u2019ll
-    get back to you in a couple hours. "
-  PreConversation: 
-  ConversationTargets: 
-  PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 921685621}
-  TargetReciever: {fileID: 670683100}
-  TimeOffsetHours: 12
-  TimeOffsetMinutes: 3
-  LPS: 20
-  StartOffset: 0
-  PlaceInConversation: 0
-  CurrentDialog: 
-  Wiretap: {fileID: 0}
-  WiretapScript: {fileID: 0}
-  Manager: {fileID: 0}
-  ManagerScript: {fileID: 0}
-  DialogueBox: {fileID: 0}
-  DialogueBoxScript: {fileID: 0}
-  TimeWaited: 0
-  CallEnded: 0
-  CallConnected: 0
-  CallStarted: 0
-  IAMTALKING: 0
 --- !u!4 &1947002916
 Transform:
   m_ObjectHideFlags: 0
@@ -4232,25 +4033,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdde6f3e2c5ad0e4491eab965cbabe55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ClockText: {fileID: 88162}
-  Hours: 12
-  Minutes: 0
-  AccumulatedTime: 0
-  Line1: {fileID: 0}
-  Connectpoint1a: {fileID: 921685621}
-  Connectpoint1b: {fileID: 820983362}
-  Line2: {fileID: 0}
-  Connectpoint2a: {fileID: 1855241245}
-  Connectpoint2b: {fileID: 962602142}
-  Line3: {fileID: 0}
-  Connectpoint3a: {fileID: 188834805}
-  Connectpoint3b: {fileID: 222431241}
-  Line4: {fileID: 0}
-  Connectpoint4a: {fileID: 400463482}
-  Connectpoint4b: {fileID: 1055399312}
-  Line5: {fileID: 0}
-  Connectpoint5a: {fileID: 1136175019}
-  Connectpoint5b: {fileID: 710281746}
 --- !u!4 &1995254232
 Transform:
   m_ObjectHideFlags: 0
