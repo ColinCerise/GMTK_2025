@@ -304,6 +304,7 @@ GameObject:
   - component: {fileID: 88107221}
   - component: {fileID: 88107220}
   - component: {fileID: 88107219}
+  - component: {fileID: 88107222}
   m_Layer: 0
   m_Name: ThickwoodReciever
   m_TagString: Reciever
@@ -423,6 +424,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 294092222}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &88107222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 88107218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e4399609ce56c428f19883b56ce116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Connector: {fileID: 0}
+  ConnectorScript: {fileID: 0}
+  InitialSprite: {fileID: 0}
+  ActiveSprite: {fileID: 0}
+  SpriteRenderer: {fileID: 0}
+  isActive: 0
+  IsReciever: 1
 --- !u!1 &125111711
 GameObject:
   m_ObjectHideFlags: 0
@@ -574,6 +594,7 @@ GameObject:
   - component: {fileID: 188834808}
   - component: {fileID: 188834807}
   - component: {fileID: 188834806}
+  - component: {fileID: 188834810}
   m_Layer: 0
   m_Name: Monax1
   m_TagString: Output
@@ -710,6 +731,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 125111712}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &188834810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188834805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e4399609ce56c428f19883b56ce116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Connector: {fileID: 0}
+  ConnectorScript: {fileID: 0}
+  InitialSprite: {fileID: 0}
+  ActiveSprite: {fileID: 0}
+  SpriteRenderer: {fileID: 0}
+  isActive: 0
+  IsReciever: 0
 --- !u!1 &213387944
 GameObject:
   m_ObjectHideFlags: 0
@@ -1010,7 +1050,7 @@ SpriteRenderer:
   m_Size: {x: 0.28, y: 0.39}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &222431246
@@ -1246,6 +1286,7 @@ GameObject:
   - component: {fileID: 400463485}
   - component: {fileID: 400463484}
   - component: {fileID: 400463483}
+  - component: {fileID: 400463487}
   m_Layer: 0
   m_Name: Eastburrow1
   m_TagString: Output
@@ -1382,6 +1423,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 125111712}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &400463487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400463482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e4399609ce56c428f19883b56ce116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Connector: {fileID: 0}
+  ConnectorScript: {fileID: 0}
+  InitialSprite: {fileID: 0}
+  ActiveSprite: {fileID: 0}
+  SpriteRenderer: {fileID: 0}
+  isActive: 0
+  IsReciever: 0
 --- !u!1 &420143885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1506,6 +1566,7 @@ GameObject:
   - component: {fileID: 478585655}
   - component: {fileID: 478585654}
   - component: {fileID: 478585653}
+  - component: {fileID: 478585656}
   m_Layer: 0
   m_Name: MonaxReciever
   m_TagString: Reciever
@@ -1625,6 +1686,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 294092222}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &478585656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 478585652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e4399609ce56c428f19883b56ce116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Connector: {fileID: 0}
+  ConnectorScript: {fileID: 0}
+  InitialSprite: {fileID: 0}
+  ActiveSprite: {fileID: 0}
+  SpriteRenderer: {fileID: 0}
+  isActive: 0
+  IsReciever: 1
 --- !u!1 &670683100
 GameObject:
   m_ObjectHideFlags: 0
@@ -1636,6 +1716,7 @@ GameObject:
   - component: {fileID: 670683103}
   - component: {fileID: 670683102}
   - component: {fileID: 670683101}
+  - component: {fileID: 670683104}
   m_Layer: 0
   m_Name: ChuckwoodReciever
   m_TagString: Reciever
@@ -1755,6 +1836,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 294092222}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &670683104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 670683100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e4399609ce56c428f19883b56ce116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Connector: {fileID: 0}
+  ConnectorScript: {fileID: 0}
+  InitialSprite: {fileID: 0}
+  ActiveSprite: {fileID: 0}
+  SpriteRenderer: {fileID: 0}
+  isActive: 0
+  IsReciever: 1
 --- !u!1 &710281746
 GameObject:
   m_ObjectHideFlags: 0
@@ -1767,6 +1867,7 @@ GameObject:
   - component: {fileID: 710281749}
   - component: {fileID: 710281748}
   - component: {fileID: 710281747}
+  - component: {fileID: 710281751}
   m_Layer: 0
   m_Name: Chuckwood1
   m_TagString: Output
@@ -1903,6 +2004,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 125111712}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &710281751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710281746}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e4399609ce56c428f19883b56ce116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Connector: {fileID: 0}
+  ConnectorScript: {fileID: 0}
+  InitialSprite: {fileID: 0}
+  ActiveSprite: {fileID: 0}
+  SpriteRenderer: {fileID: 0}
+  isActive: 0
+  IsReciever: 0
 --- !u!1 &820983362
 GameObject:
   m_ObjectHideFlags: 0
@@ -2067,7 +2187,7 @@ SpriteRenderer:
   m_Size: {x: 0.28, y: 0.39}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &820983367
@@ -2231,6 +2351,7 @@ GameObject:
   - component: {fileID: 921685624}
   - component: {fileID: 921685623}
   - component: {fileID: 921685622}
+  - component: {fileID: 921685626}
   m_Layer: 0
   m_Name: Thickwood1
   m_TagString: Output
@@ -2367,6 +2488,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 125111712}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &921685626
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 921685621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e4399609ce56c428f19883b56ce116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Connector: {fileID: 0}
+  ConnectorScript: {fileID: 0}
+  InitialSprite: {fileID: 0}
+  ActiveSprite: {fileID: 0}
+  SpriteRenderer: {fileID: 0}
+  isActive: 0
+  IsReciever: 0
 --- !u!1 &962602142
 GameObject:
   m_ObjectHideFlags: 0
@@ -2531,7 +2671,7 @@ SpriteRenderer:
   m_Size: {x: 0.28, y: 0.39}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &962602147
@@ -2858,7 +2998,7 @@ SpriteRenderer:
   m_Size: {x: 0.28, y: 0.39}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1055399317
@@ -2887,6 +3027,7 @@ GameObject:
   - component: {fileID: 1100449622}
   - component: {fileID: 1100449621}
   - component: {fileID: 1100449620}
+  - component: {fileID: 1100449623}
   m_Layer: 0
   m_Name: EastburrowReciever
   m_TagString: Reciever
@@ -3006,6 +3147,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 294092222}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1100449623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100449619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e4399609ce56c428f19883b56ce116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Connector: {fileID: 0}
+  ConnectorScript: {fileID: 0}
+  InitialSprite: {fileID: 0}
+  ActiveSprite: {fileID: 0}
+  SpriteRenderer: {fileID: 0}
+  isActive: 0
+  IsReciever: 1
 --- !u!1 &1136175019
 GameObject:
   m_ObjectHideFlags: 0
@@ -3170,7 +3330,7 @@ SpriteRenderer:
   m_Size: {x: 0.28, y: 0.39}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1136175024
@@ -4008,6 +4168,7 @@ GameObject:
   - component: {fileID: 1492175554}
   - component: {fileID: 1492175553}
   - component: {fileID: 1492175552}
+  - component: {fileID: 1492175555}
   m_Layer: 0
   m_Name: WhistlepigReciever
   m_TagString: Reciever
@@ -4127,6 +4288,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 294092222}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1492175555
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492175551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e4399609ce56c428f19883b56ce116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Connector: {fileID: 0}
+  ConnectorScript: {fileID: 0}
+  InitialSprite: {fileID: 0}
+  ActiveSprite: {fileID: 0}
+  SpriteRenderer: {fileID: 0}
+  isActive: 0
+  IsReciever: 1
 --- !u!1 &1608982125
 GameObject:
   m_ObjectHideFlags: 0
@@ -4317,6 +4497,7 @@ GameObject:
   - component: {fileID: 1855241248}
   - component: {fileID: 1855241247}
   - component: {fileID: 1855241246}
+  - component: {fileID: 1855241250}
   m_Layer: 0
   m_Name: Whistlepig1
   m_TagString: Output
@@ -4453,6 +4634,25 @@ Transform:
   m_Children: []
   m_Father: {fileID: 125111712}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1855241250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1855241245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e4399609ce56c428f19883b56ce116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Connector: {fileID: 0}
+  ConnectorScript: {fileID: 0}
+  InitialSprite: {fileID: 0}
+  ActiveSprite: {fileID: 0}
+  SpriteRenderer: {fileID: 0}
+  isActive: 0
+  IsReciever: 0
 --- !u!1 &1866340022
 GameObject:
   m_ObjectHideFlags: 0
