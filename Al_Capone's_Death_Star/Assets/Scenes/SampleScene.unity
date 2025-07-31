@@ -1711,6 +1711,8 @@ MonoBehaviour:
   ManagerScript: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
   CallMissed: 0
@@ -1782,6 +1784,8 @@ MonoBehaviour:
   ManagerScript: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
   CallMissed: 0
@@ -2002,6 +2006,8 @@ MonoBehaviour:
   ManagerScript: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
   CallMissed: 0
@@ -2575,6 +2581,8 @@ MonoBehaviour:
   ManagerScript: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
   CallMissed: 0
@@ -2796,6 +2804,8 @@ MonoBehaviour:
   ManagerScript: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
   CallMissed: 0
@@ -3699,6 +3709,8 @@ MonoBehaviour:
   ManagerScript: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
   CallMissed: 0
@@ -5721,6 +5733,8 @@ MonoBehaviour:
   ManagerScript: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
   CallMissed: 0
@@ -5816,6 +5830,8 @@ MonoBehaviour:
   ManagerScript: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
   CallMissed: 0
@@ -6474,6 +6490,8 @@ MonoBehaviour:
   ManagerScript: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
   TimeWaited: 0
   CallEnded: 0
   CallMissed: 0
