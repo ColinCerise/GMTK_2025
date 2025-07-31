@@ -752,7 +752,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 21300000, guid: ab63edad01f7c8849ba97dc360fb40d9, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 7f53419cf9fe601498a9ffe37d37bcc6, type: 3}
   MousedOver: 0
   GrabbedLock: 0
   MouseLockOut: 0
@@ -1105,10 +1105,12 @@ Transform:
   m_Children:
   - {fileID: 1711430211}
   - {fileID: 1947002916}
+  - {fileID: 881907531}
   - {fileID: 589408311}
   - {fileID: 833088550}
   - {fileID: 501975485}
   - {fileID: 1090900946}
+  - {fileID: 1720559578}
   - {fileID: 542213683}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2249,7 +2251,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 21300000, guid: ab63edad01f7c8849ba97dc360fb40d9, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 7f53419cf9fe601498a9ffe37d37bcc6, type: 3}
   MousedOver: 0
   GrabbedLock: 0
   MouseLockOut: 0
@@ -2600,6 +2602,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 859865472}
   m_CullTransparentMesh: 1
+--- !u!1 &881907530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 881907531}
+  - component: {fileID: 881907532}
+  m_Layer: 0
+  m_Name: Smuggling guns2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &881907531
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881907530}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 389639080}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &881907532
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 881907530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Conversation: "Thickwood Agent: I need you to smuggle two guns into the storage
+    unit where the alliance meeting is tonight.  Chuckwood Smuggler: Sure. I can
+    make that happen. Aren\u2019t they doing a sweep though to check for that kind
+    of thing? I can\u2019t promise they won\u2019t be found.  Thickwood Agent: Don\u2019t
+    worry, we\u2019ve got that covered.  Smuggler: Alright. I\u2019ll get going on
+    that.  Thickwood Agent: Report back to base when you\u2019re done. Call me from
+    there.  Smuggler: I\u2019ll get back to you in a couple hours. "
+  PreConversation: 
+  ConversationTargets: 
+  PlayerReciever: {fileID: 0}
+  StarterOutput: {fileID: 400463482}
+  TargetReciever: {fileID: 88107218}
+  TimeOffsetHours: 12
+  TimeOffsetMinutes: 10
+  LPS: 20
+  StartOffset: 0
+  PlaceInConversation: 0
+  maxLeangth: 0
+  CurrentDialog: 
+  Wiretap: {fileID: 0}
+  WiretapScript: {fileID: 0}
+  Manager: {fileID: 0}
+  ManagerScript: {fileID: 0}
+  DialogueBox: {fileID: 0}
+  DialogueBoxScript: {fileID: 0}
+  TimeWaited: 0
+  CallEnded: 0
+  CallMissed: 0
+  CallConnected: 0
+  CallStarted: 0
+  IAMTALKING: 0
+  ListenedToConvo: 0
 --- !u!1 &901030210
 GameObject:
   m_ObjectHideFlags: 0
@@ -2935,7 +3013,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 21300000, guid: ab63edad01f7c8849ba97dc360fb40d9, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 7f53419cf9fe601498a9ffe37d37bcc6, type: 3}
   MousedOver: 0
   GrabbedLock: 0
   MouseLockOut: 0
@@ -3262,7 +3340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 21300000, guid: ab63edad01f7c8849ba97dc360fb40d9, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 7f53419cf9fe601498a9ffe37d37bcc6, type: 3}
   MousedOver: 0
   GrabbedLock: 0
   MouseLockOut: 0
@@ -3713,7 +3791,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
-  ActiveSprite: {fileID: 21300000, guid: ab63edad01f7c8849ba97dc360fb40d9, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 7f53419cf9fe601498a9ffe37d37bcc6, type: 3}
   MousedOver: 0
   GrabbedLock: 0
   MouseLockOut: 0
@@ -5128,7 +5206,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 3d0e87cf88d8d084e9f3807054cb6527, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 912a0714f6bacb04c936dcb5c99c660d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5526,6 +5604,85 @@ Transform:
   m_Children: []
   m_Father: {fileID: 389639080}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1720559577
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1720559578}
+  - component: {fileID: 1720559579}
+  m_Layer: 0
+  m_Name: Inside1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1720559578
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720559577}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 389639080}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1720559579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1720559577}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Conversation: "Monax Agent: I have more information for you.  Inside Agent: I\u2019m
+    ready.  Monax Agent: A getaway driver will be waiting outside the building in
+    a blue car with an eagle-shaped hood ornament. Be there by ten past midnight
+    or you\u2019ll be left behind.  Inside Agent: Alright. You got any other information
+    for me?  Monax Agent: You\u2019re sure that the Eastburrow Boss trusts you? 
+    Inside Agent: Of course. I\u2019ve been deep undercover for months. I\u2019m
+    about to check the room for hidden weapons. I\u2019ll help your agent ensure
+    the guns are well-concealed.  Monax Agent: Perfect. They\u2019re stored in the
+    containers by the garage door.  Inside Agent: I\u2019ll make sure they remain
+    hidden. You won\u2019t be getting any problems from me. "
+  PreConversation: 
+  ConversationTargets: 
+  PlayerReciever: {fileID: 0}
+  StarterOutput: {fileID: 188834805}
+  TargetReciever: {fileID: 1492175551}
+  TimeOffsetHours: 17
+  TimeOffsetMinutes: 0
+  LPS: 20
+  StartOffset: 0
+  PlaceInConversation: 0
+  maxLeangth: 0
+  CurrentDialog: 
+  Wiretap: {fileID: 0}
+  WiretapScript: {fileID: 0}
+  Manager: {fileID: 0}
+  ManagerScript: {fileID: 0}
+  DialogueBox: {fileID: 0}
+  DialogueBoxScript: {fileID: 0}
+  TimeWaited: 0
+  CallEnded: 0
+  CallMissed: 0
+  CallConnected: 0
+  CallStarted: 0
+  IAMTALKING: 0
+  ListenedToConvo: 0
 --- !u!1 &1735138189
 GameObject:
   m_ObjectHideFlags: 0
