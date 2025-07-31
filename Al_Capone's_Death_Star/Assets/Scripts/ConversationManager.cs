@@ -6,6 +6,7 @@ using UnityEngine;
 //using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 using TMPro;
+using System.IO;
 
 public class ConversationManager : MonoBehaviour
 {
@@ -37,7 +38,11 @@ public class ConversationManager : MonoBehaviour
     public bool IAMTALKING = false;
     public bool ListenedToConvo;
     GameObject ConnectedPoint;
-    GameObject ConnectedReciever; 
+    GameObject ConnectedReciever;
+
+    // Variables for parsing dialogue
+    [SerializeField] string encounterName;
+
     // Start is called before the first frame
     void Start()
     {
@@ -49,6 +54,30 @@ public class ConversationManager : MonoBehaviour
         ManagerScript = Manager.GetComponent<LinesAndText>();
         DialogueBoxScript = DialogueBox.GetComponent<DialogueManager>();
         ConversationTargets = StarterOutput.name + " + " + TargetReciever.name;
+
+        //ParseDialogue();
+    }
+
+    private void ParseDialogue()
+    {
+        List<string> speakerList = new List<string>();
+        List<string> dialogueList = new List<string>();
+        string filepath = Application.dataPath + "\\" + encounterName + ".txt";
+
+        if (File.Exists(filepath))
+        {
+            using StreamReader sr = new StreamReader(filepath);
+            {
+                string line;
+                
+                while ((line = sr.ReadLine()) != null)
+                {
+                    line.Trim();
+                    speakerList.Add(line.Substring(0, line.IndexOf(": ")));
+                    dialogueList.Add(line.Substring(line.IndexOf(": ") + 1));
+                }
+            }
+        }
     }
 
     // Update is called once per
@@ -65,6 +94,7 @@ public class ConversationManager : MonoBehaviour
                 CallStarted = true;
                 CallConnected = true;
             }
+
             if (CallStarted && StartOffset == 0)
             {
                 StartOffset = TimeWaited;
