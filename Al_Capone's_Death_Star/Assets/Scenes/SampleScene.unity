@@ -772,7 +772,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 222431241}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b78c8ed6081a61a44be539730e8fd081, type: 3}
+  m_Script: {fileID: 11500000, guid: 4faefb260d7e0b140a0ee29d4108dc10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
@@ -1775,7 +1775,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 820983362}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b78c8ed6081a61a44be539730e8fd081, type: 3}
+  m_Script: {fileID: 11500000, guid: 4faefb260d7e0b140a0ee29d4108dc10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
@@ -2105,7 +2105,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 962602142}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b78c8ed6081a61a44be539730e8fd081, type: 3}
+  m_Script: {fileID: 11500000, guid: 4faefb260d7e0b140a0ee29d4108dc10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
@@ -2286,7 +2286,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 986484969}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fd80737cf9891c84bbf731b325fc61a5, type: 3}
+  m_Script: {fileID: 11500000, guid: b3ab0d3e4f455d146b34b2a1236f2a0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   mousePos: {x: 0, y: 0, z: 0}
@@ -2432,7 +2432,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1055399312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b78c8ed6081a61a44be539730e8fd081, type: 3}
+  m_Script: {fileID: 11500000, guid: 4faefb260d7e0b140a0ee29d4108dc10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
@@ -2744,7 +2744,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1136175019}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b78c8ed6081a61a44be539730e8fd081, type: 3}
+  m_Script: {fileID: 11500000, guid: 4faefb260d7e0b140a0ee29d4108dc10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
@@ -3216,7 +3216,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1286682197}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e4da5f19e26f28b40890e734ed04cc25, type: 3}
+  m_Script: {fileID: 11500000, guid: ced66636d01c52c4e9d0fee0de8ce5aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueBox: {fileID: 1286682201}
@@ -3389,7 +3389,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1308828691}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68d6ad5e88d2b7448975a04e43b873ae, type: 3}
+  m_Script: {fileID: 11500000, guid: 6c42fab8e07d33349a4b47739295c7ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Target: {fileID: 0}
@@ -3407,7 +3407,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1308828691}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b78c8ed6081a61a44be539730e8fd081, type: 3}
+  m_Script: {fileID: 11500000, guid: 4faefb260d7e0b140a0ee29d4108dc10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   InitialSprite: {fileID: 0}
@@ -3898,7 +3898,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1711430209}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f27d2d9b5782f940997cb510fcaf29f, type: 3}
+  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Conversation: "Eastburrow Boss: We still on for tonight?  Whistlepig Boss: As long
@@ -4119,7 +4119,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1947002914}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f27d2d9b5782f940997cb510fcaf29f, type: 3}
+  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Conversation: "Thickwood Agent: I need you to smuggle two guns into the storage
@@ -4228,7 +4228,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1995254230}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdde6f3e2c5ad0e4491eab965cbabe55, type: 3}
+  m_Script: {fileID: 11500000, guid: c9f85b17f21a7f34ab3270237dbde35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   ClockText: {fileID: 88162}
