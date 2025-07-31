@@ -54,7 +54,7 @@ public class Grabbable : MonoBehaviour
         if (!GrabbedLock)
         {
             SpriteRenderer.sprite = InitialSprite;
-            if (MultiTrigger == 1)
+            if (MultiTrigger == 1 || MultiTrigger == 0)
             {
                 rb.velocity = Vector2.zero;
                 if (SnapToReciever)

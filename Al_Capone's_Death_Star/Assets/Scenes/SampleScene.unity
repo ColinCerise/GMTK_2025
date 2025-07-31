@@ -391,7 +391,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Escape2
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -1203,7 +1203,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Car2
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -2003,7 +2003,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Bribe2
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -2079,7 +2079,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Mundane3
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -2304,7 +2304,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Smuggling3
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -2380,7 +2380,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Mundane1
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -3050,7 +3050,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Bribe1
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -3276,7 +3276,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Smuggling2
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -3936,7 +3936,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Mundane2
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -4348,7 +4348,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Inside2
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -5188,7 +5188,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Cthulu
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -5889,7 +5889,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Car1
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -6573,7 +6573,7 @@ GameObject:
   - component: {fileID: 1711430211}
   - component: {fileID: 1711430210}
   m_Layer: 0
-  m_Name: StillOn
+  m_Name: WeStillOn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6625,7 +6625,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: WeStillOn
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -6725,7 +6725,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Inside1
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -7428,7 +7428,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Smuggling1
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -8009,7 +8009,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: 
+  encounterName: Escape1
   speakerList: []
   dialogueList: []
   lineIndex: 0
