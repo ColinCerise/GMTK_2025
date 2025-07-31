@@ -28,6 +28,7 @@ public class DialogueManager : MonoBehaviour
         if (Conversation != null && Conversation.GetComponent<ConversationManager>().CurrentDialog != null)
         {
             DialogueBox.text = Conversation.GetComponent<ConversationManager>().CurrentDialog;
+            Debug.Log(Conversation.GetComponent<ConversationManager>().CurrentDialog);
             DialogueTimer = 0;
         }
         else
