@@ -122,6 +122,7 @@ public class GameManager : MonoBehaviour
             else
             {
                 BounceConnectors = false;
+                Loss = false;
                 AngerBar.Anger = 0;
             }
         }

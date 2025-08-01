@@ -119,6 +119,7 @@ public class BossManager : MonoBehaviour
         }
         else
         {
+            Debug.Log("Failed the fianl");
             //Failed = true;
             A.SetActive(false);
             B.SetActive(false);
