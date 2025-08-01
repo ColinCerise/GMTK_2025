@@ -603,7 +603,7 @@ MonoBehaviour:
   TargetReciever: {fileID: 88107218}
   TimeOffsetHours: 19
   TimeOffsetMinutes: 0
-  LPS: 20
+  LPS: 14
   StartOffset: 0
   PlaceInConversation: 0
   maxLeangth: 0
@@ -1595,7 +1595,7 @@ MonoBehaviour:
   TargetReciever: {fileID: 670683100}
   TimeOffsetHours: 18
   TimeOffsetMinutes: 0
-  LPS: 20
+  LPS: 14
   StartOffset: 0
   PlaceInConversation: 0
   maxLeangth: 0
@@ -2701,7 +2701,7 @@ MonoBehaviour:
   TargetReciever: {fileID: 478585652}
   TimeOffsetHours: 17
   TimeOffsetMinutes: 0
-  LPS: 20
+  LPS: 14
   StartOffset: 0
   PlaceInConversation: 0
   maxLeangth: 0
@@ -2778,7 +2778,7 @@ MonoBehaviour:
   TargetReciever: {fileID: 670683100}
   TimeOffsetHours: 20
   TimeOffsetMinutes: 0
-  LPS: 20
+  LPS: 14
   StartOffset: 0
   PlaceInConversation: 0
   maxLeangth: 0
@@ -3000,7 +3000,7 @@ MonoBehaviour:
   TargetReciever: {fileID: 1100449619}
   TimeOffsetHours: 21
   TimeOffsetMinutes: 0
-  LPS: 20
+  LPS: 14
   StartOffset: 0
   PlaceInConversation: 0
   maxLeangth: 0
@@ -3077,7 +3077,7 @@ MonoBehaviour:
   TargetReciever: {fileID: 88107218}
   TimeOffsetHours: 13
   TimeOffsetMinutes: 0
-  LPS: 20
+  LPS: 14
   StartOffset: 0
   PlaceInConversation: 0
   maxLeangth: 0
@@ -4239,7 +4239,7 @@ MonoBehaviour:
   TargetReciever: {fileID: 670683100}
   TimeOffsetHours: 16
   TimeOffsetMinutes: 0
-  LPS: 20
+  LPS: 14
   StartOffset: 0
   PlaceInConversation: 0
   maxLeangth: 0
@@ -4460,7 +4460,7 @@ MonoBehaviour:
   TargetReciever: {fileID: 88107218}
   TimeOffsetHours: 16
   TimeOffsetMinutes: 0
-  LPS: 20
+  LPS: 14
   StartOffset: 0
   PlaceInConversation: 0
   maxLeangth: 0
@@ -5122,7 +5122,7 @@ MonoBehaviour:
   TargetReciever: {fileID: 1100449619}
   TimeOffsetHours: 19
   TimeOffsetMinutes: 0
-  LPS: 20
+  LPS: 14
   StartOffset: 0
   PlaceInConversation: 0
   maxLeangth: 0
@@ -5707,7 +5707,7 @@ MonoBehaviour:
   TargetReciever: {fileID: 1492175551}
   TimeOffsetHours: 20
   TimeOffsetMinutes: 0
-  LPS: 20
+  LPS: 14
   StartOffset: 0
   PlaceInConversation: 0
   maxLeangth: 0
@@ -6547,7 +6547,7 @@ MonoBehaviour:
   TargetReciever: {fileID: 2013851218}
   TimeOffsetHours: 12
   TimeOffsetMinutes: 0
-  LPS: 20
+  LPS: 14
   StartOffset: 0
   PlaceInConversation: 0
   maxLeangth: 0
@@ -7281,7 +7281,7 @@ MonoBehaviour:
   TargetReciever: {fileID: 1100449619}
   TimeOffsetHours: 14
   TimeOffsetMinutes: 0
-  LPS: 20
+  LPS: 14
   StartOffset: 0
   PlaceInConversation: 0
   maxLeangth: 0
@@ -8184,7 +8184,7 @@ MonoBehaviour:
   TargetReciever: {fileID: 1492175551}
   TimeOffsetHours: 13
   TimeOffsetMinutes: 0
-  LPS: 20
+  LPS: 14
   StartOffset: 0
   PlaceInConversation: 0
   maxLeangth: 0
@@ -8276,7 +8276,7 @@ MonoBehaviour:
   TargetReciever: {fileID: 1492175551}
   TimeOffsetHours: 17
   TimeOffsetMinutes: 0
-  LPS: 20
+  LPS: 14
   StartOffset: 0
   PlaceInConversation: 0
   maxLeangth: 0
@@ -9006,7 +9006,7 @@ MonoBehaviour:
   TargetReciever: {fileID: 670683100}
   TimeOffsetHours: 14
   TimeOffsetMinutes: 0
-  LPS: 20
+  LPS: 14
   StartOffset: 0
   PlaceInConversation: 0
   maxLeangth: 0
@@ -9223,6 +9223,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 95573fdb0b50df64f85aa104851be123, type: 3}
   - {fileID: 21300000, guid: 24dbbee5970fe3c4797bed23a15683c2, type: 3}
   - {fileID: 21300000, guid: 4812fab36308910459f0777addb911fa, type: 3}
+  TimeIncrements: 0.75
 --- !u!4 &1995254232
 Transform:
   m_ObjectHideFlags: 0
@@ -9700,7 +9701,7 @@ MonoBehaviour:
   TargetReciever: {fileID: 478585652}
   TimeOffsetHours: 15
   TimeOffsetMinutes: 0
-  LPS: 20
+  LPS: 14
   StartOffset: 0
   PlaceInConversation: 0
   maxLeangth: 0
