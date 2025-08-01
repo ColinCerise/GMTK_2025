@@ -8,6 +8,7 @@ TagManager:
   - Reciever
   - Conversation
   - Found
+  - Connector
   layers:
   - Default
   - TransparentFX

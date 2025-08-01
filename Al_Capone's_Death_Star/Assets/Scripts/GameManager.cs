@@ -46,11 +46,10 @@ public class GameManager : MonoBehaviour
     }
     public void Loop()
     {
-        FoundAll = false;
-        DontBrickMe = 0;
         if (Victory)
         {
             //Victory Cutscene IDK?
+            TrueLoop();
         }
         if (Loss)
         {
@@ -59,6 +58,12 @@ public class GameManager : MonoBehaviour
                 fading = true;
             }
         }
+    }
+    public void TrueLoop()
+    {
+        FoundAll = false;
+        bool BounceConnectors = false;
+        DontBrickMe = 0;
         while (!FoundAll && DontBrickMe < 100)
         {
             DontBrickMe++;
@@ -67,7 +72,6 @@ public class GameManager : MonoBehaviour
             {
                 Conversations.tag = "Found";
                 Conversations.GetComponent<ConversationManager>().Revolve();
-                //FoundAll = true;
             }
             else
             {
@@ -83,13 +87,37 @@ public class GameManager : MonoBehaviour
             if (Conversations != null)
             {
                 Conversations.tag = "Conversation";
-                //Conversations.GetComponent<ConversationManager>().Revolve();
             }
             else
             {
-                //GameObject LineManager = GameObject.Find("Manager");
-                //LineManager.GetComponent<LinesAndText>().WorldRevolves();
                 FoundAll = false;
+            }
+        }
+        while (!BounceConnectors && DontBrickMe < 100)
+        {
+            DontBrickMe++;
+            Conversations = GameObject.FindWithTag("Connector");
+            if (Conversations != null)
+            {
+                Conversations.tag = "Found";
+                Conversations.GetComponent<Grabbable>().Bounce();
+            }
+            else
+            {
+                BounceConnectors = true;
+            }
+        }
+        while (BounceConnectors && DontBrickMe < 100)
+        {
+            DontBrickMe++;
+            Conversations = GameObject.FindWithTag("Found");
+            if (Conversations != null)
+            {
+                Conversations.tag = "Connector";
+            }
+            else
+            {
+                BounceConnectors = false;
             }
         }
     }
@@ -141,6 +169,7 @@ public class GameManager : MonoBehaviour
                     FadeTime = 1;
                     FadedIn = true;
                     Pausewall = false;
+                    TrueLoop();
                 }
             }
         }

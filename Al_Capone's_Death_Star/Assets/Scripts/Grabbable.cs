@@ -190,4 +190,11 @@ public class Grabbable : MonoBehaviour
         TrueMousePos = Camera.main.ScreenToWorldPoint(new Vector3(mousePos.x, mousePos.y, 0));
         rb.velocity = new Vector2(TrueMousePos.x - transform.position.x, TrueMousePos.y - transform.position.y) * GrabSpeed;
     }
+    public void Bounce()
+    {
+        transform.position = StartPos;
+        MousedOverReciever = false;
+        MousedOverOutput = false;
+        LockOnNode = false;
+    }
 }

@@ -297,7 +297,7 @@ Transform:
   m_GameObject: {fileID: 88107218}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4, y: -0.30999994, z: 0}
+  m_LocalPosition: {x: -4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -444,9 +444,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.26981127, g: 1, b: 0.39397544, a: 1}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: e3b7f1154768b8f46bef808448673277, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -465,7 +465,7 @@ Transform:
   m_GameObject: {fileID: 146130019}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.5451593, y: -0.3927272, z: 0}
+  m_LocalPosition: {x: -5.32, y: -4.09, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -534,7 +534,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 8.766666, y: 0.8}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -587,7 +587,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PreConversation: Operator,
+  Conversation: "Eastburrow Boss: We still on for tonight?  Whistlepig Boss: As long
+    as you hold up your end of the deal.  Eastburrow Boss: I will. Don\u2019t worry. 
+    Whistlepig Boss: Good. I\u2019ll be there with my second. No weapons. I\u2019ll
+    have someone check you at the door. I expect you\u2019ll do the same.  Eastburrow
+    Boss: Of course. I would expect nothing less.  Whistlepig Boss: I hope this is
+    a long and prosperous alliance for us both.  Eastburrow Boss: I\u2019ll see you
+    there. "
+  PreConversation: Operator, Thickwood
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 1855241245}
@@ -619,6 +626,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  currentLineIndex: 0
   dialogueIndices: 
 --- !u!1 &186428237
 GameObject:
@@ -980,9 +988,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.27058828, g: 0.44736895, b: 1, a: 1}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: e3b7f1154768b8f46bef808448673277, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1001,7 +1009,7 @@ Transform:
   m_GameObject: {fileID: 207378739}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5451593, y: -1.95, z: 0}
+  m_LocalPosition: {x: -5.35, y: -5.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1070,7 +1078,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 8.766666, y: 0.8}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1230,7 +1238,7 @@ GameObject:
   - component: {fileID: 222431242}
   m_Layer: 0
   m_Name: Monax2
-  m_TagString: Untagged
+  m_TagString: Connector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1577,7 +1585,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PreConversation: Operator,
+  Conversation: "Thickwood Agent: We have the guns planted in the warehouse.  Gunman:
+    Where can we find them?  Thickwood Agent: They\u2019re sitting by the garage
+    door where you\u2019ll enter, hidden in some boxes.  Gunman: How are we supposed
+    to find which boxes these things are in?  Thickwood Agent: They\u2019re unarmed.
+    They won\u2019t put up much of a fight. Just get it done.  Gunman: Understood. "
+  PreConversation: Operator, Chuckwood
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 400463482}
@@ -1609,6 +1622,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  currentLineIndex: 0
   dialogueIndices: 
 --- !u!1 &294092221
 GameObject:
@@ -1647,6 +1661,142 @@ Transform:
   - {fileID: 670683103}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &359982442
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 359982443}
+  - component: {fileID: 359982444}
+  m_Layer: 0
+  m_Name: Line6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &359982443
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359982442}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1979339801}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!120 &359982444
+LineRenderer:
+  serializedVersion: 2
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 359982442}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 0
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: dcf2d532e55c03246be3ecb985c39f2c, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 3
+  m_Positions:
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 1}
+  m_Parameters:
+    serializedVersion: 3
+    widthMultiplier: 1
+    widthCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 0.33210945
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    colorGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 0, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 0
+      ctime1: 65535
+      ctime2: 0
+      ctime3: 0
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 0
+      m_ColorSpace: -1
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    numCornerVertices: 0
+    numCapVertices: 0
+    alignment: 0
+    textureMode: 0
+    textureScale: {x: 1, y: 1}
+    shadowBias: 0.5
+    generateLightingData: 0
+  m_MaskInteraction: 0
+  m_UseWorldSpace: 1
+  m_Loop: 0
+  m_ApplyActiveColorSpace: 1
 --- !u!1 &389639079
 GameObject:
   m_ObjectHideFlags: 0
@@ -1932,7 +2082,7 @@ Camera:
   far clip plane: 1
   field of view: 60
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 6.4
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2217,7 +2367,7 @@ Transform:
   m_GameObject: {fileID: 478585652}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.30999994, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2376,7 +2526,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PreConversation: Operator,
+  Conversation: "Thickwood Agent: We have the guns planted in the warehouse.  Gunman:
+    Where can we find them?  Thickwood Agent: They\u2019re sitting by the garage
+    door where you\u2019ll enter, hidden in some boxes.  Gunman: How are we supposed
+    to find which boxes these things are in?  Thickwood Agent: They\u2019re unarmed.
+    They won\u2019t put up much of a fight. Just get it done.  Gunman: Understood. "
+  PreConversation: Operator, The Monax
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 710281746}
@@ -2408,6 +2563,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  currentLineIndex: 0
   dialogueIndices: 
 --- !u!1 &542213682
 GameObject:
@@ -2453,7 +2609,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PreConversation: Operator,
+  Conversation: 
+  PreConversation: Operator, Chuckwood
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 400463482}
@@ -2485,6 +2642,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  currentLineIndex: 0
   dialogueIndices: 
 --- !u!1 &576518151
 GameObject:
@@ -2675,7 +2833,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PreConversation: Operator,
+  Conversation: "Thickwood Agent: We have the guns planted in the warehouse.  Gunman:
+    Where can we find them?  Thickwood Agent: They\u2019re sitting by the garage
+    door where you\u2019ll enter, hidden in some boxes.  Gunman: How are we supposed
+    to find which boxes these things are in?  Thickwood Agent: They\u2019re unarmed.
+    They won\u2019t put up much of a fight. Just get it done.  Gunman: Understood. "
+  PreConversation: Operator, Eastburrow
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 921685621}
@@ -2707,6 +2870,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  currentLineIndex: 0
   dialogueIndices: 
 --- !u!1 &619343975
 GameObject:
@@ -2752,7 +2916,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PreConversation: Operator,
+  Conversation: 
+  PreConversation: Operator, Thickwood
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 188834805}
@@ -2784,6 +2949,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  currentLineIndex: 0
   dialogueIndices: 
 --- !u!1 &670683100
 GameObject:
@@ -2910,7 +3076,7 @@ Transform:
   m_GameObject: {fileID: 670683100}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: -0.30999994, z: 0}
+  m_LocalPosition: {x: 4, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3195,9 +3361,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.27058828, b: 0.32636422, a: 1}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: e3b7f1154768b8f46bef808448673277, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -3216,7 +3382,7 @@ Transform:
   m_GameObject: {fileID: 724842948}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.07, y: -0.3927272, z: 0}
+  m_LocalPosition: {x: 4.07, y: -4.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3285,7 +3451,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 8.766666, y: 0.8}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -3528,7 +3694,7 @@ GameObject:
   - component: {fileID: 820983363}
   m_Layer: 0
   m_Name: Thickwood2
-  m_TagString: Untagged
+  m_TagString: Connector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3739,7 +3905,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PreConversation: Operator,
+  Conversation: 
+  PreConversation: Operator, Chuckwood
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 921685621}
@@ -3771,6 +3938,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  currentLineIndex: 0
   dialogueIndices: 
 --- !u!1 &859865472
 GameObject:
@@ -3805,9 +3973,9 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 186428241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -265, y: 143}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -30, y: -30}
   m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &859865474
@@ -3960,7 +4128,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PreConversation: Operator,
+  Conversation: "Thickwood Agent: I need you to smuggle two guns into the storage
+    unit where the alliance meeting is tonight.  Chuckwood Smuggler: Sure. I can
+    make that happen. Aren\u2019t they doing a sweep though to check for that kind
+    of thing? I can\u2019t promise they won\u2019t be found.  Thickwood Agent: Don\u2019t
+    worry, we\u2019ve got that covered.  Smuggler: Alright. I\u2019ll get going on
+    that.  Thickwood Agent: Report back to base when you\u2019re done. Call me from
+    there.  Smuggler: I\u2019ll get back to you in a couple hours. "
+  PreConversation: Operator, Thickwood
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 400463482}
@@ -3992,6 +4167,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  currentLineIndex: 0
   dialogueIndices: 
 --- !u!1 &901030210
 GameObject:
@@ -4411,7 +4587,7 @@ GameObject:
   - component: {fileID: 962602143}
   m_Layer: 0
   m_Name: Whistlepig2
-  m_TagString: Untagged
+  m_TagString: Connector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4622,7 +4798,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PreConversation: Operator,
+  Conversation: 
+  PreConversation: Operator, Eastburrow
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 921685621}
@@ -4654,6 +4831,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  currentLineIndex: 0
   dialogueIndices: 
 --- !u!1 &986484969
 GameObject:
@@ -4880,9 +5058,9 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0.9629481, g: 1, b: 0.27058828, a: 1}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: e3b7f1154768b8f46bef808448673277, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4901,7 +5079,7 @@ Transform:
   m_GameObject: {fileID: 1040641799}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.07, y: -1.95, z: 0}
+  m_LocalPosition: {x: 4.33, y: -5.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4970,7 +5148,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 8.766666, y: 0.8}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -4994,7 +5172,7 @@ GameObject:
   - component: {fileID: 1055399313}
   m_Layer: 0
   m_Name: Eastburrow2
-  m_TagString: Untagged
+  m_TagString: Connector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5205,7 +5383,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PreConversation: Operator,
+  Conversation: "Monax Agent: I have more information for you.  Inside Agent: I\u2019m
+    ready.  Monax Agent: A getaway driver will be waiting outside the building in
+    a blue car with an eagle-shaped hood ornament. Be there by ten past midnight
+    or you\u2019ll be left behind.  Inside Agent: Alright. You got any other information
+    for me?  Monax Agent: You\u2019re sure that the Eastburrow Boss trusts you? 
+    Inside Agent: Of course. I\u2019ve been deep undercover for months. I\u2019m
+    about to check the room for hidden weapons. I\u2019ll help your agent ensure
+    the guns are well-concealed.  Monax Agent: Perfect. They\u2019re stored in the
+    containers by the garage door.  Inside Agent: I\u2019ll make sure they remain
+    hidden. You won\u2019t be getting any problems from me. "
+  PreConversation: Operator, Whistlepig
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 188834805}
@@ -5237,6 +5425,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  currentLineIndex: 0
   dialogueIndices: 
 --- !u!1 &1097691633
 GameObject:
@@ -5402,7 +5591,7 @@ Transform:
   m_GameObject: {fileID: 1100449619}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: -0.30999994, z: 0}
+  m_LocalPosition: {x: 2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5448,7 +5637,7 @@ GameObject:
   - component: {fileID: 1136175020}
   m_Layer: 0
   m_Name: Chuckwood2
-  m_TagString: Untagged
+  m_TagString: Connector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6077,6 +6266,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  currentLineIndex: 0
   dialogueIndices: 
 --- !u!1 &1286682197
 GameObject:
@@ -6149,7 +6339,7 @@ GameObject:
   - component: {fileID: 1308828692}
   m_Layer: 0
   m_Name: Wiretap
-  m_TagString: Untagged
+  m_TagString: Connector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6338,7 +6528,7 @@ Transform:
   m_GameObject: {fileID: 1308828691}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.85, y: -1.56, z: 0}
+  m_LocalPosition: {x: 6.5, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6608,7 +6798,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PreConversation: Operator,
+  Conversation: "Thickwood Agent: We have the guns planted in the warehouse.  Gunman:
+    Where can we find them?  Thickwood Agent: They\u2019re sitting by the garage
+    door where you\u2019ll enter, hidden in some boxes.  Gunman: How are we supposed
+    to find which boxes these things are in?  Thickwood Agent: They\u2019re unarmed.
+    They won\u2019t put up much of a fight. Just get it done.  Gunman: Understood. "
+  PreConversation: Operator, Eastburrow
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 710281746}
@@ -6640,6 +6835,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  currentLineIndex: 0
   dialogueIndices: 
 --- !u!1 &1492175551
 GameObject:
@@ -6766,7 +6962,7 @@ Transform:
   m_GameObject: {fileID: 1492175551}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: -0.30999994, z: 0}
+  m_LocalPosition: {x: -2, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7372,6 +7568,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  currentLineIndex: 0
   dialogueIndices: 
 --- !u!4 &1711430211
 Transform:
@@ -7432,7 +7629,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PreConversation: Operator,
+  Conversation: "Monax Agent: I have more information for you.  Inside Agent: I\u2019m
+    ready.  Monax Agent: A getaway driver will be waiting outside the building in
+    a blue car with an eagle-shaped hood ornament. Be there by ten past midnight
+    or you\u2019ll be left behind.  Inside Agent: Alright. You got any other information
+    for me?  Monax Agent: You\u2019re sure that the Eastburrow Boss trusts you? 
+    Inside Agent: Of course. I\u2019ve been deep undercover for months. I\u2019m
+    about to check the room for hidden weapons. I\u2019ll help your agent ensure
+    the guns are well-concealed.  Monax Agent: Perfect. They\u2019re stored in the
+    containers by the garage door.  Inside Agent: I\u2019ll make sure they remain
+    hidden. You won\u2019t be getting any problems from me. "
+  PreConversation: Operator, Whistlepig
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 188834805}
@@ -7464,6 +7671,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  currentLineIndex: 0
   dialogueIndices: 
 --- !u!1 &1735138189
 GameObject:
@@ -8131,7 +8339,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PreConversation: Operator,
+  Conversation: "Thickwood Agent: I need you to smuggle two guns into the storage
+    unit where the alliance meeting is tonight.  Chuckwood Smuggler: Sure. I can
+    make that happen. Aren\u2019t they doing a sweep though to check for that kind
+    of thing? I can\u2019t promise they won\u2019t be found.  Thickwood Agent: Don\u2019t
+    worry, we\u2019ve got that covered.  Smuggler: Alright. I\u2019ll get going on
+    that.  Thickwood Agent: Report back to base when you\u2019re done. Call me from
+    there.  Smuggler: I\u2019ll get back to you in a couple hours. "
+  PreConversation: Operator, Chuckwood
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 921685621}
@@ -8163,6 +8378,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  currentLineIndex: 0
   dialogueIndices: 
 --- !u!4 &1947002916
 Transform:
@@ -8288,6 +8504,7 @@ Transform:
   - {fileID: 213387946}
   - {fileID: 1168931195}
   - {fileID: 244537572}
+  - {fileID: 359982443}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1995254230
@@ -8614,7 +8831,7 @@ Transform:
   m_GameObject: {fileID: 2013851218}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8, y: 0.16, z: 0}
+  m_LocalPosition: {x: 6.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8821,7 +9038,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PreConversation: Operator,
+  Conversation: "Eastburrow Boss: We still on for tonight?  Whistlepig Boss: As long
+    as you hold up your end of the deal.  Eastburrow Boss: I will. Don\u2019t worry. 
+    Whistlepig Boss: Good. I\u2019ll be there with my second. No weapons. I\u2019ll
+    have someone check you at the door. I expect you\u2019ll do the same.  Eastburrow
+    Boss: Of course. I would expect nothing less.  Whistlepig Boss: I hope this is
+    a long and prosperous alliance for us both.  Eastburrow Boss: I\u2019ll see you
+    there. "
+  PreConversation: Operator, The Monax
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 1855241245}
@@ -8853,6 +9077,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  currentLineIndex: 0
   dialogueIndices: 
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
