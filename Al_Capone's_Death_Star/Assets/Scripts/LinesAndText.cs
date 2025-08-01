@@ -35,6 +35,7 @@ public class LinesAndText : MonoBehaviour
     [SerializeField] GameObject clockDisplay;
     [SerializeField] Sprite[] clockSprites;
     private Image[] clockDigits;
+    public float TimeIncrements = .5f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -69,9 +70,9 @@ public class LinesAndText : MonoBehaviour
         ClockDisplay(Hours, Minutes);
         if (AccumulatedTime >= .5)
         {
-            for (float i = AccumulatedTime; i > .5f; i -= .5f)
+            for (float i = AccumulatedTime; i > TimeIncrements; i -= TimeIncrements)
             {
-                AccumulatedTime -= .5f;
+                AccumulatedTime -= TimeIncrements;
                 Minutes++;
                 if (Minutes > 59)
                 {
