@@ -289,5 +289,6 @@ public class ConversationManager : MonoBehaviour
         TheCthuluException = HeldCthulu;
         PlaceInConversation = 0;
         TimeWaited = 0;
+        StarterOutput.GetComponent<OutputJack>().SetLightActive(false, null);
     }
 }
