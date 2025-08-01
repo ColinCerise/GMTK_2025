@@ -76,7 +76,7 @@ public class LinesAndText : MonoBehaviour
         }
         if (Hours >= 22)
         {
-            GameObject BossMan = GameObject.Find("FinalBossManager");
+            GameObject BossMan = GameObject.Find("BossManager");
             BossManager BossScript = BossMan.GetComponent<BossManager>();
             if (BossScript.Stage == 0)
             {
@@ -84,12 +84,20 @@ public class LinesAndText : MonoBehaviour
             }
         }
     }
-
     private void ClockDisplay(int hours, int minutes)
     {
         clockDigits[0].sprite = clockSprites[hours / 10];
         clockDigits[1].sprite = clockSprites[hours % 10];
         clockDigits[2].sprite = clockSprites[minutes / 10];
         clockDigits[3].sprite = clockSprites[minutes % 10];
+    }
+    public void WorldRevolves()
+    {
+        Hours = 12;
+        Minutes = 0;
+        AccumulatedTime = 0;
+        GameObject BossMan = GameObject.Find("BossManager");
+        BossManager BossScript = BossMan.GetComponent<BossManager>();
+        BossScript.Stage = 0;
     }
 }
