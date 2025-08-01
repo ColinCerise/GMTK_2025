@@ -299,13 +299,8 @@ public class ConversationManager : MonoBehaviour
 
     public string NextLine()
     {
-        string result = "";
-        if (currentLineIndex > 0)
-        {
-            result += "\n\n";
-        }
         currentLineIndex++;
-        return result + speakerList[currentLineIndex - 1] + "\n";
+        return speakerList[currentLineIndex - 1] + "\n";
     }
 
     public string GetConversation()
