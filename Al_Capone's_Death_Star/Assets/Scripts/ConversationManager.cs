@@ -106,7 +106,7 @@ public class ConversationManager : MonoBehaviour
         string convo = "";
         foreach (string str in dialogueList)
         {
-            convo += str;
+            convo += str + "\n";
         }
         Conversation = convo;
     }
