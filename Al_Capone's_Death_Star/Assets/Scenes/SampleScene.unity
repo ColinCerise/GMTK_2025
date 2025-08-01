@@ -387,6 +387,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -1175,6 +1176,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -2070,6 +2072,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -2145,6 +2148,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -2369,6 +2373,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -2444,6 +2449,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -3115,6 +3121,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -3340,6 +3347,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -4000,6 +4008,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -4411,6 +4420,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -5251,6 +5261,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 1
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -5954,6 +5965,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -6690,6 +6702,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -6789,6 +6802,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -7492,6 +7506,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -7729,11 +7744,13 @@ MonoBehaviour:
   - lightOn
   - tappingWires
   - wireConnect
+  - grabWire
   sfxClips:
   - {fileID: 8300000, guid: ef6747dfbc6422f4a8b029320523efda, type: 3}
   - {fileID: 8300000, guid: df8cd46d45bde23408c02c33e04800e1, type: 3}
   - {fileID: 8300000, guid: 16c66068bc4f38a4d91b7fd0ba82244b, type: 3}
   - {fileID: 8300000, guid: f162934e8d9619447809b5cda2f44da6, type: 3}
+  - {fileID: 8300000, guid: dc88987fcd471894996808885014cf63, type: 3}
 --- !u!1 &2007604382
 GameObject:
   m_ObjectHideFlags: 0
@@ -8098,6 +8115,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0

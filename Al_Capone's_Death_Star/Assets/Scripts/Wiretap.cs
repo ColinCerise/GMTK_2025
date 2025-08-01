@@ -10,10 +10,15 @@ public class Wiretap : MonoBehaviour
     public GameObject ConnectedPoint;
     public GameObject ConnectedReciever;
     public string Conversation;
+
+    private string previousConvo;
+    private AudioManager audioManager;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        audioManager = GameObject.Find("Manager").GetComponent<AudioManager>();
+        previousConvo = Conversation;
     }
 
     // Update is called once per frame
@@ -26,6 +31,11 @@ public class Wiretap : MonoBehaviour
             if (ConnectedReciever != null && TargettedOutput != null)
             {
                 Conversation = TargettedOutput.name + " + " + ConnectedReciever.name;
+                if (Conversation != previousConvo)
+                {
+                    audioManager.PlaySFX("tappingWires");
+                }
+                previousConvo = Conversation;
             }
             else
             {

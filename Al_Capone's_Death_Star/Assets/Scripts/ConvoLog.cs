@@ -23,12 +23,15 @@ public class ConvoLog : MonoBehaviour
 
     public void AddConvo(string convo)
     {
-        if (noEntries)
+        if (!string.IsNullOrEmpty(convo))
         {
-            noEntries = false;
-            conversationsLogged.Clear();
+            if (noEntries)
+            {
+                noEntries = false;
+                conversationsLogged.Clear();
+            }
+            conversationsLogged.Add(convo);
         }
-        conversationsLogged.Add(convo);
     }
 
     public void LogbookDisplay()
