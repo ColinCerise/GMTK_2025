@@ -280,5 +280,6 @@ public class ConversationManager : MonoBehaviour
         PlaceInConversation = 0;
         TimeWaited = 0;
         StarterOutput.GetComponent<OutputJack>().SetLightActive(false, null);
+        //ConnectedPoint
     }
 }
