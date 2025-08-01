@@ -155,7 +155,7 @@ public class ConversationManager : MonoBehaviour
                 StarterOutput.GetComponent<OutputJack>().SetLightActive(true, this.gameObject);
                 Manager.GetComponent<AudioManager>().PlaySFX("lightOn");
             }
-            if (!CallConnected && TimeWaited >= 5)
+            if (!CallConnected && TimeWaited >= 10)
             {
                 AngryBar.AddAnger(Time.deltaTime);
             }
