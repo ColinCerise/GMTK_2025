@@ -8,18 +8,34 @@ public class GameManager : MonoBehaviour
     public bool Victory;
     public bool Loss;
     public GameObject Conversations;
+    public GameObject FadeWall;
     public bool FoundAll = false;
     public int DontBrickMe;
+    public float FadeTime = 0;
+    public bool FadedIn = false;
+    public bool fading = false;
+    public SpriteRenderer sr;
+    public Color color;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (FadeWall != null)
+        {
+            sr = FadeWall.GetComponent<SpriteRenderer>();
+            color = sr.color;
+            color.a = 0;
+            sr.color = color;
+        }
+        FadedIn = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (fading)
+        {
+            FadeIn();
+        }
     }
     public void Loop()
     {
@@ -31,7 +47,10 @@ public class GameManager : MonoBehaviour
         }
         if (Loss)
         {
-            //Fade to black?
+            if (FadeWall != null)
+            {
+                fading = true;
+            }
         }
         while (!FoundAll && DontBrickMe < 100)
         {
@@ -66,5 +85,33 @@ public class GameManager : MonoBehaviour
                 FoundAll = false;
             }
         }
+    }
+    public void FadeIn()
+    {
+        if (!FadedIn)
+        {
+            FadeTime += Time.deltaTime;
+            if (FadeTime > 1)
+            {
+                FadeTime = 1;
+                FadedIn = true;
+            }
+            
+            color.a = FadeTime;
+            sr.color = color;
+        }
+        else
+        {
+            FadeTime -= Time.deltaTime;
+            if (FadeTime < 0)
+            {
+                FadeTime = 0;
+                FadedIn = false;
+                fading = false;
+            }
+            color.a = FadeTime;
+            sr.color = color;
+        }
+
     }
 }
