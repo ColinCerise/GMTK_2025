@@ -39,6 +39,7 @@ public class ConversationManager : MonoBehaviour
     public bool CallStarted = false;
     public bool IAMTALKING = false;
     public bool ListenedToConvo;
+    public float ListenReq = .5f;
     GameObject ConnectedPoint;
     GameObject ConnectedReciever;
     public bool TheCthuluException = false;
@@ -228,7 +229,7 @@ public class ConversationManager : MonoBehaviour
             PlaceInConversation = (int)((TimeWaited - StartOffset) * LPS);
             if (WiretapScript.Conversation != null && WiretapScript.Conversation.Equals(ConversationTargets))
             {
-                if (PlaceInConversation - DialogueBoxScript.StartNum >= maxLeangth / 2)
+                if (PlaceInConversation - DialogueBoxScript.StartNum >= maxLeangth * ListenReq)
                 {
                     ListenedToConvo = true;
                     //Debug.Log(PlaceInConversation - DialogueBoxScript.StartNum - maxLeangth / 2);
@@ -269,6 +270,7 @@ public class ConversationManager : MonoBehaviour
         CallConnected = false;
         CallStarted = false;
         CallMissed = false;
+        IAMTALKING = false;
         TheCthuluException = HeldCthulu;
         PlaceInConversation = 0;
         TimeWaited = 0;

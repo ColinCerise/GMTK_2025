@@ -18,6 +18,9 @@ public class GameManager : MonoBehaviour
     public bool fading = false;
     public SpriteRenderer sr;
     public Color color;
+    public float TimeDialation = .5f;
+    public float FadeWallTime = 1.2f;
+    public bool Pausewall = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -92,30 +95,56 @@ public class GameManager : MonoBehaviour
     }
     public void FadeIn()
     {
-        if (!FadedIn)
+        if (!Pausewall)
         {
-            FadeTime += Time.deltaTime;
-            if (FadeTime > 1)
+            if (!FadedIn)
             {
-                FadeTime = 1;
-                FadedIn = true;
+                FadeTime += Time.deltaTime * TimeDialation;
+                if (FadeTime > 1)
+                {
+                    FadeTime = 1;
+                    FadedIn = true;
+                    Pausewall = true;
+                }
+                color.a = FadeTime;
+                sr.color = color;
             }
-            
-            color.a = FadeTime;
-            sr.color = color;
+            else
+            {
+                FadeTime -= Time.deltaTime * TimeDialation;
+                if (FadeTime < 0)
+                {
+                    FadeTime = 0;
+                    FadedIn = false;
+                    fading = false;
+                    DontBrickMe = 0;
+                }
+                color.a = FadeTime;
+                sr.color = color;
+            }
         }
         else
         {
-            FadeTime -= Time.deltaTime;
-            if (FadeTime < 0)
+            if (FadedIn)
             {
-                FadeTime = 0;
-                FadedIn = false;
-                fading = false;
+                FadeTime += Time.deltaTime * TimeDialation;
+                if (FadeTime >= 1 + (FadeWallTime / 2))
+                {
+                    FadedIn = false;
+                }
             }
-            color.a = FadeTime;
-            sr.color = color;
+            else
+            {
+                FadeTime -= Time.deltaTime * TimeDialation;
+                if (FadeTime <= 1)
+                {
+                    FadeTime = 1;
+                    FadedIn = true;
+                    Pausewall = false;
+                }
+            }
         }
+        
 
     }
 }
