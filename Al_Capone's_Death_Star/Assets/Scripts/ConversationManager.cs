@@ -122,25 +122,34 @@ public class ConversationManager : MonoBehaviour
             CallConnected = true;
             maxLeangth = totalCharLength;
             TimeWaited += Time.deltaTime;
+
+            int temp = PlaceInConversation;
+
             PlaceInConversation = (int)((TimeWaited - StartOffset) * LPS);
-            if (!IAMTALKING)
+
+            if (PlaceInConversation != temp)
             {
-                IAMTALKING = true;
-                DialogueBoxScript.SetAsTalking(this.gameObject, PlaceInConversation);
+                if (!IAMTALKING)
+                {
+                    IAMTALKING = true;
+                    DialogueBoxScript.SetAsTalking(this.gameObject, PlaceInConversation);
+                }
+                if (PlaceInConversation < maxLeangth)
+                {
+                    //Debug.Log("I cant talk but must scream");
+                    CurrentDialog = Conversation.Substring(0, PlaceInConversation);
+                    DialogueBoxScript.CallDialogueUpdate();
+                }
+                if (PlaceInConversation >= maxLeangth)
+                {
+                    Debug.Log("Ending The convo");
+                    CurrentDialog = Conversation.Substring(0, maxLeangth);
+                    DialogueBoxScript.ForceUpdate();
+                    TheCthuluException = false;
+                    Manager.GetComponent<ConvoLog>().AddConvo(CurrentDialog);
+                }
             }
-            if (PlaceInConversation < maxLeangth)
-            {
-                //Debug.Log("I cant talk but must scream");
-                CurrentDialog = Conversation.Substring(0, PlaceInConversation);
-            }
-            if (PlaceInConversation >= maxLeangth)
-            {
-                Debug.Log("Ending The convo");
-                CurrentDialog = Conversation.Substring(0, maxLeangth);
-                DialogueBoxScript.ForceUpdate();
-                TheCthuluException = false;
-                Manager.GetComponent<ConvoLog>().AddConvo(CurrentDialog);
-            }
+            
         }
         //check if enough time has passed and the call is still going
         if (((ManagerScript.Hours == TimeOffsetHours && ManagerScript.Minutes >= TimeOffsetMinutes) || ManagerScript.Hours > TimeOffsetHours) && !CallEnded)
