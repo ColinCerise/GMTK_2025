@@ -10,7 +10,7 @@ using System.IO;
 
 public class ConversationManager : MonoBehaviour
 {
-    public string Conversation;
+    private string Conversation;
     public string PreConversation;
     public string ConversationTargets;
     public GameObject PlayerReciever;
@@ -49,9 +49,8 @@ public class ConversationManager : MonoBehaviour
     private int totalCharLength;
     public List<string> speakerList = new List<string>();
     public List<string> dialogueList = new List<string>();
-    public int currentLineIndex = 0;
+    private int currentLineIndex = 0;
     public List<int> dialogueIndices = new List<int>();
-    public int lineIndex;
 
     // Start is called before the first frame
     void Start()
@@ -281,5 +280,22 @@ public class ConversationManager : MonoBehaviour
         TimeWaited = 0;
         StarterOutput.GetComponent<OutputJack>().SetLightActive(false, null);
         //ConnectedPoint
+    }
+
+    public string NextLine()
+    {
+        string result = "";
+        if (currentLineIndex > 0)
+        {
+            result += "\n";
+        }
+        currentLineIndex++;
+        Debug.Log("Next line " + (currentLineIndex - 1));
+        return result + speakerList[currentLineIndex - 1] + "\n";
+    }
+
+    public string GetConversation()
+    {
+        return Conversation;
     }
 }
