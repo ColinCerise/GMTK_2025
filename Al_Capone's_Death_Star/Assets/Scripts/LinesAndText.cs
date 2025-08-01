@@ -27,6 +27,9 @@ public class LinesAndText : MonoBehaviour
     public LineRenderer Line5;
     public GameObject Connectpoint5a;
     public GameObject Connectpoint5b;
+    public LineRenderer Line6;
+    public GameObject Connectpoint6a;
+    public GameObject Connectpoint6b;
 
     // Variables for clock rendering
     [SerializeField] GameObject clockDisplay;
@@ -41,6 +44,7 @@ public class LinesAndText : MonoBehaviour
         Line3 = GameObject.Find("Line3").GetComponent<LineRenderer>();
         Line4 = GameObject.Find("Line4").GetComponent<LineRenderer>();
         Line5 = GameObject.Find("Line5").GetComponent<LineRenderer>();
+        Line6 = GameObject.Find("Line6").GetComponent<LineRenderer>();
 
         clockDigits = clockDisplay.GetComponentsInChildren<Image>();
     }
@@ -58,6 +62,8 @@ public class LinesAndText : MonoBehaviour
         Line4.SetPosition(1, Connectpoint4b.transform.position);
         Line5.SetPosition(0, Connectpoint5a.transform.position);
         Line5.SetPosition(1, Connectpoint5b.transform.position);
+        Line6.SetPosition(0, Connectpoint6a.transform.position);
+        Line6.SetPosition(1, Connectpoint6b.transform.position);
 
         AccumulatedTime += Time.deltaTime;
         ClockDisplay(Hours, Minutes);

@@ -27,6 +27,7 @@ public class ButtonBetter : MonoBehaviour
     void Update()
     {
         CheckGrab();
+        /*
         if (BossScript.Stage == 0 )
         {
             SpriteRenderer.sprite = null;
@@ -37,6 +38,7 @@ public class ButtonBetter : MonoBehaviour
             SpriteRenderer.sprite = InitialSprite;
             this.GetComponent<BoxCollider2D>().enabled = true;
         }
+        */
     }
     public void CheckGrab()
     {
