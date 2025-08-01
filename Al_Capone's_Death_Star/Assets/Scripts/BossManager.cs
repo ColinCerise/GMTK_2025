@@ -36,6 +36,20 @@ public class BossManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (GameManagerScript.Loss)
+        {
+            //Failed = true;
+            A.SetActive(false);
+            B.SetActive(false);
+            C.SetActive(false);
+            D.SetActive(false);
+            Activebuttons = false;
+            GameManagerScript.Loss = true;
+            GameManagerScript.Loop();
+            Stage = 0;
+            CorrectInput = 0;
+            CurrentInput = 0;
+        }
         switch(Stage)
         {
             case 1:
@@ -105,7 +119,8 @@ public class BossManager : MonoBehaviour
         }
         else
         {
-            Failed = true;
+            Debug.Log("Failed the fianl");
+            //Failed = true;
             A.SetActive(false);
             B.SetActive(false);
             C.SetActive(false);
@@ -114,6 +129,8 @@ public class BossManager : MonoBehaviour
             GameManagerScript.Loss = true;
             GameManagerScript.Loop();
             Stage = 0;
+            CorrectInput = 0;
+            CurrentInput = 0;
         }
         CurrentInput = 0;
     }
