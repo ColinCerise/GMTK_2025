@@ -3513,6 +3513,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 715758125a6021a4fa6807d213d5fe57, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpriteRenderer: {fileID: 0}
+  HideInScene: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   Victory: 0
   Loss: 0
   Conversations: {fileID: 0}
@@ -8985,7 +8987,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 20
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -8993,7 +8995,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2055552287

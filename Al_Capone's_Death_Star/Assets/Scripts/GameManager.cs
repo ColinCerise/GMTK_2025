@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public SpriteRenderer SpriteRenderer;
+    public Sprite HideInScene;
     public bool Victory;
     public bool Loss;
     public GameObject Conversations;
@@ -25,6 +27,8 @@ public class GameManager : MonoBehaviour
             color = sr.color;
             color.a = 0;
             sr.color = color;
+            SpriteRenderer = FadeWall.GetComponent<SpriteRenderer>();
+            SpriteRenderer.sprite = HideInScene;
         }
         FadedIn = false;
     }
