@@ -53,33 +53,7 @@ public class DialogueManager : MonoBehaviour
         }
         if (Conversation != null && Conversation.GetComponent<ConversationManager>().CurrentDialog != null && !PreconversationOverride)
         {
-            ConversationManager convo = Conversation.GetComponent<ConversationManager>();
-
-            tempCount = DialogueBox.textInfo.lineCount;
-            DisplayLines(convo);
-            DialogueTimer = 0;
-            
-            if (convo.GetConversation()[convo.PlaceInConversation] == ' ')
-            {
-                lastSpaceIndex = convo.PlaceInConversation;
-            }
-            else if (convo.GetConversation()[convo.PlaceInConversation] == '\n')
-            {
-                physicalLines.Add(convo.NextLine());
-            }
-
-            DialogueBox.ForceMeshUpdate();
-            if (DialogueBox.textInfo.lineCount > tempCount)
-            {
-                string lineSection = convo.GetConversation().Substring(lastLineIndex, lastSpaceIndex - lastLineIndex);
-                lastLineIndex = lastSpaceIndex;
-                physicalLines.Add(lineSection);
-
-                for (int i = 0; i < DialogueBox.textInfo.lineCount - maxLines; i++)
-                {
-                    physicalLines.RemoveAt(0);
-                }
-            }
+            //CallDialogueUpdate();
         }
         else
         {
@@ -93,12 +67,10 @@ public class DialogueManager : MonoBehaviour
     }
     public void SetAsTalking(GameObject Conversationist, int startingNum)
     {
-        Conversation = Conversationist;
-        physicalLines.Clear();
         lastSpaceIndex = 0;
         lastLineIndex = 0;
-        tempCount = 0;
-        physicalLines.Add(Conversation.GetComponent<ConversationManager>().NextLine());
+        Conversation = Conversationist;
+        ConversationManager convo = Conversation.GetComponent<ConversationManager>();
 
         if (startingNum < 10)
         {
@@ -106,8 +78,28 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            StartNum = startingNum - 10;
+            int firstIndex = startingNum - 10;
+            int index = firstIndex;
+
+            if (convo.GetConversation()[firstIndex] != ' ')
+            {
+                for (int i = firstIndex; index == firstIndex && i < convo.maxLeangth; i++)
+                {
+                    if (convo.GetConversation()[i] == ' ')
+                    {
+                        index = i;
+                    }
+                }
+            }
+            
+            StartNum = index;
         }
+
+        physicalLines.Clear();
+        tempCount = 0;
+        AddLine(convo.NextLine());
+        lastSpaceIndex = StartNum;
+        lastLineIndex = StartNum;
     }
     public void ForceUpdate()
     {
@@ -128,5 +120,50 @@ public class DialogueManager : MonoBehaviour
         fullDialogue += convo.GetConversation().Substring(lastLineIndex, convo.PlaceInConversation - lastLineIndex);
 
         DialogueBox.text = fullDialogue;
+    }
+
+    public void CallDialogueUpdate()
+    {
+        ConversationManager convo = Conversation.GetComponent<ConversationManager>();
+
+        tempCount = DialogueBox.textInfo.lineCount;
+        DisplayLines(convo);
+        DialogueTimer = 0;
+
+        DialogueBox.ForceMeshUpdate();
+        if (DialogueBox.textInfo.lineCount > tempCount)
+        {
+            string lineSection = convo.GetConversation().Substring(lastLineIndex, lastSpaceIndex - lastLineIndex);
+            AddLine(lineSection);
+            lastLineIndex = lastSpaceIndex;
+
+            for (int i = 0; i < DialogueBox.textInfo.lineCount - maxLines; i++)
+            {
+                physicalLines.RemoveAt(0);
+            }
+        }
+
+        if (convo.GetConversation()[convo.PlaceInConversation] == ' ')
+        {
+            lastSpaceIndex = convo.PlaceInConversation;
+        }
+        else if (convo.GetConversation()[convo.PlaceInConversation] == '\n')
+        {
+            AddLine(convo.GetConversation().Substring(lastLineIndex, convo.PlaceInConversation - lastLineIndex));
+            lastSpaceIndex = convo.PlaceInConversation + 1;
+            lastLineIndex = convo.PlaceInConversation + 1;
+
+            AddLine(convo.NextLine());
+        }
+    }
+
+    private void AddLine(string line)
+    {
+        string result = line;
+        if (StartNum != 0 && lastLineIndex == StartNum)
+        {
+            result = "..." + result;
+        }
+        physicalLines.Add(result);
     }
 }
