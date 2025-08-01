@@ -22,12 +22,52 @@ public class BossManager : MonoBehaviour
         switch(Stage)
         {
             case 1:
+                CorrectInput = 4;
+                if (CurrentInput != 0)
+                {
+                    CheckAnswer();
+                }
+                break;
+            case 2:
+                CorrectInput = 3;
+                if (CurrentInput != 0)
+                {
+                    CheckAnswer();
+                }
+                break;
+            case 3:
                 CorrectInput = 1;
                 if (CurrentInput != 0)
                 {
                     CheckAnswer();
                 }
                 break;
+            case 4:
+                CorrectInput = 2;
+                if (CurrentInput != 0)
+                {
+                    CheckAnswer();
+                }
+                break;
+            case 5:
+                CorrectInput = 1;
+                if (CurrentInput != 0)
+                {
+                    CheckAnswer();
+                }
+                break;
+            case 6:
+                CorrectInput = 3;
+                if (CurrentInput != 0)
+                {
+                    CheckAnswer();
+                }
+                break;
+            case 7:
+                Debug.Log("You Win");
+                break;
+
+
         }
     }
     public void CheckAnswer()
@@ -41,6 +81,7 @@ public class BossManager : MonoBehaviour
             Failed = true;
             Stage = 0;
         }
+        CurrentInput = 0;
     }
     public void Input(int input)
     {

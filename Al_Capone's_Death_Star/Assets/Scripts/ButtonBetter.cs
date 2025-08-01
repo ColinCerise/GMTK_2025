@@ -11,17 +11,32 @@ public class ButtonBetter : MonoBehaviour
     public bool MouseDown;
     public bool MousedOver;
     public bool MouseLockOut;
+    public Sprite InitialSprite;
+    public SpriteRenderer SpriteRenderer;
+
     // Start is called before the first frame update
     void Start()
     {
         BossMan = GameObject.Find("FinalBossManager");
         BossScript = BossMan.GetComponent<BossManager>();
+        SpriteRenderer = GetComponent<SpriteRenderer>();
+        InitialSprite = this.SpriteRenderer.sprite;
     }
 
     // Update is called once per frame
     void Update()
     {
         CheckGrab();
+        if (BossScript.Stage == 0 )
+        {
+            SpriteRenderer.sprite = null;
+            this.GetComponent<BoxCollider2D>().enabled = false;
+        }
+        else
+        {
+            SpriteRenderer.sprite = InitialSprite;
+            this.GetComponent<BoxCollider2D>().enabled = true;
+        }
     }
     public void CheckGrab()
     {
@@ -33,6 +48,7 @@ public class ButtonBetter : MonoBehaviour
         if (Input.GetMouseButtonUp(0))
         {
             MouseDown = false;
+            MouseLockOut = false;
             //Debug.Log("Mouse Unclick");
         }
         if (MouseDown && !MousedOver)
@@ -55,7 +71,13 @@ public class ButtonBetter : MonoBehaviour
         if (collision.gameObject.name == "Mouse")
         {
             MousedOver = false;
-
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    { 
+        if (collision.gameObject.name == "Mouse")
+        {
+            MousedOver = true;
         }
     }
 }

@@ -74,6 +74,15 @@ public class LinesAndText : MonoBehaviour
                 }
             }
         }
+        if (Hours >= 22)
+        {
+            GameObject BossMan = GameObject.Find("FinalBossManager");
+            BossManager BossScript = BossMan.GetComponent<BossManager>();
+            if (BossScript.Stage == 0)
+            {
+                BossScript.Stage = 1;
+            }
+        }
     }
 
     private void ClockDisplay(int hours, int minutes)
