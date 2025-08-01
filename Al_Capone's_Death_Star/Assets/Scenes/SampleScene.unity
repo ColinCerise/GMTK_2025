@@ -391,7 +391,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Escape2
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -405,7 +404,6 @@ GameObject:
   m_Component:
   - component: {fileID: 186428241}
   - component: {fileID: 186428240}
-  - component: {fileID: 186428239}
   - component: {fileID: 186428238}
   m_Layer: 5
   m_Name: Canvas
@@ -431,29 +429,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &186428239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 186428237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 2
-  m_ReferencePixelsPerUnit: 30
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
 --- !u!223 &186428240
 Canvas:
   m_ObjectHideFlags: 0
@@ -1203,7 +1178,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Car2
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -2003,7 +1977,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Bribe2
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -2079,7 +2052,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Mundane3
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -2304,7 +2276,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Smuggling3
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -2380,7 +2351,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Mundane1
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -3050,7 +3020,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Bribe1
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -3276,7 +3245,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Smuggling2
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -3936,7 +3904,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Mundane2
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -4348,7 +4315,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Inside2
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -5188,7 +5154,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Cthulu
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -5889,7 +5854,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Car1
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -6215,9 +6179,9 @@ RectTransform:
   - {fileID: 1227329350}
   m_Father: {fileID: 186428241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -240, y: 0}
   m_SizeDelta: {x: 132, y: 63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1584706734
@@ -6625,7 +6589,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: WeStillOn
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -6725,7 +6688,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Inside1
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -7428,7 +7390,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Smuggling1
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -8009,7 +7970,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Escape1
   speakerList: []
   dialogueList: []
   lineIndex: 0
