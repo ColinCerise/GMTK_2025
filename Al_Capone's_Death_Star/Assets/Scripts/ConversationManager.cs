@@ -42,6 +42,7 @@ public class ConversationManager : MonoBehaviour
     GameObject ConnectedPoint;
     GameObject ConnectedReciever;
     public bool TheCthuluException = false;
+    public bool HeldCthulu = false;
 
     // Variables for parsing dialogue
     private int totalCharLength;
@@ -62,7 +63,10 @@ public class ConversationManager : MonoBehaviour
         DialogueBoxScript = DialogueBox.GetComponent<DialogueManager>();
         AngryBar = AngerManager.GetComponent<AngerBar>();
         ConversationTargets = StarterOutput.name + " + " + TargetReciever.name;
-
+        if (TheCthuluException)
+        {
+            HeldCthulu = true;
+        }
         ParseDialogue();
     }
 
@@ -275,5 +279,15 @@ public class ConversationManager : MonoBehaviour
             }
             //CurrentChar = Conversation[PlaceInConversation];
         }
+    }
+    public void Revolve()
+    {
+        CallEnded = false;
+        CallConnected = false;
+        CallStarted = false;
+        CallMissed = false;
+        TheCthuluException = HeldCthulu;
+        PlaceInConversation = 0;
+        TimeWaited = 0;
     }
 }
