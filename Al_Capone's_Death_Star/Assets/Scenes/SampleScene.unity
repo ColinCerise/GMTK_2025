@@ -587,13 +587,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: "Eastburrow Boss: We still on for tonight?  Whistlepig Boss: As long
-    as you hold up your end of the deal.  Eastburrow Boss: I will. Don\u2019t worry. 
-    Whistlepig Boss: Good. I\u2019ll be there with my second. No weapons. I\u2019ll
-    have someone check you at the door. I expect you\u2019ll do the same.  Eastburrow
-    Boss: Of course. I would expect nothing less.  Whistlepig Boss: I hope this is
-    a long and prosperous alliance for us both.  Eastburrow Boss: I\u2019ll see you
-    there. "
   PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
@@ -621,12 +614,12 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
-  lineIndex: 0
 --- !u!1 &186428237
 GameObject:
   m_ObjectHideFlags: 0
@@ -1584,11 +1577,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: "Thickwood Agent: We have the guns planted in the warehouse.  Gunman:
-    Where can we find them?  Thickwood Agent: They\u2019re sitting by the garage
-    door where you\u2019ll enter, hidden in some boxes.  Gunman: How are we supposed
-    to find which boxes these things are in?  Thickwood Agent: They\u2019re unarmed.
-    They won\u2019t put up much of a fight. Just get it done.  Gunman: Understood. "
   PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
@@ -1616,12 +1604,12 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
-  lineIndex: 0
 --- !u!1 &294092221
 GameObject:
   m_ObjectHideFlags: 0
@@ -2388,11 +2376,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: "Thickwood Agent: We have the guns planted in the warehouse.  Gunman:
-    Where can we find them?  Thickwood Agent: They\u2019re sitting by the garage
-    door where you\u2019ll enter, hidden in some boxes.  Gunman: How are we supposed
-    to find which boxes these things are in?  Thickwood Agent: They\u2019re unarmed.
-    They won\u2019t put up much of a fight. Just get it done.  Gunman: Understood. "
   PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
@@ -2420,12 +2403,12 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
-  lineIndex: 0
 --- !u!1 &542213682
 GameObject:
   m_ObjectHideFlags: 0
@@ -2470,7 +2453,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: 
   PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
@@ -2498,12 +2480,12 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
-  lineIndex: 0
 --- !u!1 &576518151
 GameObject:
   m_ObjectHideFlags: 0
@@ -2693,11 +2675,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: "Thickwood Agent: We have the guns planted in the warehouse.  Gunman:
-    Where can we find them?  Thickwood Agent: They\u2019re sitting by the garage
-    door where you\u2019ll enter, hidden in some boxes.  Gunman: How are we supposed
-    to find which boxes these things are in?  Thickwood Agent: They\u2019re unarmed.
-    They won\u2019t put up much of a fight. Just get it done.  Gunman: Understood. "
   PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
@@ -2725,12 +2702,12 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
-  lineIndex: 0
 --- !u!1 &619343975
 GameObject:
   m_ObjectHideFlags: 0
@@ -2775,7 +2752,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: 
   PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
@@ -2803,12 +2779,12 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
-  lineIndex: 0
 --- !u!1 &670683100
 GameObject:
   m_ObjectHideFlags: 0
@@ -3519,6 +3495,9 @@ MonoBehaviour:
   fading: 0
   sr: {fileID: 0}
   color: {r: 0, g: 0, b: 0, a: 0}
+  TimeDialation: 0.5
+  FadeWallTime: 1.2
+  Pausewall: 0
 --- !u!4 &779784836
 Transform:
   m_ObjectHideFlags: 0
@@ -3760,7 +3739,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: 
   PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
@@ -3788,12 +3766,12 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
-  lineIndex: 0
 --- !u!1 &859865472
 GameObject:
   m_ObjectHideFlags: 0
@@ -3822,14 +3800,14 @@ RectTransform:
   m_GameObject: {fileID: 859865472}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 186428241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -217, y: 106}
+  m_AnchoredPosition: {x: -265, y: 143}
   m_SizeDelta: {x: 32, y: 32}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &859865474
@@ -3982,13 +3960,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: "Thickwood Agent: I need you to smuggle two guns into the storage
-    unit where the alliance meeting is tonight.  Chuckwood Smuggler: Sure. I can
-    make that happen. Aren\u2019t they doing a sweep though to check for that kind
-    of thing? I can\u2019t promise they won\u2019t be found.  Thickwood Agent: Don\u2019t
-    worry, we\u2019ve got that covered.  Smuggler: Alright. I\u2019ll get going on
-    that.  Thickwood Agent: Report back to base when you\u2019re done. Call me from
-    there.  Smuggler: I\u2019ll get back to you in a couple hours. "
   PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
@@ -4016,12 +3987,12 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
-  lineIndex: 0
 --- !u!1 &901030210
 GameObject:
   m_ObjectHideFlags: 0
@@ -4651,7 +4622,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: 
   PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
@@ -4679,12 +4649,12 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
-  lineIndex: 0
 --- !u!1 &986484969
 GameObject:
   m_ObjectHideFlags: 0
@@ -5235,16 +5205,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: "Monax Agent: I have more information for you.  Inside Agent: I\u2019m
-    ready.  Monax Agent: A getaway driver will be waiting outside the building in
-    a blue car with an eagle-shaped hood ornament. Be there by ten past midnight
-    or you\u2019ll be left behind.  Inside Agent: Alright. You got any other information
-    for me?  Monax Agent: You\u2019re sure that the Eastburrow Boss trusts you? 
-    Inside Agent: Of course. I\u2019ve been deep undercover for months. I\u2019m
-    about to check the room for hidden weapons. I\u2019ll help your agent ensure
-    the guns are well-concealed.  Monax Agent: Perfect. They\u2019re stored in the
-    containers by the garage door.  Inside Agent: I\u2019ll make sure they remain
-    hidden. You won\u2019t be getting any problems from me. "
   PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
@@ -5272,12 +5232,12 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
-  lineIndex: 0
 --- !u!1 &1097691633
 GameObject:
   m_ObjectHideFlags: 0
@@ -6085,9 +6045,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: RAAAAAAAAAAAH I am Cthulu and my patron DIED!!!!!! This wont do!!
-    I have sent you back in time to save the mob boss at the cost of your sanity!
-    Do your best to solve the murder and save my patron before you go insane!!!!!!!
   PreConversation: Please work please
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
@@ -6115,12 +6072,12 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 1
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
-  lineIndex: 0
 --- !u!1 &1286682197
 GameObject:
   m_ObjectHideFlags: 0
@@ -6175,7 +6132,7 @@ MonoBehaviour:
   DialogueTimer: 0
   PreconversationOverride: 0
   physicalLines: []
-  maxLines: 9
+  maxLines: 14
 --- !u!1 &1308828691
 GameObject:
   m_ObjectHideFlags: 0
@@ -6651,11 +6608,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: "Thickwood Agent: We have the guns planted in the warehouse.  Gunman:
-    Where can we find them?  Thickwood Agent: They\u2019re sitting by the garage
-    door where you\u2019ll enter, hidden in some boxes.  Gunman: How are we supposed
-    to find which boxes these things are in?  Thickwood Agent: They\u2019re unarmed.
-    They won\u2019t put up much of a fight. Just get it done.  Gunman: Understood. "
   PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
@@ -6683,12 +6635,12 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
-  lineIndex: 0
 --- !u!1 &1492175551
 GameObject:
   m_ObjectHideFlags: 0
@@ -7388,13 +7340,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: "Eastburrow Boss: We still on for tonight?  Whistlepig Boss: As long
-    as you hold up your end of the deal.  Eastburrow Boss: I will. Don\u2019t worry. 
-    Whistlepig Boss: Good. I\u2019ll be there with my second. No weapons. I\u2019ll
-    have someone check you at the door. I expect you\u2019ll do the same.  Eastburrow
-    Boss: Of course. I would expect nothing less.  Whistlepig Boss: I hope this is
-    a long and prosperous alliance for us both.  Eastburrow Boss: I\u2019ll see you
-    there. "
   PreConversation: Operator, Whistlepig
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
@@ -7422,12 +7367,12 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
-  lineIndex: 0
 --- !u!4 &1711430211
 Transform:
   m_ObjectHideFlags: 0
@@ -7487,16 +7432,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: "Monax Agent: I have more information for you.  Inside Agent: I\u2019m
-    ready.  Monax Agent: A getaway driver will be waiting outside the building in
-    a blue car with an eagle-shaped hood ornament. Be there by ten past midnight
-    or you\u2019ll be left behind.  Inside Agent: Alright. You got any other information
-    for me?  Monax Agent: You\u2019re sure that the Eastburrow Boss trusts you? 
-    Inside Agent: Of course. I\u2019ve been deep undercover for months. I\u2019m
-    about to check the room for hidden weapons. I\u2019ll help your agent ensure
-    the guns are well-concealed.  Monax Agent: Perfect. They\u2019re stored in the
-    containers by the garage door.  Inside Agent: I\u2019ll make sure they remain
-    hidden. You won\u2019t be getting any problems from me. "
   PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
@@ -7524,12 +7459,12 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
-  lineIndex: 0
 --- !u!1 &1735138189
 GameObject:
   m_ObjectHideFlags: 0
@@ -8196,13 +8131,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: "Thickwood Agent: I need you to smuggle two guns into the storage
-    unit where the alliance meeting is tonight.  Chuckwood Smuggler: Sure. I can
-    make that happen. Aren\u2019t they doing a sweep though to check for that kind
-    of thing? I can\u2019t promise they won\u2019t be found.  Thickwood Agent: Don\u2019t
-    worry, we\u2019ve got that covered.  Smuggler: Alright. I\u2019ll get going on
-    that.  Thickwood Agent: Report back to base when you\u2019re done. Call me from
-    there.  Smuggler: I\u2019ll get back to you in a couple hours. "
   PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
@@ -8230,12 +8158,12 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
-  lineIndex: 0
 --- !u!4 &1947002916
 Transform:
   m_ObjectHideFlags: 0
@@ -8893,13 +8821,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Conversation: "Eastburrow Boss: We still on for tonight?  Whistlepig Boss: As long
-    as you hold up your end of the deal.  Eastburrow Boss: I will. Don\u2019t worry. 
-    Whistlepig Boss: Good. I\u2019ll be there with my second. No weapons. I\u2019ll
-    have someone check you at the door. I expect you\u2019ll do the same.  Eastburrow
-    Boss: Of course. I would expect nothing less.  Whistlepig Boss: I hope this is
-    a long and prosperous alliance for us both.  Eastburrow Boss: I\u2019ll see you
-    there. "
   PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
@@ -8927,12 +8848,12 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
-  lineIndex: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

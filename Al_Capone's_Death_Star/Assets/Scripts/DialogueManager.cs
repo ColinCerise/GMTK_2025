@@ -33,8 +33,6 @@ public class DialogueManager : MonoBehaviour
         WiretapScript = Wiretap.GetComponent<Wiretap>();
         PlayerReciever = GameObject.Find("PlayerReciever");
         PlayerRecieverScript = PlayerReciever.GetComponent<OutputJack>();
-        lastSpaceIndex = 0;
-        lastLineIndex = 0;
     }
 
     // Update is called once per frame
@@ -61,23 +59,23 @@ public class DialogueManager : MonoBehaviour
             DisplayLines(convo);
             DialogueTimer = 0;
             
-            if (convo.Conversation[convo.PlaceInConversation] == ' ')
+            if (convo.GetConversation()[convo.PlaceInConversation] == ' ')
             {
                 lastSpaceIndex = convo.PlaceInConversation;
             }
-            else if (convo.Conversation[convo.PlaceInConversation] == '\n')
+            else if (convo.GetConversation()[convo.PlaceInConversation] == '\n')
             {
-
+                physicalLines.Add(convo.NextLine());
             }
 
             DialogueBox.ForceMeshUpdate();
             if (DialogueBox.textInfo.lineCount > tempCount)
             {
-                string lineSection = convo.Conversation.Substring(lastLineIndex, lastSpaceIndex - lastLineIndex);
+                string lineSection = convo.GetConversation().Substring(lastLineIndex, lastSpaceIndex - lastLineIndex);
                 lastLineIndex = lastSpaceIndex;
                 physicalLines.Add(lineSection);
 
-                if (DialogueBox.textInfo.lineCount >= maxLines)
+                for (int i = 0; i < DialogueBox.textInfo.lineCount - maxLines; i++)
                 {
                     physicalLines.RemoveAt(0);
                 }
@@ -100,6 +98,7 @@ public class DialogueManager : MonoBehaviour
         lastSpaceIndex = 0;
         lastLineIndex = 0;
         tempCount = 0;
+        physicalLines.Add(Conversation.GetComponent<ConversationManager>().NextLine());
 
         if (startingNum < 10)
         {
@@ -126,44 +125,8 @@ public class DialogueManager : MonoBehaviour
         {
             fullDialogue += str;
         }
-        fullDialogue += convo.Conversation.Substring(lastLineIndex, convo.PlaceInConversation - lastLineIndex);
+        fullDialogue += convo.GetConversation().Substring(lastLineIndex, convo.PlaceInConversation - lastLineIndex);
 
         DialogueBox.text = fullDialogue;
     }
-
-    /*public string CurrentLine(ConversationManager convo)
-    {
-        int charNum = convo.PlaceInConversation;
-        int lineIndex = -1;
-        int remainder = charNum;
-        int elapsedChars = 0;
-        if (charNum < convo.totalCharLength)
-        {
-            for (int i = 0, count = charNum; count > 0; i++)
-            {
-                lineIndex = i;
-                remainder = count;
-                count -= convo.dialogueList[i].Length;
-            }
-
-            elapsedChars = charNum - remainder;
-        }
-
-        if (lineIndex >= 0 && lineIndex < convo.dialogueList.Count)
-        {
-            if (StartNum > elapsedChars)
-            {
-                int frontIndex = StartNum - elapsedChars;
-                return convo.speakerList[lineIndex] + ": ..." + convo.dialogueList[lineIndex].Substring(frontIndex, remainder - frontIndex);
-            }
-            else
-            {
-                return convo.speakerList[lineIndex] + ": " + convo.dialogueList[lineIndex].Substring(0, remainder);
-            }
-        }
-        else
-        {
-            return string.Empty;
-        }
-    }*/
 }
