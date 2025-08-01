@@ -42,7 +42,6 @@ public class DialogueManager : MonoBehaviour
     {
         if (PlayerRecieverScript.isActive)
         {
-            
             GameObject TempNotConv = GameObject.Find(PlayerRecieverScript.Connector.gameObject.name.Substring(0, (PlayerRecieverScript.Connector.gameObject.name.Length - 1)) + "1");
             if (TempNotConv.GetComponent<OutputJack>().PendingConversation != null)
             {
@@ -65,6 +64,10 @@ public class DialogueManager : MonoBehaviour
             if (convo.Conversation[convo.PlaceInConversation] == ' ')
             {
                 lastSpaceIndex = convo.PlaceInConversation;
+            }
+            else if (convo.Conversation[convo.PlaceInConversation] == '\n')
+            {
+
             }
 
             DialogueBox.ForceMeshUpdate();
