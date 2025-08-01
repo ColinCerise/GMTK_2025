@@ -6681,7 +6681,7 @@ MonoBehaviour:
     door where you\u2019ll enter, hidden in some boxes.  Gunman: How are we supposed
     to find which boxes these things are in?  Thickwood Agent: They\u2019re unarmed.
     They won\u2019t put up much of a fight. Just get it done.  Gunman: Understood. "
-  PreConversation: Operator, Chuckwood
+  PreConversation: Operator, Eastburrow
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 710281746}
