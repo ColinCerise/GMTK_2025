@@ -112,7 +112,7 @@ public class ConversationManager : MonoBehaviour
             ConnectedReciever = ConnectedPoint.GetComponent<Grabbable>().TargettedReciever;
             if (StarterOutput.GetComponent<OutputJack>() != null && !StarterOutput.GetComponent<OutputJack>().LightActive)
             {
-                StarterOutput.GetComponent<OutputJack>().SetLightActive(true);
+                StarterOutput.GetComponent<OutputJack>().SetLightActive(true, this.gameObject);
             }
             if (!CallConnected && TimeWaited >= 5)
             {
@@ -137,14 +137,14 @@ public class ConversationManager : MonoBehaviour
             if (TimeWaited >= 20 && !CallConnected)
             {
                 CallEnded = true;
-                StarterOutput.GetComponent<OutputJack>().SetLightActive(false);
+                StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
                 CallMissed = true;
                 AngryBar.DisconnectedCall();
             }
             else if (TimeWaited >= 30 && CallStarted)
             {
                 CallEnded = true;
-                StarterOutput.GetComponent<OutputJack>().SetLightActive(false);
+                StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
                 CallMissed = true;
                 AngryBar.DisconnectedCall();
             }
@@ -153,7 +153,7 @@ public class ConversationManager : MonoBehaviour
                 if (ConnectedReciever != TargetReciever)
                 {
                     CallEnded = true;
-                    StarterOutput.GetComponent<OutputJack>().SetLightActive(false);
+                    StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
                     CallMissed = true;
                     AngryBar.DisconnectedCall();
                     Manager.GetComponent<ConvoLog>().AddConvo(CurrentDialog);
@@ -186,7 +186,7 @@ public class ConversationManager : MonoBehaviour
                         else
                         {
                             CallEnded = true;
-                            StarterOutput.GetComponent<OutputJack>().SetLightActive(false);
+                            StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
                             Manager.GetComponent<ConvoLog>().AddConvo(CurrentDialog);
                         }
                     }
@@ -204,7 +204,7 @@ public class ConversationManager : MonoBehaviour
                 CurrentDialog = Conversation.Substring(DialogueBoxScript.StartNum, maxLeangth - DialogueBoxScript.StartNum);
                 DialogueBoxScript.ForceUpdate();
                 CallEnded = true;
-                StarterOutput.GetComponent<OutputJack>().SetLightActive(false);
+                StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
                 Manager.GetComponent<ConvoLog>().AddConvo(CurrentDialog);
             }
         }

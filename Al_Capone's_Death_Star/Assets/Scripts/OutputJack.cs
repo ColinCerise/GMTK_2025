@@ -16,6 +16,7 @@ public class OutputJack : MonoBehaviour
     public bool LightActive = false;
     public bool IsReciever;
     public int MultiTrigger = 0;
+    public GameObject PendingConversation;
     // Start is called before the first frame update
     void Start()
     {
@@ -109,8 +110,16 @@ public class OutputJack : MonoBehaviour
             }
         }
     }
-    public void SetLightActive(bool active)
+    public void SetLightActive(bool active, GameObject Conversator)
     {
         LightActive = active;
+        if (active)
+        {
+            PendingConversation = Conversator;
+        }
+        else
+        {
+            PendingConversation = null;
+        }
     }
 }

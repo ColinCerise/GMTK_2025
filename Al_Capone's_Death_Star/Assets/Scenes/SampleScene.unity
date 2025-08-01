@@ -277,6 +277,7 @@ MonoBehaviour:
   LightActive: 0
   IsReciever: 1
   MultiTrigger: 0
+  PendingConversation: {fileID: 0}
 --- !u!1 &125111711
 GameObject:
   m_ObjectHideFlags: 0
@@ -364,7 +365,7 @@ MonoBehaviour:
     Boss: Of course. I would expect nothing less.  Whistlepig Boss: I hope this is
     a long and prosperous alliance for us both.  Eastburrow Boss: I\u2019ll see you
     there. "
-  PreConversation: 
+  PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 1855241245}
@@ -391,7 +392,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Escape2
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -405,7 +405,6 @@ GameObject:
   m_Component:
   - component: {fileID: 186428241}
   - component: {fileID: 186428240}
-  - component: {fileID: 186428239}
   - component: {fileID: 186428238}
   m_Layer: 5
   m_Name: Canvas
@@ -431,29 +430,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &186428239
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 186428237}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 2
-  m_ReferencePixelsPerUnit: 30
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
 --- !u!223 &186428240
 Canvas:
   m_ObjectHideFlags: 0
@@ -673,6 +649,7 @@ MonoBehaviour:
   LightActive: 0
   IsReciever: 0
   MultiTrigger: 0
+  PendingConversation: {fileID: 0}
 --- !u!1 &213387944
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,7 +1153,7 @@ MonoBehaviour:
     door where you\u2019ll enter, hidden in some boxes.  Gunman: How are we supposed
     to find which boxes these things are in?  Thickwood Agent: They\u2019re unarmed.
     They won\u2019t put up much of a fight. Just get it done.  Gunman: Understood. "
-  PreConversation: 
+  PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 400463482}
@@ -1203,7 +1180,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Car2
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -1464,6 +1440,7 @@ MonoBehaviour:
   LightActive: 0
   IsReciever: 0
   MultiTrigger: 0
+  PendingConversation: {fileID: 0}
 --- !u!1 &420143885
 GameObject:
   m_ObjectHideFlags: 0
@@ -1843,6 +1820,7 @@ MonoBehaviour:
   LightActive: 0
   IsReciever: 1
   MultiTrigger: 0
+  PendingConversation: {fileID: 0}
 --- !u!1 &495559436
 GameObject:
   m_ObjectHideFlags: 0
@@ -1976,7 +1954,7 @@ MonoBehaviour:
     door where you\u2019ll enter, hidden in some boxes.  Gunman: How are we supposed
     to find which boxes these things are in?  Thickwood Agent: They\u2019re unarmed.
     They won\u2019t put up much of a fight. Just get it done.  Gunman: Understood. "
-  PreConversation: 
+  PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 710281746}
@@ -2003,7 +1981,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Bribe2
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -2052,7 +2029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conversation: 
-  PreConversation: 
+  PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 400463482}
@@ -2079,7 +2056,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Mundane3
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -2277,7 +2253,7 @@ MonoBehaviour:
     door where you\u2019ll enter, hidden in some boxes.  Gunman: How are we supposed
     to find which boxes these things are in?  Thickwood Agent: They\u2019re unarmed.
     They won\u2019t put up much of a fight. Just get it done.  Gunman: Understood. "
-  PreConversation: 
+  PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 921685621}
@@ -2304,7 +2280,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Smuggling3
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -2353,7 +2328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conversation: 
-  PreConversation: 
+  PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 188834805}
@@ -2380,7 +2355,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Mundane1
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -2539,6 +2513,7 @@ MonoBehaviour:
   LightActive: 0
   IsReciever: 1
   MultiTrigger: 0
+  PendingConversation: {fileID: 0}
 --- !u!1 &710281746
 GameObject:
   m_ObjectHideFlags: 0
@@ -2712,6 +2687,7 @@ MonoBehaviour:
   LightActive: 0
   IsReciever: 0
   MultiTrigger: 0
+  PendingConversation: {fileID: 0}
 --- !u!1 &750313045
 GameObject:
   m_ObjectHideFlags: 0
@@ -3023,7 +2999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conversation: 
-  PreConversation: 
+  PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 921685621}
@@ -3050,7 +3026,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Bribe1
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -3249,7 +3224,7 @@ MonoBehaviour:
     worry, we\u2019ve got that covered.  Smuggler: Alright. I\u2019ll get going on
     that.  Thickwood Agent: Report back to base when you\u2019re done. Call me from
     there.  Smuggler: I\u2019ll get back to you in a couple hours. "
-  PreConversation: 
+  PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 400463482}
@@ -3276,7 +3251,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Smuggling2
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -3682,6 +3656,7 @@ MonoBehaviour:
   LightActive: 0
   IsReciever: 0
   MultiTrigger: 0
+  PendingConversation: {fileID: 0}
 --- !u!1 &962602142
 GameObject:
   m_ObjectHideFlags: 0
@@ -3909,7 +3884,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conversation: 
-  PreConversation: 
+  PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 921685621}
@@ -3936,7 +3911,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Mundane2
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -4321,7 +4295,7 @@ MonoBehaviour:
     the guns are well-concealed.  Monax Agent: Perfect. They\u2019re stored in the
     containers by the garage door.  Inside Agent: I\u2019ll make sure they remain
     hidden. You won\u2019t be getting any problems from me. "
-  PreConversation: 
+  PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 188834805}
@@ -4348,7 +4322,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Inside2
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -4546,6 +4519,7 @@ MonoBehaviour:
   LightActive: 0
   IsReciever: 1
   MultiTrigger: 0
+  PendingConversation: {fileID: 0}
 --- !u!1 &1136175019
 GameObject:
   m_ObjectHideFlags: 0
@@ -5161,7 +5135,7 @@ MonoBehaviour:
   Conversation: RAAAAAAAAAAAH I am Cthulu and my patron DIED!!!!!! This wont do!!
     I have sent you back in time to save the mob boss at the cost of your sanity!
     Do your best to solve the murder and save my patron before you go insane!!!!!!!
-  PreConversation: 
+  PreConversation: Please work please
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 921685621}
@@ -5188,7 +5162,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Cthulu
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -5246,8 +5219,11 @@ MonoBehaviour:
   StartNum: 0
   Wiretap: {fileID: 0}
   WiretapScript: {fileID: 0}
+  PlayerReciever: {fileID: 0}
+  PlayerRecieverScript: {fileID: 0}
   Conversation: {fileID: 0}
   DialogueTimer: 0
+  PreconversationOverride: 0
 --- !u!114 &1286682201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5862,7 +5838,7 @@ MonoBehaviour:
     door where you\u2019ll enter, hidden in some boxes.  Gunman: How are we supposed
     to find which boxes these things are in?  Thickwood Agent: They\u2019re unarmed.
     They won\u2019t put up much of a fight. Just get it done.  Gunman: Understood. "
-  PreConversation: 
+  PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 710281746}
@@ -5889,7 +5865,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Car1
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -6048,6 +6023,7 @@ MonoBehaviour:
   LightActive: 0
   IsReciever: 1
   MultiTrigger: 0
+  PendingConversation: {fileID: 0}
 --- !u!1 &1507690003
 GameObject:
   m_ObjectHideFlags: 0
@@ -6215,9 +6191,9 @@ RectTransform:
   - {fileID: 1227329350}
   m_Father: {fileID: 186428241}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: 0}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -240, y: 0}
   m_SizeDelta: {x: 132, y: 63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1584706734
@@ -6625,7 +6601,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: WeStillOn
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -6698,7 +6673,7 @@ MonoBehaviour:
     the guns are well-concealed.  Monax Agent: Perfect. They\u2019re stored in the
     containers by the garage door.  Inside Agent: I\u2019ll make sure they remain
     hidden. You won\u2019t be getting any problems from me. "
-  PreConversation: 
+  PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 188834805}
@@ -6725,7 +6700,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Inside1
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -7156,6 +7130,7 @@ MonoBehaviour:
   LightActive: 0
   IsReciever: 0
   MultiTrigger: 0
+  PendingConversation: {fileID: 0}
 --- !u!1 &1866340022
 GameObject:
   m_ObjectHideFlags: 0
@@ -7401,7 +7376,7 @@ MonoBehaviour:
     worry, we\u2019ve got that covered.  Smuggler: Alright. I\u2019ll get going on
     that.  Thickwood Agent: Report back to base when you\u2019re done. Call me from
     there.  Smuggler: I\u2019ll get back to you in a couple hours. "
-  PreConversation: 
+  PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 921685621}
@@ -7428,7 +7403,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Smuggling1
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -7766,6 +7740,7 @@ GameObject:
   - component: {fileID: 2013851221}
   - component: {fileID: 2013851220}
   - component: {fileID: 2013851219}
+  - component: {fileID: 2013851222}
   m_Layer: 0
   m_Name: PlayerReciever
   m_TagString: Reciever
@@ -7885,6 +7860,31 @@ Transform:
   m_Children: []
   m_Father: {fileID: 294092222}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2013851222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2013851218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1e4399609ce56c428f19883b56ce116, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Connector: {fileID: 0}
+  ConnectorScript: {fileID: 0}
+  ConnectedLight: {fileID: 0}
+  InitialSprite: {fileID: 21300000, guid: d59a285d45b9aab4a976c5e99b983ea3, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 990aac2fb81c0d449b9986287474bc03, type: 3}
+  InitialLight: {fileID: 0}
+  ActiveLight: {fileID: 0}
+  SpriteRenderer: {fileID: 0}
+  isActive: 0
+  LightActive: 0
+  IsReciever: 1
+  MultiTrigger: 0
+  PendingConversation: {fileID: 0}
 --- !u!1 &2075619980
 GameObject:
   m_ObjectHideFlags: 0
@@ -7982,7 +7982,7 @@ MonoBehaviour:
     Boss: Of course. I would expect nothing less.  Whistlepig Boss: I hope this is
     a long and prosperous alliance for us both.  Eastburrow Boss: I\u2019ll see you
     there. "
-  PreConversation: 
+  PreConversation: Operator,
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 1855241245}
@@ -8009,7 +8009,6 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  encounterName: Escape1
   speakerList: []
   dialogueList: []
   lineIndex: 0

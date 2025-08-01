@@ -13,19 +13,34 @@ public class DialogueManager : MonoBehaviour
     public int StartNum = 0;
     public GameObject Wiretap;
     public Wiretap WiretapScript;
+    public GameObject PlayerReciever;
+    public OutputJack PlayerRecieverScript;
     public GameObject Conversation;
     public float DialogueTimer = 0;
+    public bool PreconversationOverride = false;
     // Start is called before the first frame update
     void Start()
     {
         Wiretap = GameObject.Find("Wiretap");
         WiretapScript = Wiretap.GetComponent<Wiretap>();
+        PlayerReciever = GameObject.Find("PlayerReciever");
+        PlayerRecieverScript = PlayerReciever.GetComponent<OutputJack>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Conversation != null && Conversation.GetComponent<ConversationManager>().CurrentDialog != null)
+        if (PlayerRecieverScript.isActive)
+        {
+            GameObject TempNotConv = GameObject.Find(PlayerRecieverScript.Connector.gameObject.name.Substring(0, (PlayerRecieverScript.Connector.gameObject.name.Length - 1)) + "1");
+            DialogueBox.text = TempNotConv.GetComponent<OutputJack>().PendingConversation.GetComponent<ConversationManager>().PreConversation;
+            PreconversationOverride = true;
+        }
+        else
+        {
+            PreconversationOverride = false;
+        }
+        if (Conversation != null && Conversation.GetComponent<ConversationManager>().CurrentDialog != null && !PreconversationOverride)
         {
             //DialogueBox.text = Conversation.GetComponent<ConversationManager>().CurrentDialog;
             DialogueBox.text = Conversation.GetComponent<ConversationManager>().CurrentLine();
@@ -55,7 +70,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void ForceUpdate()
     {
-        if (Conversation != null && Conversation.GetComponent<ConversationManager>())
+        if (Conversation != null && Conversation.GetComponent<ConversationManager>() && !PreconversationOverride)
         {
             DialogueBox.text = Conversation.GetComponent<ConversationManager>().CurrentDialog;
         }
