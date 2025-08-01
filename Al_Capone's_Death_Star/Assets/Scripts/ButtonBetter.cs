@@ -1,0 +1,61 @@
+using System.Collections;
+using System.Collections.Generic;
+using Unity.VisualScripting;
+using UnityEngine;
+
+public class ButtonBetter : MonoBehaviour
+{
+    public GameObject BossMan;
+    public BossManager BossScript;
+    public int ButtonNum = 0;
+    public bool MouseDown;
+    public bool MousedOver;
+    public bool MouseLockOut;
+    // Start is called before the first frame update
+    void Start()
+    {
+        BossMan = GameObject.Find("FinalBossManager");
+        BossScript = BossMan.GetComponent<BossManager>();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        CheckGrab();
+    }
+    public void CheckGrab()
+    {
+        if (Input.GetMouseButtonDown(0))
+        {
+            //Debug.Log("Mouse click");
+            MouseDown = true;
+        }
+        if (Input.GetMouseButtonUp(0))
+        {
+            MouseDown = false;
+            //Debug.Log("Mouse Unclick");
+        }
+        if (MouseDown && !MousedOver)
+        {
+            MouseLockOut = true;
+        }
+        if (MouseDown && MousedOver && !MouseLockOut)
+        {
+            Grab();
+            //Debug.Log("Tring to Move");
+        }
+    }
+    public void Grab()
+    {
+        BossScript.Input(ButtonNum);
+        MouseLockOut = true;
+    }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.name == "Mouse")
+        {
+            MousedOver = false;
+
+        }
+    }
+}
