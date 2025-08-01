@@ -621,6 +621,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
@@ -1616,6 +1617,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
@@ -2420,6 +2422,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
@@ -2498,6 +2501,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
@@ -2725,6 +2729,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
@@ -2803,6 +2808,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
@@ -3519,6 +3525,9 @@ MonoBehaviour:
   fading: 0
   sr: {fileID: 0}
   color: {r: 0, g: 0, b: 0, a: 0}
+  TimeDialation: 0.5
+  FadeWallTime: 1.2
+  Pausewall: 0
 --- !u!4 &779784836
 Transform:
   m_ObjectHideFlags: 0
@@ -3788,6 +3797,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
@@ -4016,6 +4026,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
@@ -4679,6 +4690,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
@@ -5272,6 +5284,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
@@ -6115,6 +6128,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 1
   HeldCthulu: 0
   speakerList: []
@@ -6683,6 +6697,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
@@ -7422,6 +7437,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
@@ -7524,6 +7540,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
@@ -8230,6 +8247,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []
@@ -8927,6 +8945,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
   speakerList: []

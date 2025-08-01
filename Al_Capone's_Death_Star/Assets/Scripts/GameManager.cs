@@ -46,11 +46,10 @@ public class GameManager : MonoBehaviour
     }
     public void Loop()
     {
-        FoundAll = false;
-        DontBrickMe = 0;
         if (Victory)
         {
             //Victory Cutscene IDK?
+            TrueLoop();
         }
         if (Loss)
         {
@@ -59,6 +58,11 @@ public class GameManager : MonoBehaviour
                 fading = true;
             }
         }
+    }
+    public void TrueLoop()
+    {
+        FoundAll = false;
+        DontBrickMe = 0;
         while (!FoundAll && DontBrickMe < 100)
         {
             DontBrickMe++;
@@ -141,6 +145,7 @@ public class GameManager : MonoBehaviour
                     FadeTime = 1;
                     FadedIn = true;
                     Pausewall = false;
+                    TrueLoop();
                 }
             }
         }

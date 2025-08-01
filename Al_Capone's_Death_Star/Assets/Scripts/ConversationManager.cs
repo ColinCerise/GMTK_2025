@@ -173,6 +173,7 @@ public class ConversationManager : MonoBehaviour
                     StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
                     CallMissed = true;
                     AngryBar.DisconnectedCall();
+                    Debug.Log("Disconnected on " + gameObject.name);
                     Manager.GetComponent<ConvoLog>().AddConvo(CurrentDialog);
                 }
                 RunConvo();
@@ -201,6 +202,7 @@ public class ConversationManager : MonoBehaviour
             StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
             CallMissed = true;
             AngryBar.DisconnectedCall();
+            Debug.Log("Disconnected on " + gameObject.name);
         }
         else if (TimeWaited >= 30 && CallStarted)
         {
@@ -208,6 +210,7 @@ public class ConversationManager : MonoBehaviour
             StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
             CallMissed = true;
             AngryBar.DisconnectedCall();
+            Debug.Log("Disconnected on " + gameObject.name);
         }
     }
     public void CheckIfActivate()
