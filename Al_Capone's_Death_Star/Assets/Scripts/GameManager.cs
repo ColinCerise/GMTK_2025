@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    public bool Victory;
+    public bool Loss;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +16,16 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         
+    }
+    public void Loop()
+    {
+        if (Victory)
+        {
+            //Victory Cutscene IDK
+        }
+        if (Loss)
+        {
+
+        }
     }
 }

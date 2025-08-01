@@ -152,6 +152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Failed: 0
+  GameManager: {fileID: 0}
+  GameManagerScript: {fileID: 0}
   CurrentInput: 0
   CorrectInput: 1
   Stage: 0
@@ -548,7 +550,7 @@ GameObject:
   - component: {fileID: 186307277}
   m_Layer: 0
   m_Name: Escape2
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1542,7 +1544,7 @@ GameObject:
   - component: {fileID: 270839293}
   m_Layer: 0
   m_Name: Car2
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2438,7 +2440,7 @@ GameObject:
   - component: {fileID: 501975486}
   m_Layer: 0
   m_Name: Bribe2
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2518,7 +2520,7 @@ GameObject:
   - component: {fileID: 542213684}
   m_Layer: 0
   m_Name: Mundane3
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2739,7 +2741,7 @@ GameObject:
   - component: {fileID: 589408312}
   m_Layer: 0
   m_Name: Smuggling3
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2819,7 +2821,7 @@ GameObject:
   - component: {fileID: 619343977}
   m_Layer: 0
   m_Name: Mundane1
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3476,6 +3478,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &779784834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 779784836}
+  - component: {fileID: 779784835}
+  m_Layer: 0
+  m_Name: LoopManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &779784835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779784834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 715758125a6021a4fa6807d213d5fe57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Victory: 0
+  Loss: 0
+--- !u!4 &779784836
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779784834}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.5451593, y: -0.3927272, z: -0.0714645}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &820983362
 GameObject:
   m_ObjectHideFlags: 0
@@ -3670,7 +3718,7 @@ GameObject:
   - component: {fileID: 833088551}
   m_Layer: 0
   m_Name: Bribe1
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3890,7 +3938,7 @@ GameObject:
   - component: {fileID: 881907532}
   m_Layer: 0
   m_Name: Smuggling2
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4557,7 +4605,7 @@ GameObject:
   - component: {fileID: 983352629}
   m_Layer: 0
   m_Name: Mundane2
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5139,7 +5187,7 @@ GameObject:
   - component: {fileID: 1090900947}
   m_Layer: 0
   m_Name: Inside2
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5987,7 +6035,7 @@ GameObject:
   - component: {fileID: 1241174939}
   m_Layer: 0
   m_Name: Cthulu
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6690,7 +6738,7 @@ GameObject:
   - component: {fileID: 1467166797}
   m_Layer: 0
   m_Name: Car1
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7440,7 +7488,7 @@ GameObject:
   - component: {fileID: 1711430210}
   m_Layer: 0
   m_Name: WeStillOn
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7522,7 +7570,7 @@ GameObject:
   - component: {fileID: 1720559579}
   m_Layer: 0
   m_Name: Inside1
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8320,7 +8368,7 @@ GameObject:
   - component: {fileID: 1947002915}
   m_Layer: 0
   m_Name: Smuggling1
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8887,6 +8935,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Anger: 0
   MaxAnger: 100
+  GameManager: {fileID: 0}
+  GameManagerScript: {fileID: 0}
 --- !u!4 &2075619982
 Transform:
   m_ObjectHideFlags: 0
@@ -8914,7 +8964,7 @@ GameObject:
   - component: {fileID: 2089083529}
   m_Layer: 0
   m_Name: Escape1
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9003,3 +9053,4 @@ SceneRoots:
   - {fileID: 724842951}
   - {fileID: 207378742}
   - {fileID: 1040641802}
+  - {fileID: 779784836}

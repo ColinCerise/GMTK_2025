@@ -17,7 +17,7 @@ public class ButtonBetter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        BossMan = GameObject.Find("FinalBossManager");
+        BossMan = GameObject.Find("BossManager");
         BossScript = BossMan.GetComponent<BossManager>();
         SpriteRenderer = GetComponent<SpriteRenderer>();
         InitialSprite = this.SpriteRenderer.sprite;

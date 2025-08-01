@@ -6,6 +6,8 @@ using UnityEngine;
 public class BossManager : MonoBehaviour
 {
     public bool Failed = false;
+    public GameObject GameManager;
+    public GameManager GameManagerScript;
     public int CurrentInput = 0;
     public int CorrectInput = 1;
     public int Stage = 0;
@@ -13,7 +15,8 @@ public class BossManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameManager = GameObject.Find("LoopManager");
+        GameManagerScript = GameManager.GetComponent<GameManager>();
     }
 
     // Update is called once per frame
@@ -65,6 +68,8 @@ public class BossManager : MonoBehaviour
                 break;
             case 7:
                 Debug.Log("You Win");
+                GameManagerScript.Victory = true;
+                GameManagerScript.Loop();
                 break;
 
 
@@ -79,6 +84,8 @@ public class BossManager : MonoBehaviour
         else
         {
             Failed = true;
+            GameManagerScript.Loss = true;
+            GameManagerScript.Loop();
             Stage = 0;
         }
         CurrentInput = 0;
