@@ -269,6 +269,7 @@ public class ConversationManager : MonoBehaviour
         CallConnected = false;
         CallStarted = false;
         CallMissed = false;
+        IAMTALKING = false;
         TheCthuluException = HeldCthulu;
         PlaceInConversation = 0;
         TimeWaited = 0;
