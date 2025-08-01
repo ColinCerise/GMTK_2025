@@ -297,7 +297,7 @@ Transform:
   m_GameObject: {fileID: 88107218}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4, y: -4, z: 0}
+  m_LocalPosition: {x: -4, y: -0.30999994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -625,6 +625,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  dialogueIndices: 
   lineIndex: 0
 --- !u!1 &186428237
 GameObject:
@@ -1619,6 +1620,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  dialogueIndices: 
   lineIndex: 0
 --- !u!1 &294092221
 GameObject:
@@ -2227,7 +2229,7 @@ Transform:
   m_GameObject: {fileID: 478585652}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -4, z: 0}
+  m_LocalPosition: {x: 0, y: -0.30999994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2422,6 +2424,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  dialogueIndices: 
   lineIndex: 0
 --- !u!1 &542213682
 GameObject:
@@ -2499,6 +2502,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  dialogueIndices: 
   lineIndex: 0
 --- !u!1 &576518151
 GameObject:
@@ -2725,6 +2729,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  dialogueIndices: 
   lineIndex: 0
 --- !u!1 &619343975
 GameObject:
@@ -2802,6 +2807,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  dialogueIndices: 
   lineIndex: 0
 --- !u!1 &670683100
 GameObject:
@@ -2928,7 +2934,7 @@ Transform:
   m_GameObject: {fileID: 670683100}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: -4, z: 0}
+  m_LocalPosition: {x: 4, y: -0.30999994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3786,6 +3792,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  dialogueIndices: 
   lineIndex: 0
 --- !u!1 &859865472
 GameObject:
@@ -4013,6 +4020,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  dialogueIndices: 
   lineIndex: 0
 --- !u!1 &901030210
 GameObject:
@@ -4675,6 +4683,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  dialogueIndices: 
   lineIndex: 0
 --- !u!1 &986484969
 GameObject:
@@ -5267,6 +5276,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  dialogueIndices: 
   lineIndex: 0
 --- !u!1 &1097691633
 GameObject:
@@ -5432,7 +5442,7 @@ Transform:
   m_GameObject: {fileID: 1100449619}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: -4, z: 0}
+  m_LocalPosition: {x: 2, y: -0.30999994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -6109,6 +6119,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  dialogueIndices: 
   lineIndex: 0
 --- !u!1 &1286682197
 GameObject:
@@ -6169,6 +6180,8 @@ MonoBehaviour:
   Conversation: {fileID: 0}
   DialogueTimer: 0
   PreconversationOverride: 0
+  physicalLines: []
+  maxLines: 4
 --- !u!114 &1286682201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6814,6 +6827,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  dialogueIndices: 
   lineIndex: 0
 --- !u!1 &1492175551
 GameObject:
@@ -6940,7 +6954,7 @@ Transform:
   m_GameObject: {fileID: 1492175551}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: -4, z: 0}
+  m_LocalPosition: {x: -2, y: -0.30999994, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7552,6 +7566,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  dialogueIndices: 
   lineIndex: 0
 --- !u!4 &1711430211
 Transform:
@@ -7653,6 +7668,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  dialogueIndices: 
   lineIndex: 0
 --- !u!1 &1735138189
 GameObject:
@@ -8434,6 +8450,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  dialogueIndices: 
   lineIndex: 0
 --- !u!4 &1947002916
 Transform:
@@ -8885,7 +8902,7 @@ Transform:
   m_GameObject: {fileID: 2013851218}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -8, y: -3.53, z: 0}
+  m_LocalPosition: {x: -8, y: 0.16, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9130,6 +9147,7 @@ MonoBehaviour:
   HeldCthulu: 0
   speakerList: []
   dialogueList: []
+  dialogueIndices: 
   lineIndex: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
