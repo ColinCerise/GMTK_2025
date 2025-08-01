@@ -9277,6 +9277,48 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 16c66068bc4f38a4d91b7fd0ba82244b, type: 3}
   - {fileID: 8300000, guid: f162934e8d9619447809b5cda2f44da6, type: 3}
   - {fileID: 8300000, guid: dc88987fcd471894996808885014cf63, type: 3}
+  voiceNames:
+  - Louis Boone
+  - Joey Smalltail
+  - Macey Kindle
+  - "Golff \u201CAce\u201D Caddy"
+  - Frank Piney
+  - Plumpen Tumac
+  - Acron Gnut
+  - Jerry Silflay
+  - "Al \u201CPine\u201D Cone"
+  - Yegg Veezer
+  - Chipka Kindle
+  - Tony Whiskers
+  - Shellby Fir
+  - Jeremy Fir
+  - ???
+  - Jimmy Oakleaf
+  - "\u201CBilly the Chuckling\u201D"
+  - "\u201CPhil Potatoes\u201D"
+  - "\u201CKyle\u201D"
+  - "Crag \u201COne-Eye\u201D"
+  voiceClips:
+  - {fileID: 8300000, guid: 47522fd887e501c438d36cec5c745e59, type: 3}
+  - {fileID: 8300000, guid: f7b9c4b88d496254f852e4030fe5a6f1, type: 3}
+  - {fileID: 8300000, guid: a3bcda2451ee41d4aa418bb640df1e32, type: 3}
+  - {fileID: 8300000, guid: f999a25625041c94198c2516581c1492, type: 3}
+  - {fileID: 8300000, guid: b0e4658ab03243840aab63790c80ae00, type: 3}
+  - {fileID: 8300000, guid: dd83fa05940044444ab097aca54e5cef, type: 3}
+  - {fileID: 8300000, guid: 517591e8f2ecbe44f989d52ea65f7673, type: 3}
+  - {fileID: 8300000, guid: b6b0a8bb5207bcb4b9ba8406978c59a5, type: 3}
+  - {fileID: 8300000, guid: 709be3bf0bf43e240bca290104e27870, type: 3}
+  - {fileID: 8300000, guid: 7c342a0f38b45aa468b3993a4fb1aaec, type: 3}
+  - {fileID: 8300000, guid: d3ed17e8922b84f4585ca2dd26c022e3, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &2007604382
 GameObject:
   m_ObjectHideFlags: 0
