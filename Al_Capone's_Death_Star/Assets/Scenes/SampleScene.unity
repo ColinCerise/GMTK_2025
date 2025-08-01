@@ -162,6 +162,8 @@ MonoBehaviour:
   B: {fileID: 0}
   C: {fileID: 0}
   D: {fileID: 0}
+  DialogueBox: {fileID: 0}
+  DialogueBoxScript: {fileID: 0}
 --- !u!4 &29519015
 Transform:
   m_ObjectHideFlags: 0
@@ -409,6 +411,7 @@ MonoBehaviour:
   MouseLockOut: 0
   InitialSprite: {fileID: 0}
   SpriteRenderer: {fileID: 0}
+  ConnectedText: {fileID: 1647973806}
 --- !u!212 &146130021
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -946,6 +949,7 @@ MonoBehaviour:
   MouseLockOut: 0
   InitialSprite: {fileID: 0}
   SpriteRenderer: {fileID: 0}
+  ConnectedText: {fileID: 832458123}
 --- !u!212 &207378741
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3469,6 +3473,7 @@ MonoBehaviour:
   MouseLockOut: 0
   InitialSprite: {fileID: 0}
   SpriteRenderer: {fileID: 0}
+  ConnectedText: {fileID: 419074030}
 --- !u!212 &724842950
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5328,6 +5333,7 @@ MonoBehaviour:
   MouseLockOut: 0
   InitialSprite: {fileID: 0}
   SpriteRenderer: {fileID: 0}
+  ConnectedText: {fileID: 1343583816}
 --- !u!212 &1040641801
 SpriteRenderer:
   m_ObjectHideFlags: 0
