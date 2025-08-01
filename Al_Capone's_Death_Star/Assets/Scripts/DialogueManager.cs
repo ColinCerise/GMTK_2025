@@ -103,10 +103,12 @@ public class DialogueManager : MonoBehaviour
     }
     public void ForceUpdate()
     {
-        /*if (Conversation != null && Conversation.GetComponent<ConversationManager>() && !PreconversationOverride)
+        ConversationManager convo = Conversation.GetComponent<ConversationManager>();
+        if (Conversation != null && convo && !PreconversationOverride)
         {
-            DialogueBox.text = Conversation.GetComponent<ConversationManager>().CurrentDialog;
-        }*/
+            convo.PlaceInConversation = convo.GetConversation().Length - 1;
+            DisplayLines(convo);
+        }
         DialogueTimer = 0;
     }
 
@@ -137,7 +139,7 @@ public class DialogueManager : MonoBehaviour
             AddLine(lineSection);
             lastLineIndex = lastSpaceIndex;
 
-            for (int i = 0; i < DialogueBox.textInfo.lineCount - maxLines; i++)
+            for (int i = 0; i < physicalLines.Count - maxLines || (physicalLines[0] != null && string.IsNullOrWhiteSpace(physicalLines[0])); i++)
             {
                 physicalLines.RemoveAt(0);
             }
@@ -153,6 +155,7 @@ public class DialogueManager : MonoBehaviour
             lastSpaceIndex = convo.PlaceInConversation + 1;
             lastLineIndex = convo.PlaceInConversation + 1;
 
+            AddLine("\n\n");
             AddLine(convo.NextLine());
         }
     }
