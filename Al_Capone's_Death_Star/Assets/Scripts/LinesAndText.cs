@@ -76,7 +76,7 @@ public class LinesAndText : MonoBehaviour
         }
         if (Hours >= 22)
         {
-            GameObject BossMan = GameObject.Find("FinalBossManager");
+            GameObject BossMan = GameObject.Find("BossManager");
             BossManager BossScript = BossMan.GetComponent<BossManager>();
             if (BossScript.Stage == 0)
             {

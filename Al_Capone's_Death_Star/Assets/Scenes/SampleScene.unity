@@ -152,6 +152,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Failed: 0
+  GameManager: {fileID: 0}
+  GameManagerScript: {fileID: 0}
   CurrentInput: 0
   CorrectInput: 1
   Stage: 0
@@ -548,7 +550,7 @@ GameObject:
   - component: {fileID: 186307277}
   m_Layer: 0
   m_Name: Escape2
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -689,7 +691,7 @@ RectTransform:
   m_LocalScale: {x: 0.04, y: 0.04, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1866340023}
+  - {fileID: 1853524325}
   - {fileID: 1097691634}
   - {fileID: 859865473}
   - {fileID: 1584706733}
@@ -1542,7 +1544,7 @@ GameObject:
   - component: {fileID: 270839293}
   m_Layer: 0
   m_Name: Car2
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2428,7 +2430,7 @@ GameObject:
   - component: {fileID: 501975486}
   m_Layer: 0
   m_Name: Bribe2
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2508,7 +2510,7 @@ GameObject:
   - component: {fileID: 542213684}
   m_Layer: 0
   m_Name: Mundane3
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2729,7 +2731,7 @@ GameObject:
   - component: {fileID: 589408312}
   m_Layer: 0
   m_Name: Smuggling3
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2809,7 +2811,7 @@ GameObject:
   - component: {fileID: 619343977}
   m_Layer: 0
   m_Name: Mundane1
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3466,6 +3468,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &779784834
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 779784836}
+  - component: {fileID: 779784835}
+  m_Layer: 0
+  m_Name: LoopManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &779784835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779784834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 715758125a6021a4fa6807d213d5fe57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Victory: 0
+  Loss: 0
+--- !u!4 &779784836
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779784834}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.5451593, y: -0.3927272, z: -0.0714645}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &820983362
 GameObject:
   m_ObjectHideFlags: 0
@@ -3660,7 +3708,7 @@ GameObject:
   - component: {fileID: 833088551}
   m_Layer: 0
   m_Name: Bribe1
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3880,7 +3928,7 @@ GameObject:
   - component: {fileID: 881907532}
   m_Layer: 0
   m_Name: Smuggling2
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4547,7 +4595,7 @@ GameObject:
   - component: {fileID: 983352629}
   m_Layer: 0
   m_Name: Mundane2
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5129,7 +5177,7 @@ GameObject:
   - component: {fileID: 1090900947}
   m_Layer: 0
   m_Name: Inside2
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5977,7 +6025,7 @@ GameObject:
   - component: {fileID: 1241174939}
   m_Layer: 0
   m_Name: Cthulu
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6102,6 +6150,7 @@ MonoBehaviour:
   Conversation: {fileID: 0}
   DialogueTimer: 0
   PreconversationOverride: 0
+  maxLines: 4
 --- !u!114 &1286682201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6679,7 +6728,7 @@ GameObject:
   - component: {fileID: 1467166797}
   m_Layer: 0
   m_Name: Car1
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7429,7 +7478,7 @@ GameObject:
   - component: {fileID: 1711430210}
   m_Layer: 0
   m_Name: WeStillOn
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7511,7 +7560,7 @@ GameObject:
   - component: {fileID: 1720559579}
   m_Layer: 0
   m_Name: Inside1
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7838,6 +7887,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845136093}
   m_CullTransparentMesh: 1
+--- !u!1 &1853524324
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1853524325}
+  - component: {fileID: 1853524327}
+  - component: {fileID: 1853524326}
+  m_Layer: 5
+  m_Name: DialogueBackground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1853524325
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853524324}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1866340023}
+  m_Father: {fileID: 186428241}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -140, y: -26}
+  m_SizeDelta: {x: 200, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1853524326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853524324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.94821626, b: 0.7480722, a: 0.27450982}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1853524327
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853524324}
+  m_CullTransparentMesh: 1
 --- !u!1 &1855241245
 GameObject:
   m_ObjectHideFlags: 0
@@ -8037,12 +8162,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1866340022}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 186428241}
+  m_Father: {fileID: 1853524325}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -8078,8 +8203,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -8096,8 +8221,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 24
-  m_fontSizeBase: 24
+  m_fontSize: 12
+  m_fontSizeBase: 12
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8233,7 +8358,7 @@ GameObject:
   - component: {fileID: 1947002915}
   m_Layer: 0
   m_Name: Smuggling1
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8800,6 +8925,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Anger: 0
   MaxAnger: 100
+  GameManager: {fileID: 0}
+  GameManagerScript: {fileID: 0}
 --- !u!4 &2075619982
 Transform:
   m_ObjectHideFlags: 0
@@ -8827,7 +8954,7 @@ GameObject:
   - component: {fileID: 2089083529}
   m_Layer: 0
   m_Name: Escape1
-  m_TagString: Untagged
+  m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8926,3 +9053,4 @@ SceneRoots:
   - {fileID: 724842951}
   - {fileID: 207378742}
   - {fileID: 1040641802}
+  - {fileID: 779784836}
