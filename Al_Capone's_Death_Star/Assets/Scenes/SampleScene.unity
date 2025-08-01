@@ -392,6 +392,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -1180,6 +1181,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -1981,6 +1983,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -2056,6 +2059,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -2280,6 +2284,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -2355,6 +2360,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -3026,6 +3032,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -3251,6 +3258,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -3911,6 +3919,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -4322,6 +4331,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -5162,6 +5172,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 1
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -5865,6 +5876,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -6601,6 +6613,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -6700,6 +6713,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -7403,6 +7417,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
@@ -8009,6 +8024,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
+  TheCthuluException: 0
   speakerList: []
   dialogueList: []
   lineIndex: 0
