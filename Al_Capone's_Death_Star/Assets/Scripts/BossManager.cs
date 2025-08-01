@@ -11,12 +11,26 @@ public class BossManager : MonoBehaviour
     public int CurrentInput = 0;
     public int CorrectInput = 1;
     public int Stage = 0;
+    public bool Activebuttons = false;
+    public GameObject A;
+    public GameObject B;
+    public GameObject C;
+    public GameObject D;
 
     // Start is called before the first frame update
     void Start()
     {
+        A = GameObject.Find("A");
+        B = GameObject.Find("B");
+        C = GameObject.Find("C");
+        D = GameObject.Find("D");
         GameManager = GameObject.Find("LoopManager");
         GameManagerScript = GameManager.GetComponent<GameManager>();
+        A.SetActive(false);
+        B.SetActive(false);
+        C.SetActive(false);
+        D.SetActive(false);
+        Activebuttons = false;
     }
 
     // Update is called once per frame
@@ -25,6 +39,14 @@ public class BossManager : MonoBehaviour
         switch(Stage)
         {
             case 1:
+                if (!Activebuttons)
+                {
+                    A.SetActive(true);
+                    B.SetActive(true);
+                    C.SetActive(true);
+                    D.SetActive(true);
+                    Activebuttons = true;
+                }
                 CorrectInput = 4;
                 if (CurrentInput != 0)
                 {
@@ -84,6 +106,11 @@ public class BossManager : MonoBehaviour
         else
         {
             Failed = true;
+            A.SetActive(false);
+            B.SetActive(false);
+            C.SetActive(false);
+            D.SetActive(false);
+            Activebuttons = false;
             GameManagerScript.Loss = true;
             GameManagerScript.Loop();
             Stage = 0;
