@@ -48,6 +48,7 @@ public class ConversationManager : MonoBehaviour
     private int totalCharLength;
     public List<string> speakerList = new List<string>();
     public List<string> dialogueList = new List<string>();
+    public int currentLineIndex = 0;
     public List<int> dialogueIndices = new List<int>();
     public int lineIndex;
 
@@ -69,6 +70,7 @@ public class ConversationManager : MonoBehaviour
             HeldCthulu = true;
         }
         ParseDialogue();
+        currentLineIndex = 0;
     }
 
     private void ParseDialogue()
