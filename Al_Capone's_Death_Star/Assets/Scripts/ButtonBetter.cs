@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -13,6 +14,7 @@ public class ButtonBetter : MonoBehaviour
     public bool MouseLockOut;
     public Sprite InitialSprite;
     public SpriteRenderer SpriteRenderer;
+    public TMP_Text ConnectedText;
 
     // Start is called before the first frame update
     void Start()
