@@ -32,9 +32,13 @@ public class DialogueManager : MonoBehaviour
     {
         if (PlayerRecieverScript.isActive)
         {
+            
             GameObject TempNotConv = GameObject.Find(PlayerRecieverScript.Connector.gameObject.name.Substring(0, (PlayerRecieverScript.Connector.gameObject.name.Length - 1)) + "1");
-            DialogueBox.text = TempNotConv.GetComponent<OutputJack>().PendingConversation.GetComponent<ConversationManager>().PreConversation;
-            PreconversationOverride = true;
+            if (TempNotConv.GetComponent<OutputJack>().PendingConversation != null)
+            {
+                DialogueBox.text = TempNotConv.GetComponent<OutputJack>().PendingConversation.GetComponent<ConversationManager>().PreConversation;
+                PreconversationOverride = true;
+            }
         }
         else
         {
