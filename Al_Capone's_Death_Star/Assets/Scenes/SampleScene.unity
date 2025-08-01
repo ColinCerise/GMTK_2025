@@ -594,7 +594,7 @@ MonoBehaviour:
     Boss: Of course. I would expect nothing less.  Whistlepig Boss: I hope this is
     a long and prosperous alliance for us both.  Eastburrow Boss: I\u2019ll see you
     there. "
-  PreConversation: Operator,
+  PreConversation: Operator, Thickwood
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 1855241245}
@@ -1591,7 +1591,7 @@ MonoBehaviour:
     door where you\u2019ll enter, hidden in some boxes.  Gunman: How are we supposed
     to find which boxes these things are in?  Thickwood Agent: They\u2019re unarmed.
     They won\u2019t put up much of a fight. Just get it done.  Gunman: Understood. "
-  PreConversation: Operator,
+  PreConversation: Operator, Chuckwood
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 400463482}
@@ -2397,7 +2397,7 @@ MonoBehaviour:
     door where you\u2019ll enter, hidden in some boxes.  Gunman: How are we supposed
     to find which boxes these things are in?  Thickwood Agent: They\u2019re unarmed.
     They won\u2019t put up much of a fight. Just get it done.  Gunman: Understood. "
-  PreConversation: Operator,
+  PreConversation: Operator, The Monax
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 710281746}
@@ -2477,7 +2477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conversation: 
-  PreConversation: Operator,
+  PreConversation: Operator, Chuckwood
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 400463482}
@@ -2706,7 +2706,7 @@ MonoBehaviour:
     door where you\u2019ll enter, hidden in some boxes.  Gunman: How are we supposed
     to find which boxes these things are in?  Thickwood Agent: They\u2019re unarmed.
     They won\u2019t put up much of a fight. Just get it done.  Gunman: Understood. "
-  PreConversation: Operator,
+  PreConversation: Operator, Eastburrow
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 921685621}
@@ -2786,7 +2786,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conversation: 
-  PreConversation: Operator,
+  PreConversation: Operator, Thickwood
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 188834805}
@@ -3776,7 +3776,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conversation: 
-  PreConversation: Operator,
+  PreConversation: Operator, Chuckwood
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 921685621}
@@ -4006,7 +4006,7 @@ MonoBehaviour:
     worry, we\u2019ve got that covered.  Smuggler: Alright. I\u2019ll get going on
     that.  Thickwood Agent: Report back to base when you\u2019re done. Call me from
     there.  Smuggler: I\u2019ll get back to you in a couple hours. "
-  PreConversation: Operator,
+  PreConversation: Operator, Thickwood
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 400463482}
@@ -4671,7 +4671,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Conversation: 
-  PreConversation: Operator,
+  PreConversation: Operator, Eastburrow
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 921685621}
@@ -5266,7 +5266,7 @@ MonoBehaviour:
     the guns are well-concealed.  Monax Agent: Perfect. They\u2019re stored in the
     containers by the garage door.  Inside Agent: I\u2019ll make sure they remain
     hidden. You won\u2019t be getting any problems from me. "
-  PreConversation: Operator,
+  PreConversation: Operator, Whistlepig
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 188834805}
@@ -6681,7 +6681,7 @@ MonoBehaviour:
     door where you\u2019ll enter, hidden in some boxes.  Gunman: How are we supposed
     to find which boxes these things are in?  Thickwood Agent: They\u2019re unarmed.
     They won\u2019t put up much of a fight. Just get it done.  Gunman: Understood. "
-  PreConversation: Operator,
+  PreConversation: Operator, Chuckwood
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 710281746}
@@ -7526,7 +7526,7 @@ MonoBehaviour:
     the guns are well-concealed.  Monax Agent: Perfect. They\u2019re stored in the
     containers by the garage door.  Inside Agent: I\u2019ll make sure they remain
     hidden. You won\u2019t be getting any problems from me. "
-  PreConversation: Operator,
+  PreConversation: Operator, Whistlepig
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 188834805}
@@ -8234,7 +8234,7 @@ MonoBehaviour:
     worry, we\u2019ve got that covered.  Smuggler: Alright. I\u2019ll get going on
     that.  Thickwood Agent: Report back to base when you\u2019re done. Call me from
     there.  Smuggler: I\u2019ll get back to you in a couple hours. "
-  PreConversation: Operator,
+  PreConversation: Operator, Chuckwood
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 921685621}
@@ -8933,7 +8933,7 @@ MonoBehaviour:
     Boss: Of course. I would expect nothing less.  Whistlepig Boss: I hope this is
     a long and prosperous alliance for us both.  Eastburrow Boss: I\u2019ll see you
     there. "
-  PreConversation: Operator,
+  PreConversation: Operator, The Monax
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
   StarterOutput: {fileID: 1855241245}
