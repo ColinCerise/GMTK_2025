@@ -47,6 +47,7 @@ public class ConversationManager : MonoBehaviour
     private int totalCharLength;
     public List<string> speakerList = new List<string>();
     public List<string> dialogueList = new List<string>();
+    public List<int> dialogueIndices = new List<int>();
     public int lineIndex;
 
     // Start is called before the first frame
@@ -74,12 +75,16 @@ public class ConversationManager : MonoBehaviour
             using StreamReader sr = new StreamReader(filepath);
             {
                 string line;
+                int count = 0;
                 
                 while ((line = sr.ReadLine()) != null)
                 {
                     line.Trim();
                     speakerList.Add(line.Substring(0, line.IndexOf(": ")));
-                    dialogueList.Add(line.Substring(line.IndexOf(": ") + 2));
+                    string dialogue = line.Substring(line.IndexOf(": ") + 2);
+                    count += dialogue.Length;
+                    dialogueIndices.Add(count - 1);
+                    dialogueList.Add(dialogue);
                 }
             }
         }
@@ -142,6 +147,7 @@ public class ConversationManager : MonoBehaviour
             if (StarterOutput.GetComponent<OutputJack>() != null && !StarterOutput.GetComponent<OutputJack>().LightActive)
             {
                 StarterOutput.GetComponent<OutputJack>().SetLightActive(true, this.gameObject);
+                Manager.GetComponent<AudioManager>().PlaySFX("lightOn");
             }
             if (!CallConnected && TimeWaited >= 5)
             {
@@ -182,29 +188,6 @@ public class ConversationManager : MonoBehaviour
         }
     }
 
-    public string CurrentLine()
-    {
-        int charNum = PlaceInConversation;
-        int lineIndex = -1;
-        int remainder = charNum;
-        if (charNum < totalCharLength)
-        {
-            for (int i = 0, count = charNum; count > 0; i++)
-            {
-                lineIndex = i;
-                remainder = count;
-                count -= dialogueList[i].Length;
-            }
-        }
-        if (lineIndex >= 0 && lineIndex < dialogueList.Count)
-        {
-            return speakerList[lineIndex] + ": " + dialogueList[lineIndex].Substring(0, remainder);
-        }
-        else
-        {
-            return string.Empty;
-        }
-    }
     public void CheckIfTimeout()
     {
         if (TimeWaited >= 20 && !CallConnected)
