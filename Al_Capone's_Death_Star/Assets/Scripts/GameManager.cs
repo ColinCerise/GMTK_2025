@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public bool Loss;
     public GameObject Conversations;
     public GameObject FadeWall;
+    public GameObject Anger;
+    public AngerBar AngerBar;
     public bool FoundAll = false;
     public int DontBrickMe;
     public float FadeTime = 0;
@@ -24,6 +26,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Anger = GameObject.Find("AngryBossManager");
+        AngerBar = Anger.GetComponent<AngerBar>();
         if (FadeWall != null)
         {
             sr = FadeWall.GetComponent<SpriteRenderer>();
@@ -118,6 +122,7 @@ public class GameManager : MonoBehaviour
             else
             {
                 BounceConnectors = false;
+                AngerBar.Anger = 0;
             }
         }
     }

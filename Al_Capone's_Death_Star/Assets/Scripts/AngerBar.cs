@@ -23,7 +23,6 @@ public class AngerBar : MonoBehaviour
             Debug.Log("GameOver");
             GameManagerScript.Loss = true;
             GameManagerScript.Loop();
-            Anger = 0;
         }
     }
     public void AddAnger(float anger)
