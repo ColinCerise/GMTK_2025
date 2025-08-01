@@ -115,6 +115,7 @@ public class ConversationManager : MonoBehaviour
 
     void Update()
     {
+        // Cthulu
         if (TheCthuluException)
         {
             CallEnded = true;
@@ -151,6 +152,7 @@ public class ConversationManager : MonoBehaviour
             }
             
         }
+
         //check if enough time has passed and the call is still going
         if (((ManagerScript.Hours == TimeOffsetHours && ManagerScript.Minutes >= TimeOffsetMinutes) || ManagerScript.Hours > TimeOffsetHours) && !CallEnded)
         {
@@ -244,7 +246,6 @@ public class ConversationManager : MonoBehaviour
             // If we have progressed to a new conversation index
             if (temp != PlaceInConversation)
             {
-                DialogueBoxScript.CallDialogueUpdate();
                 if (WiretapScript.Conversation != null && WiretapScript.Conversation.Equals(ConversationTargets))
                 {
                     if (PlaceInConversation - DialogueBoxScript.StartNum >= maxLeangth * ListenReq)
@@ -271,10 +272,12 @@ public class ConversationManager : MonoBehaviour
                     if (PlaceInConversation < maxLeangth && DialogueBoxScript.StartNum < maxLeangth)
                     {
                         CurrentDialog = Conversation.Substring(DialogueBoxScript.StartNum, PlaceInConversation - DialogueBoxScript.StartNum);
+                        DialogueBoxScript.CallDialogueUpdate();
                     }
                     else if (DialogueBoxScript.StartNum < maxLeangth)
                     {
                         CurrentDialog = Conversation.Substring(DialogueBoxScript.StartNum, maxLeangth - DialogueBoxScript.StartNum);
+                        DialogueBoxScript.CallDialogueUpdate();
                     }
                     else
                     {
