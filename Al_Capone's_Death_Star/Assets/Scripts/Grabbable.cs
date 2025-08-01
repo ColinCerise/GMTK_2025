@@ -25,6 +25,7 @@ public class Grabbable : MonoBehaviour
     public bool SnapToReciever = false;
     public bool SnapToOutput = false;
     public bool AbleToLock = true;
+    private AudioManager audioManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -33,6 +34,7 @@ public class Grabbable : MonoBehaviour
         InitialSprite = this.SpriteRenderer.sprite;
         StartPos = transform.position;
         //this.GetComponent<Wiretap>
+        audioManager = GameObject.Find("Manager").GetComponent<AudioManager>();
     }
 
     // Update is called once per frame
@@ -133,16 +135,20 @@ public class Grabbable : MonoBehaviour
         if (collision.gameObject.name == "Mouse")
         {
             MousedOver = false;
+
         }
         else if (collision.gameObject.tag == "Reciever")
         {
             MousedOverReciever = false;
             TargettedReciever = null;
+            audioManager.PlaySFX("wireConnect");
         }
         else if (collision.gameObject.tag == "Output")
         {
             MousedOverOutput = false;
             TargettedReciever = null;
+
+            audioManager.PlaySFX("grabWire");
         }
         if (collision.gameObject.name != "Mouse" && collision.gameObject.name != "Wiretap")
         {
