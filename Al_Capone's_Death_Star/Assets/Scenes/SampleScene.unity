@@ -8778,7 +8778,7 @@ GameObject:
   - component: {fileID: 1861678182}
   - component: {fileID: 1861678181}
   m_Layer: 0
-  m_Name: IncompetenceBar
+  m_Name: AngerMeter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
