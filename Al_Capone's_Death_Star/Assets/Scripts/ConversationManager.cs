@@ -74,7 +74,7 @@ public class ConversationManager : MonoBehaviour
         }
         if (TheBossException)
         {
-            HeldBoss = true;
+            //HeldBoss = true;
         }
         currentLineIndex = 0;
     }
@@ -130,7 +130,6 @@ public class ConversationManager : MonoBehaviour
         if (TheCthuluException)
         {
             CallEnded = true;
-            Debug.Log("Ending call via Cthulu, i4");
             CallStarted = true;
             CallConnected = true;
             maxLeangth = totalCharLength;
@@ -160,7 +159,6 @@ public class ConversationManager : MonoBehaviour
                     TheCthuluException = false;
                     DialogueBoxScript.Conversation = null;
                     Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
-                    Debug.Log(gameObject.name + ": " + DialogueBoxScript.FormattedCurrentText() + "\nIdentity: 4 (Cthulu)");
                 }
             }
             
@@ -264,11 +262,11 @@ public class ConversationManager : MonoBehaviour
             int temp = PlaceInConversation;
             // Set the integer value of the current character based on the passage of time since the beginning of the conversation
             PlaceInConversation = (int)((TimeWaited - StartOffset) * LPS);
-
+            
             // If we have progressed to a new conversation index
             if (temp != PlaceInConversation)
             {
-                if (WiretapScript.Conversation != null && WiretapScript.Conversation.Equals(ConversationTargets))
+                if (TheBossException || (WiretapScript.Conversation != null && WiretapScript.Conversation.Equals(ConversationTargets)))
                 {
                     if (PlaceInConversation - DialogueBoxScript.StartNum >= maxLeangth * ListenReq)
                     {
