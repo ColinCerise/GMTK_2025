@@ -9786,8 +9786,11 @@ MonoBehaviour:
   LoopMan: {fileID: 0}
   LoopScript: {fileID: 0}
   BubblePrefab: {fileID: 259484157708186093, guid: af4824c66665efa4ca660bb1ef80dd25, type: 3}
+  FishPrefab: {fileID: 259484157708186093, guid: d5494a014e764f845895b7a050ce3d51, type: 3}
   AccumulatedTime: 0
+  FishTime: 0
   SpawnDelay: 1
+  FishSpawnDelay: 9
 --- !u!4 &2054129269
 Transform:
   m_ObjectHideFlags: 0
