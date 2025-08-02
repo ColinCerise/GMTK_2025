@@ -147,6 +147,7 @@ public class ConversationManager : MonoBehaviour
                     CurrentDialog = Conversation.Substring(0, maxLeangth);
                     DialogueBoxScript.ForceUpdate();
                     TheCthuluException = false;
+                    DialogueBoxScript.Conversation = null;
                     Manager.GetComponent<ConvoLog>().AddConvo(CurrentDialog);
                 }
             }
