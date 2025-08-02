@@ -14,12 +14,13 @@ public class AudioManager : MonoBehaviour
     [SerializeField] string[] songNames;
     [SerializeField] AudioClip[] songClips;
     [SerializeField] bool musicOn = true;
+    [SerializeField] string songToPlay;
 
     private void Start()
     {
-        if (musicOn)
+        if (musicOn && songToPlay != null)
         {
-            StartCoroutine(LoopMusic("main"));
+            StartCoroutine(LoopMusic(songToPlay));
         }
     }
 
@@ -38,12 +39,20 @@ public class AudioManager : MonoBehaviour
 
     private IEnumerator LoopMusic(string song)
     {
-        mainSource.clip = songClips[Array.IndexOf(songNames, song)];
-        mainSource.Play();
-        yield return new WaitForSeconds(mainSource.clip.length);
-        if (musicOn)
+        if (Array.IndexOf(songNames, song) != -1)
         {
-            StartCoroutine(LoopMusic(song));
+            mainSource.clip = songClips[Array.IndexOf(songNames, song)];
+
+            mainSource.Play();
+            yield return new WaitForSeconds(mainSource.clip.length);
+            if (musicOn)
+            {
+                StartCoroutine(LoopMusic(song));
+            }
+        }
+        else
+        {
+            yield return null;
         }
     }
 }

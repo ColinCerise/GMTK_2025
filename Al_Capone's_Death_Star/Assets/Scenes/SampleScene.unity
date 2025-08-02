@@ -9474,7 +9474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hours: 12
-  Minutes: 50
+  Minutes: 0
   AccumulatedTime: 0
   Line1: {fileID: 0}
   Connectpoint1a: {fileID: 921685621}
@@ -9608,6 +9608,7 @@ MonoBehaviour:
   songClips:
   - {fileID: 8300000, guid: 677316970526c7e4ca247f2ce3a4130a, type: 3}
   musicOn: 1
+  songToPlay: 
 --- !u!1 &2007604382
 GameObject:
   m_ObjectHideFlags: 0
