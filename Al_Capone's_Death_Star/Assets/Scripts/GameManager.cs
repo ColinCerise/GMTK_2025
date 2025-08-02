@@ -29,8 +29,10 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (SceneManager.GetActiveScene().Equals("SampleScene"))
+        Debug.Log(SceneManager.GetActiveScene().name);
+        if (!SceneManager.GetActiveScene().Equals("FakeSampleScene"))
         {
+            Debug.Log("This Is The Sample!!!!!!!!");
             Anger = GameObject.Find("AngryBossManager");
             AngerBar = Anger.GetComponent<AngerBar>();
             if (FadeWall != null)
@@ -72,6 +74,7 @@ public class GameManager : MonoBehaviour
             {
                 fading = true;
             }
+            TrueLoop();
         }
     }
     public void TrueLoop()
