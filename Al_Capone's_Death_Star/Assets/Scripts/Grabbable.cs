@@ -25,6 +25,7 @@ public class Grabbable : MonoBehaviour
     public bool SnapToReciever = false;
     public bool SnapToOutput = false;
     public bool AbleToLock = true;
+    public bool NoSnapping = false;
     private AudioManager audioManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -54,41 +55,44 @@ public class Grabbable : MonoBehaviour
         }
         if (!GrabbedLock)
         {
-            SpriteRenderer.sprite = InitialSprite;
-            if (MultiTrigger == 1 || MultiTrigger == 0)
+            if (!NoSnapping)
             {
-                rb.velocity = Vector2.zero;
-                if (SnapToReciever)
+                SpriteRenderer.sprite = InitialSprite;
+                if (MultiTrigger == 1 || MultiTrigger == 0)
                 {
-                    if (MousedOverReciever)
+                    rb.velocity = Vector2.zero;
+                    if (SnapToReciever)
                     {
-                        LockOnNode = true;
-                        transform.position = TargettedReciever.transform.position;
-                    }
-                    else
-                    {
-                        transform.position = StartPos;
-                    }
-                }
-                if (SnapToOutput)
-                {
-                    if (MousedOverOutput)
-                    {
-                        if (AbleToLock)
+                        if (MousedOverReciever)
                         {
                             LockOnNode = true;
+                            transform.position = TargettedReciever.transform.position;
                         }
-                        transform.position = TargettedReciever.transform.position;
+                        else
+                        {
+                            transform.position = StartPos;
+                        }
                     }
-                    else
+                    if (SnapToOutput)
                     {
-                        transform.position = StartPos;
+                        if (MousedOverOutput)
+                        {
+                            if (AbleToLock)
+                            {
+                                LockOnNode = true;
+                            }
+                            transform.position = TargettedReciever.transform.position;
+                        }
+                        else
+                        {
+                            transform.position = StartPos;
+                        }
                     }
                 }
-            }
-            else if (!LockOnNode)
-            {
-                transform.position = StartPos;
+                else if (!LockOnNode)
+                {
+                    transform.position = StartPos;
+                }
             }
         }
         else
@@ -125,7 +129,7 @@ public class Grabbable : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Debug.Log("triggered" + collision.gameObject.name);
-        if (collision.gameObject.name != "Mouse" && collision.gameObject.name != "Wiretap")
+        if (collision.gameObject.name != "Mouse" && collision.gameObject.name != "Wiretap" && collision.gameObject.tag != "UselessObj")
         {
             MultiTrigger++;
         }
@@ -150,7 +154,7 @@ public class Grabbable : MonoBehaviour
 
             audioManager.PlaySFX("grabWire");
         }
-        if (collision.gameObject.name != "Mouse" && collision.gameObject.name != "Wiretap")
+        if (collision.gameObject.name != "Mouse" && collision.gameObject.name != "Wiretap" && collision.gameObject.tag != "UselessObj")
         {
             MultiTrigger--;
         }
