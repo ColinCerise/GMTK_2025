@@ -9275,7 +9275,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hours: 12
-  Minutes: 0
+  Minutes: 50
   AccumulatedTime: 0
   Line1: {fileID: 0}
   Connectpoint1a: {fileID: 921685621}
@@ -9363,6 +9363,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f162934e8d9619447809b5cda2f44da6, type: 3}
   - {fileID: 8300000, guid: dc88987fcd471894996808885014cf63, type: 3}
   voiceNames:
+  - "\u201CKyle\u201D"
   - Louis Boone
   - Joey Smalltail
   - Macey Kindle
@@ -9374,16 +9375,16 @@ MonoBehaviour:
   - "Al \u201CPine\u201D Cone"
   - Yegg Veezer
   - Chipka Kindle
+  - Jimmy Oakleaf
+  - ???
+  - "\u201CPhil Potatoes\u201D"
   - Tony Whiskers
   - Shellby Fir
   - Jeremy Fir
-  - ???
-  - Jimmy Oakleaf
   - "\u201CBilly the Chuckling\u201D"
-  - "\u201CPhil Potatoes\u201D"
-  - "\u201CKyle\u201D"
   - "Crag \u201COne-Eye\u201D"
   voiceClips:
+  - {fileID: 0}
   - {fileID: 8300000, guid: 47522fd887e501c438d36cec5c745e59, type: 3}
   - {fileID: 8300000, guid: f7b9c4b88d496254f852e4030fe5a6f1, type: 3}
   - {fileID: 8300000, guid: a3bcda2451ee41d4aa418bb640df1e32, type: 3}
@@ -9395,15 +9396,19 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 709be3bf0bf43e240bca290104e27870, type: 3}
   - {fileID: 8300000, guid: 7c342a0f38b45aa468b3993a4fb1aaec, type: 3}
   - {fileID: 8300000, guid: d3ed17e8922b84f4585ca2dd26c022e3, type: 3}
+  - {fileID: 8300000, guid: a1631ece56e33564eb1319fb4962ff7c, type: 3}
+  - {fileID: 8300000, guid: 026f303503c964d40b1372d5a8ff024e, type: 3}
+  - {fileID: 8300000, guid: 128762f96dc9f694082c5d6b05423511, type: 3}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  songNames:
+  - main
+  songClips:
+  - {fileID: 8300000, guid: 677316970526c7e4ca247f2ce3a4130a, type: 3}
+  musicOn: 1
 --- !u!1 &2007604382
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,17 @@ public class AudioManager : MonoBehaviour
     [SerializeField] AudioClip[] sfxClips;
     [SerializeField] string[] voiceNames;
     [SerializeField] AudioClip[] voiceClips;
+    [SerializeField] string[] songNames;
+    [SerializeField] AudioClip[] songClips;
+    [SerializeField] bool musicOn = true;
+
+    private void Start()
+    {
+        if (musicOn)
+        {
+            StartCoroutine(LoopMusic("main"));
+        }
+    }
 
     public void PlaySFX(string sfxName)
     {
@@ -22,6 +33,17 @@ public class AudioManager : MonoBehaviour
         if (Array.IndexOf(voiceNames, name) != -1)
         {
             mainSource.PlayOneShot(voiceClips[Array.IndexOf(voiceNames, name)]);
+        }
+    }
+
+    private IEnumerator LoopMusic(string song)
+    {
+        mainSource.clip = songClips[Array.IndexOf(songNames, song)];
+        mainSource.Play();
+        yield return new WaitForSeconds(mainSource.clip.length);
+        if (musicOn)
+        {
+            StartCoroutine(LoopMusic(song));
         }
     }
 }
