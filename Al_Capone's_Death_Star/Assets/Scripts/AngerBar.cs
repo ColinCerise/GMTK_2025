@@ -35,6 +35,7 @@ public class AngerBar : MonoBehaviour
     {
         if (Anger >= MaxAnger)
         {
+            Anger = 0;
             Debug.Log("GameOver");
             GameManagerScript.Loss = true;
             GameManagerScript.Loop();
