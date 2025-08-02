@@ -94,6 +94,10 @@ public class Grabbable : MonoBehaviour
                     transform.position = StartPos;
                 }
             }
+            else if (transform.position.y >= 20 || transform.position.y <= -10)
+            {
+                transform.position = StartPos;
+            }
         }
         else
         {

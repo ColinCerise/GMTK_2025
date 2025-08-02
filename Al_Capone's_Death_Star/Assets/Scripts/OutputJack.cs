@@ -39,7 +39,6 @@ public class OutputJack : MonoBehaviour
             ConnectorScript = Connector.GetComponent<Grabbable>();
         }
     }
-
     // Update is called once per frame
     void Update()
     {
@@ -85,7 +84,7 @@ public class OutputJack : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         //Debug.Log("triggered" + collision.gameObject.name);
-        if (collision.gameObject.name != "Mouse" && collision.gameObject.name != "Wiretap")
+        if (collision.gameObject.name != "Mouse" && collision.gameObject.name != "Wiretap" && collision.gameObject.tag != "UselessObj")
         {
             MultiTrigger++;
             if (IsReciever && MultiTrigger == 1)
@@ -100,7 +99,7 @@ public class OutputJack : MonoBehaviour
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.name != "Mouse" && collision.gameObject.name != "Wiretap")
+        if (collision.gameObject.name != "Mouse" && collision.gameObject.name != "Wiretap" && collision.gameObject.tag != "UselessObj")
         {
             MultiTrigger--;
             if (IsReciever && MultiTrigger == 0)

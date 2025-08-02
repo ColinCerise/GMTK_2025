@@ -227,7 +227,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.21133333}
@@ -1279,6 +1279,7 @@ MonoBehaviour:
   SnapToReciever: 1
   SnapToOutput: 0
   AbleToLock: 1
+  NoSnapping: 0
 --- !u!50 &222431243
 Rigidbody2D:
   serializedVersion: 4
@@ -2458,7 +2459,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.21133333}
@@ -3151,7 +3152,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.21133333}
@@ -3274,7 +3275,7 @@ GameObject:
   - component: {fileID: 706269549}
   m_Layer: 0
   m_Name: Photo1
-  m_TagString: Untagged
+  m_TagString: UselessObj
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3312,6 +3313,7 @@ MonoBehaviour:
   SnapToReciever: 0
   SnapToOutput: 0
   AbleToLock: 0
+  NoSnapping: 1
 --- !u!212 &706269547
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3394,7 +3396,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -3435,7 +3437,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.1919434}
@@ -4080,6 +4082,7 @@ MonoBehaviour:
   SnapToReciever: 1
   SnapToOutput: 0
   AbleToLock: 1
+  NoSnapping: 0
 --- !u!50 &820983364
 Rigidbody2D:
   serializedVersion: 4
@@ -5134,6 +5137,7 @@ MonoBehaviour:
   SnapToReciever: 1
   SnapToOutput: 0
   AbleToLock: 1
+  NoSnapping: 0
 --- !u!50 &962602144
 Rigidbody2D:
   serializedVersion: 4
@@ -5719,6 +5723,7 @@ MonoBehaviour:
   SnapToReciever: 1
   SnapToOutput: 0
   AbleToLock: 1
+  NoSnapping: 0
 --- !u!50 &1055399314
 Rigidbody2D:
   serializedVersion: 4
@@ -6012,7 +6017,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.21133333}
@@ -6173,6 +6178,7 @@ MonoBehaviour:
   SnapToReciever: 1
   SnapToOutput: 0
   AbleToLock: 1
+  NoSnapping: 0
 --- !u!50 &1136175021
 Rigidbody2D:
   serializedVersion: 4
@@ -6892,6 +6898,7 @@ MonoBehaviour:
   SnapToReciever: 0
   SnapToOutput: 1
   AbleToLock: 1
+  NoSnapping: 0
 --- !u!50 &1308828694
 Rigidbody2D:
   serializedVersion: 4
@@ -7547,7 +7554,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.21133333}
@@ -9733,7 +9740,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0.21133333}

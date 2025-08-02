@@ -9,6 +9,7 @@ TagManager:
   - Conversation
   - Found
   - Connector
+  - UselessObj
   layers:
   - Default
   - TransparentFX
