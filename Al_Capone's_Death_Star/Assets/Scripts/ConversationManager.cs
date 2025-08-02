@@ -163,7 +163,7 @@ public class ConversationManager : MonoBehaviour
             if (StarterOutput.GetComponent<OutputJack>() != null && !StarterOutput.GetComponent<OutputJack>().LightActive)
             {
                 StarterOutput.GetComponent<OutputJack>().SetLightActive(true, this.gameObject);
-                Manager.GetComponent<AudioManager>().PlaySFX("lightOn");
+                Manager.GetComponent<AudioManager>().PlaySoundEffect("lightOn");
             }
             if (!CallConnected && TimeWaited >= 10)
             {
@@ -313,7 +313,7 @@ public class ConversationManager : MonoBehaviour
     {
         currentLineIndex++;
         Manager.GetComponent<AudioManager>().PlayVoiceFX(speakerList[currentLineIndex - 1]);
-        return speakerList[currentLineIndex - 1] + "\n";
+        return "<b>" + speakerList[currentLineIndex - 1] + "</b>\n";
     }
 
     public string GetConversation()

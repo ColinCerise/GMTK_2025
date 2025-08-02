@@ -24,7 +24,7 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    public void PlaySFX(string sfxName)
+    public void PlaySoundEffect(string sfxName)
     {
         mainSource.PlayOneShot(sfxClips[Array.IndexOf(sfxNames, sfxName)]);
     }
