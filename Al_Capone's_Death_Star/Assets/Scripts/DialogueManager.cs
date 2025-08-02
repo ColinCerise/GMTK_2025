@@ -28,7 +28,7 @@ public class DialogueManager : MonoBehaviour
     private int tempCount = 0;
 
     public string[] troublesomeNames;
-    private string formattedCurrentText;
+    [SerializeField] string formattedCurrentText;
 
     // Start is called before the first frame update
     void Start()
@@ -176,7 +176,7 @@ public class DialogueManager : MonoBehaviour
 
         if (convo.GetConversation()[convo.PlaceInConversation] == ' ')
         {
-            lastSpaceIndex = convo.PlaceInConversation;
+            lastSpaceIndex = convo.PlaceInConversation + 1;
         }
         else if (convo.GetConversation()[convo.PlaceInConversation] == '\n')
         {
