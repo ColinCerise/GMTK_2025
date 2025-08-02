@@ -79,6 +79,7 @@ public class DialogueManager : MonoBehaviour
     }
     public void SetAsTalking(GameObject Conversationist, int startingNum)
     {
+        Debug.Log(Conversationist.name + " ENCOUNTER");
         lastSpaceIndex = 0;
         lastLineIndex = 0;
         Conversation = Conversationist;
@@ -134,6 +135,7 @@ public class DialogueManager : MonoBehaviour
 
     private void DisplayLines(ConversationManager convo)
     {
+        Debug.Log("Talkin for the boss");
         string fullDialogue = "";
         foreach (string str in physicalLines)
         {
@@ -147,7 +149,7 @@ public class DialogueManager : MonoBehaviour
         }
 
         fullDialogue += convo.GetConversation().Substring(lastLineIndex, convo.PlaceInConversation - lastLineIndex);
-        if (!PlayerRecieverScript.isActive)
+        if (!PlayerRecieverScript.isActive || convo.TheBossException)
         {
             DialogueBox.text = fullDialogue;
         }
