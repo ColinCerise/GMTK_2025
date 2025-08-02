@@ -8,7 +8,7 @@ public class ConvoLog : MonoBehaviour
     [SerializeField] List<string> conversationsLogged = new List<string>();
     [SerializeField] GameObject logbookDisplay;
     private bool noEntries;
-    private string defaultText = "No entries available (listen in on conversations and they will be recorded here for your reference).";
+    [SerializeField] string defaultText = "No entries available (listen in on conversations and they will be recorded here for your reference).";
     private TextMeshProUGUI currLog;
     private int logCounter;
 

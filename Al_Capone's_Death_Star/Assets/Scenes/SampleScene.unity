@@ -2598,7 +2598,7 @@ Transform:
   m_GameObject: {fileID: 495559436}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2, y: 5, z: 0}
+  m_LocalPosition: {x: -2, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3128,7 +3128,7 @@ GameObject:
   - component: {fileID: 632590387}
   - component: {fileID: 632590386}
   m_Layer: 5
-  m_Name: Entry2
+  m_Name: Overflow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3150,8 +3150,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 175, y: -35.62}
-  m_SizeDelta: {x: 289.67, y: 263.61}
+  m_AnchoredPosition: {x: 175, y: -7}
+  m_SizeDelta: {x: 290, y: 320}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &632590386
 MonoBehaviour:
@@ -3182,8 +3182,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 0.21176471, g: 0.12941177, b: 0.047058824, a: 1}
+    rgba: 4278323982
+  m_fontColor: {r: 0.05490196, g: 0.043137256, b: 0.007843138, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -3862,7 +3862,7 @@ Transform:
   m_GameObject: {fileID: 750313045}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4, y: 5, z: 0}
+  m_LocalPosition: {x: 4, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4890,7 +4890,7 @@ Transform:
   m_GameObject: {fileID: 909030874}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 5, z: 0}
+  m_LocalPosition: {x: 0, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5989,7 +5989,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1097691634
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7117,7 +7117,7 @@ Transform:
   m_GameObject: {fileID: 1327886542}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: 5, z: 0}
+  m_LocalPosition: {x: 2, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8012,7 +8012,7 @@ GameObject:
   - component: {fileID: 1687916317}
   - component: {fileID: 1687916316}
   m_Layer: 5
-  m_Name: Entry1
+  m_Name: Entry
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8034,8 +8034,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -178, y: -35.62}
-  m_SizeDelta: {x: 289.67, y: 263.61}
+  m_AnchoredPosition: {x: -178, y: -7}
+  m_SizeDelta: {x: 290, y: 320}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1687916316
 MonoBehaviour:
@@ -8057,7 +8057,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: hi
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 708b3789b78763943af84c936cca6858, type: 2}
   m_sharedMaterial: {fileID: -9048621022931018289, guid: 708b3789b78763943af84c936cca6858, type: 2}
@@ -8066,8 +8066,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4278985014
-  m_fontColor: {r: 0.21176471, g: 0.12941177, b: 0.047058824, a: 1}
+    rgba: 4278323982
+  m_fontColor: {r: 0.05490196, g: 0.043137256, b: 0.007843138, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -9434,6 +9434,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversationsLogged: []
   logbookDisplay: {fileID: 1097691633}
+  defaultText: No entries available. (listen in on conversations and they will be
+    recorded here for your reference).
 --- !u!114 &1995254234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9537,7 +9539,7 @@ Transform:
   m_GameObject: {fileID: 2007604382}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4, y: 5, z: 0}
+  m_LocalPosition: {x: -4, y: 6, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
