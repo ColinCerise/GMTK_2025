@@ -6768,7 +6768,7 @@ MonoBehaviour:
   StarterOutput: {fileID: 921685621}
   TargetReciever: {fileID: 2013851218}
   TimeOffsetHours: 12
-  TimeOffsetMinutes: 0
+  TimeOffsetMinutes: 30
   LPS: 14
   StartOffset: 0
   PlaceInConversation: 0
