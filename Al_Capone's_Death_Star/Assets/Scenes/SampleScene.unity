@@ -3259,6 +3259,198 @@ MonoBehaviour:
   IsReciever: 1
   MultiTrigger: 0
   PendingConversation: {fileID: 0}
+--- !u!1 &706269545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 706269548}
+  - component: {fileID: 706269547}
+  - component: {fileID: 706269546}
+  - component: {fileID: 706269550}
+  - component: {fileID: 706269549}
+  m_Layer: 0
+  m_Name: Photo1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &706269546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706269545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4faefb260d7e0b140a0ee29d4108dc10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InitialSprite: {fileID: 21300000, guid: e68d8fbf03f704e438c470737603d25a, type: 3}
+  ActiveSprite: {fileID: 21300000, guid: 1ea4844d28882d444b988c094c435672, type: 3}
+  MousedOver: 0
+  GrabbedLock: 0
+  MouseLockOut: 0
+  MouseDown: 0
+  MousedOverReciever: 0
+  MousedOverOutput: 0
+  LockOnNode: 0
+  mousePos: {x: 0, y: 0}
+  TrueMousePos: {x: 0, y: 0}
+  StartPos: {x: 0, y: 0}
+  GrabSpeed: 20
+  MultiTrigger: 0
+  rb: {fileID: 706269549}
+  SpriteRenderer: {fileID: 0}
+  Target: {fileID: 0}
+  TargettedReciever: {fileID: 0}
+  SnapToReciever: 0
+  SnapToOutput: 0
+  AbleToLock: 0
+--- !u!212 &706269547
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706269545}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: e68d8fbf03f704e438c470737603d25a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &706269548
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706269545}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.5206385, y: 3.239213, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &706269549
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706269545}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!61 &706269550
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 706269545}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.1919434}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 3.5, y: 2.8333333}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.5, y: 2.20044}
+  m_EdgeRadius: 0
 --- !u!1 &710281746
 GameObject:
   m_ObjectHideFlags: 0
@@ -8761,6 +8953,90 @@ MonoBehaviour:
   IsReciever: 0
   MultiTrigger: 0
   PendingConversation: {fileID: 0}
+--- !u!1 &1861678180
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1861678182}
+  - component: {fileID: 1861678181}
+  m_Layer: 0
+  m_Name: IncompetenceBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1861678181
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861678180}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300000, guid: a9a75c87b640ea44da8a1fc080e891dd, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!4 &1861678182
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861678180}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 8, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1866340022
 GameObject:
   m_ObjectHideFlags: 0
@@ -9278,6 +9554,48 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 16c66068bc4f38a4d91b7fd0ba82244b, type: 3}
   - {fileID: 8300000, guid: f162934e8d9619447809b5cda2f44da6, type: 3}
   - {fileID: 8300000, guid: dc88987fcd471894996808885014cf63, type: 3}
+  voiceNames:
+  - Louis Boone
+  - Joey Smalltail
+  - Macey Kindle
+  - "Golff \u201CAce\u201D Caddy"
+  - Frank Piney
+  - Plumpen Tumac
+  - Acron Gnut
+  - Jerry Silflay
+  - "Al \u201CPine\u201D Cone"
+  - Yegg Veezer
+  - Chipka Kindle
+  - Tony Whiskers
+  - Shellby Fir
+  - Jeremy Fir
+  - ???
+  - Jimmy Oakleaf
+  - "\u201CBilly the Chuckling\u201D"
+  - "\u201CPhil Potatoes\u201D"
+  - "\u201CKyle\u201D"
+  - "Crag \u201COne-Eye\u201D"
+  voiceClips:
+  - {fileID: 8300000, guid: 47522fd887e501c438d36cec5c745e59, type: 3}
+  - {fileID: 8300000, guid: f7b9c4b88d496254f852e4030fe5a6f1, type: 3}
+  - {fileID: 8300000, guid: a3bcda2451ee41d4aa418bb640df1e32, type: 3}
+  - {fileID: 8300000, guid: f999a25625041c94198c2516581c1492, type: 3}
+  - {fileID: 8300000, guid: b0e4658ab03243840aab63790c80ae00, type: 3}
+  - {fileID: 8300000, guid: dd83fa05940044444ab097aca54e5cef, type: 3}
+  - {fileID: 8300000, guid: 517591e8f2ecbe44f989d52ea65f7673, type: 3}
+  - {fileID: 8300000, guid: b6b0a8bb5207bcb4b9ba8406978c59a5, type: 3}
+  - {fileID: 8300000, guid: 709be3bf0bf43e240bca290104e27870, type: 3}
+  - {fileID: 8300000, guid: 7c342a0f38b45aa468b3993a4fb1aaec, type: 3}
+  - {fileID: 8300000, guid: d3ed17e8922b84f4585ca2dd26c022e3, type: 3}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!1 &2007604382
 GameObject:
   m_ObjectHideFlags: 0
@@ -9753,3 +10071,5 @@ SceneRoots:
   - {fileID: 2055552287}
   - {fileID: 1286682198}
   - {fileID: 1752335445}
+  - {fileID: 1861678182}
+  - {fileID: 706269548}
