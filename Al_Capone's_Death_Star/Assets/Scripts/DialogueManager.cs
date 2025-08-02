@@ -219,6 +219,7 @@ public class DialogueManager : MonoBehaviour
 
     public string FormattedCurrentText()
     {
+        Debug.Log("This occurs");
         return formattedCurrentText;
     }
 }
