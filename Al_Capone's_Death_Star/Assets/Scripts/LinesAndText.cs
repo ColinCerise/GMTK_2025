@@ -40,6 +40,7 @@ public class LinesAndText : MonoBehaviour
     private Image[] clockDigits;
     public float TimeIncrements = .5f;
     public float HeldTimeInc;
+    public float ExtraBossTime = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -98,7 +99,11 @@ public class LinesAndText : MonoBehaviour
             {
                 if (BossConvoScript.CallEnded)
                 {
-                    BossScript.Stage = 1;
+                    ExtraBossTime += Time.deltaTime;
+                    if ((BossConvoScript.TimeWaited + ExtraBossTime - BossConvoScript.StartOffset - 3) >= BossConvoScript.maxLeangth / BossConvoScript.LPS)
+                    {
+                        BossScript.Stage = 1;
+                    }
                 }
                 TimeIncrements = 60;
             }
@@ -114,11 +119,12 @@ public class LinesAndText : MonoBehaviour
     public void WorldRevolves()
     {
         Hours = 12;
-        Minutes = 0;
+        Minutes = 30;
         AccumulatedTime = 0;
         GameObject BossMan = GameObject.Find("BossManager");
         BossManager BossScript = BossMan.GetComponent<BossManager>();
         BossScript.Stage = 0;
+        ExtraBossTime = 0;
         TimeIncrements = HeldTimeInc;
     }
 }
