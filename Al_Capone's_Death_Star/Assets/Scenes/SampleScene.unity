@@ -6768,7 +6768,7 @@ MonoBehaviour:
   StarterOutput: {fileID: 921685621}
   TargetReciever: {fileID: 2013851218}
   TimeOffsetHours: 12
-  TimeOffsetMinutes: 0
+  TimeOffsetMinutes: 30
   LPS: 14
   StartOffset: 0
   PlaceInConversation: 0
@@ -6849,7 +6849,11 @@ MonoBehaviour:
   DialogueTimer: 0
   PreconversationOverride: 0
   physicalLines: []
-  maxLines: 12
+  maxLines: 13
+  troublesomeNames:
+  - Golff "Ace" Caddy
+  - '"Billy the Chuckling"'
+  - '"Phil Potatoes"'
 --- !u!1 &1308828691
 GameObject:
   m_ObjectHideFlags: 0
