@@ -6873,7 +6873,7 @@ MonoBehaviour:
   DialogueTimer: 0
   PreconversationOverride: 0
   physicalLines: []
-  maxLines: 13
+  maxLines: 12
   troublesomeNames:
   - Golff "Ace" Caddy
   - '"Billy the Chuckling"'
