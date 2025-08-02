@@ -4609,7 +4609,7 @@ MonoBehaviour:
   PreConversation: hey
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 921685621}
+  StarterOutput: {fileID: 188834805}
   TargetReciever: {fileID: 2013851218}
   TimeOffsetHours: 22
   TimeOffsetMinutes: 0
@@ -9791,6 +9791,7 @@ MonoBehaviour:
   FishTime: 0
   SpawnDelay: 1
   FishSpawnDelay: 9
+  TrackedInsanity: 0
 --- !u!4 &2054129269
 Transform:
   m_ObjectHideFlags: 0

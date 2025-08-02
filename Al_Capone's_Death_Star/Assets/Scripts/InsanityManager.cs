@@ -14,6 +14,7 @@ public class InsanityManager : MonoBehaviour
     public float FishTime = 5;
     public float SpawnDelay = 1;
     public float FishSpawnDelay = 9;
+    public int TrackedInsanity;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,35 @@ public class InsanityManager : MonoBehaviour
     {
         if (LoopScript.StageOfInsanity >= 1)
         {
+            if (LoopScript.StageOfInsanity != TrackedInsanity)
+            {
+                TrackedInsanity = LoopScript.StageOfInsanity;
+                switch(TrackedInsanity)
+                {
+                    case 1:
+                        SpawnDelay = 2;
+                        break;
+                        case 2:
+                        SpawnDelay = 1;
+                        FishSpawnDelay = 20;
+                        break;
+                        case 3:
+                        SpawnDelay = .75f;
+                        FishSpawnDelay = 15;
+                        break;
+                        case 4:
+                        FishSpawnDelay = 10;
+                        break;
+                    case 5:
+                        break;
+                        default:
+                        TrackedInsanity = 5;
+                        SpawnDelay = .75f;
+                        FishSpawnDelay = 10;
+                        break;
+
+                }
+            }
             AccumulatedTime += Time.deltaTime;
             if (BubblePrefab != null && AccumulatedTime >= SpawnDelay)
             {
@@ -37,14 +67,15 @@ public class InsanityManager : MonoBehaviour
                 Color color = sr.color;
                 color = new Color(Random.value, Random.value, Random.value, Random.value);
                 sr.color = color;
-                float bubblescale = Random.Range(.5f, 10);
+                float bubblescale = Random.Range(.5f, 2);
                 Bubble.transform.localScale = new Vector2(bubblescale, bubblescale);
             }
-            if (LoopScript.StageOfInsanity >= 2)
+            if (TrackedInsanity >= 2)
             {
                 FishTime += Time.deltaTime;
                 if (FishPrefab != null && FishTime >= FishSpawnDelay)
                 {
+                    //FishSpawnDelay = 20;
                     FishTime -= FishSpawnDelay;
                     GameObject Fish = Instantiate(FishPrefab);
                     Vector2 Fishran = new Vector2(Random.Range(-10, 10), -9);
