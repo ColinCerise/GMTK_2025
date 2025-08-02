@@ -9344,30 +9344,30 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f162934e8d9619447809b5cda2f44da6, type: 3}
   - {fileID: 8300000, guid: dc88987fcd471894996808885014cf63, type: 3}
   voiceNames:
-  - "\u201CKyle\u201D"
+  - '"Kyle"'
   - Louis Boone
   - Joey Smalltail
   - Macey Kindle
-  - "Golff \u201CAce\u201D Caddy"
+  - Golff "Ace" Caddy
   - Frank Piney
   - Plumpen Tumac
   - Acron Gnut
   - Jerry Silflay
-  - "Al \u201CPine\u201D Cone"
+  - Al "Pine" Cone
   - Yegg Veezer
   - Chipka Kindle
   - Jimmy Oakleaf
   - ???
-  - "\u201CPhil Potatoes\u201D"
-  - "Crag \u201COne-Eye\u201D"
-  - "\u201CBilly the Chuckling\u201D"
+  - '"Phil Potatoes"'
+  - Crag "One-Eye"
+  - '"Billy the Chuckling"'
   - Jeremy Fir
   - Nathan Stone
   - Employee
   - Tony Whiskers
   - Shellby Fir
   voiceClips:
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 6263a8133174f844db9279434654f104, type: 3}
   - {fileID: 8300000, guid: 47522fd887e501c438d36cec5c745e59, type: 3}
   - {fileID: 8300000, guid: f7b9c4b88d496254f852e4030fe5a6f1, type: 3}
   - {fileID: 8300000, guid: a3bcda2451ee41d4aa418bb640df1e32, type: 3}
@@ -9380,15 +9380,15 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7c342a0f38b45aa468b3993a4fb1aaec, type: 3}
   - {fileID: 8300000, guid: d3ed17e8922b84f4585ca2dd26c022e3, type: 3}
   - {fileID: 8300000, guid: a1631ece56e33564eb1319fb4962ff7c, type: 3}
-  - {fileID: 8300000, guid: 460745179c366eb40a9d340d8a0491ef, type: 3}
+  - {fileID: 8300000, guid: d231fd89527fc0f4688459297e028d11, type: 3}
   - {fileID: 8300000, guid: 128762f96dc9f694082c5d6b05423511, type: 3}
   - {fileID: 8300000, guid: b4e8d9636e8e1634b9054e9fe0c75df0, type: 3}
   - {fileID: 8300000, guid: 7026229b07ba2834fb8a88de2472005e, type: 3}
-  - {fileID: 8300000, guid: eb3ebde9c1369ba45aa8cdd89f670aa7, type: 3}
+  - {fileID: 8300000, guid: 5d60c79b3c61bf949ae9037e97b6157c, type: 3}
   - {fileID: 8300000, guid: f7773468b76e68a4fba0e186aa801d80, type: 3}
   - {fileID: 8300000, guid: 6b8ace80716d2c442aa912508b289dbb, type: 3}
-  - {fileID: 8300000, guid: e1cc886631d3e524a8b20cc9310f82d0, type: 3}
-  - {fileID: 8300000, guid: ef11c533dde85414fa49e977a226e600, type: 3}
+  - {fileID: 8300000, guid: 8182c8ee19cce74408cfd40ec59d753c, type: 3}
+  - {fileID: 8300000, guid: c9922041fc6d9394ca049d6ccfd42ff3, type: 3}
   songNames:
   - main
   songClips:
