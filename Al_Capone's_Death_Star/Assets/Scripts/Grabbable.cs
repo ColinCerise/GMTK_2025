@@ -26,6 +26,7 @@ public class Grabbable : MonoBehaviour
     public bool SnapToOutput = false;
     public bool AbleToLock = true;
     public bool NoSnapping = false;
+    public bool DeleteAtBorder = false;
     private AudioManager audioManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -96,7 +97,14 @@ public class Grabbable : MonoBehaviour
             }
             else if (transform.position.y >= 20 || transform.position.y <= -10)
             {
-                transform.position = StartPos;
+                if (DeleteAtBorder)
+                {
+                    Destroy(this.gameObject);
+                }
+                else
+                {
+                    transform.position = StartPos;
+                }
             }
         }
         else
