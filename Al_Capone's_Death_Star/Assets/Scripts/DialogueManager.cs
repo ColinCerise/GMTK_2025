@@ -108,6 +108,11 @@ public class DialogueManager : MonoBehaviour
         {
             convo.PlaceInConversation = convo.GetConversation().Length - 1;
             DisplayLines(convo);
+
+            for (int i = 0; i < physicalLines.Count - maxLines || (string.IsNullOrWhiteSpace(physicalLines[0]) && physicalLines[0] != null); i++)
+            {
+                physicalLines.RemoveAt(0);
+            }
         }
         DialogueTimer = 0;
     }
@@ -119,6 +124,12 @@ public class DialogueManager : MonoBehaviour
         {
             fullDialogue += str;
         }
+
+        if (StartNum != 0 && lastLineIndex == StartNum)
+        {
+            fullDialogue += "...";
+        }
+
         fullDialogue += convo.GetConversation().Substring(lastLineIndex, convo.PlaceInConversation - lastLineIndex);
         if (!PlayerRecieverScript.isActive)
         {
@@ -140,11 +151,11 @@ public class DialogueManager : MonoBehaviour
             string lineSection = convo.GetConversation().Substring(lastLineIndex, lastSpaceIndex - lastLineIndex);
             AddLine(lineSection);
             lastLineIndex = lastSpaceIndex;
+        }
 
-            for (int i = 0; i < physicalLines.Count - maxLines || (physicalLines[0] != null && string.IsNullOrWhiteSpace(physicalLines[0])); i++)
-            {
-                physicalLines.RemoveAt(0);
-            }
+        for (int i = 0; i < physicalLines.Count - maxLines || (string.IsNullOrWhiteSpace(physicalLines[0]) && physicalLines[0] != null); i++)
+        {
+            physicalLines.RemoveAt(0);
         }
 
         if (convo.GetConversation()[convo.PlaceInConversation] == ' ')
@@ -157,18 +168,26 @@ public class DialogueManager : MonoBehaviour
             lastSpaceIndex = convo.PlaceInConversation + 1;
             lastLineIndex = convo.PlaceInConversation + 1;
 
-            AddLine("\n\n");
+            AddLineBreak();
             AddLine(convo.NextLine());
         }
     }
 
     private void AddLine(string line)
     {
-        string result = line;
-        if (StartNum != 0 && lastLineIndex == StartNum)
+        if (!string.IsNullOrEmpty(line))
         {
-            result = "..." + result;
+            string result = line;
+            if (StartNum != 0 && lastLineIndex == StartNum)
+            {
+                result = "..." + result;
+            }
+            physicalLines.Add(result);
         }
-        physicalLines.Add(result);
+    }
+
+    private void AddLineBreak()
+    {
+        physicalLines.Add("\n\n");
     }
 }
