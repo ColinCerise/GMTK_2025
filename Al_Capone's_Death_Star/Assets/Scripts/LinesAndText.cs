@@ -90,7 +90,7 @@ public class LinesAndText : MonoBehaviour
             BossManager BossScript = BossMan.GetComponent<BossManager>();
             if (BossScript.Stage == 0)
             {
-                BossScript.Stage = 1;
+                //BossScript.Stage = 1;
                 TimeIncrements = 60;
             }
         }

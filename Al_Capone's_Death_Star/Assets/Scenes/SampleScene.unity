@@ -4619,7 +4619,7 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  ListenReq: 0.5
+  ListenReq: 0.99
   TheCthuluException: 1
   HeldCthulu: 0
   speakerList: []
