@@ -119,12 +119,12 @@ public class LinesAndText : MonoBehaviour
     public void WorldRevolves()
     {
         AccumulatedTime = 0;
+        TimeIncrements = HeldTimeInc;
         Hours = 12;
         Minutes = 30;
         GameObject BossMan = GameObject.Find("BossManager");
         BossManager BossScript = BossMan.GetComponent<BossManager>();
         BossScript.Stage = 0;
         ExtraBossTime = 0;
-        TimeIncrements = HeldTimeInc;
     }
 }
