@@ -9101,7 +9101,7 @@ GameObject:
   - component: {fileID: 1861678182}
   - component: {fileID: 1861678181}
   m_Layer: 0
-  m_Name: IncompetenceBar
+  m_Name: AngerMeter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10096,6 +10096,9 @@ MonoBehaviour:
   MaxAnger: 100
   GameManager: {fileID: 0}
   GameManagerScript: {fileID: 0}
+  angerMeter: {fileID: 1861678180}
+  meterSprites: []
+  angerMeterObject: {fileID: 0}
 --- !u!4 &2075619982
 Transform:
   m_ObjectHideFlags: 0
