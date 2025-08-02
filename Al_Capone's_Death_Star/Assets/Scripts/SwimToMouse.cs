@@ -30,7 +30,7 @@ public class SwimToMouse : MonoBehaviour
 
             //Vector2 Angle = new Vector3(mousePos.x,mousePos.y, 0) - transform.position;
             //float angle = Mathf.Atan2(Angle.y, Angle.x) * Mathf.Rad2Deg;
-            angle += 15;
+            angle += 1;
             transform.rotation = Quaternion.Euler(0, 0, angle);
         }
         else

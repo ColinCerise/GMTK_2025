@@ -37,7 +37,7 @@ public class InsanityManager : MonoBehaviour
                 Color color = sr.color;
                 color = new Color(Random.value, Random.value, Random.value, Random.value);
                 sr.color = color;
-                float bubblescale = Random.Range(.5f, 2);
+                float bubblescale = Random.Range(.5f, 10);
                 Bubble.transform.localScale = new Vector2(bubblescale, bubblescale);
             }
             if (LoopScript.StageOfInsanity >= 2)
