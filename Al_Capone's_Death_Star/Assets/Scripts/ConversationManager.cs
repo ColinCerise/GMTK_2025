@@ -70,8 +70,12 @@ public class ConversationManager : MonoBehaviour
         {
             HeldCthulu = true;
         }
-        ParseDialogue();
         currentLineIndex = 0;
+    }
+
+    private void Awake()
+    {
+        ParseDialogue();
     }
 
     private void ParseDialogue()
@@ -97,7 +101,7 @@ public class ConversationManager : MonoBehaviour
         }
         else
         {
-            Debug.Log(gameObject.name);
+            Debug.Log("Failed to parse conversation for " + gameObject.name);
         }
 
         totalCharLength = 0;
@@ -149,7 +153,7 @@ public class ConversationManager : MonoBehaviour
                     DialogueBoxScript.ForceUpdate();
                     TheCthuluException = false;
                     DialogueBoxScript.Conversation = null;
-                    Manager.GetComponent<ConvoLog>().AddConvo(CurrentDialog);
+                    Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
                 }
             }
             
@@ -187,7 +191,7 @@ public class ConversationManager : MonoBehaviour
                     CallMissed = true;
                     AngryBar.DisconnectedCall();
                     Debug.Log("Disconnected 1 on " + gameObject.name);
-                    Manager.GetComponent<ConvoLog>().AddConvo(CurrentDialog);
+                    Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
                 }
                 RunConvo();
             }
@@ -197,7 +201,7 @@ public class ConversationManager : MonoBehaviour
                 DialogueBoxScript.ForceUpdate();
                 CallEnded = true;
                 StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
-                Manager.GetComponent<ConvoLog>().AddConvo(CurrentDialog);
+                Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
             }
         }
         if (CallEnded && IAMTALKING && !TheCthuluException)
@@ -285,13 +289,13 @@ public class ConversationManager : MonoBehaviour
                     {
                         CallEnded = true;
                         StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
-                        Manager.GetComponent<ConvoLog>().AddConvo(CurrentDialog);
+                        Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
                     }
                 }
                 else
                 {
                     IAMTALKING = false;
-                    Manager.GetComponent<ConvoLog>().AddConvo(CurrentDialog);
+                    Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
                     CurrentDialog = null;
                 }
             }

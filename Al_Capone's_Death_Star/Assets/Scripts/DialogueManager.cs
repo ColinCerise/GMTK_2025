@@ -28,6 +28,7 @@ public class DialogueManager : MonoBehaviour
     private int tempCount = 0;
 
     public string[] troublesomeNames;
+    private string formattedCurrentText;
 
     // Start is called before the first frame update
     void Start()
@@ -74,6 +75,7 @@ public class DialogueManager : MonoBehaviour
         lastLineIndex = 0;
         Conversation = Conversationist;
         ConversationManager convo = Conversation.GetComponent<ConversationManager>();
+        formattedCurrentText = "";
 
         if (startingNum < 20)
         {
@@ -112,6 +114,7 @@ public class DialogueManager : MonoBehaviour
             ConversationManager convo = Conversation.GetComponent<ConversationManager>();
             convo.PlaceInConversation = convo.GetConversation().Length - 1;
             DisplayLines(convo);
+            formattedCurrentText += convo.GetConversation().Substring(lastLineIndex, convo.PlaceInConversation - lastLineIndex);
 
             for (int i = 0; i < physicalLines.Count - maxLines || (string.IsNullOrWhiteSpace(physicalLines[0]) && physicalLines[0] != null); i++)
             {
@@ -132,6 +135,7 @@ public class DialogueManager : MonoBehaviour
         if (StartNum != 0 && lastLineIndex == StartNum)
         {
             fullDialogue += "...";
+            formattedCurrentText = fullDialogue;
         }
 
         fullDialogue += convo.GetConversation().Substring(lastLineIndex, convo.PlaceInConversation - lastLineIndex);
@@ -189,22 +193,24 @@ public class DialogueManager : MonoBehaviour
             }
             physicalLines.Add(result);
 
-            if (DialogueBox.textInfo.lineCount > temp + 1)
-            {
-                Debug.Log(">2");
-                physicalLines.Add(string.Empty);
-            }
+            formattedCurrentText += result;
         }
     }
 
     private void AddLineBreak()
     {
         physicalLines.Add("\n\n");
+        formattedCurrentText += "\n\n";
     }
 
     public IEnumerator PlaceHolderLine()
     {
         yield return new WaitForEndOfFrame();
         physicalLines.Add(string.Empty);
+    }
+
+    public string FormattedCurrentText()
+    {
+        return formattedCurrentText;
     }
 }
