@@ -6771,7 +6771,7 @@ MonoBehaviour:
   DialogueTimer: 0
   PreconversationOverride: 0
   physicalLines: []
-  maxLines: 13
+  maxLines: 12
 --- !u!1 &1308828691
 GameObject:
   m_ObjectHideFlags: 0
