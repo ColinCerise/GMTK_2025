@@ -26,7 +26,14 @@ public class AudioManager : MonoBehaviour
 
     public void PlaySoundEffect(string sfxName)
     {
-        mainSource.PlayOneShot(sfxClips[Array.IndexOf(sfxNames, sfxName)]);
+        if (Array.IndexOf(sfxNames, sfxName) != -1)
+        {
+            mainSource.PlayOneShot(sfxClips[Array.IndexOf(sfxNames, sfxName)]);
+        }
+        else
+        {
+            Debug.Log("Failure to play " + sfxName);
+        }
     }
 
     public void PlayVoiceFX(string name)
@@ -34,6 +41,10 @@ public class AudioManager : MonoBehaviour
         if (Array.IndexOf(voiceNames, name) != -1)
         {
             mainSource.PlayOneShot(voiceClips[Array.IndexOf(voiceNames, name)]);
+        }
+        else
+        {
+            Debug.Log("No voice for " + name);
         }
     }
 

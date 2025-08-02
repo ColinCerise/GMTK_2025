@@ -36,6 +36,7 @@ public class LinesAndText : MonoBehaviour
     [SerializeField] Sprite[] clockSprites;
     private Image[] clockDigits;
     public float TimeIncrements = .5f;
+    public float HeldTimeInc;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -48,6 +49,8 @@ public class LinesAndText : MonoBehaviour
         Line6 = GameObject.Find("Line6").GetComponent<LineRenderer>();
 
         clockDigits = clockDisplay.GetComponentsInChildren<Image>();
+
+        HeldTimeInc = TimeIncrements;
     }
 
     // Update is called once per frame
@@ -88,6 +91,7 @@ public class LinesAndText : MonoBehaviour
             if (BossScript.Stage == 0)
             {
                 BossScript.Stage = 1;
+                TimeIncrements = 60;
             }
         }
     }
@@ -106,5 +110,6 @@ public class LinesAndText : MonoBehaviour
         GameObject BossMan = GameObject.Find("BossManager");
         BossManager BossScript = BossMan.GetComponent<BossManager>();
         BossScript.Stage = 0;
+        TimeIncrements = HeldTimeInc;
     }
 }
