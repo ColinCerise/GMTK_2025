@@ -1279,6 +1279,7 @@ MonoBehaviour:
   SnapToReciever: 1
   SnapToOutput: 0
   AbleToLock: 1
+  NoSnapping: 0
 --- !u!50 &222431243
 Rigidbody2D:
   serializedVersion: 4
@@ -3312,6 +3313,7 @@ MonoBehaviour:
   SnapToReciever: 0
   SnapToOutput: 0
   AbleToLock: 0
+  NoSnapping: 0
 --- !u!212 &706269547
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4080,6 +4082,7 @@ MonoBehaviour:
   SnapToReciever: 1
   SnapToOutput: 0
   AbleToLock: 1
+  NoSnapping: 0
 --- !u!50 &820983364
 Rigidbody2D:
   serializedVersion: 4
@@ -5134,6 +5137,7 @@ MonoBehaviour:
   SnapToReciever: 1
   SnapToOutput: 0
   AbleToLock: 1
+  NoSnapping: 0
 --- !u!50 &962602144
 Rigidbody2D:
   serializedVersion: 4
@@ -5719,6 +5723,7 @@ MonoBehaviour:
   SnapToReciever: 1
   SnapToOutput: 0
   AbleToLock: 1
+  NoSnapping: 0
 --- !u!50 &1055399314
 Rigidbody2D:
   serializedVersion: 4
@@ -6173,6 +6178,7 @@ MonoBehaviour:
   SnapToReciever: 1
   SnapToOutput: 0
   AbleToLock: 1
+  NoSnapping: 0
 --- !u!50 &1136175021
 Rigidbody2D:
   serializedVersion: 4
@@ -6892,6 +6898,7 @@ MonoBehaviour:
   SnapToReciever: 0
   SnapToOutput: 1
   AbleToLock: 1
+  NoSnapping: 0
 --- !u!50 &1308828694
 Rigidbody2D:
   serializedVersion: 4
@@ -9467,7 +9474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hours: 12
-  Minutes: 50
+  Minutes: 0
   AccumulatedTime: 0
   Line1: {fileID: 0}
   Connectpoint1a: {fileID: 921685621}
@@ -9601,6 +9608,7 @@ MonoBehaviour:
   songClips:
   - {fileID: 8300000, guid: 677316970526c7e4ca247f2ce3a4130a, type: 3}
   musicOn: 1
+  songToPlay: 
 --- !u!1 &2007604382
 GameObject:
   m_ObjectHideFlags: 0
