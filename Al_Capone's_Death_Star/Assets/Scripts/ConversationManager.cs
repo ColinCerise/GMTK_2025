@@ -130,6 +130,7 @@ public class ConversationManager : MonoBehaviour
         if (TheCthuluException)
         {
             CallEnded = true;
+            Debug.Log("Ending call via Cthulu, i4");
             CallStarted = true;
             CallConnected = true;
             maxLeangth = totalCharLength;
@@ -154,12 +155,12 @@ public class ConversationManager : MonoBehaviour
                 }
                 if (PlaceInConversation >= maxLeangth)
                 {
-                    Debug.Log("Ending The convo");
                     CurrentDialog = Conversation.Substring(0, maxLeangth);
                     DialogueBoxScript.ForceUpdate();
                     TheCthuluException = false;
                     DialogueBoxScript.Conversation = null;
                     Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
+                    Debug.Log(gameObject.name + ": " + DialogueBoxScript.FormattedCurrentText() + "\nIdentity: 4 (Cthulu)");
                 }
             }
             
@@ -193,24 +194,28 @@ public class ConversationManager : MonoBehaviour
             }
             if (CallStarted && !CallEnded)
             {
-                if (ConnectedReciever != TargetReciever)
+                if (ConnectedReciever != TargetReciever) // If we start a call then disconnect
                 {
                     CallEnded = true;
+                    Debug.Log("Ending call via start/disconnect, i1");
                     StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
                     CallMissed = true;
                     AngryBar.DisconnectedCall();
                     Debug.Log("Disconnected 1 on " + gameObject.name);
                     Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
+                    Debug.Log(gameObject.name + ": " + DialogueBoxScript.FormattedCurrentText() + "\nIdentity: 1");
                 }
                 RunConvo();
             }
-            if (PlaceInConversation >= maxLeangth)
+            if (PlaceInConversation >= maxLeangth) // If we have supposedly reached the end of the convo naturally
             {
                 CurrentDialog = Conversation.Substring(DialogueBoxScript.StartNum, maxLeangth - DialogueBoxScript.StartNum);
                 DialogueBoxScript.ForceUpdate();
                 CallEnded = true;
+                Debug.Log("Ending call via natural end, i1");
                 StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
                 Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
+                Debug.Log(gameObject.name + ": " + DialogueBoxScript.FormattedCurrentText() + "\nIdentity: 2");
             }
         }
         if (CallEnded && IAMTALKING && !TheCthuluException)
@@ -225,6 +230,7 @@ public class ConversationManager : MonoBehaviour
         if (TimeWaited >= 20 && !CallConnected)
         {
             CallEnded = true;
+            Debug.Log("Ending call via connection timeout, i0.1");
             StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
             CallMissed = true;
             AngryBar.DisconnectedCall();
@@ -233,6 +239,7 @@ public class ConversationManager : MonoBehaviour
         else if (TimeWaited >= 30 && !CallStarted)
         {
             CallEnded = true;
+            Debug.Log("Ending call via start timeout, i0.2");
             StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
             CallMissed = true;
             AngryBar.DisconnectedCall();
@@ -268,6 +275,7 @@ public class ConversationManager : MonoBehaviour
                         ListenedToConvo = true;
                         //Debug.Log(PlaceInConversation - DialogueBoxScript.StartNum - maxLeangth / 2);
                     }
+
                     if (!IAMTALKING)
                     {
                         IAMTALKING = true;
@@ -284,6 +292,7 @@ public class ConversationManager : MonoBehaviour
 
                         DialogueBoxScript.SetAsTalking(this.gameObject, PlaceInConversation);
                     }
+
                     if (PlaceInConversation < maxLeangth && DialogueBoxScript.StartNum < maxLeangth)
                     {
                         CurrentDialog = Conversation.Substring(DialogueBoxScript.StartNum, PlaceInConversation - DialogueBoxScript.StartNum);
@@ -297,8 +306,10 @@ public class ConversationManager : MonoBehaviour
                     else
                     {
                         CallEnded = true;
+                        Debug.Log("Ending call via catch case, i3");
                         StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
                         Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
+                        Debug.Log(gameObject.name + ": " + DialogueBoxScript.FormattedCurrentText() + "\nIdentity: 3");
 
                     }
                 }
