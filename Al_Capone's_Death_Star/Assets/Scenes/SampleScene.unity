@@ -6878,6 +6878,7 @@ MonoBehaviour:
   - Golff "Ace" Caddy
   - '"Billy the Chuckling"'
   - '"Phil Potatoes"'
+  formattedCurrentText: 
 --- !u!1 &1308828691
 GameObject:
   m_ObjectHideFlags: 0
