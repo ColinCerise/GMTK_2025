@@ -8057,7 +8057,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: hi
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 708b3789b78763943af84c936cca6858, type: 2}
   m_sharedMaterial: {fileID: -9048621022931018289, guid: 708b3789b78763943af84c936cca6858, type: 2}
@@ -9434,6 +9434,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   conversationsLogged: []
   logbookDisplay: {fileID: 1097691633}
+  defaultText: No entries available. (listen in on conversations and they will be
+    recorded here for your reference).
 --- !u!114 &1995254234
 MonoBehaviour:
   m_ObjectHideFlags: 0
