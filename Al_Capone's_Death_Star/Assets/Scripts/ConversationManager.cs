@@ -138,6 +138,10 @@ public class ConversationManager : MonoBehaviour
             int temp = PlaceInConversation;
 
             PlaceInConversation = (int)((TimeWaited - StartOffset) * LPS);
+            if (PlaceInConversation < 0)
+            {
+                PlaceInConversation = 0;
+            }
 
             if (PlaceInConversation != temp)
             {
