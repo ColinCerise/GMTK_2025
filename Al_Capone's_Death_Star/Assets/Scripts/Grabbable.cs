@@ -163,13 +163,13 @@ public class Grabbable : MonoBehaviour
             MousedOver = false;
 
         }
-        else if (collision.gameObject.tag == "Reciever")
+        else if (collision.gameObject.tag == "Reciever" && this.gameObject.name != "Mouse" && this.gameObject.name != "Wiretap" && this.gameObject.tag != "UselessObj")
         {
             MousedOverReciever = false;
             TargettedReciever = null;
             audioManager.PlaySoundEffect("wireConnect");
         }
-        else if (collision.gameObject.tag == "Output")
+        else if (collision.gameObject.tag == "Output" && this.gameObject.name != "Mouse" && this.gameObject.tag != "UselessObj")
         {
             MousedOverOutput = false;
             TargettedReciever = null;
