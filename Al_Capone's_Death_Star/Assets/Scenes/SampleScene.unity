@@ -4609,7 +4609,7 @@ MonoBehaviour:
   PreConversation: hey
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 188834805}
+  StarterOutput: {fileID: 921685621}
   TargetReciever: {fileID: 2013851218}
   TimeOffsetHours: 22
   TimeOffsetMinutes: 0
@@ -5989,7 +5989,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1097691634
 RectTransform:
   m_ObjectHideFlags: 0
