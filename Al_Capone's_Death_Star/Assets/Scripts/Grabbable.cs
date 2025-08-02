@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class Grabbable : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class Grabbable : MonoBehaviour
     public bool NoSnapping = false;
     public bool DeleteAtBorder = false;
     private AudioManager audioManager;
+    private Vector2 Angle;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -109,9 +111,17 @@ public class Grabbable : MonoBehaviour
         }
         else
         {
+            if (SnapToReciever) //checks if it is a connector
+            {
+                GameObject Output = GameObject.Find(this.gameObject.name.Substring(0, (this.gameObject.name.Length - 1)) + "1");
+                Angle = Output.transform.position - transform.position;
+                float angle = Mathf.Atan2(Angle.y, Angle.x) * Mathf.Rad2Deg; // Convert to degrees
+
+                transform.rotation = Quaternion.Euler(0, 0, angle - 90);        //new Vector3()
+            }
+
             if (ActiveSprite != null)
             {
-                //needs to exist
                 SpriteRenderer.sprite = ActiveSprite;
             }
         }
