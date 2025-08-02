@@ -626,6 +626,8 @@ MonoBehaviour:
   ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
+  TheBossException: 0
+  HeldBoss: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -1619,6 +1621,8 @@ MonoBehaviour:
   ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
+  TheBossException: 0
+  HeldBoss: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -2726,6 +2730,8 @@ MonoBehaviour:
   ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
+  TheBossException: 0
+  HeldBoss: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -2803,6 +2809,8 @@ MonoBehaviour:
   ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
+  TheBossException: 0
+  HeldBoss: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -3024,6 +3032,8 @@ MonoBehaviour:
   ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
+  TheBossException: 0
+  HeldBoss: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -3101,6 +3111,8 @@ MonoBehaviour:
   ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
+  TheBossException: 0
+  HeldBoss: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -4401,6 +4413,8 @@ MonoBehaviour:
   ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
+  TheBossException: 0
+  HeldBoss: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -4619,9 +4633,11 @@ MonoBehaviour:
   CallStarted: 0
   IAMTALKING: 0
   ListenedToConvo: 0
-  ListenReq: 0.5
-  TheCthuluException: 1
+  ListenReq: 0.99
+  TheCthuluException: 0
   HeldCthulu: 0
+  TheBossException: 1
+  HeldBoss: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -4699,6 +4715,8 @@ MonoBehaviour:
   ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
+  TheBossException: 0
+  HeldBoss: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -5362,6 +5380,8 @@ MonoBehaviour:
   ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
+  TheBossException: 0
+  HeldBoss: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -5949,6 +5969,8 @@ MonoBehaviour:
   ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
+  TheBossException: 0
+  HeldBoss: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -6792,6 +6814,8 @@ MonoBehaviour:
   ListenReq: 0.5
   TheCthuluException: 1
   HeldCthulu: 0
+  TheBossException: 0
+  HeldBoss: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -7532,6 +7556,8 @@ MonoBehaviour:
   ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
+  TheBossException: 0
+  HeldBoss: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -8167,6 +8193,8 @@ MonoBehaviour:
   ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
+  TheBossException: 0
+  HeldBoss: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -8259,6 +8287,8 @@ MonoBehaviour:
   ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
+  TheBossException: 0
+  HeldBoss: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -9175,6 +9205,8 @@ MonoBehaviour:
   ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
+  TheBossException: 0
+  HeldBoss: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -9985,6 +10017,8 @@ MonoBehaviour:
   ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
+  TheBossException: 0
+  HeldBoss: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 

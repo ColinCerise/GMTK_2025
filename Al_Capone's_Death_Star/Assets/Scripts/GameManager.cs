@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public float TimeDialation = .5f;
     public float FadeWallTime = 1.2f;
     public bool Pausewall = false;
+    //public bool BeforeYourEyes = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -74,7 +75,6 @@ public class GameManager : MonoBehaviour
             {
                 fading = true;
             }
-            TrueLoop();
         }
     }
     public void TrueLoop()
@@ -82,7 +82,7 @@ public class GameManager : MonoBehaviour
         FoundAll = false;
         bool BounceConnectors = false;
         DontBrickMe = 0;
-        while (!FoundAll && DontBrickMe < 100)
+        while (!FoundAll && DontBrickMe < 1000)
         {
             DontBrickMe++;
             Conversations = GameObject.FindWithTag("Conversation");
@@ -98,7 +98,7 @@ public class GameManager : MonoBehaviour
                 FoundAll = true;
             }
         }
-        while (FoundAll && DontBrickMe < 100)
+        while (FoundAll && DontBrickMe < 1000)
         {
             DontBrickMe++;
             Conversations = GameObject.FindWithTag("Found");
@@ -111,7 +111,7 @@ public class GameManager : MonoBehaviour
                 FoundAll = false;
             }
         }
-        while (!BounceConnectors && DontBrickMe < 100)
+        while (!BounceConnectors && DontBrickMe < 1000)
         {
             DontBrickMe++;
             Conversations = GameObject.FindWithTag("Connector");
@@ -125,7 +125,7 @@ public class GameManager : MonoBehaviour
                 BounceConnectors = true;
             }
         }
-        while (BounceConnectors && DontBrickMe < 100)
+        while (BounceConnectors && DontBrickMe < 1000)
         {
             DontBrickMe++;
             Conversations = GameObject.FindWithTag("Found");

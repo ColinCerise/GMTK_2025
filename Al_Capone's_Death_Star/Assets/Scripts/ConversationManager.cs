@@ -45,6 +45,8 @@ public class ConversationManager : MonoBehaviour
     GameObject ConnectedReciever;
     public bool TheCthuluException = false;
     public bool HeldCthulu = false;
+    public bool TheBossException = false;
+    public bool HeldBoss = false;
 
     // Variables for parsing dialogue
     private int totalCharLength;
@@ -69,6 +71,10 @@ public class ConversationManager : MonoBehaviour
         if (TheCthuluException)
         {
             HeldCthulu = true;
+        }
+        if (TheBossException)
+        {
+            HeldBoss = true;
         }
         ParseDialogue();
         currentLineIndex = 0;
@@ -177,7 +183,10 @@ public class ConversationManager : MonoBehaviour
                 CallConnected = true;
             }
             CheckIfActivate();
-            CheckIfTimeout();
+            if (!TheBossException)
+            {
+                CheckIfTimeout();
+            }
             if (CallStarted && !CallEnded)
             {
                 if (ConnectedReciever != TargetReciever)
