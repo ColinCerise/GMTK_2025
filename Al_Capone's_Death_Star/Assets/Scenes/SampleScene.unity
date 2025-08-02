@@ -6638,7 +6638,7 @@ MonoBehaviour:
   DialogueTimer: 0
   PreconversationOverride: 0
   physicalLines: []
-  maxLines: 11
+  maxLines: 13
 --- !u!1 &1308828691
 GameObject:
   m_ObjectHideFlags: 0
@@ -8994,8 +8994,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -222, y: 43.06}
-  m_SizeDelta: {x: 100, y: 173.89}
+  m_AnchoredPosition: {x: -223, y: 27.53}
+  m_SizeDelta: {x: 108, y: 203.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1866340024
 MonoBehaviour:
@@ -9044,8 +9044,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 12
-  m_fontSizeBase: 12
+  m_fontSize: 11
+  m_fontSizeBase: 11
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -9056,7 +9056,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: 12
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -9389,7 +9389,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f85b17f21a7f34ab3270237dbde35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hours: 12
+  Hours: 14
   Minutes: 30
   AccumulatedTime: 0
   Line1: {fileID: 0}
