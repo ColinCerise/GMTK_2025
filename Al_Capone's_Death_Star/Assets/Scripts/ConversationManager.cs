@@ -312,6 +312,7 @@ public class ConversationManager : MonoBehaviour
     public string NextLine()
     {
         currentLineIndex++;
+        Manager.GetComponent<AudioManager>().PlayVoiceFX(speakerList[currentLineIndex - 1]);
         return speakerList[currentLineIndex - 1] + "\n";
     }
 
