@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -9,6 +10,8 @@ public class GameManager : MonoBehaviour
     public Sprite HideInScene;
     public bool Victory;
     public bool Loss;
+    public bool AngerLoss;
+    public int StageOfInsanity = 0;
     public GameObject Conversations;
     public GameObject FadeWall;
     public GameObject Anger;
@@ -26,18 +29,21 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Anger = GameObject.Find("AngryBossManager");
-        AngerBar = Anger.GetComponent<AngerBar>();
-        if (FadeWall != null)
+        if (SceneManager.GetActiveScene().Equals("SampleScene"))
         {
-            sr = FadeWall.GetComponent<SpriteRenderer>();
-            color = sr.color;
-            color.a = 0;
-            sr.color = color;
-            SpriteRenderer = FadeWall.GetComponent<SpriteRenderer>();
-            SpriteRenderer.sprite = HideInScene;
+            Anger = GameObject.Find("AngryBossManager");
+            AngerBar = Anger.GetComponent<AngerBar>();
+            if (FadeWall != null)
+            {
+                sr = FadeWall.GetComponent<SpriteRenderer>();
+                color = sr.color;
+                color.a = 0;
+                sr.color = color;
+                SpriteRenderer = FadeWall.GetComponent<SpriteRenderer>();
+                SpriteRenderer.sprite = HideInScene;
+            }
+            FadedIn = false;
         }
-        FadedIn = false;
     }
 
     // Update is called once per frame
@@ -57,6 +63,11 @@ public class GameManager : MonoBehaviour
         }
         if (Loss)
         {
+            StageOfInsanity++;
+            if (AngerBar.Anger >= 100)
+            {
+                AngerLoss = true;
+            }
             if (FadeWall != null)
             {
                 fading = true;
@@ -123,6 +134,7 @@ public class GameManager : MonoBehaviour
             {
                 BounceConnectors = false;
                 Loss = false;
+                AngerLoss = false;
                 AngerBar.Anger = 0;
             }
         }
@@ -181,5 +193,10 @@ public class GameManager : MonoBehaviour
         }
         
 
+    }
+
+    public void ShiftScene(string sceneName)
+    {
+        SceneManager.LoadScene(sceneName);
     }
 }

@@ -58,7 +58,7 @@ public class DialogueManager : MonoBehaviour
         else
         {
             DialogueTimer += Time.deltaTime;
-            if (DialogueTimer >= 3)
+            if (DialogueTimer >= 3 && !PlayerRecieverScript.isActive)
             {
                 DialogueBox.text = null;
                 DialogueTimer = 0;
@@ -120,8 +120,10 @@ public class DialogueManager : MonoBehaviour
             fullDialogue += str;
         }
         fullDialogue += convo.GetConversation().Substring(lastLineIndex, convo.PlaceInConversation - lastLineIndex);
-
-        DialogueBox.text = fullDialogue;
+        if (!PlayerRecieverScript.isActive)
+        {
+            DialogueBox.text = fullDialogue;
+        }
     }
 
     public void CallDialogueUpdate()

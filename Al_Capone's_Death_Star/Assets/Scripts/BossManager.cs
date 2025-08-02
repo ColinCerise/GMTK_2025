@@ -90,10 +90,10 @@ public class BossManager : MonoBehaviour
                 break;
             case 3:
                 CorrectInput = 1;
-                A.GetComponent<ButtonBetter>().ConnectedText.text = "Blue car with eagle ornament";
-                B.GetComponent<ButtonBetter>().ConnectedText.text = "Blue car with stag ornament";
-                C.GetComponent<ButtonBetter>().ConnectedText.text = "Black car with badger ornament";
-                D.GetComponent<ButtonBetter>().ConnectedText.text = "Black car with ox ornament";
+                A.GetComponent<ButtonBetter>().ConnectedText.text = "Blue with eagle ornament";
+                B.GetComponent<ButtonBetter>().ConnectedText.text = "Blue with stag ornament";
+                C.GetComponent<ButtonBetter>().ConnectedText.text = "Black with badger ornament";
+                D.GetComponent<ButtonBetter>().ConnectedText.text = "Black with ox ornament";
                 DialogueBoxScript.DialogueBox.text = "3: What car will the getaway driver be in?";
                 if (CurrentInput != 0)
                 {
@@ -102,10 +102,10 @@ public class BossManager : MonoBehaviour
                 break;
             case 4:
                 CorrectInput = 2;
-                A.GetComponent<ButtonBetter>().ConnectedText.text = "Behind a shrub outside the main entrance";
+                A.GetComponent<ButtonBetter>().ConnectedText.text = "Behind a shrub outside the main door";
                 B.GetComponent<ButtonBetter>().ConnectedText.text = "In a box near the garage door";
                 C.GetComponent<ButtonBetter>().ConnectedText.text = "In a locker on the second floor";
-                D.GetComponent<ButtonBetter>().ConnectedText.text = "Under a floorboard near the garage door";
+                D.GetComponent<ButtonBetter>().ConnectedText.text = "Under a floorboard by the garage door";
                 DialogueBoxScript.DialogueBox.text = "4: Where are the guns hidden?";
                 if (CurrentInput != 0)
                 {

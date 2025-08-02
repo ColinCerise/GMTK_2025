@@ -33,7 +33,7 @@ public class Wiretap : MonoBehaviour
                 Conversation = TargettedOutput.name + " + " + ConnectedReciever.name;
                 if (Conversation != previousConvo)
                 {
-                    audioManager.PlaySFX("tappingWires");
+                    audioManager.PlaySoundEffect("tappingWires");
                 }
                 previousConvo = Conversation;
             }
