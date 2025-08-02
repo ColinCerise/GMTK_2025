@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public float TimeDialation = .5f;
     public float FadeWallTime = 1.2f;
     public bool Pausewall = false;
+    public float ANTIspam;
     //public bool BeforeYourEyes = true;
     // Start is called before the first frame update
     void Start()
@@ -56,24 +57,36 @@ public class GameManager : MonoBehaviour
         {
             FadeIn();
         }
+        if (ANTIspam != 0)
+        {
+            ANTIspam += Time.deltaTime;
+            if (ANTIspam >= 11)
+            {
+                ANTIspam = 0;
+            }
+        }
     }
     public void Loop()
     {
-        if (Victory)
+        if (ANTIspam == 0)
         {
-            //Victory Cutscene IDK?
-            TrueLoop();
-        }
-        if (Loss)
-        {
-            StageOfInsanity++;
-            if (AngerBar.Anger >= 100)
+            ANTIspam++;
+            if (Victory)
             {
-                AngerLoss = true;
+                //Victory Cutscene IDK?
+                TrueLoop();
             }
-            if (FadeWall != null)
+            if (Loss)
             {
-                fading = true;
+                StageOfInsanity++;
+                if (AngerBar.Anger >= 100)
+                {
+                    AngerLoss = true;
+                }
+                if (FadeWall != null)
+                {
+                    fading = true;
+                }
             }
         }
     }
