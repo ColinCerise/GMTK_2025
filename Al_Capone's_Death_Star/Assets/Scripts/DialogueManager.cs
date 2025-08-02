@@ -103,9 +103,10 @@ public class DialogueManager : MonoBehaviour
     }
     public void ForceUpdate()
     {
-        ConversationManager convo = Conversation.GetComponent<ConversationManager>();
-        if (Conversation != null && convo && !PreconversationOverride)
+        
+        if (Conversation != null && !PreconversationOverride)
         {
+            ConversationManager convo = Conversation.GetComponent<ConversationManager>();
             convo.PlaceInConversation = convo.GetConversation().Length - 1;
             DisplayLines(convo);
 
@@ -177,12 +178,19 @@ public class DialogueManager : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(line))
         {
+            int temp = DialogueBox.textInfo.lineCount;
             string result = line;
             if (StartNum != 0 && lastLineIndex == StartNum)
             {
                 result = "..." + result;
             }
             physicalLines.Add(result);
+
+            if (DialogueBox.textInfo.lineCount > temp + 1)
+            {
+                Debug.Log(">2");
+                physicalLines.Add(string.Empty);
+            }
         }
     }
 
