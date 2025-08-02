@@ -31,6 +31,9 @@ public class LinesAndText : MonoBehaviour
     public GameObject Connectpoint6a;
     public GameObject Connectpoint6b;
 
+    public GameObject BossConvo;
+    public ConversationManager BossConvoScript;
+
     // Variables for clock rendering
     [SerializeField] GameObject clockDisplay;
     [SerializeField] Sprite[] clockSprites;
@@ -51,6 +54,9 @@ public class LinesAndText : MonoBehaviour
         clockDigits = clockDisplay.GetComponentsInChildren<Image>();
 
         HeldTimeInc = TimeIncrements;
+
+        BossConvo = GameObject.Find("BossCall");
+        BossConvoScript = BossConvo.GetComponent<ConversationManager>();
     }
 
     // Update is called once per frame
@@ -90,7 +96,10 @@ public class LinesAndText : MonoBehaviour
             BossManager BossScript = BossMan.GetComponent<BossManager>();
             if (BossScript.Stage == 0)
             {
-                BossScript.Stage = 1;
+                if (BossConvoScript.CallEnded)
+                {
+                    BossScript.Stage = 1;
+                }
                 TimeIncrements = 60;
             }
         }
