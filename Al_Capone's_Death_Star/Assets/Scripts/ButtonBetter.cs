@@ -8,6 +8,7 @@ public class ButtonBetter : MonoBehaviour
 {
     public GameObject BossMan;
     public BossManager BossScript;
+    public GameObject ConvoLog;
     public int ButtonNum = 0;
     public bool MouseDown;
     public bool MousedOver;
@@ -67,8 +68,12 @@ public class ButtonBetter : MonoBehaviour
     }
     public void Grab()
     {
-        BossScript.Input(ButtonNum);
-        MouseLockOut = true;
+        ConvoLog = GameObject.Find("LogbookDisplay");
+        if (ConvoLog == null || !ConvoLog.activeSelf)
+        {
+            BossScript.Input(ButtonNum);
+            MouseLockOut = true;
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
