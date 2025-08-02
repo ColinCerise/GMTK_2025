@@ -21,9 +21,9 @@ public class InsanityManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        AccumulatedTime += Time.deltaTime;
         if (LoopScript.StageOfInsanity >= 1)
         {
+            AccumulatedTime += Time.deltaTime;
             if (BubblePrefab != null && AccumulatedTime >= SpawnDelay)
             {
                 AccumulatedTime -= SpawnDelay;

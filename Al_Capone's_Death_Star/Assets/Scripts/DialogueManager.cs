@@ -75,13 +75,13 @@ public class DialogueManager : MonoBehaviour
         Conversation = Conversationist;
         ConversationManager convo = Conversation.GetComponent<ConversationManager>();
 
-        if (startingNum < 10)
+        if (startingNum < 20)
         {
             StartNum = 0;
         }
         else
         {
-            int firstIndex = startingNum - 10;
+            int firstIndex = startingNum - 20;
             int index = firstIndex;
 
             if (convo.GetConversation()[firstIndex] != ' ')
