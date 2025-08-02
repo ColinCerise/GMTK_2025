@@ -1,12 +1,13 @@
 using JetBrains.Annotations;
-using Unity.VisualScripting;
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 //using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
-using TMPro;
-using System.IO;
 
 public class ConversationManager : MonoBehaviour
 {
@@ -314,6 +315,12 @@ public class ConversationManager : MonoBehaviour
     {
         currentLineIndex++;
         Manager.GetComponent<AudioManager>().PlayVoiceFX(speakerList[currentLineIndex - 1]);
+
+        if (Array.IndexOf(DialogueBoxScript.troublesomeNames, speakerList[currentLineIndex - 1]) != -1)
+        {
+            StartCoroutine(DialogueBoxScript.PlaceHolderLine());
+        }
+
         return "<b>" + speakerList[currentLineIndex - 1] + "</b>\n";
     }
 
