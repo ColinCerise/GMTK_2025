@@ -279,6 +279,7 @@ public class ConversationManager : MonoBehaviour
                     if (!IAMTALKING)
                     {
                         IAMTALKING = true;
+                        DialogueBoxScript.SetAsTalking(this.gameObject, PlaceInConversation);
                         // Initialize dialogue encounter
 
                         int index = 0;
@@ -290,7 +291,6 @@ public class ConversationManager : MonoBehaviour
 
                         currentLineIndex = index;
 
-                        DialogueBoxScript.SetAsTalking(this.gameObject, PlaceInConversation);
                     }
 
                     if (PlaceInConversation < maxLeangth && DialogueBoxScript.StartNum < maxLeangth)
