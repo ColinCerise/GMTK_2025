@@ -118,9 +118,9 @@ public class LinesAndText : MonoBehaviour
     }
     public void WorldRevolves()
     {
+        AccumulatedTime = 0;
         Hours = 12;
         Minutes = 30;
-        AccumulatedTime = 0;
         GameObject BossMan = GameObject.Find("BossManager");
         BossManager BossScript = BossMan.GetComponent<BossManager>();
         BossScript.Stage = 0;
