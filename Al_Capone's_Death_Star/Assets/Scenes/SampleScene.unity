@@ -6849,7 +6849,11 @@ MonoBehaviour:
   DialogueTimer: 0
   PreconversationOverride: 0
   physicalLines: []
-  maxLines: 12
+  maxLines: 13
+  troublesomeNames:
+  - Golff "Ace" Caddy
+  - '"Billy the Chuckling"'
+  - '"Phil Potatoes"'
 --- !u!1 &1308828691
 GameObject:
   m_ObjectHideFlags: 0

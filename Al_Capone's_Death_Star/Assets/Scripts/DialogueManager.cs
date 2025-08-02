@@ -6,6 +6,7 @@ using UnityEngine;
 //using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
 using TMPro;
+using System;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -25,6 +26,8 @@ public class DialogueManager : MonoBehaviour
     private int lastSpaceIndex = 0;
     private int lastLineIndex = 0;
     private int tempCount = 0;
+
+    public string[] troublesomeNames;
 
     // Start is called before the first frame update
     void Start()
@@ -197,5 +200,11 @@ public class DialogueManager : MonoBehaviour
     private void AddLineBreak()
     {
         physicalLines.Add("\n\n");
+    }
+
+    public IEnumerator PlaceHolderLine()
+    {
+        yield return new WaitForEndOfFrame();
+        physicalLines.Add(string.Empty);
     }
 }
