@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour
     public Sprite HideInScene;
     public bool Victory;
     public bool Loss;
+    public bool AngerLoss;
+    public int StageOfInsanity = 0;
     public GameObject Conversations;
     public GameObject FadeWall;
     public GameObject Anger;
@@ -57,6 +59,11 @@ public class GameManager : MonoBehaviour
         }
         if (Loss)
         {
+            StageOfInsanity++;
+            if (AngerBar.Anger >= 100)
+            {
+                AngerLoss = true;
+            }
             if (FadeWall != null)
             {
                 fading = true;
@@ -123,6 +130,7 @@ public class GameManager : MonoBehaviour
             {
                 BounceConnectors = false;
                 Loss = false;
+                AngerLoss = false;
                 AngerBar.Anger = 0;
             }
         }
