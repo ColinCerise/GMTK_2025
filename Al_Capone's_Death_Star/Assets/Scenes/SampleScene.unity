@@ -1279,6 +1279,7 @@ MonoBehaviour:
   SnapToOutput: 0
   AbleToLock: 1
   NoSnapping: 0
+  DeleteAtBorder: 0
 --- !u!50 &222431243
 Rigidbody2D:
   serializedVersion: 4
@@ -3891,6 +3892,7 @@ MonoBehaviour:
   SnapToOutput: 0
   AbleToLock: 1
   NoSnapping: 0
+  DeleteAtBorder: 0
 --- !u!50 &820983364
 Rigidbody2D:
   serializedVersion: 4
@@ -4946,6 +4948,7 @@ MonoBehaviour:
   SnapToOutput: 0
   AbleToLock: 1
   NoSnapping: 0
+  DeleteAtBorder: 0
 --- !u!50 &962602144
 Rigidbody2D:
   serializedVersion: 4
@@ -5532,6 +5535,7 @@ MonoBehaviour:
   SnapToOutput: 0
   AbleToLock: 1
   NoSnapping: 0
+  DeleteAtBorder: 0
 --- !u!50 &1055399314
 Rigidbody2D:
   serializedVersion: 4
@@ -5987,6 +5991,7 @@ MonoBehaviour:
   SnapToOutput: 0
   AbleToLock: 1
   NoSnapping: 0
+  DeleteAtBorder: 0
 --- !u!50 &1136175021
 Rigidbody2D:
   serializedVersion: 4
@@ -6707,6 +6712,7 @@ MonoBehaviour:
   SnapToOutput: 1
   AbleToLock: 1
   NoSnapping: 0
+  DeleteAtBorder: 0
 --- !u!50 &1308828694
 Rigidbody2D:
   serializedVersion: 4
@@ -9488,11 +9494,13 @@ MonoBehaviour:
   - Jimmy Oakleaf
   - ???
   - "\u201CPhil Potatoes\u201D"
+  - "Crag \u201COne-Eye\u201D"
+  - "\u201CBilly the Chuckling\u201D"
+  - Jeremy Fir
+  - Nathan Stone
+  - Employee
   - Tony Whiskers
   - Shellby Fir
-  - Jeremy Fir
-  - "\u201CBilly the Chuckling\u201D"
-  - "Crag \u201COne-Eye\u201D"
   voiceClips:
   - {fileID: 0}
   - {fileID: 8300000, guid: 47522fd887e501c438d36cec5c745e59, type: 3}
@@ -9507,13 +9515,15 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 7c342a0f38b45aa468b3993a4fb1aaec, type: 3}
   - {fileID: 8300000, guid: d3ed17e8922b84f4585ca2dd26c022e3, type: 3}
   - {fileID: 8300000, guid: a1631ece56e33564eb1319fb4962ff7c, type: 3}
-  - {fileID: 8300000, guid: 026f303503c964d40b1372d5a8ff024e, type: 3}
+  - {fileID: 8300000, guid: 460745179c366eb40a9d340d8a0491ef, type: 3}
   - {fileID: 8300000, guid: 128762f96dc9f694082c5d6b05423511, type: 3}
   - {fileID: 8300000, guid: b4e8d9636e8e1634b9054e9fe0c75df0, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 8300000, guid: 7026229b07ba2834fb8a88de2472005e, type: 3}
+  - {fileID: 8300000, guid: eb3ebde9c1369ba45aa8cdd89f670aa7, type: 3}
+  - {fileID: 8300000, guid: f7773468b76e68a4fba0e186aa801d80, type: 3}
+  - {fileID: 8300000, guid: 6b8ace80716d2c442aa912508b289dbb, type: 3}
+  - {fileID: 8300000, guid: e1cc886631d3e524a8b20cc9310f82d0, type: 3}
+  - {fileID: 8300000, guid: ef11c533dde85414fa49e977a226e600, type: 3}
   songNames:
   - main
   songClips:
