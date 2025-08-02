@@ -76,7 +76,6 @@ public class ConversationManager : MonoBehaviour
         {
             HeldBoss = true;
         }
-        ParseDialogue();
         currentLineIndex = 0;
     }
 
@@ -300,12 +299,12 @@ public class ConversationManager : MonoBehaviour
                         CallEnded = true;
                         StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
                         Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
+
                     }
                 }
                 else
                 {
                     IAMTALKING = false;
-                    Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
                     CurrentDialog = null;
                 }
             }
