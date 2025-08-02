@@ -2051,7 +2051,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 9, y: 1}
+  m_SizeDelta: {x: 7.5, y: 0.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &419074030
 MonoBehaviour:
@@ -2073,7 +2073,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Example Answer Text
+  m_text: Under a floorboard by the garage door
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2100,8 +2100,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.95
-  m_fontSizeBase: 36
+  m_fontSize: 4.35
+  m_fontSizeBase: 4
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 1
@@ -4054,7 +4054,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 9, y: 1}
+  m_SizeDelta: {x: 7.5, y: 0.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &832458123
 MonoBehaviour:
@@ -4076,7 +4076,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Example Answer Text
+  m_text: Under a floorboard by the garage door
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4103,8 +4103,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.95
-  m_fontSizeBase: 36
+  m_fontSize: 4.35
+  m_fontSizeBase: 4
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 1
@@ -6964,7 +6964,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 9, y: 1}
+  m_SizeDelta: {x: 7.5, y: 0.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1343583816
 MonoBehaviour:
@@ -6986,7 +6986,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Example Answer Text
+  m_text: Under a floorboard by the garage door
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7013,8 +7013,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.95
-  m_fontSizeBase: 36
+  m_fontSize: 4.35
+  m_fontSizeBase: 4
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 1
@@ -7750,7 +7750,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 9, y: 1}
+  m_SizeDelta: {x: 7.5, y: 0.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1647973806
 MonoBehaviour:
@@ -7772,7 +7772,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Example Answer Text
+  m_text: Under a floorboard by the garage door
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7799,8 +7799,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 8.95
-  m_fontSizeBase: 36
+  m_fontSize: 4.35
+  m_fontSizeBase: 4
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 1
@@ -8778,7 +8778,7 @@ GameObject:
   - component: {fileID: 1861678182}
   - component: {fileID: 1861678181}
   m_Layer: 0
-  m_Name: IncompetenceBar
+  m_Name: AngerMeter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9281,7 +9281,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hours: 12
-  Minutes: 0
+  Minutes: 30
   AccumulatedTime: 0
   Line1: {fileID: 0}
   Connectpoint1a: {fileID: 921685621}
@@ -9773,6 +9773,19 @@ MonoBehaviour:
   MaxAnger: 100
   GameManager: {fileID: 0}
   GameManagerScript: {fileID: 0}
+  angerMeter: {fileID: 0}
+  meterSprites:
+  - {fileID: 21300000, guid: a9a75c87b640ea44da8a1fc080e891dd, type: 3}
+  - {fileID: 21300000, guid: cb483b4186b13cc499999069c0a79650, type: 3}
+  - {fileID: 21300000, guid: 4a2c7898425f8b6468e64535bf2a5772, type: 3}
+  - {fileID: 21300000, guid: 06b6d9020cced6945b23212a28df3220, type: 3}
+  - {fileID: 21300000, guid: aa67100f46104674c9e02e4292e8d773, type: 3}
+  - {fileID: 21300000, guid: 9e3e6f8b7c633564eb75e6cff034ba48, type: 3}
+  - {fileID: 21300000, guid: a8ff49257e322d24887d2eb18b90fe75, type: 3}
+  - {fileID: 21300000, guid: 40e1dd7aa7327d0408702416f7ed5466, type: 3}
+  - {fileID: 21300000, guid: d51f27fbb17062745b60b70ee285ad6e, type: 3}
+  - {fileID: 21300000, guid: a8f10cf68e224f54d9aa982c33049469, type: 3}
+  - {fileID: 21300000, guid: 45e5256c7506cd84f85f87944fd13e01, type: 3}
 --- !u!4 &2075619982
 Transform:
   m_ObjectHideFlags: 0
