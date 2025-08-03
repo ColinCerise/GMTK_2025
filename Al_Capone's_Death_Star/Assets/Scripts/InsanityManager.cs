@@ -64,9 +64,9 @@ public class InsanityManager : MonoBehaviour
                 Vector2 Bubbleran = new Vector2(Random.Range(-10, 10), -9);
                 Bubble.transform.position = Bubbleran;
                 SpriteRenderer sr = Bubble.GetComponent<SpriteRenderer>();
-                Color color = sr.color;
-                color = new Color(Random.value, Random.value, Random.value, Random.value);
-                sr.color = color;
+                //Color color = sr.color;
+                //color = new Color(Random.value, Random.value, Random.value, Random.value);
+                //sr.color = color;
                 float bubblescale = Random.Range(.5f, 2);
                 Bubble.transform.localScale = new Vector2(bubblescale, bubblescale);
             }
