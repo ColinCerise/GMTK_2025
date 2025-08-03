@@ -138,6 +138,10 @@ public class ConversationManager : MonoBehaviour
             int temp = PlaceInConversation;
 
             PlaceInConversation = (int)((TimeWaited - StartOffset) * LPS);
+            if (PlaceInConversation < 0)
+            {
+                PlaceInConversation = 0;
+            }
 
             if (PlaceInConversation != temp)
             {
@@ -290,7 +294,10 @@ public class ConversationManager : MonoBehaviour
                         currentLineIndex = index;
 
                     }
-
+                    else if (DialogueBoxScript.Conversation != this.gameObject)
+                    {
+                        DialogueBoxScript.SetAsTalking(this.gameObject, PlaceInConversation);
+                    }
                     if (PlaceInConversation < maxLeangth && DialogueBoxScript.StartNum < maxLeangth)
                     {
                         CurrentDialog = Conversation.Substring(DialogueBoxScript.StartNum, PlaceInConversation - DialogueBoxScript.StartNum);
@@ -315,6 +322,10 @@ public class ConversationManager : MonoBehaviour
                 {
                     IAMTALKING = false;
                     CurrentDialog = null;
+                    if (DialogueBoxScript.Conversation == this.gameObject)
+                    {
+                        DialogueBoxScript.Conversation = null;
+                    }
                 }
             }
         }
