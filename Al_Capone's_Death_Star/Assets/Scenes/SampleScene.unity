@@ -164,6 +164,7 @@ MonoBehaviour:
   D: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
+  QuizWrongTIme: 0
 --- !u!4 &29519015
 Transform:
   m_ObjectHideFlags: 0
@@ -1830,6 +1831,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 776446390}
   - {fileID: 1241174938}
   - {fileID: 1711430211}
   - {fileID: 1947002916}
@@ -3923,6 +3925,85 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &776446389
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 776446390}
+  - component: {fileID: 776446391}
+  m_Layer: 0
+  m_Name: Cthulu (1)
+  m_TagString: Conversation
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &776446390
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776446389}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 5.0936065, y: 0.8866247, z: -0.1130053}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 389639080}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &776446391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 776446389}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7adb1a814ea3c448740f6995fd8943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PreConversation: Operator, put me in Thickwood
+  ConversationTargets: 
+  PlayerReciever: {fileID: 0}
+  StarterOutput: {fileID: 921685621}
+  TargetReciever: {fileID: 2013851218}
+  TimeOffsetHours: 12
+  TimeOffsetMinutes: 30
+  LPS: 14
+  StartOffset: 0
+  PlaceInConversation: 0
+  maxLeangth: 0
+  CurrentDialog: 
+  Wiretap: {fileID: 0}
+  WiretapScript: {fileID: 0}
+  Manager: {fileID: 0}
+  ManagerScript: {fileID: 0}
+  DialogueBox: {fileID: 0}
+  DialogueBoxScript: {fileID: 0}
+  AngerManager: {fileID: 0}
+  AngryBar: {fileID: 0}
+  TimeWaited: 0
+  CallEnded: 0
+  CallMissed: 0
+  CallConnected: 0
+  CallStarted: 0
+  IAMTALKING: 0
+  ListenedToConvo: 0
+  ListenReq: 0.5
+  TheCthuluException: 0
+  HeldCthulu: 0
+  TheBossException: 0
+  HeldBoss: 0
+  speakerList: []
+  dialogueList: []
+  dialogueIndices: 
 --- !u!1 &779784834
 GameObject:
   m_ObjectHideFlags: 0
@@ -9947,6 +10028,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d51f27fbb17062745b60b70ee285ad6e, type: 3}
   - {fileID: 21300000, guid: a8f10cf68e224f54d9aa982c33049469, type: 3}
   - {fileID: 21300000, guid: 45e5256c7506cd84f85f87944fd13e01, type: 3}
+  DontUpdateBar: 0
 --- !u!4 &2075619982
 Transform:
   m_ObjectHideFlags: 0
