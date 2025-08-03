@@ -163,6 +163,10 @@ public class ConversationManager : MonoBehaviour
                     TheCthuluException = false;
                     DialogueBoxScript.Conversation = null;
                     Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
+                    if (DialogueBoxScript.Conversation == this.gameObject)
+                    {
+                        DialogueBoxScript.Conversation = null;
+                    }
                 }
             }
             
@@ -224,6 +228,10 @@ public class ConversationManager : MonoBehaviour
         {
             IAMTALKING = false;
             CurrentDialog = null;
+            if (DialogueBoxScript.Conversation == this.gameObject)
+            {
+                DialogueBoxScript.Conversation = null;
+            }
         }
     }
 
