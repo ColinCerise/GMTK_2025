@@ -11,7 +11,7 @@ public class Tutorial : MonoBehaviour
     public GameObject TutorialInstructions;
     public GameObject TutorialInstructions2;
     public GameObject TutorialInstructions3;
-    public int TutStage = 1;
+    //public int TutStage = 1;
     // Start is called before the first frame update
     void Start()
     {
