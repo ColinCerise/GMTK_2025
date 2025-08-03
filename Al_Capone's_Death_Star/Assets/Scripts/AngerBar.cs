@@ -19,6 +19,7 @@ public class AngerBar : MonoBehaviour
     private Sprite meterSprite;
     private GameObject angerMeterObject;
     private SpriteRenderer meterSpriteRenderer;
+    public bool DontUpdateBar = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -35,6 +36,8 @@ public class AngerBar : MonoBehaviour
     {
         if (Anger >= MaxAnger)
         {
+            DontUpdateBar = true;
+            meterSpriteRenderer.sprite = meterSprites[10];
             Anger = 0;
             Debug.Log("GameOver");
             GameManagerScript.Loss = true;
@@ -42,7 +45,10 @@ public class AngerBar : MonoBehaviour
         }
         else
         {
-            meterSpriteRenderer.sprite = meterSprites[(int)(Anger/10)];
+            if (!DontUpdateBar && Anger < 100)
+            {
+                meterSpriteRenderer.sprite = meterSprites[(int)(Anger / 10)];
+            }
         }
     }
     public void AddAnger(float anger)
@@ -52,5 +58,9 @@ public class AngerBar : MonoBehaviour
     public void DisconnectedCall()
     {
         Anger += MaxAnger / 4;
+    }
+    public void RevolveBar()
+    {
+        DontUpdateBar = false;
     }
 }

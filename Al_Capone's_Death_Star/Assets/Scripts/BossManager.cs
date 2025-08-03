@@ -19,6 +19,8 @@ public class BossManager : MonoBehaviour
     public GameObject DialogueBox;
     public DialogueManager DialogueBoxScript;
 
+    public float QuizWrongTIme = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +42,17 @@ public class BossManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(QuizWrongTIme != 0)
+        {
+            QuizWrongTIme += Time.deltaTime;
+            if (QuizWrongTIme >= 4)
+            {
+                Stage++;
+                QuizWrongTIme = 0;
+                ALLWhite();
+            }
+        }
+
         if (GameManagerScript.Loss)
         {
             //Failed = true;
@@ -137,9 +150,26 @@ public class BossManager : MonoBehaviour
                 }
                 break;
             case 7:
-                Debug.Log("You Win");
-                GameManagerScript.Victory = true;
-                GameManagerScript.Loop();
+                if (Failed)
+                {
+                    Debug.Log("Failed so now loop");
+                    A.SetActive(false);
+                    B.SetActive(false);
+                    C.SetActive(false);
+                    D.SetActive(false);
+                    Activebuttons = false;
+                    GameManagerScript.Loss = true;
+                    GameManagerScript.Loop();
+                    Stage = 0;
+                    CorrectInput = 0;
+                    CurrentInput = 0;
+                }
+                else
+                {
+                    Debug.Log("You Win");
+                    GameManagerScript.Victory = true;
+                    GameManagerScript.Loop();
+                }
                 break;
 
 
@@ -154,22 +184,52 @@ public class BossManager : MonoBehaviour
         else
         {
             Debug.Log("Failed the fianl");
-            //Failed = true;
-            A.SetActive(false);
-            B.SetActive(false);
-            C.SetActive(false);
-            D.SetActive(false);
-            Activebuttons = false;
-            GameManagerScript.Loss = true;
-            GameManagerScript.Loop();
-            Stage = 0;
-            CorrectInput = 0;
-            CurrentInput = 0;
+            Failed = true;
+            QuizWrongTIme++;
+            AllRed();
         }
         CurrentInput = 0;
     }
     public void Input(int input)
     {
         CurrentInput = input;
+    }
+    public void AllRed()
+    {
+        SpriteRenderer Asr = A.GetComponent<SpriteRenderer>();
+        Color Acolor = Asr.color;
+        Acolor = new Color(255, 0, 0, 255);
+        Asr.color = Acolor;
+        SpriteRenderer Bsr = B.GetComponent<SpriteRenderer>();
+        Color Bcolor = Bsr.color;
+        Bcolor = new Color(255, 0, 0, 255);
+        Bsr.color = Bcolor;
+        SpriteRenderer Csr = C.GetComponent<SpriteRenderer>();
+        Color Ccolor = Csr.color;
+        Ccolor = new Color(255, 0, 0, 255);
+        Csr.color = Ccolor;
+        SpriteRenderer Dsr = D.GetComponent<SpriteRenderer>();
+        Color Dcolor = Dsr.color;
+        Dcolor = new Color(255, 0, 0, 255);
+        Dsr.color = Dcolor;
+    }
+    public void ALLWhite()
+    {
+        SpriteRenderer Asr = A.GetComponent<SpriteRenderer>();
+        Color Acolor = Asr.color;
+        Acolor = new Color(255, 255, 255, 255);
+        Asr.color = Acolor;
+        SpriteRenderer Bsr = B.GetComponent<SpriteRenderer>();
+        Color Bcolor = Bsr.color;
+        Bcolor = new Color(255, 255, 255, 255);
+        Bsr.color = Bcolor;
+        SpriteRenderer Csr = C.GetComponent<SpriteRenderer>();
+        Color Ccolor = Csr.color;
+        Ccolor = new Color(255, 255, 255, 255);
+        Csr.color = Ccolor;
+        SpriteRenderer Dsr = D.GetComponent<SpriteRenderer>();
+        Color Dcolor = Dsr.color;
+        Dcolor = new Color(255, 255, 255, 255);
+        Dsr.color = Dcolor;
     }
 }
