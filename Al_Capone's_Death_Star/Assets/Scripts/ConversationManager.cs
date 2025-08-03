@@ -275,10 +275,10 @@ public class ConversationManager : MonoBehaviour
     }
     public void RunConvo()
     {
-        Debug.Log("Starts running");
+        //Debug.Log("Starts running");
         if ((TimeWaited - StartOffset) * LPS <= maxLeangth + 1) // Continue to progress conversation
         {
-            Debug.Log("Stage1");
+            //Debug.Log("Stage1");
             int temp = PlaceInConversation;
             // Set the integer value of the current character based on the passage of time since the beginning of the conversation
             PlaceInConversation = (int)((TimeWaited - StartOffset) * LPS);
@@ -290,10 +290,10 @@ public class ConversationManager : MonoBehaviour
             // If we have progressed to a new conversation index
             if (temp != PlaceInConversation)
             {
-                Debug.Log("Stage2");
+                //Debug.Log("Stage2");
                 if ((TheBossException && !TutorialException) || (WiretapScript.Conversation != null && WiretapScript.Conversation.Equals(ConversationTargets)))
                 {
-                    Debug.Log("Stage3");
+                    //Debug.Log("Stage3");
                     if (PlaceInConversation - DialogueBoxScript.StartNum >= maxLeangth * ListenReq)
                     {
 
@@ -303,7 +303,7 @@ public class ConversationManager : MonoBehaviour
 
                     if (!IAMTALKING)
                     {
-                        Debug.Log("Stage4 I will talk!");
+                        //Debug.Log("Stage4 I will talk!");
                         IAMTALKING = true;
 
                         int index = 0;

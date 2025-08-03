@@ -44,10 +44,11 @@ public class Tutorial : MonoBehaviour
         {
             WorldScript.TimeIncrements = 999999;
         }
-        else if (WorldScript.Minutes == 29 && TutorialScript.CallEnded)
+        if (WorldScript.Minutes == 29 && TutorialScript.CallEnded)
         {
             WorldScript.RemoveAccumulated();
             WorldScript.TimeIncrements = WorldScript.HeldTimeInc;
+            this.gameObject.SetActive(false);
         }
     }
 }
