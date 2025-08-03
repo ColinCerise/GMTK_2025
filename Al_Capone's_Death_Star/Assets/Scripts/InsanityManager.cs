@@ -84,7 +84,7 @@ public class InsanityManager : MonoBehaviour
                     Color color = sr.color;
                     color = new Color(Random.value, Random.value, Random.value, Random.value);
                     sr.color = color;
-                    float Fishscale = Random.Range(1, 2);
+                    float Fishscale = Random.Range(5, 10);
                     Fish.transform.localScale = new Vector2(Fishscale, Fishscale);
                 }
             }

@@ -182,8 +182,38 @@ public class BossManager : MonoBehaviour
     public void AllRed()
     {
         SpriteRenderer Asr = A.GetComponent<SpriteRenderer>();
-        Color color = Asr.color;
-        color = new Color(255, 0, 0, 255);
-        Asr.color = color;
+        Color Acolor = Asr.color;
+        Acolor = new Color(255, 0, 0, 255);
+        Asr.color = Acolor;
+        SpriteRenderer Bsr = B.GetComponent<SpriteRenderer>();
+        Color Bcolor = Bsr.color;
+        Bcolor = new Color(255, 0, 0, 255);
+        Bsr.color = Bcolor;
+        SpriteRenderer Csr = C.GetComponent<SpriteRenderer>();
+        Color Ccolor = Csr.color;
+        Ccolor = new Color(255, 0, 0, 255);
+        Csr.color = Ccolor;
+        SpriteRenderer Dsr = D.GetComponent<SpriteRenderer>();
+        Color Dcolor = Dsr.color;
+        Dcolor = new Color(255, 0, 0, 255);
+        Dsr.color = Dcolor;
+    }
+    public void ALLWhite()
+    {
+        SpriteRenderer Asr = A.GetComponent<SpriteRenderer>();
+        Color Acolor = Asr.color;
+        Acolor = new Color(255, 255, 255, 255);
+        Asr.color = Acolor;
+        SpriteRenderer Bsr = B.GetComponent<SpriteRenderer>();
+        Color Bcolor = Bsr.color;
+        Bcolor = new Color(255, 255, 255, 255);
+        Bsr.color = Bcolor;
+        SpriteRenderer Csr = C.GetComponent<SpriteRenderer>();
+        Color Ccolor = Csr.color;
+        Ccolor = new Color(255, 255, 255, 255);
+        Csr.color = Ccolor;
+        SpriteRenderer Dsr = D.GetComponent<SpriteRenderer>();
+        Color Dcolor = Dsr.color;
+        Dsr.color = Dcolor;
     }
 }
