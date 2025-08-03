@@ -160,6 +160,7 @@ public class DialogueManager : MonoBehaviour
 
     public void CallDialogueUpdate()
     {
+        
         ConversationManager convo = Conversation.GetComponent<ConversationManager>();
 
         tempCount = DialogueBox.textInfo.lineCount;

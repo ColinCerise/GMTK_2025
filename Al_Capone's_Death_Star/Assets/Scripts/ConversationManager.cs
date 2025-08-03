@@ -54,7 +54,6 @@ public class ConversationManager : MonoBehaviour
     public List<string> speakerList = new List<string>();
     public List<string> dialogueList = new List<string>();
     private int currentLineIndex = 0;
-    public List<int> dialogueIndices = new List<int>();
 
     // Start is called before the first frame
     void Start()
@@ -87,23 +86,23 @@ public class ConversationManager : MonoBehaviour
 
     private void ParseDialogue()
     {
-        string filepath = Application.dataPath + "/TextFiles/" + gameObject.name + ".txt";
-        if (File.Exists(filepath))
+        TextAsset textAsset = Resources.Load<TextAsset>(gameObject.name);
+
+        if (textAsset != null)
         {
-            using StreamReader sr = new StreamReader(filepath);
+            string assetText = textAsset.text;
+
+            string[] lines = assetText.Split('\n');
+
+            string line;
+
+            for (int i = 0; i < lines.Length; i++)
             {
-                string line;
-                int count = 0;
-                
-                while ((line = sr.ReadLine()) != null)
-                {
-                    line.Trim();
-                    speakerList.Add(line.Substring(0, line.IndexOf(": ")));
-                    string dialogue = line.Substring(line.IndexOf(": ") + 2);
-                    count += dialogue.Length;
-                    dialogueIndices.Add(count - 1);
-                    dialogueList.Add(dialogue);
-                }
+                line = lines[i];
+                line.Trim();
+                speakerList.Add(line.Substring(0, line.IndexOf(": ")));
+                string dialogue = line.Substring(line.IndexOf(": ") + 2);
+                dialogueList.Add(dialogue);
             }
         }
         else
@@ -185,6 +184,7 @@ public class ConversationManager : MonoBehaviour
             ConnectedReciever = ConnectedPoint.GetComponent<Grabbable>().TargettedReciever;
             if (StarterOutput.GetComponent<OutputJack>() != null && !StarterOutput.GetComponent<OutputJack>().LightActive)
             {
+                Debug.Log("Attempting light");
                 StarterOutput.GetComponent<OutputJack>().SetLightActive(true, this.gameObject);
                 Manager.GetComponent<AudioManager>().PlaySoundEffect("lightOn");
             }
@@ -250,7 +250,6 @@ public class ConversationManager : MonoBehaviour
         if (TimeWaited >= 20 && !CallConnected)
         {
             CallEnded = true;
-            Debug.Log("Ending call via connection timeout, i0.1");
             StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
             CallMissed = true;
             AngryBar.DisconnectedCall();
@@ -259,7 +258,6 @@ public class ConversationManager : MonoBehaviour
         else if (TimeWaited >= 30 && !CallStarted)
         {
             CallEnded = true;
-            Debug.Log("Ending call via start timeout, i0.2");
             StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
             CallMissed = true;
             AngryBar.DisconnectedCall();
@@ -391,7 +389,6 @@ public class ConversationManager : MonoBehaviour
 
     public void LeaveConvo()
     {
-        Debug.Log("Leaving convo");
         Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText() + "...");
     }
 
