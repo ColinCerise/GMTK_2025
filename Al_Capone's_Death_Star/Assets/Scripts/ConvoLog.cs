@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -38,7 +39,7 @@ public class ConvoLog : MonoBehaviour
     {
         logbookDisplay.SetActive(!logbookDisplay.activeSelf);
 
-        currLog.text = conversationsLogged[0];
+        Display(0);
         logCounter = 0;
     }
 
@@ -47,7 +48,7 @@ public class ConvoLog : MonoBehaviour
         if (logbookDisplay.activeSelf && logCounter < conversationsLogged.Count - 1)
         {
             logCounter++;
-            currLog.text = conversationsLogged[logCounter];
+            Display(logCounter);
         }
     }
 
@@ -56,7 +57,7 @@ public class ConvoLog : MonoBehaviour
         if (logbookDisplay.activeSelf && logCounter > 0)
         {
             logCounter--;
-            currLog.text = conversationsLogged[logCounter];
+            Display(logCounter);
         }
     }
 
@@ -67,5 +68,10 @@ public class ConvoLog : MonoBehaviour
         conversationsLogged.Clear();
         conversationsLogged.Add(defaultText);
         noEntries = true;
+    }
+
+    private void Display(int index)
+    {
+        currLog.text = conversationsLogged[index];
     }
 }
