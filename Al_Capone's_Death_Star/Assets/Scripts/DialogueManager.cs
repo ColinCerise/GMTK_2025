@@ -50,7 +50,7 @@ public class DialogueManager : MonoBehaviour
             if (TempNotConv.GetComponent<OutputJack>().PendingConversation != null)
             {
                 ConversationManager Convo = TempNotConv.GetComponent<OutputJack>().PendingConversation.GetComponent<ConversationManager>();
-                if (Convo != null && Convo.TheBossException)
+                if (Convo != null && (Convo.TheBossException && !Convo.TutorialException))
                 {
 
                 }
