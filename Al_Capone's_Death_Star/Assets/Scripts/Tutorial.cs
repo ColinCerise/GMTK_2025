@@ -46,6 +46,7 @@ public class Tutorial : MonoBehaviour
         }
         else if (WorldScript.Minutes == 29 && TutorialScript.CallEnded)
         {
+            WorldScript.RemoveAccumulated();
             WorldScript.TimeIncrements = WorldScript.HeldTimeInc;
         }
     }
