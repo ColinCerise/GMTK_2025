@@ -188,7 +188,7 @@ public class ConversationManager : MonoBehaviour
                 StarterOutput.GetComponent<OutputJack>().SetLightActive(true, this.gameObject);
                 Manager.GetComponent<AudioManager>().PlaySoundEffect("lightOn");
             }
-            if (!CallConnected && TimeWaited >= 10 && !TutorialException)
+            if (!CallConnected && TimeWaited >= 5 && !TutorialException)
             {
                 AngryBar.AddAnger(Time.deltaTime);
             }
@@ -223,6 +223,10 @@ public class ConversationManager : MonoBehaviour
                 CurrentDialog = Conversation.Substring(DialogueBoxScript.StartNum, maxLeangth - DialogueBoxScript.StartNum);
                 DialogueBoxScript.ForceUpdate();
                 CallEnded = true;
+                if (TutorialException)
+                {
+                    ConnectedPoint.GetComponent<Grabbable>().Bounce();
+                }
                 StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
                 if (IAMTALKING)
                 {
