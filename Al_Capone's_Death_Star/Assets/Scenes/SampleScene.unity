@@ -164,7 +164,7 @@ MonoBehaviour:
   D: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
-  EndScreen: {fileID: 0}
+  EndScreen: {fileID: 931814566}
   QuizWrongTIme: 0
 --- !u!4 &29519015
 Transform:
@@ -11799,8 +11799,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f85b17f21a7f34ab3270237dbde35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hours: 11
-  Minutes: 59
+  Hours: 21
+  Minutes: 50
   AccumulatedTime: 0
   Line1: {fileID: 0}
   Connectpoint1a: {fileID: 921685621}
