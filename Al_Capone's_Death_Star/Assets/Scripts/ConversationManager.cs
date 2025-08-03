@@ -169,7 +169,7 @@ public class ConversationManager : MonoBehaviour
                     }
                 }
             }
-            
+
         }
 
         //check if enough time has passed and the call is still going

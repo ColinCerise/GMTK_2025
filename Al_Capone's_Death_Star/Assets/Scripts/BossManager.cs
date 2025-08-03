@@ -19,6 +19,8 @@ public class BossManager : MonoBehaviour
     public GameObject DialogueBox;
     public DialogueManager DialogueBoxScript;
 
+    public float QuizWrongTIme = 0;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,6 +42,17 @@ public class BossManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(QuizWrongTIme != 0)
+        {
+            QuizWrongTIme += Time.deltaTime;
+            if (QuizWrongTIme >= 4)
+            {
+                Stage++;
+                QuizWrongTIme = 0;
+                ALLWhite();
+            }
+        }
+
         if (GameManagerScript.Loss)
         {
             //Failed = true;
@@ -172,6 +185,8 @@ public class BossManager : MonoBehaviour
         {
             Debug.Log("Failed the fianl");
             Failed = true;
+            QuizWrongTIme++;
+            AllRed();
         }
         CurrentInput = 0;
     }
