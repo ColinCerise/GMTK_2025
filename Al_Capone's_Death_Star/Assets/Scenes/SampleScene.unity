@@ -630,6 +630,7 @@ MonoBehaviour:
   HeldCthulu: 0
   TheBossException: 0
   HeldBoss: 0
+  TutorialException: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -1626,6 +1627,7 @@ MonoBehaviour:
   HeldCthulu: 0
   TheBossException: 0
   HeldBoss: 0
+  TutorialException: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -2736,6 +2738,7 @@ MonoBehaviour:
   HeldCthulu: 0
   TheBossException: 0
   HeldBoss: 0
+  TutorialException: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -2815,6 +2818,7 @@ MonoBehaviour:
   HeldCthulu: 0
   TheBossException: 0
   HeldBoss: 0
+  TutorialException: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -3038,6 +3042,7 @@ MonoBehaviour:
   HeldCthulu: 0
   TheBossException: 0
   HeldBoss: 0
+  TutorialException: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -3117,6 +3122,7 @@ MonoBehaviour:
   HeldCthulu: 0
   TheBossException: 0
   HeldBoss: 0
+  TutorialException: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -3936,7 +3942,7 @@ GameObject:
   - component: {fileID: 776446390}
   - component: {fileID: 776446391}
   m_Layer: 0
-  m_Name: Cthulu (1)
+  m_Name: Tutorial
   m_TagString: Conversation
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3972,10 +3978,10 @@ MonoBehaviour:
   PreConversation: Operator, put me in Thickwood
   ConversationTargets: 
   PlayerReciever: {fileID: 0}
-  StarterOutput: {fileID: 921685621}
-  TargetReciever: {fileID: 2013851218}
+  StarterOutput: {fileID: 188834805}
+  TargetReciever: {fileID: 88107218}
   TimeOffsetHours: 12
-  TimeOffsetMinutes: 30
+  TimeOffsetMinutes: 0
   LPS: 14
   StartOffset: 0
   PlaceInConversation: 0
@@ -3999,8 +4005,9 @@ MonoBehaviour:
   ListenReq: 0.5
   TheCthuluException: 0
   HeldCthulu: 0
-  TheBossException: 0
+  TheBossException: 1
   HeldBoss: 0
+  TutorialException: 1
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -4500,6 +4507,7 @@ MonoBehaviour:
   HeldCthulu: 0
   TheBossException: 0
   HeldBoss: 0
+  TutorialException: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -4723,6 +4731,7 @@ MonoBehaviour:
   HeldCthulu: 0
   TheBossException: 1
   HeldBoss: 0
+  TutorialException: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -4802,6 +4811,7 @@ MonoBehaviour:
   HeldCthulu: 0
   TheBossException: 0
   HeldBoss: 0
+  TutorialException: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -5467,6 +5477,7 @@ MonoBehaviour:
   HeldCthulu: 0
   TheBossException: 0
   HeldBoss: 0
+  TutorialException: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -6057,6 +6068,7 @@ MonoBehaviour:
   HeldCthulu: 0
   TheBossException: 0
   HeldBoss: 0
+  TutorialException: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -6902,6 +6914,7 @@ MonoBehaviour:
   HeldCthulu: 0
   TheBossException: 0
   HeldBoss: 0
+  TutorialException: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -7645,6 +7658,7 @@ MonoBehaviour:
   HeldCthulu: 0
   TheBossException: 0
   HeldBoss: 0
+  TutorialException: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -8282,6 +8296,7 @@ MonoBehaviour:
   HeldCthulu: 0
   TheBossException: 0
   HeldBoss: 0
+  TutorialException: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -8376,6 +8391,7 @@ MonoBehaviour:
   HeldCthulu: 0
   TheBossException: 0
   HeldBoss: 0
+  TutorialException: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -9294,6 +9310,7 @@ MonoBehaviour:
   HeldCthulu: 0
   TheBossException: 0
   HeldBoss: 0
+  TutorialException: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
@@ -9455,8 +9472,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f85b17f21a7f34ab3270237dbde35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hours: 12
-  Minutes: 30
+  Hours: 11
+  Minutes: 59
   AccumulatedTime: 0
   Line1: {fileID: 0}
   Connectpoint1a: {fileID: 921685621}
@@ -10120,6 +10137,7 @@ MonoBehaviour:
   HeldCthulu: 0
   TheBossException: 0
   HeldBoss: 0
+  TutorialException: 0
   speakerList: []
   dialogueList: []
   dialogueIndices: 
