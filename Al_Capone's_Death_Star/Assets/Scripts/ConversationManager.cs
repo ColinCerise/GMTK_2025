@@ -46,7 +46,8 @@ public class ConversationManager : MonoBehaviour
     public bool TheCthuluException = false;
     public bool HeldCthulu = false;
     public bool TheBossException = false;
-    public bool HeldBoss = false;
+    //public bool HeldBoss = false;
+    public bool TutorialException = false;
 
     // Variables for parsing dialogue
     private int totalCharLength;
@@ -127,7 +128,7 @@ public class ConversationManager : MonoBehaviour
     void Update()
     {
         // Cthulu
-        if (TheCthuluException)
+        if (TheCthuluException && ((ManagerScript.Hours == TimeOffsetHours && ManagerScript.Minutes >= TimeOffsetMinutes) || ManagerScript.Hours > TimeOffsetHours))
         {
             CallEnded = true;
             CallStarted = true;
@@ -160,9 +161,9 @@ public class ConversationManager : MonoBehaviour
                 {
                     CurrentDialog = Conversation.Substring(0, maxLeangth);
                     DialogueBoxScript.ForceUpdate();
+                    Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
                     TheCthuluException = false;
                     DialogueBoxScript.Conversation = null;
-                    Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
                     if (DialogueBoxScript.Conversation == this.gameObject)
                     {
                         DialogueBoxScript.Conversation = null;
@@ -176,7 +177,10 @@ public class ConversationManager : MonoBehaviour
         if (((ManagerScript.Hours == TimeOffsetHours && ManagerScript.Minutes >= TimeOffsetMinutes) || ManagerScript.Hours > TimeOffsetHours) && !CallEnded)
         {
             maxLeangth = totalCharLength;
-            TimeWaited += Time.deltaTime;
+            if (!TutorialException || IAMTALKING)
+            {
+                TimeWaited += Time.deltaTime;
+            }
             ConnectedPoint = GameObject.Find(StarterOutput.name.Substring(0, (StarterOutput.name.Length - 1)) + "2");
             ConnectedReciever = ConnectedPoint.GetComponent<Grabbable>().TargettedReciever;
             if (StarterOutput.GetComponent<OutputJack>() != null && !StarterOutput.GetComponent<OutputJack>().LightActive)
@@ -184,7 +188,7 @@ public class ConversationManager : MonoBehaviour
                 StarterOutput.GetComponent<OutputJack>().SetLightActive(true, this.gameObject);
                 Manager.GetComponent<AudioManager>().PlaySoundEffect("lightOn");
             }
-            if (!CallConnected && TimeWaited >= 10)
+            if (!CallConnected && TimeWaited >= 10 && !TutorialException)
             {
                 AngryBar.AddAnger(Time.deltaTime);
             }
@@ -203,13 +207,14 @@ public class ConversationManager : MonoBehaviour
                 if (ConnectedReciever != TargetReciever) // If we start a call then disconnect
                 {
                     CallEnded = true;
-                    Debug.Log("Ending call via start/disconnect, i1");
                     StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
                     CallMissed = true;
                     AngryBar.DisconnectedCall();
                     Debug.Log("Disconnected 1 on " + gameObject.name);
-                    Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
-                    Debug.Log(gameObject.name + ": " + DialogueBoxScript.FormattedCurrentText() + "\nIdentity: 1");
+                    if (IAMTALKING)
+                    {
+                        LeaveConvo();
+                    }
                 }
                 RunConvo();
             }
@@ -218,10 +223,11 @@ public class ConversationManager : MonoBehaviour
                 CurrentDialog = Conversation.Substring(DialogueBoxScript.StartNum, maxLeangth - DialogueBoxScript.StartNum);
                 DialogueBoxScript.ForceUpdate();
                 CallEnded = true;
-                Debug.Log("Ending call via natural end, i1");
                 StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
-                Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
-                Debug.Log(gameObject.name + ": " + DialogueBoxScript.FormattedCurrentText() + "\nIdentity: 2");
+                if (IAMTALKING)
+                {
+                    Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
+                }
             }
         }
         if (CallEnded && IAMTALKING && !TheCthuluException)
@@ -269,28 +275,36 @@ public class ConversationManager : MonoBehaviour
     }
     public void RunConvo()
     {
+        //Debug.Log("Starts running");
         if ((TimeWaited - StartOffset) * LPS <= maxLeangth + 1) // Continue to progress conversation
         {
+            //Debug.Log("Stage1");
             int temp = PlaceInConversation;
             // Set the integer value of the current character based on the passage of time since the beginning of the conversation
             PlaceInConversation = (int)((TimeWaited - StartOffset) * LPS);
-            
+
+            if (TutorialException && !IAMTALKING && PlaceInConversation == temp) //Jumpstarts the conversation bc otherwise it wont progress
+            {
+                PlaceInConversation++;
+            }
             // If we have progressed to a new conversation index
             if (temp != PlaceInConversation)
             {
-                if (TheBossException || (WiretapScript.Conversation != null && WiretapScript.Conversation.Equals(ConversationTargets)))
+                //Debug.Log("Stage2");
+                if ((TheBossException && !TutorialException) || (WiretapScript.Conversation != null && WiretapScript.Conversation.Equals(ConversationTargets)))
                 {
+                    //Debug.Log("Stage3");
                     if (PlaceInConversation - DialogueBoxScript.StartNum >= maxLeangth * ListenReq)
                     {
+
                         ListenedToConvo = true;
                         //Debug.Log(PlaceInConversation - DialogueBoxScript.StartNum - maxLeangth / 2);
                     }
 
                     if (!IAMTALKING)
                     {
+                        //Debug.Log("Stage4 I will talk!");
                         IAMTALKING = true;
-                        DialogueBoxScript.SetAsTalking(this.gameObject, PlaceInConversation);
-                        // Initialize dialogue encounter
 
                         int index = 0;
                         for (int i = 0, count = PlaceInConversation; count > 0; i++)
@@ -301,6 +315,7 @@ public class ConversationManager : MonoBehaviour
 
                         currentLineIndex = index;
 
+                        DialogueBoxScript.SetAsTalking(this.gameObject, PlaceInConversation);
                     }
                     else if (DialogueBoxScript.Conversation != this.gameObject)
                     {
@@ -319,15 +334,12 @@ public class ConversationManager : MonoBehaviour
                     else
                     {
                         CallEnded = true;
-                        Debug.Log("Ending call via catch case, i3");
                         StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
-                        Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
-                        Debug.Log(gameObject.name + ": " + DialogueBoxScript.FormattedCurrentText() + "\nIdentity: 3");
-
                     }
                 }
-                else
+                else if (IAMTALKING)
                 {
+                    LeaveConvo();
                     IAMTALKING = false;
                     CurrentDialog = null;
                     if (DialogueBoxScript.Conversation == this.gameObject)
@@ -340,15 +352,18 @@ public class ConversationManager : MonoBehaviour
     }
     public void Revolve()
     {
-        CallEnded = false;
-        CallConnected = false;
-        CallStarted = false;
-        CallMissed = false;
-        IAMTALKING = false;
-        TheCthuluException = HeldCthulu;
-        PlaceInConversation = 0;
-        TimeWaited = 0;
-        StarterOutput.GetComponent<OutputJack>().SetLightActive(false, null);
+        if (!TutorialException)
+        {
+            CallEnded = false;
+            CallConnected = false;
+            CallStarted = false;
+            CallMissed = false;
+            IAMTALKING = false;
+            TheCthuluException = HeldCthulu;
+            PlaceInConversation = 0;
+            TimeWaited = 0;
+            StarterOutput.GetComponent<OutputJack>().SetLightActive(false, null);
+        }
         //ConnectedPoint
     }
 
@@ -368,5 +383,16 @@ public class ConversationManager : MonoBehaviour
     public string GetConversation()
     {
         return Conversation;
+    }
+
+    public void LeaveConvo()
+    {
+        Debug.Log("Leaving convo");
+        Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText() + "...");
+    }
+
+    public string StartTime()
+    {
+        return $"{(int)TimeOffsetHours}:{(int)TimeOffsetMinutes:D2} 02/02/1923\n\n";
     }
 }

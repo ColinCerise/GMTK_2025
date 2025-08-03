@@ -127,4 +127,8 @@ public class LinesAndText : MonoBehaviour
         BossScript.Stage = 0;
         ExtraBossTime = 0;
     }
+    public void RemoveAccumulated()
+    {
+        AccumulatedTime = 0;
+    }
 }

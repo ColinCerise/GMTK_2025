@@ -59,4 +59,13 @@ public class ConvoLog : MonoBehaviour
             currLog.text = conversationsLogged[logCounter];
         }
     }
+
+    public void Revolve()
+    {
+        logbookDisplay.SetActive(false);
+        currLog = logbookDisplay.GetComponentInChildren<TextMeshProUGUI>();
+        conversationsLogged.Clear();
+        conversationsLogged.Add(defaultText);
+        noEntries = true;
+    }
 }
