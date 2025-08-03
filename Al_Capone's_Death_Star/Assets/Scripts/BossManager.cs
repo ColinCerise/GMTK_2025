@@ -137,9 +137,26 @@ public class BossManager : MonoBehaviour
                 }
                 break;
             case 7:
-                Debug.Log("You Win");
-                GameManagerScript.Victory = true;
-                GameManagerScript.Loop();
+                if (Failed)
+                {
+                    Debug.Log("Failed so now loop");
+                    A.SetActive(false);
+                    B.SetActive(false);
+                    C.SetActive(false);
+                    D.SetActive(false);
+                    Activebuttons = false;
+                    GameManagerScript.Loss = true;
+                    GameManagerScript.Loop();
+                    Stage = 0;
+                    CorrectInput = 0;
+                    CurrentInput = 0;
+                }
+                else
+                {
+                    Debug.Log("You Win");
+                    GameManagerScript.Victory = true;
+                    GameManagerScript.Loop();
+                }
                 break;
 
 
@@ -154,17 +171,7 @@ public class BossManager : MonoBehaviour
         else
         {
             Debug.Log("Failed the fianl");
-            //Failed = true;
-            A.SetActive(false);
-            B.SetActive(false);
-            C.SetActive(false);
-            D.SetActive(false);
-            Activebuttons = false;
-            GameManagerScript.Loss = true;
-            GameManagerScript.Loop();
-            Stage = 0;
-            CorrectInput = 0;
-            CurrentInput = 0;
+            Failed = true;
         }
         CurrentInput = 0;
     }
