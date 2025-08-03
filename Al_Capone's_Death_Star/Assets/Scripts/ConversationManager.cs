@@ -381,7 +381,7 @@ public class ConversationManager : MonoBehaviour
             StartCoroutine(DialogueBoxScript.PlaceHolderLine());
         }
 
-        return "<b>" + speakerList[currentLineIndex - 1] + "</b>\n";
+        return "<color=#0e0b02>" + speakerList[currentLineIndex - 1] + "</color>\n";
     }
 
     public string GetConversation()
