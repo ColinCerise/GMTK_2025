@@ -150,10 +150,6 @@ public class ConversationManager : MonoBehaviour
                     IAMTALKING = true;
                     DialogueBoxScript.SetAsTalking(this.gameObject, PlaceInConversation);
                 }
-                else if(DialogueBoxScript.Conversation != this.gameObject)
-                {
-                    DialogueBoxScript.SetAsTalking(this.gameObject, PlaceInConversation);
-                }
                 if (PlaceInConversation < maxLeangth)
                 {
                     //Debug.Log("I cant talk but must scream");
@@ -298,7 +294,10 @@ public class ConversationManager : MonoBehaviour
                         currentLineIndex = index;
 
                     }
-
+                    else if (DialogueBoxScript.Conversation != this.gameObject)
+                    {
+                        DialogueBoxScript.SetAsTalking(this.gameObject, PlaceInConversation);
+                    }
                     if (PlaceInConversation < maxLeangth && DialogueBoxScript.StartNum < maxLeangth)
                     {
                         CurrentDialog = Conversation.Substring(DialogueBoxScript.StartNum, PlaceInConversation - DialogueBoxScript.StartNum);
@@ -323,6 +322,10 @@ public class ConversationManager : MonoBehaviour
                 {
                     IAMTALKING = false;
                     CurrentDialog = null;
+                    if (DialogueBoxScript.Conversation == this.gameObject)
+                    {
+                        DialogueBoxScript.Conversation = null;
+                    }
                 }
             }
         }
