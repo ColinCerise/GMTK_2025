@@ -51,6 +51,6 @@ public class AngerBar : MonoBehaviour
     }
     public void DisconnectedCall()
     {
-        Anger += MaxAnger / 2;
+        Anger += MaxAnger / 4;
     }
 }
