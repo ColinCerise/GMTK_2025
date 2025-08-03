@@ -9411,6 +9411,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 4812fab36308910459f0777addb911fa, type: 3}
   TimeIncrements: 0.75
   HeldTimeInc: 0
+  ExtraBossTime: 0
 --- !u!4 &1995254232
 Transform:
   m_ObjectHideFlags: 0
@@ -9502,7 +9503,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: dd83fa05940044444ab097aca54e5cef, type: 3}
   - {fileID: 8300000, guid: 517591e8f2ecbe44f989d52ea65f7673, type: 3}
   - {fileID: 8300000, guid: b6b0a8bb5207bcb4b9ba8406978c59a5, type: 3}
-  - {fileID: 8300000, guid: 709be3bf0bf43e240bca290104e27870, type: 3}
+  - {fileID: 8300000, guid: ff90dbd7a711b5040861d14aa9b1a782, type: 3}
   - {fileID: 8300000, guid: 7c342a0f38b45aa468b3993a4fb1aaec, type: 3}
   - {fileID: 8300000, guid: d3ed17e8922b84f4585ca2dd26c022e3, type: 3}
   - {fileID: 8300000, guid: a1631ece56e33564eb1319fb4962ff7c, type: 3}
