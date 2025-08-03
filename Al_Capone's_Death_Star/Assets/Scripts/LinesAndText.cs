@@ -97,6 +97,10 @@ public class LinesAndText : MonoBehaviour
             BossManager BossScript = BossMan.GetComponent<BossManager>();
             if (BossScript.Stage == 0)
             {
+                if (BossConvoScript.enabled == false)
+                {
+                    BossConvoScript.enabled = true;
+                }
                 if (BossConvoScript.CallEnded)
                 {
                     ExtraBossTime += Time.deltaTime;
