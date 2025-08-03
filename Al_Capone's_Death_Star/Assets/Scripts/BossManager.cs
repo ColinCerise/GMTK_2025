@@ -214,6 +214,7 @@ public class BossManager : MonoBehaviour
         Csr.color = Ccolor;
         SpriteRenderer Dsr = D.GetComponent<SpriteRenderer>();
         Color Dcolor = Dsr.color;
+        Dcolor = new Color(255, 255, 255, 255);
         Dsr.color = Dcolor;
     }
 }
