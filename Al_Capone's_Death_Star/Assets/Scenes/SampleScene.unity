@@ -164,6 +164,7 @@ MonoBehaviour:
   D: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
+  QuizWrongTIme: 0
 --- !u!4 &29519015
 Transform:
   m_ObjectHideFlags: 0
@@ -835,7 +836,6 @@ MonoBehaviour:
   TheCthuluException: 0
   HeldCthulu: 0
   TheBossException: 0
-  HeldBoss: 0
   TutorialException: 0
   speakerList: []
   dialogueList: []
@@ -2227,6 +2227,7 @@ Transform:
   - {fileID: 983352628}
   - {fileID: 542213683}
   - {fileID: 861890085}
+  - {fileID: 776446390}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &400463482
@@ -11189,8 +11190,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9f85b17f21a7f34ab3270237dbde35a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hours: 12
-  Minutes: 30
+  Hours: 11
+  Minutes: 59
   AccumulatedTime: 0
   Line1: {fileID: 0}
   Connectpoint1a: {fileID: 921685621}
@@ -11762,6 +11763,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d51f27fbb17062745b60b70ee285ad6e, type: 3}
   - {fileID: 21300000, guid: a8f10cf68e224f54d9aa982c33049469, type: 3}
   - {fileID: 21300000, guid: 45e5256c7506cd84f85f87944fd13e01, type: 3}
+  DontUpdateBar: 0
 --- !u!4 &2075619982
 Transform:
   m_ObjectHideFlags: 0
