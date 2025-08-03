@@ -67,7 +67,7 @@ public class InsanityManager : MonoBehaviour
                 Color color = sr.color;
                 color = new Color(255, 255, 255, Random.value);
                 sr.color = color;
-                float bubblescale = Random.Range(0, 1) + (TrackedInsanity / 2);
+                float bubblescale = Random.Range(0.5f, 1 + (TrackedInsanity / 2)) ;
                 Bubble.transform.localScale = new Vector2(bubblescale, bubblescale);
             }
             if (TrackedInsanity >= 2)
