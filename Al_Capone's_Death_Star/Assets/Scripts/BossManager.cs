@@ -18,14 +18,13 @@ public class BossManager : MonoBehaviour
     public GameObject D;
     public GameObject DialogueBox;
     public DialogueManager DialogueBoxScript;
-    public GameObject EndScreen;
+    [SerializeField] GameObject EndScreen;
 
     public float QuizWrongTIme = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        GetCom
         A = GameObject.Find("A");
         B = GameObject.Find("B");
         C = GameObject.Find("C");
@@ -169,7 +168,7 @@ public class BossManager : MonoBehaviour
                 else
                 {
                     Debug.Log("You Win");
-                    EndScreen.enabled = true;
+                    EndScreen.SetActive(true);
                     GameManagerScript.Victory = true;
                     GameManagerScript.Loop();
                 }

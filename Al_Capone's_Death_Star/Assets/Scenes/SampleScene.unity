@@ -11178,7 +11178,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_fontColor: {r: 0.21176471, g: 0.12941177, b: 0.047058824, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -11803,7 +11803,7 @@ MonoBehaviour:
   - grabWire
   sfxClips:
   - {fileID: 8300000, guid: ef6747dfbc6422f4a8b029320523efda, type: 3}
-  - {fileID: 8300000, guid: df8cd46d45bde23408c02c33e04800e1, type: 3}
+  - {fileID: 8300000, guid: 5d36462b669705545bee203256129216, type: 3}
   - {fileID: 8300000, guid: 16c66068bc4f38a4d91b7fd0ba82244b, type: 3}
   - {fileID: 8300000, guid: f162934e8d9619447809b5cda2f44da6, type: 3}
   - {fileID: 8300000, guid: dc88987fcd471894996808885014cf63, type: 3}
