@@ -46,7 +46,7 @@ public class ConversationManager : MonoBehaviour
     public bool TheCthuluException = false;
     public bool HeldCthulu = false;
     public bool TheBossException = false;
-    public bool HeldBoss = false;
+    //public bool HeldBoss = false;
     public bool TutorialException = false;
 
     // Variables for parsing dialogue
@@ -273,25 +273,35 @@ public class ConversationManager : MonoBehaviour
     }
     public void RunConvo()
     {
+        Debug.Log("Starts running");
         if ((TimeWaited - StartOffset) * LPS <= maxLeangth + 1) // Continue to progress conversation
         {
+            Debug.Log("Stage1");
             int temp = PlaceInConversation;
             // Set the integer value of the current character based on the passage of time since the beginning of the conversation
             PlaceInConversation = (int)((TimeWaited - StartOffset) * LPS);
-            
+
+            if (TutorialException && !IAMTALKING && PlaceInConversation == temp) //Jumpstarts the conversation bc otherwise it wont progress
+            {
+                PlaceInConversation++;
+            }
             // If we have progressed to a new conversation index
             if (temp != PlaceInConversation)
             {
-                if (TheBossException || (WiretapScript.Conversation != null && WiretapScript.Conversation.Equals(ConversationTargets)))
+                Debug.Log("Stage2");
+                if ((TheBossException && !TutorialException) || (WiretapScript.Conversation != null && WiretapScript.Conversation.Equals(ConversationTargets)))
                 {
+                    Debug.Log("Stage3");
                     if (PlaceInConversation - DialogueBoxScript.StartNum >= maxLeangth * ListenReq)
                     {
+
                         ListenedToConvo = true;
                         //Debug.Log(PlaceInConversation - DialogueBoxScript.StartNum - maxLeangth / 2);
                     }
 
                     if (!IAMTALKING)
                     {
+                        Debug.Log("Stage4 I will talk!");
                         IAMTALKING = true;
                         DialogueBoxScript.SetAsTalking(this.gameObject, PlaceInConversation);
                         // Initialize dialogue encounter
