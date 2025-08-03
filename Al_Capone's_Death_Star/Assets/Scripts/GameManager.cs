@@ -108,6 +108,7 @@ public class GameManager : MonoBehaviour
             {
                 GameObject LineManager = GameObject.Find("Manager");
                 LineManager.GetComponent<LinesAndText>().WorldRevolves();
+                AngerBar.RevolveBar();
                 FoundAll = true;
             }
         }
