@@ -179,4 +179,11 @@ public class BossManager : MonoBehaviour
     {
         CurrentInput = input;
     }
+    public void AllRed()
+    {
+        SpriteRenderer Asr = A.GetComponent<SpriteRenderer>();
+        Color color = Asr.color;
+        color = new Color(255, 0, 0, 255);
+        Asr.color = color;
+    }
 }
