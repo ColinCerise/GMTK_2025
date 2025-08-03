@@ -164,7 +164,7 @@ MonoBehaviour:
   D: {fileID: 0}
   DialogueBox: {fileID: 0}
   DialogueBoxScript: {fileID: 0}
-  EndScreen: {fileID: 0}
+  EndScreen: {fileID: 931814566}
   QuizWrongTIme: 0
 --- !u!4 &29519015
 Transform:
@@ -911,9 +911,9 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1866340023}
+  - {fileID: 1584706733}
   - {fileID: 1097691634}
   - {fileID: 859865473}
-  - {fileID: 1584706733}
   - {fileID: 97929805}
   - {fileID: 1567870213}
   - {fileID: 602171964}
@@ -3740,7 +3740,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &602171964
 Transform:
   m_ObjectHideFlags: 0
@@ -11800,7 +11800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Hours: 11
-  Minutes: 59
+  Minutes: 30
   AccumulatedTime: 0
   Line1: {fileID: 0}
   Connectpoint1a: {fileID: 921685621}

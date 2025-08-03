@@ -18,7 +18,7 @@ public class BossManager : MonoBehaviour
     public GameObject D;
     public GameObject DialogueBox;
     public DialogueManager DialogueBoxScript;
-    [SerializeField] GameObject EndScreen;
+    public GameObject EndScreen;
 
     public float QuizWrongTIme = 0;
 
@@ -170,7 +170,6 @@ public class BossManager : MonoBehaviour
                     Debug.Log("You Win");
                     EndScreen.SetActive(true);
                     GameManagerScript.Victory = true;
-                    GameManagerScript.Loop();
                 }
                 break;
 
