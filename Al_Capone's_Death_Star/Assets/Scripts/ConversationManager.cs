@@ -128,7 +128,7 @@ public class ConversationManager : MonoBehaviour
     void Update()
     {
         // Cthulu
-        if (TheCthuluException)
+        if (TheCthuluException && ((ManagerScript.Hours == TimeOffsetHours && ManagerScript.Minutes >= TimeOffsetMinutes) || ManagerScript.Hours > TimeOffsetHours))
         {
             CallEnded = true;
             CallStarted = true;
