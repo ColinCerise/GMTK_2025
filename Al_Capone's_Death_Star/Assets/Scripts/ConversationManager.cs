@@ -268,7 +268,7 @@ public class ConversationManager : MonoBehaviour
         {
             StartOffset = TimeWaited;
         }
-        if (ConnectedReciever == PlayerReciever)
+        if (ConnectedReciever == PlayerReciever && !ConnectedPoint.GetComponent<Grabbable>().GrabbedLock)
         {
             CallConnected = true;
         }
