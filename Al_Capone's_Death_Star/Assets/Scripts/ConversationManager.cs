@@ -160,9 +160,9 @@ public class ConversationManager : MonoBehaviour
                 {
                     CurrentDialog = Conversation.Substring(0, maxLeangth);
                     DialogueBoxScript.ForceUpdate();
+                    Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
                     TheCthuluException = false;
                     DialogueBoxScript.Conversation = null;
-                    Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
                 }
             }
             
@@ -199,13 +199,14 @@ public class ConversationManager : MonoBehaviour
                 if (ConnectedReciever != TargetReciever) // If we start a call then disconnect
                 {
                     CallEnded = true;
-                    Debug.Log("Ending call via start/disconnect, i1");
                     StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
                     CallMissed = true;
                     AngryBar.DisconnectedCall();
                     Debug.Log("Disconnected 1 on " + gameObject.name);
-                    Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
-                    Debug.Log(gameObject.name + ": " + DialogueBoxScript.FormattedCurrentText() + "\nIdentity: 1");
+                    if (IAMTALKING)
+                    {
+                        LeaveConvo();
+                    }
                 }
                 RunConvo();
             }
@@ -214,10 +215,11 @@ public class ConversationManager : MonoBehaviour
                 CurrentDialog = Conversation.Substring(DialogueBoxScript.StartNum, maxLeangth - DialogueBoxScript.StartNum);
                 DialogueBoxScript.ForceUpdate();
                 CallEnded = true;
-                Debug.Log("Ending call via natural end, i1");
                 StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
-                Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
-                Debug.Log(gameObject.name + ": " + DialogueBoxScript.FormattedCurrentText() + "\nIdentity: 2");
+                if (IAMTALKING)
+                {
+                    Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
+                }
             }
         }
         if (CallEnded && IAMTALKING && !TheCthuluException)
@@ -281,8 +283,6 @@ public class ConversationManager : MonoBehaviour
                     if (!IAMTALKING)
                     {
                         IAMTALKING = true;
-                        DialogueBoxScript.SetAsTalking(this.gameObject, PlaceInConversation);
-                        // Initialize dialogue encounter
 
                         int index = 0;
                         for (int i = 0, count = PlaceInConversation; count > 0; i++)
@@ -293,6 +293,7 @@ public class ConversationManager : MonoBehaviour
 
                         currentLineIndex = index;
 
+                        DialogueBoxScript.SetAsTalking(this.gameObject, PlaceInConversation);
                     }
 
                     if (PlaceInConversation < maxLeangth && DialogueBoxScript.StartNum < maxLeangth)
@@ -308,15 +309,12 @@ public class ConversationManager : MonoBehaviour
                     else
                     {
                         CallEnded = true;
-                        Debug.Log("Ending call via catch case, i3");
                         StarterOutput.GetComponent<OutputJack>().SetLightActive(false, this.gameObject);
-                        Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText());
-                        Debug.Log(gameObject.name + ": " + DialogueBoxScript.FormattedCurrentText() + "\nIdentity: 3");
-
                     }
                 }
-                else
+                else if (IAMTALKING)
                 {
+                    LeaveConvo();
                     IAMTALKING = false;
                     CurrentDialog = null;
                 }
@@ -353,5 +351,16 @@ public class ConversationManager : MonoBehaviour
     public string GetConversation()
     {
         return Conversation;
+    }
+
+    public void LeaveConvo()
+    {
+        Debug.Log("Leaving convo");
+        Manager.GetComponent<ConvoLog>().AddConvo(DialogueBoxScript.FormattedCurrentText() + "...");
+    }
+
+    public string StartTime()
+    {
+        return $"{(int)TimeOffsetHours}:{(int)TimeOffsetMinutes:D2} 02/02/1923\n\n";
     }
 }

@@ -95,6 +95,7 @@ public class GameManager : MonoBehaviour
         FoundAll = false;
         bool BounceConnectors = false;
         DontBrickMe = 0;
+        GameObject.Find("Manager").GetComponent<ConvoLog>().Revolve();
         while (!FoundAll && DontBrickMe < 1000)
         {
             DontBrickMe++;

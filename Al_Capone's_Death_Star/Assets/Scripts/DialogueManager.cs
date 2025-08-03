@@ -27,6 +27,7 @@ public class DialogueManager : MonoBehaviour
     private int lastLineIndex = 0;
     private int tempCount = 0;
 
+    private ConvoLog convoLog;
     public string[] troublesomeNames;
     [SerializeField] string formattedCurrentText;
 
@@ -37,6 +38,7 @@ public class DialogueManager : MonoBehaviour
         WiretapScript = Wiretap.GetComponent<Wiretap>();
         PlayerReciever = GameObject.Find("PlayerReciever");
         PlayerRecieverScript = PlayerReciever.GetComponent<OutputJack>();
+        convoLog = GameObject.Find("Manager").GetComponent<ConvoLog>();
     }
 
     // Update is called once per frame
@@ -79,12 +81,11 @@ public class DialogueManager : MonoBehaviour
     }
     public void SetAsTalking(GameObject Conversationist, int startingNum)
     {
-        Debug.Log(Conversationist.name + " ENCOUNTER");
         lastSpaceIndex = 0;
         lastLineIndex = 0;
         Conversation = Conversationist;
         ConversationManager convo = Conversation.GetComponent<ConversationManager>();
-        formattedCurrentText = "";
+        formattedCurrentText = convo.StartTime();
 
         if (startingNum < 20)
         {
@@ -122,12 +123,16 @@ public class DialogueManager : MonoBehaviour
         {
             ConversationManager convo = Conversation.GetComponent<ConversationManager>();
             convo.PlaceInConversation = convo.GetConversation().Length - 1;
-            DisplayLines(convo);
-            formattedCurrentText += convo.GetConversation().Substring(lastLineIndex, convo.PlaceInConversation - lastLineIndex);
 
             for (int i = 0; i < physicalLines.Count - maxLines || (string.IsNullOrWhiteSpace(physicalLines[0]) && physicalLines[0] != null); i++)
             {
                 physicalLines.RemoveAt(0);
+            }
+
+            if (convo.IAMTALKING)
+            {
+                DisplayLines(convo);
+                //convoLog.AddConvo(FormattedCurrentText());
             }
         }
         DialogueTimer = 0;
@@ -135,7 +140,6 @@ public class DialogueManager : MonoBehaviour
 
     private void DisplayLines(ConversationManager convo)
     {
-        Debug.Log("Talkin for the boss");
         string fullDialogue = "";
         foreach (string str in physicalLines)
         {
@@ -145,7 +149,6 @@ public class DialogueManager : MonoBehaviour
         if (StartNum != 0 && lastLineIndex == StartNum)
         {
             fullDialogue += "...";
-            formattedCurrentText = fullDialogue;
         }
 
         fullDialogue += convo.GetConversation().Substring(lastLineIndex, convo.PlaceInConversation - lastLineIndex);
@@ -169,11 +172,6 @@ public class DialogueManager : MonoBehaviour
             string lineSection = convo.GetConversation().Substring(lastLineIndex, lastSpaceIndex - lastLineIndex);
             AddLine(lineSection);
             lastLineIndex = lastSpaceIndex;
-        }
-
-        for (int i = 0; i < physicalLines.Count - maxLines || (string.IsNullOrWhiteSpace(physicalLines[0]) && physicalLines[0] != null); i++)
-        {
-            physicalLines.RemoveAt(0);
         }
 
         if (convo.GetConversation()[convo.PlaceInConversation] == ' ')
@@ -204,6 +202,13 @@ public class DialogueManager : MonoBehaviour
             physicalLines.Add(result);
 
             formattedCurrentText += result;
+
+            for (int i = 0; i < physicalLines.Count - maxLines || (string.IsNullOrWhiteSpace(physicalLines[0]) && physicalLines[0] != null); i++)
+            {
+                physicalLines.RemoveAt(0);
+            }
+
+            //DisplayLines(Conversation.GetComponent<ConversationManager>());
         }
     }
 
@@ -221,6 +226,8 @@ public class DialogueManager : MonoBehaviour
 
     public string FormattedCurrentText()
     {
+        ConversationManager convo = Conversation.GetComponent<ConversationManager>();
+        formattedCurrentText += convo.GetConversation().Substring(lastLineIndex, convo.PlaceInConversation - lastLineIndex);
         return formattedCurrentText;
     }
 }
