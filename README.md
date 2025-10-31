@@ -8,6 +8,6 @@ The player must simultaneously keep up with their tasks as a telephone operator 
 
 The project used jsfxr for sound effect generation and sources its font to Bitstream, found at https://www.fontspace.com/bitstream-vera-sans-mono-font-f13233.
 
-Development team: [Whelm9](https://github.com/Whelm9), [Terayal](https://github.com/Terayal), [Colin Cerise](https://github.com/ColinCerise), and [KingRolly](https://github.com/KingRolly)
+Development team: [Holland Young](https://github.com/hollandyoung), [Terayal](https://github.com/Terayal), [Colin Cerise](https://github.com/ColinCerise), and [KingRolly](https://github.com/KingRolly)
 
 Musical support: [Numlord](https://numlord.itch.io/)
